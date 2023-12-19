@@ -5,30 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <title>Document</title>
+    <title>index | sleeping bottle</title>
 </head>
 <body>
     <!-- 일회성 광고창 -->
     <div class="oneOff">
-        <a href="" class="disCount"><img src="" alt="가입시 신규회원 20%할인 쿠폰증정"></a>
-        <a href="" class="closeBtn">
+        <a href="#" class="couponTop"><img src="" alt="가입시 신규회원 20%할인 쿠폰증정"></a>
+        <a href="#" class="closeBtn">
             <span>1일동안 보지 않음</span>
             <span>X</span><!--폰트어썸-->
         </a>
     </div>
     <!-- 헤더 시작 -->
     <header>
-        <!-- 로고 -->
         <div class="mainMenu">
             <div class="left">
-                <!-- 태블릿 메뉴 모드 -->
-                <div class="tabletMode">
-                    <div class="tabletLogin">
-                        <!-- 로그인이 필요합니다 삭제 @디자인수정 -->
-                        <a href="#">로그인</a>
-                    </div>
+                <!-- 태블릿,모바일 메뉴 모드 -->
+                <div class="reactiveType">
+                    <!-- 로그인이 필요합니다 삭제 @디자인수정 -->
+                    <p class="reactivelogin"><a href="#">로그인</a></p>
                     <nav>
-                        <!-- 태블릿 모드 메뉴 같이사용 -->
+                        <!-- 태블릿,모바일 모드 메뉴 구조 같음 -->
                         <ul class="gnb">
                             <li>
                                 <a href="#">ABOUT</a>
@@ -41,31 +38,34 @@
                             <li><a href="#">STORY</a></li>
                             <li><a href="#">MUSIC</a></li>
                             <li>
-                                <a href="#">
-                                    <ul class="lnb">CONTACT
-                                        <li><a href="#">Notice</a></li>
-                                        <li><a href="#">FAQ</a></li>
-                                        <li><a href="#">Q&A</a></li>
-                                    </ul>
-                                </a>
+                                <a href="#">CONTACT</a>
+                                <ul class="lnb">
+                                    <li><a href="#">Notice</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Q&A</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
                     <div class="lang">
-                        <select name="langSelect" id="langSelect">
-                            <img src="" alt="언어선택">
-                            <option value="ko">한국어</option>
-                            <option value="en">English</option>
-                        </select>
+                        <img src="" class="langImg" alt="언어선택">
+                        <a href="#" class="langsSelect" >한국어</a>
+                        <a href="#" class="langKo">한국어</a>
+                        <a href="#" class="langEn">English</a>
                     </div>
-                    <a href="#" class="CloseBtn"></a>
+                    <p class="CloseBtn"><a href="#">X</a></p>
+                    <!-- ↑↑↑여기까지 햄버거 클릭시 나오는 화면 -->
+                    <!-- 태블릿,모바일 모드 메인로고 -->
+                    <h1><a href="#"><img src="" alt="메인페이지로 돌아가기"></a></h1>
+                    <!-- 태블릿,모바일 모드 오른쪽  -->
+                    <p class="rightLogin"><a href="#">Login</a></p>                    
                 </div>
-                <!-- 메인로고 -->
+                <!-- 메인로고(데스크탑) -->
                 <h1><a href="#"><img src="" alt="메인페이지로 돌아가기"></a></h1>
             </div>
-            <!-- 메인 카테고리 -->
+            <!-- 메인 카테고리(데스크탑) -->
+            <!-- 태블릿,모바일 모드 메뉴 같이사용 -->
             <nav>
-                <!-- 태블릿 모드 메뉴 같이사용 -->
                 <ul class="gnb">
                     <li>
                         <a href="#">ABOUT</a>
@@ -88,11 +88,12 @@
                     </li>
                 </ul>
             </nav>
-            <div class="menuR">
+            <div class="menuRight">
                 <a href="">Login</a>
                 <div class="advertise">
+                    <!-- 태블릿,모바일 모드에서 join없어짐 -->
                     <a href="">Join</a>
-                    <span class="advertise1">20% 할인 쿠폰 발급!</span>
+                    <span class="couponBtm">20% 할인 쿠폰 발급!</span>
                 </div>
             </div>
         </div>
@@ -100,8 +101,17 @@
     <!-- 메인 시작 -->
     <main>
         <section class="mainContainer">
-            <div class="shopIntro">
-                <div class="introLeft">
+            <!-- 태블릿, 모바일 슬라이드화면  -->
+            <div class="reactiveSlide">
+                <ul>
+                    <li><a href="#"><img src="" alt="좋은잠을위한한병, 슬리핑보틀과 함께 건강한 수면리듬을 찾아보세요"></a></li>
+                    <li><a href="#"><img src="" alt="국내유일최초 특허받은 수면음료 슬리핑보틀"></a></li>
+                    <li><a href="#"><img src="" alt="좋은잠을위한한병, 슬리핑보틀"></a></li>
+                </ul>
+            </div>
+            <!-- ↑↑↑태블릿, 모바일 슬라이드화면 끝 -->
+            <div class="productPage">
+                <div class="productLeft">
                     <h2>"ONE BOTTLE FOR<br>
                         BETTER SLEEP."</h2>
                     <P>진정한 휴식을 위한 음료, 슬리핑보틀</P>
@@ -109,17 +119,81 @@
                         감태추출물, 타트체리, L-테아닌 그리고 특허받은<br>
                         SB 농축액 등 10가지 자연성분으로 만들어진 혼합음료로<br>
                         누구나 부작용 걱정 없이 음용할 수 잇습니다.</p>
-                    <a href="">SHOP</a>
+                    <a href="#">SHOP</a>
                 </div>
-                <img src="" alt="">
+                <img src="" alt="슬리핑보틀제품이미지">
             </div>
         </section>    
-        <section class=""></section>
-        <section class=""></section>
-        <section class=""></section>
-        <section class=""></section>
-        <section class=""></section>
-        <section class=""></section>
+        <section class="SleepPage">
+            <div class="sleepLeft">
+                <h2>현대인들에게 가장 중요한<span>'휴식'</span></h2>
+                <p>많은 현대인들이 스트레스와 과도한 긴장상태에 자주 노출되다 보니 제대로된 휴식과 숙면을<br>
+                    취하지 못해 힘들어하는 경우를 보게되는 데요, 휴식과 숙면은 우리가 사용한 에너지를 충전<br>
+                    하고 우리 몸이 회복되는 데에 아주 중요한 부분입니다. 제대로된 휴식을 취하지 못할 경우 피<br>
+                    로가 충분히 회복되지 않고 피곤한 상태로 하루하루 지내다 보면 극심한 만성피로에 시달리게<br>
+                    되죠. 휴식에 도움을 주는 감태추출물, 타트체리, L-테아닌, 특어받은 SB 농축액 등 10가지<br>
+                    자연성분으로 이루어진 슬리핑보틀과 함께 진정한 휴식을 경험해 보세요.</p>
+                <a href="#">Discover More</a>
+            </div>
+            <img src="" alt="제품이미지">
+        </section>
+        <section class="eventPage">
+            <a href="#">
+                <span>슬리핑보틀 웹사이트 오픈기념 이벤트</span>
+                <span>지금 회원가입하고 20% 할인 쿠폰 받아 가세요!</span>
+            </a>
+            <a href="#"></a><!--폰트어썸-->
+        </section>
+        <section class="healthierPage">
+            <div class="healthier">
+                <h1>Helps You Sleep Deeper & Healthier</h1>
+                <p>슬리핑보틀과 함께 <span>진정한 휴식</span>을 경험해보세요.</p>
+            </div>
+            <ul class="">
+                <li class="">
+                    <img src="" alt="상차림이미지">
+                    <span>Good Ingredients</span>
+                    <span>의약품이 아닌 혼합음료로 누구나 부작용 걱정없이 드실 수 있습니다.</span>
+                </li>
+                <li>
+                    <img src="" alt="침대와식물이미지">
+                    <span>Calm & Relaxation</span>
+                    <span>의약품이 아닌 혼합음료로 누구나 부작용 걱정없이 드실 수 있습니다.</span>
+                </li>
+                <li>
+                    <img src="" alt="유리병이미지">
+                    <span>Zero Sugar</span>
+                    <span>의약품이 아닌 혼합음료로 누구나 부작용 걱정없이 드실 수 있습니다.</span>
+                </li>
+            </ul>
+        </section>
+        <section class="vegan">
+            <a href="#"><img src="" alt="now it's vegan"></a>
+        </section>
+        <section class="shopPage">
+            <div class="shopTitle">
+                <h2>Product</h2>
+                <p>좋은 잠을 위한 한 병, 슬리핑보틀</p>
+            </div>
+            <div class="ProductItem">
+                <ul class="item">
+                    <li>
+                        <a href="#"><img src="" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="storyPage">
+            <div class="">
+                <h2>Sleeping Story</h2>
+                <p>슬리핑보틀 엠버서더들의 인터뷰</p>
+            </div>
+            <ul>
+                <li><a href="#"><img src="" alt="사진작가 오중석"></a></li>
+                <li><a href="#"><img src="" alt="음악감동 김문정"></a></li>
+                <li><a href="#"><img src="" alt="의사 현일식"></a></li>
+            </ul>
+        </section>
         <section class=""></section>
         <section class=""></section>
         <section class=""></section>
