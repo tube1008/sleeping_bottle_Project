@@ -14,55 +14,62 @@
         <a href="#" class="couponTop"><img src="" alt="가입시 신규회원 20%할인 쿠폰증정"></a>
         <a href="#" class="closeBtn">
             <span>1일동안 보지 않음</span>
-            <span>X</span><!--폰트어썸-->
+            <span class="closeBtn">X</span><!--폰트어썸-->
         </a>
     </div>
-    <!-- 헤더 시작 -->
-    <header>
-        <div class="mainMenu">
-            <div class="left">
-                <!-- 태블릿,모바일 메뉴 모드 -->
-                <div class="reactiveType">
-                    <!-- 로그인이 필요합니다 삭제 @디자인수정 -->
-                    <p class="reactivelogin"><a href="#">로그인</a></p>
-                    <nav>
-                        <!-- 태블릿,모바일 모드 메뉴 구조 같음 -->
-                        <ul class="gnb">
-                            <li>
-                                <a href="#">ABOUT</a>
-                                <ul class="lnb">
-                                    <li><a href="#">Our story</a></li>
-                                    <li><a href="#">Press</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">SHOP</a></li>
-                            <li><a href="#">STORY</a></li>
-                            <li><a href="#">MUSIC</a></li>
-                            <li>
-                                <a href="#">CONTACT</a>
-                                <ul class="lnb">
-                                    <li><a href="#">Notice</a></li>
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">Q&A</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+    <!-- 태블릿,모바일 메뉴 모드 -->
+    <div class="allMenuWrap">
+        <a href="#" class="allMenu"></a><!--폰트어썸 햄버거 모양-->
+        <div class="allMenuLeft">
+            <div class="loginMenu">
+                <!-- 로그인이 필요합니다 삭제 @디자인수정 -->
+                <a href="#" class="mLogin">로그인</a>
+                <nav>
+                    <!-- 태블릿,모바일 모드 메뉴 구조 같음 -->
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">ABOUT</a>
+                            <ul class="lnb">
+                                <li><a href="#">Our story</a></li>
+                                <li><a href="#">Press</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">STORY</a></li>
+                        <li><a href="#">MUSIC</a></li>
+                        <li>
+                            <a href="#">CONTACT</a>
+                            <ul class="lnb">
+                                <li><a href="#">Notice</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="language">
                     <div class="lang">
                         <img src="" class="langImg" alt="언어선택">
                         <a href="#" class="langsSelect" >한국어</a>
+                    </div>
+                    <div class="langOpen">
                         <a href="#" class="langKo">한국어</a>
                         <a href="#" class="langEn">English</a>
                     </div>
-                    <p class="CloseBtn"><a href="#">X</a></p>
-                    <!-- ↑↑↑여기까지 햄버거 클릭시 나오는 화면 -->
-                    <!-- 태블릿,모바일 모드 메인로고 -->
-                    <h1><a href="#"><img src="" alt="메인페이지로 돌아가기"></a></h1>
-                    <!-- 태블릿,모바일 모드 오른쪽  -->
-                    <p class="rightLogin"><a href="#">Login</a></p>                    
                 </div>
-                <!-- 메인로고(데스크탑) -->
-                <h1><a href="#"><img src="" alt="메인페이지로 돌아가기"></a></h1>
+            </div><!-- ↑↑↑여기까지 햄버거 클릭시 나오는 화면 -->       
+            <a href="#" class="CloseBtn">X</a>
+        </div>
+        <!-- 태블릿,모바일 모드 메인로고 -->
+        <h1 class="m_Logo"><a href="#"><img src="" alt="메인페이지로 돌아가기"></a></h1>
+        <!-- 태블릿,모바일 모드 오른쪽  -->
+        <a href="#" class="rightLogin">Login</a>
+    </div>    
+    <!-- 헤더 시작 -->
+    <header>
+        <div class="mainMenu">
+            <!-- 메인로고(데스크탑) -->
+            <h1><a href="#"><img src="" alt="메인페이지로 돌아가기"></a></h1>
             </div>
             <!-- 메인 카테고리(데스크탑) -->
             <!-- 태블릿,모바일 모드 메뉴 같이사용 -->
@@ -89,10 +96,10 @@
                 </ul>
             </nav>
             <div class="menuRight">
-                <a href="">Login</a>
+                <a href="#">Login</a>
                 <div class="advertise">
                     <!-- 태블릿,모바일 모드에서 join없어짐 -->
-                    <a href="" class="joinHide">Join</a>
+                    <a href="#" class="join">Join</a>
                     <span class="couponBtm">20% 할인 쿠폰 발급!</span>
                 </div>
             </div>
@@ -102,7 +109,7 @@
     <main>
         <section class="mainContainer">
             <!-- 태블릿, 모바일 슬라이드화면  -->
-            <div class="reactiveSlide">
+            <div class="Slide">
                 <ul>
                     <li><a href="#"><img src="" alt="좋은잠을위한한병, 슬리핑보틀과 함께 건강한 수면리듬을 찾아보세요"></a></li>
                     <li><a href="#"><img src="" alt="국내유일최초 특허받은 수면음료 슬리핑보틀"></a></li>
@@ -142,7 +149,7 @@
                 <span>슬리핑보틀 웹사이트 오픈기념 이벤트</span>
                 <span>지금 회원가입하고 20% 할인 쿠폰 받아 가세요!</span>
             </a>
-            <a href="#"><i class=""></i></a><!--폰트어썸-->
+            <a href="#"><i></i></a><!--폰트어썸-->
         </div>
         <section class="deeperPage">
             <div class="deeper">
@@ -155,12 +162,12 @@
                     <span>Good Ingredients</span>
                     <span>의약품이 아닌 혼합음료로 누구나 부작용 걱정없이 드실 수 있습니다.</span>
                 </li>
-                <li>
+                <li class="health">
                     <img src="" alt="침대와식물이미지">
                     <span>Calm & Relaxation</span>
                     <span>의약품이 아닌 혼합음료로 누구나 부작용 걱정없이 드실 수 있습니다.</span>
                 </li>
-                <li>
+                <li class="health">
                     <img src="" alt="유리병이미지">
                     <span>Zero Sugar</span>
                     <span>의약품이 아닌 혼합음료로 누구나 부작용 걱정없이 드실 수 있습니다.</span>
@@ -177,7 +184,7 @@
             </div>
             <div class="ProductItem">
                 <div class="item01">
-                    <a href="#"><!-- 호버  -->
+                    <a href="#"><!-- 호버시 새로운 이미지가 뜸 -->
                         <img src="" alt="슬리핑 보틀 1병">
                         <h2>[슬리핑보틀]1병(100ml)</h2>
                         <p>5,000원</p>
