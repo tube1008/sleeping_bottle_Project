@@ -6,21 +6,50 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <title>index | sleeping bottle</title>
+    <title>Sleeping Bottle</title>
 </head>
 <body>
+    <!-- 로그인 팝업창 -->
+    <div class="loginPop">
+        <div class="login">
+            <div class="top">
+                <h1>로그인</h1>
+                <p class="loginBtn"></p><!--폰트어썸-->
+            </div>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>로그인양식</legend>
+                    <input type="text" name="frmId" id="frmId" placeholder="이메일">
+                    <input type="password" name="frmPw" id="frmPw" placeholder="비밀번호">
+                    <label for="chkBtn">
+                        <input type="checkbox" name="chkBtn" id="chkBtn"></input>로그인상태유지
+                    </label>
+                    <a href="#" class="loginSel">로그인</a>
+                </fieldset>
+                <div class="joinSearch">
+                    <a href="#">회원가입</a>
+                    <a href="#">아이디·비밀번호찾기</a>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    <!-- 조인 팝업창 -->
+    <div class="joinPop">
+
+    </div>
     <!-- 일회성 광고창 -->
-    <div class="oneOff">
+    <div class="popUp">
         <a href="#" class="couponTop"><img src="" alt="가입시 신규회원 20%할인 쿠폰증정"></a>
-        <a href="#" class="closeBtn">
+        <a href="#" class="close">
             <span>1일동안 보지 않음</span>
-            <span class="closeBtn">X</span><!--폰트어썸-->
+            <span class="btn"></span><!--폰트어썸-->
         </a>
     </div>
     <!-- 헤더 시작 -->
     <header>
-        <div class="allMenuWrap">
-            <div class="allMenuLeft">
+        <div class="mMenuWrap">
+            <div class="mMenuLeft">
                 <!-- 로그인이 필요합니다 삭제 @디자인수정 -->
                 <a href="#" class="mLogin">로그인</a>
                 <nav>
@@ -46,6 +75,7 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- 태블릿, 모바일 모드 메뉴 내부 언어변경 -->
                 <div class="language">
                     <div class="lang">
                         <img src="" class="langImg" alt="언어선택">
@@ -60,8 +90,8 @@
             </div>
         </div>
         <div class="mainMenu">
-            <!-- 태블릿,모바일 메뉴 모드 -->
-            <a href="#" class="mobilemenu"></a>
+            <!-- 태블릿,모바일 메뉴 (햄버거) -->
+            <a href="#" class="mMenu"></a>
             <!-- 태블릿,모바일 모드 메인로고 -->
             <h1 class="mLogo"><a href="#"><img src="" alt="Sleeping Bottle"></a></h1>  
             <!-- 메인로고(데스크탑) -->
@@ -105,30 +135,35 @@
     <main>
         <section class="productPage">
             <!-- 태블릿, 모바일 슬라이드화면  -->
-            <div class="Slide">
-                <ul>
-                    <li>
-                        <a href="#"></a><!--"좋은잠을위한한병, 슬리핑보틀과 함께 건강한 수면리듬을 찾아보세요"-->
-                    </li>
-                    <li>
-                        <a href="#"></a><!--"국내 유일, 국내 최초 특허받은 수면음료, 슬리핑 보틀"-->
-                    </li>
-                    <li>
-                        <img src="" alt="슬리핑 보틀과 꽃">
-                    </li>
-                    <li>
-                        <a href="#"></a><!--"좋은 잠을 위한 한 병, 슬리핑 보틀"-->
-                    </li>
-                    <li>
-                        <img src="" alt="침대협탁 위에 슬리핑 보틀">
-                    </li>
-                </ul>
-                <a href="#" class="prev"><img src="" alt="이전으로 가기"></a>
-                <a href="#" class="next"><img src="" alt="다음으로 가기"></a>
+            <div class="slide"><!--이미지만 보여지는 슬라이드는 제거함-->
+                <div class="selectSlide">
+                    <div class="left">
+                        <h1>"ONE BOTTLE FOR BETTER SLEEP."</h1>
+                        <p class="boldTxt">진정한 휴식을 위한 음료, 슬리핑 음료</p>
+                        <p>슬리핑보틀은 휴식에 도움을 주는 감태추출무르 타트체리, L-테아닌 그리고 특허받은 SB 농축액 등 10가지 자연성분으로 만들어진 혼합음료로 누구나 부작용 걱정없이 음용할 수 있습니다.</p>
+                        <p><a href="#" class="shopBtn">Shop</a></p>
+                    </div>
+                </div><!--오른쪽 이미지는 백그라운드 이미지로..-->
+                <div class="selectSlide">
+                    <a class="left">
+                        <h1>"국내 <em>유일,</em> 국내 <em>최초</em>" 특허받은 수면 음료, 슬리핑보틀</h1>
+                        <p>Sleeping Bottle</p>
+                    </a>
+                </div><!--오른쪽 이미지는 백그라운드 이미지로..-->
+                <div class="selectSlide">
+                    <div class="left">
+                        <h1>"Godd Night Sleep Tight."</h1>
+                        <p class="boldTxt">좋은 잠을 위한 한병, 슬리핑보틀</p>
+                        <p>국내최초 수면리듬 개선음료 슬리핑보틀은 타트체리, 감태추출물, 특허받은 SB농축액 등 12가지 천연성분으로 만들어진 혼합음료로 누구나 부작용 걱정 없이 음용할 수 있습니다. 슬리핑 보틀과 함께 건강한 수면리듬을 찾아보세요.</p>
+                        <p><a href="#" class="shopBtn">Shop</a></p>
+                    </div>
+                </div><!--오른쪽 이미지는 백그라운드 이미지로..-->
             </div>
+            <a href="#" class="prev"><img src="" alt="이전으로 가기"></a>
+            <a href="#" class="next"><img src="" alt="다음으로 가기"></a>
         </section>    
         <section class="sleepPage">
-            <div class="sleepTitle">
+            <div class="title">
                 <h2>One Bottle For Better Sleep</h2>
                 <p>진정한 휴식을 위한 음료, 슬리핑 보틀</p>
             </div>
@@ -140,9 +175,9 @@
                     로가 충분히 회복되지 않고 피곤한 상태로 하루하루 지내다 보면 극심한 만성피로에 시달리게
                     되죠. 휴식에 도움을 주는 감태추출물, 타트체리, L-테아닌, 특어받은 SB 농축액 등 10가지
                     자연성분으로 이루어진 슬리핑보틀과 함께 진정한 휴식을 경험해 보세요.</p>
-                <a href="#">Discover More</a>
+                <a href="#" class="moreBtn">Discover More</a>
             </div>
-            <img src="" alt="제품이미지">
+            <p><img src="" alt="제품이미지"></p>
         </section>
         <div class="eventPage"><!--이벤트페이지-->
             <a href="#">
@@ -152,33 +187,33 @@
             </a>
         </div>
         <section class="deeperPage">
-            <div class="deeper">
+            <div class="title">
                 <h2>Helps You Sleep Deeper & Healthier</h2>
                 <p>슬리핑보틀과 함께 <span>진정한 휴식</span>을 경험해보세요.</p>
             </div>
             <ul class="healthier">
                 <li class="health"><!-- 호버-->
-                    <p><img src="" alt="상차림이미지"></p>
+                    <p class="circle"><img src="" alt="상차림이미지"></p>
                     <h3>Good Ingredients</h3>
                     <p>의약품이 아닌 혼합음료로 누구나 부작용 걱정없이 드실 수 있습니다.</p>
                 </li>
                 <li class="health">
-                    <p><img src="" alt="침대와식물이미지"></p>
+                    <p class="circle"><img src="" alt="침대와식물이미지"></p>
                     <h3>Calm & Relaxation</h3>
                     <p>의약품이 아닌 혼합음료로 누구나 부작용 걱정없이 드실 수 있습니다.</p>
                 </li>
                 <li class="health">
-                    <p><img src="" alt="유리병이미지"></p>
+                    <p class="circle"><img src="" alt="유리병이미지"></p>
                     <h3>Zero Sugar</h3>
                     <p>의약품이 아닌 혼합음료로 누구나 부작용 걱정없이 드실 수 있습니다.</p>
                 </li>
             </ul>
-            <a href="#" class="nowitsvegan">
+            <a href="#" class="veganBnr">
                 <img src="" alt="now it's vegan">
             </a>
         </section>
         <section class="shopPage"><!--총상품6개, 자동슬라이드? 마우스로 왼쪽오른쪽 끌어당겨 원하는 상품볼수있음-->
-            <div class="shopTitle">
+            <div class="title">
                 <h2>Product</h2>
                 <p>좋은 잠을 위한 한 병, 슬리핑보틀</p>
             </div>
@@ -187,7 +222,7 @@
                     <a href="#"><!-- 호버시 새로운 이미지가 뜸 -->
                         <p><img src="" alt="슬리핑 보틀 1병"></p>
                         <h2>[슬리핑보틀]1병(100ml)</h2>
-                        <p>5,000원</p>
+                        <p class="price">5,000원</p>
                         <div class="saleMd">
                             <span>SALE</span>
                         </div>
@@ -197,7 +232,7 @@
                     <a href="#">
                         <p><img src="" alt="슬리핑 보틀 1박스[10개입]"></p>
                         <h2>슬리핑 보틀 1박스[10개입]</h2>
-                        <p>45,000원<del>50,000원</del></p>
+                        <p class="price">45,000원<del>50,000원</del></p>
                         <div class="saleMd">
                             <span>SALE</span>
                         </div>
@@ -207,7 +242,7 @@
                     <a href="#">
                         <p><img src="" alt="슬리핑 보틀 2박스[20개입]"></p>
                         <h2>슬리핑 보틀 2박스[20개입]</h2>
-                        <p>90,000원<del>100,000원</del></p>
+                        <p class="price">90,000원<del>100,000원</del></p>
                         <div class="saleMd">
                             <span>SALE</span>
                         </div>
@@ -217,7 +252,7 @@
                     <a href="#">
                         <p><img src="" alt="슬리핑 보틀 3박스[30개입]"></p>
                         <h2>[슬리핑로브] 프리미엄 호텔식 로브</h2>
-                        <p>127,500원<del>150,000원</del></p>
+                        <p class="price">127,500원<del>150,000원</del></p>
                         <div class="saleMd">
                             <span>SALE</span>
                         </div>
@@ -227,7 +262,7 @@
                     <a href="#">
                         <p><img src="" alt="슬리핑 보틀 5박스[50개입]"></p>
                         <h2>[슬리핑로브] 프리미엄 호텔식 로브</h2>
-                        <p>200,000원<del>250,000원</del></p>
+                        <p class="price">200,000원<del>250,000원</del></p>
                         <div class="saleMd">
                             <span>SALE</span>
                         </div>
@@ -241,7 +276,7 @@
                             <a href="#" class="brown"></a>
                         </div>
                         <h2>[슬리핑로브] 프리미엄 호텔식 로브</h2>
-                        <p>79,000원<del>150,000원</del></p>
+                        <p class="price">79,000원<del>150,000원</del></p>
                         <div class="saleMd">
                             <span>SALE</span>
                             <span>MD</span>
@@ -251,7 +286,7 @@
             </div>
         </section>
         <section class="storyPage">
-            <div class="ambassador">
+            <div class="title">
                 <h2>Sleeping Story</h2>
                 <p>슬리핑보틀 엠버서더들의 인터뷰</p>
             </div>
@@ -265,29 +300,29 @@
         <section class="blueBottle">
             <a href="#">
                 <p class="left"><img src="" alt="goodbight,sleeptight."></p>
-                <p class="right"><img src="" alt="파란 보틀병 이미지"></p>
+                <!--블루보틀 이미지 삭제 (디자인수정)-->
             </a>
         </section>
         <section class="newsPage"><!--호버-->
-            <div class="newsTitle">
+            <div class="title">
                 <h2>Instagram</h2>
                 <p>슬리핑보틀의 다양한 소식과 리뷰를 만나보세요</p>
             </div>
-            <ul>
-                <li><a href="#"><img src="" alt="연말맞이특별할인"></a></li>
-                <li><a href="#"><img src="" alt="날이 추울땐 슬리핑 보틀 한잔"></a></li>
-                <li><a href="#"><img src="" alt="[ep86]슬리핑 뮤직 플레이 리스트"></a></li>
-                <li><a href="#"><img src="" alt="금요일 오후는 슬리핑보틀과 함께"></a></li>
-                <li><a href="#"><img src="" alt="미국에 이어 호주까지 슬리핑보틀 진출"></a></li>
-                <li><a href="#"><img src="" alt="몸을 망치는 최악의 수면 자세?"></a></li>
-                <li><a href="#"><img src="" alt="[ep85]슬리핑 뮤직 플레이 리스트"></a></li>
-                <li><a href="#"><img src="" alt="약사들이 선택한 수면음료, 슬리핑보틀"></a></li>
-            </ul>
+            <div class="instagram">
+                <a href="#"><img src="" alt="연말맞이특별할인"></a>
+                <a href="#"><img src="" alt="날이 추울땐 슬리핑 보틀 한잔"></a>
+                <a href="#"><img src="" alt="[ep86]슬리핑 뮤직 플레이 리스트"></a>
+                <a href="#"><img src="" alt="금요일 오후는 슬리핑보틀과 함께"></a>
+                <a href="#"><img src="" alt="미국에 이어 호주까지 슬리핑보틀 진출"></a>
+                <a href="#"><img src="" alt="몸을 망치는 최악의 수면 자세?"></a>
+                <a href="#"><img src="" alt="[ep85]슬리핑 뮤직 플레이 리스트"></a>
+                <a href="#"><img src="" alt="약사들이 선택한 수면음료, 슬리핑보틀"></a>
+            </div>
         </section>
         <section class="goodnightPage">
             <h2>Good night, Sleep tight.</h2>
             <p>한 병으로 챙기는 건강한 수면리듬, 슬리핑보틀</p>
-            <a href="">Our story</a>
+            <a href="#" class="moreBtn">Our story</a>
         </section>
         <section class="customerServ">
             <h2>Custmer Service</h2>
@@ -301,20 +336,16 @@
             <a href="#">제휴문의</a>
             <a href="#">이용약관</a>
             <a href="#">개인정보처리방침</a>
-            <div class="sns"><!--폰트어썸-->
+            <div class="sns"><!--폰트어썸 sns-->
                 <a href="#"><i></i></a>
                 <a href="#"><i></i></a>
             </div>
         </div>
+        <p class="addTitle">sleeping 슬리핑보틀</p>
         <address>
-            <p>sleeping 슬리핑보틀</p>
-            <p>상호명:주식회사 머스카/대표:김은경/주소:서울특별시 용산구 한남동 805,101-101/전화:15510508</p>
-            <div class="entrePreneur">
-                <p>사업자등록번호:306-87-01330/</p>
-                <a href="#">통신판매업신고번호:2020-서울용산-0760/</a>
-                <a href="#">/문의:hq@muska.kr</a>
-            </div>
-            <p>Copy2023 Sleeping Bottle 슬리핑보틀 All rights reserved</p>
+            상호명:주식회사 머스카/대표:김은경/주소:서울특별시 용산구 한남동 805,101-101/전화:15510508<br>
+            사업자등록번호:306-87-01330/<a href="#">통신판매업신고번호:2020-서울용산-0760/</a><a href="#">/문의:hq@muska.kr</a><br>
+            Copy2023&copy; Sleeping Bottle 슬리핑보틀 All rights reserved
         </address>
     </footer>
     <div class="terms">
