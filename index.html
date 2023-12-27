@@ -16,7 +16,7 @@
                 <h1>로그인</h1>
                 <a href="#" class="closeLogin"></a><!--폰트어썸-->
             </div>
-            <form action="#" method="get">
+            <form action="#" method="get" id="loginPage">
                 <fieldset>
                     <legend class="skip">로그인양식</legend>
                     <input type="text" name="frmId" id="frmId" placeholder="이메일">
@@ -85,7 +85,7 @@
                     <h1>약관동의</h1>
                     <a href="#"></a><!--폰트어썸-->
                 </div>
-                <form action="#" method="get">
+                <form action="#" method="get" id="termss">
                     <fieldset>
                         <legend class="skip">약관동의 양식</legend>
                             <input type="checkbox" id="chkall">
@@ -251,12 +251,12 @@
                         </div>
                         <div class="gender">
                             <h2 class="">성별</h2>
-                            <label for="genderChk" class="male">남자</label>
-                            <label for="genderChk" class="female">여자</label>
+                            <input type="radio"><label for="genderChk" class="male">남자</label>
+                            <input type="radio"><label for="genderChk" class="female">여자</label>
                         </div>
                         <div class="num">
                             <h2>연락처</h2>
-                            <input type="text" name="userNumber">
+                            <input type="text" name="userNumber" placeholder="연락처">
                         </div>
                         <h2>생년월일</h2>
                         <div class="birth">
