@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
     <title>Sleeping Bottle</title>
-
 </head>
 <body>
     <!-- 로그인 팝업창 -->
@@ -15,7 +14,7 @@
         <div class="login">
             <div class="top">
                 <h1>로그인</h1>
-                <p class="loginBtn"></p><!--폰트어썸-->
+                <a href="#" class="closeLogin"></a><!--폰트어썸-->
             </div>
             <form action="#" method="get">
                 <fieldset>
@@ -38,36 +37,31 @@
                 </fieldset>
             </form>
         </div>
-        <div class="searchIdPw">
-            <div class="searchBox">
-                <div class="title">
-                    <h1>아이디 찾기</h1>
-                    <a href="#" class="closeIP"></a><!--폰트어썸-->
-                    <h1>비밀번호 찾기</h1>
-                    <a href="#" class="closeIP"></a><!--폰트어썸-->
-                </div>
-                <div class="search">
-                    <div class="searchIdPw">
-                        <a href="#"><h2>아이디 찾기</h2></a>
-                        <a href="#"><h2>비밀번호 찾기</h2></a>
-                    </div>
-                    <div class="searchId">
-                        <span>아이디를 찾을 방법을 선택해주세요.</span><!--아이디 찾기-->
-                        <label for="selectBox"><input type="checkbox" name="selectBox" id="selectBox">가입한 이메일로 찾기</label>
-                        <input type="text" name="emailId" id="emailId" placeholder="이메일 또는 아이디">
-                        <label for="selectBox"><input type="checkbox" name="selectBox" id="selectBox">가입한 휴대폰으로 찾기</label>
-                        <input type="text" name="name" id="name" placeholder="이름 또는 닉네임">
-                        <input type="text" name="phNumber" id="phNumber" placeholder="휴대폰 번호">
-                        <a href="#" class="findIdPw">아이디 찾기</a>
-                    </div>
-                    <div class="searchPw"><!--비밀번호 찾기-->
-                        <input type="text" name="joinId" id="joinId" placeholder="가입한 아이디">
-                        <a href="#">비밀번호 찾기</a>
-                    </div>
-                </div>
+        <div class="searchBox"><!--아이디 비밀번호 찾기-->
+            <div class="title">
+                <h1>아이디 찾기</h1>
+                <a href="#" class="closeIdpw"></a><!--폰트어썸-->
             </div>
+            <div class="searchIdPw">
+                <a href="#"><h2>아이디 찾기</h2></a>
+                <a href="#"><h2>비밀번호 찾기</h2></a>
+            </div>
+            <div class="idpwBox">
+                <div class="searchId">
+                    <span>아이디를 찾을 방법을 선택해주세요.</span><!--아이디 찾기-->
+                    <label for="selectBox"><input type="checkbox" name="selectBox" id="selectBox">가입한 이메일로 찾기</label>
+                    <input type="text" name="emailId" id="emailId" placeholder="이메일 또는 아이디">
+                    <label for="selectBox"><input type="checkbox" name="selectBox" id="selectBox">가입한 휴대폰으로 찾기</label>
+                    <input type="text" name="name" id="name" placeholder="이름 또는 닉네임">
+                    <input type="text" name="phNumber" id="phNumber" placeholder="휴대폰 번호">
+                    <a href="#" class="findIdPw">아이디 찾기</a>
+                </div>
+                <div class="searchPw"><!--비밀번호 찾기-->
+                    <input type="text" name="joinId" id="joinId" placeholder="가입한 아이디">
+                    <a href="#">비밀번호 찾기</a>
+                </div>
+            </div> 
         </div>
-    </div>
     </div>
     <!-- 조인 팝업창 -->
     <div class="joinWrap">
@@ -91,10 +85,10 @@
                 <form action="#" method="get">
                     <fieldset>
                         <legend class="skip">약관동의 양식</legend>
-                        <input type="checkbox" id="chkall">
-                        <label for="chkall" class="agree">
-                            이용약관, 개인정보 수집 및 이용에 모두 동의합니다.
-                        </label>
+                            <input type="checkbox" id="chkall">
+                            <label for="chkall" class="agree">
+                                이용약관, 개인정보 수집 및 이용에 모두 동의합니다.
+                            </label>
                         <div class="mainchk">
                             <input type="checkbox" class="chk">
                             <label for="chkall" class="agree1">
@@ -229,7 +223,7 @@
         <div class="wrap">
             <div class="title">
                 <h1>회원가입</h1>
-                <a href="" class="signCloseBtn"></a><!--폰트어썸-->
+                <a href="#" class="signCloseBtn"></a><!--폰트어썸-->
             </div>  
             <div class="container">
                 <form action="#" method="post" id="signUp">
@@ -243,16 +237,24 @@
                                 <a href="#">삭제</a>
                             </div>
                         </div>
-                        <input type="text" name="email" id="email" placeholder="이메일">
-                        <input type="password" name="pw" id="pw" placeholder="비밀번호">
-                        <input type="password" name="pw" id="pw" placeholder="비밀번호 확인">
-                        <h2>이름</h2>
-                        <input type="text" name="userName" id="userName" placeholder="이름을(를) 입력하세요">
-                        <h2 class="">성별</h2>
-                        <label for="genderChk" class="male">남자</label>
-                        <label for="genderChk" class="female">여자</label>
-                        <h2>연락처</h2>
-                        <input type="text" name="userNumber">
+                        <div class="idPw">
+                            <input type="text" name="email" id="email" placeholder="이메일">
+                            <input type="password" name="pw" id="pw" placeholder="비밀번호">
+                            <input type="password" name="pw" id="pw" placeholder="비밀번호 확인">
+                        </div>
+                        <div class="name">
+                            <h2>이름</h2>
+                            <input type="text" name="userName" id="userName" placeholder="이름을(를) 입력하세요">
+                        </div>
+                        <div class="gender">
+                            <h2 class="">성별</h2>
+                            <label for="genderChk" class="male">남자</label>
+                            <label for="genderChk" class="female">여자</label>
+                        </div>
+                        <div class="num">
+                            <h2>연락처</h2>
+                            <input type="text" name="userNumber">
+                        </div>
                         <h2>생년월일</h2>
                         <div class="birth">
                             <select name="year" class="year">
@@ -359,7 +361,7 @@
     <header>
         <div class="mMenuWrap">
             <div class="mMenuLeft">
-                <!-- 로그인이 필요합니다 삭제 @디자인수정 -->
+                <!-- 로그인이 필요합니다 삭제 디자인수정 -->
                 <a href="#" class="mLogin">로그인</a>
                 <nav>
                     <!-- 태블릿,모바일 모드 메뉴 구조 같음 -->
@@ -464,7 +466,7 @@
                         <h1>"Godd Night Sleep Tight."</h1>
                         <p class="boldTxt">좋은 잠을 위한 한병, 슬리핑보틀</p>
                         <p>국내최초 수면리듬 개선음료 슬리핑보틀은 타트체리, 감태추출물, 특허받은 SB농축액 등 12가지 천연성분으로 만들어진 혼합음료로 누구나 부작용 걱정 없이 음용할 수 있습니다. 슬리핑 보틀과 함께 건강한 수면리듬을 찾아보세요.</p>
-                        <p><a href="#" class="shopBtn">Shop</a></p>
+                        <a href="#" class="shopBtn">Shop</a>
                     </div>
                 </div><!--오른쪽 이미지는 백그라운드 이미지로..-->
             </div>
@@ -527,71 +529,59 @@
                 <p>좋은 잠을 위한 한 병, 슬리핑보틀</p>
             </div>
             <div class="productItem">
-                <div class="item">
-                    <a href="#"><!-- 호버시 새로운 이미지가 뜸 -->
-                        <p><img src="" alt="슬리핑 보틀 1병"></p>
-                        <h2>[슬리핑보틀]1병(100ml)</h2>
-                        <p class="price">5,000원</p>
-                        <div class="saleMd">
-                            <span>SALE</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <p><img src="" alt="슬리핑 보틀 1박스[10개입]"></p>
-                        <h2>슬리핑 보틀 1박스[10개입]</h2>
-                        <p class="price">45,000원<del>50,000원</del></p>
-                        <div class="saleMd">
-                            <span>SALE</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <p><img src="" alt="슬리핑 보틀 2박스[20개입]"></p>
-                        <h2>슬리핑 보틀 2박스[20개입]</h2>
-                        <p class="price">90,000원<del>100,000원</del></p>
-                        <div class="saleMd">
-                            <span>SALE</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <p><img src="" alt="슬리핑 보틀 3박스[30개입]"></p>
-                        <h2>슬리핑 보틀 3박스[30개입]</h2>
-                        <p class="price">127,500원<del>150,000원</del></p>
-                        <div class="saleMd">
-                            <span>SALE</span>
-                        </div>
-                    </a>
-                </div>    
-                <div class="item">
-                    <a href="#">
-                        <p><img src="" alt="슬리핑 보틀 5박스[50개입]"></p>
-                        <h2>슬리핑 보틀 5박스[50개입]</h2>
-                        <p class="price">200,000원<del>250,000원</del></p>
-                        <div class="saleMd">
-                            <span>SALE</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <p><img src="" alt="[슬리핑로브] 프리미엄 호텔식 로브"></p>
-                        <div class="colorSelect">
-                            <a href="#" class="white"></a>
-                            <a href="#" class="brown"></a>
-                        </div>
-                        <h2>[슬리핑로브] 프리미엄 호텔식 로브</h2>
-                        <p class="price">79,000원<del>150,000원</del></p>
-                        <div class="saleMd">
-                            <span>SALE</span>
-                            <span>MD</span>
-                        </div>
-                    </a>
-                </div>
+                <a href="#" class="item"><!-- 호버시 새로운 이미지가 뜸 -->
+                    <p><img src="" alt="슬리핑 보틀 1병"></p>
+                    <h2>[슬리핑보틀]1병(100ml)</h2>
+                    <p class="price">5,000원</p>
+                    <div class="saleMd">
+                        <span>SALE</span>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <p><img src="" alt="슬리핑 보틀 1박스[10개입]"></p>
+                    <h2>슬리핑 보틀 1박스[10개입]</h2>
+                    <p class="price">45,000원<del>50,000원</del></p>
+                    <div class="saleMd">
+                        <span>SALE</span>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <p><img src="" alt="슬리핑 보틀 2박스[20개입]"></p>
+                    <h2>슬리핑 보틀 2박스[20개입]</h2>
+                    <p class="price">90,000원<del>100,000원</del></p>
+                    <div class="saleMd">
+                        <span>SALE</span>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <p><img src="" alt="슬리핑 보틀 3박스[30개입]"></p>
+                    <h2>슬리핑 보틀 3박스[30개입]</h2>
+                    <p class="price">127,500원<del>150,000원</del></p>
+                    <div class="saleMd">
+                        <span>SALE</span>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <p><img src="" alt="슬리핑 보틀 5박스[50개입]"></p>
+                    <h2>슬리핑 보틀 5박스[50개입]</h2>
+                    <p class="price">200,000원<del>250,000원</del></p>
+                    <div class="saleMd">
+                        <span>SALE</span>
+                    </div>
+                </a>
+                <a href="#" class="item">
+                    <p><img src="" alt="[슬리핑로브] 프리미엄 호텔식 로브"></p>
+                    <div class="colorSelect">
+                        <a href="#" class="white"></a>
+                        <a href="#" class="brown"></a>
+                    </div>
+                    <h2>[슬리핑로브] 프리미엄 호텔식 로브</h2>
+                    <p class="price">79,000원<del>150,000원</del></p>
+                    <div class="saleMd">
+                        <span>SALE</span>
+                        <span>MD</span>
+                    </div>
+                </a>
             </div>
         </section>
         <section class="storyPage">
@@ -633,29 +623,31 @@
             <p>한 병으로 챙기는 건강한 수면리듬, 슬리핑보틀</p>
             <a href="#" class="moreBtn">Our story</a>
         </section>
-        <section class="customerServ">
+    </main>
+    <footer>
+        <div class="top">
             <h2>Custmer Service</h2>
             <p><i class=""></i><strong>1551-0508</strong></p><!--폰트어썸-->
             <p><i class=""></i>10:00 ~ 18:00(Lunch Time 12:00 ~ 13:30)</p><!--폰트어썸-->
             <p><i class=""></i>토, 일요일 및 공휴일 휴무</p><!--폰트어썸-->
-        </section>
-    </main>
-    <footer>
-        <div class="bottom">
-            <a href="#">제휴문의</a>
-            <a href="#">이용약관</a>
-            <a href="#">개인정보처리방침</a>
-            <div class="sns"><!--폰트어썸 sns-->
-                <a href="#"><i></i></a>
-                <a href="#"><i></i></a>
-            </div>
         </div>
-        <p class="addTitle">sleeping 슬리핑보틀</p>
-        <address>
-            상호명:주식회사 머스카/대표:김은경/주소:서울특별시 용산구 한남동 805,101-101/전화:15510508<br>
-            사업자등록번호:306-87-01330/<a href="#">통신판매업신고번호:2020-서울용산-0760/</a><a href="#">/문의:hq@muska.kr</a><br>
-            Copy2023&copy; Sleeping Bottle 슬리핑보틀 All rights reserved
-        </address>
+        <div class="bottom">
+            <div class="add">
+                <a href="#">제휴문의</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <div class="sns"><!--폰트어썸 sns-->
+                    <a href="#"><i></i></a>
+                    <a href="#"><i></i></a>
+                </div>
+            </div>
+            <p class="addTitle">sleeping 슬리핑보틀</p>
+            <address>
+                상호명:주식회사 머스카/대표:김은경/주소:서울특별시 용산구 한남동 805,101-101/전화:15510508<br>
+                사업자등록번호:306-87-01330/<a href="#">통신판매업신고번호:2020-서울용산-0760/</a><a href="#">/문의:hq@muska.kr</a><br>
+                Copy2023&copy; Sleeping Bottle 슬리핑보틀 All rights reserved
+            </address>
+        </div>
     </footer>
     <div class="terms">
         <div class="utiliTitle"><!--utilization 이용약관 팝업창-->
