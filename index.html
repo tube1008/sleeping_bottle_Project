@@ -46,21 +46,24 @@
                 <a href="#"><h2>아이디 찾기</h2></a>
                 <a href="#"><h2>비밀번호 찾기</h2></a>
             </div>
-            <div class="idpwBox">
-                <div class="searchId">
-                    <span>아이디를 찾을 방법을 선택해주세요.</span><!--아이디 찾기-->
-                    <label for="selectBox"><input type="checkbox" name="selectBox" id="selectBox">가입한 이메일로 찾기</label>
-                    <input type="text" name="emailId" id="emailId" placeholder="이메일 또는 아이디">
-                    <label for="selectBox"><input type="checkbox" name="selectBox" id="selectBox">가입한 휴대폰으로 찾기</label>
-                    <input type="text" name="name" id="name" placeholder="이름 또는 닉네임">
-                    <input type="text" name="phNumber" id="phNumber" placeholder="휴대폰 번호">
-                    <a href="#" class="findIdPw">아이디 찾기</a>
-                </div>
-                <div class="searchPw"><!--비밀번호 찾기-->
-                    <input type="text" name="joinId" id="joinId" placeholder="가입한 아이디">
-                    <a href="#">비밀번호 찾기</a>
-                </div>
-            </div> 
+            <form class="idpwBox">
+                <fieldset>
+                    <legend class="skip">아이디 비밀번호 찾기 양식</legend>
+                    <div class="searchId">
+                        <span>아이디를 찾을 방법을 선택해주세요.</span><!--아이디 찾기-->
+                        <label for="selectBox"><input type="checkbox" name="selectBox" id="selectBox">가입한 이메일로 찾기</label>
+                        <input type="text" name="emailId" id="emailId" placeholder="이메일 또는 아이디">
+                        <label for="selectBox"><input type="checkbox" name="selectBox" id="selectBox">가입한 휴대폰으로 찾기</label>
+                        <input type="text" name="name" id="name" placeholder="이름 또는 닉네임">
+                        <input type="text" name="phNumber" id="phNumber" placeholder="휴대폰 번호">
+                        <a href="#" class="findIdPw">아이디 찾기</a>
+                    </div>
+                    <div class="searchPw"><!--비밀번호 찾기-->
+                        <input type="text" name="joinId" id="joinId" placeholder="가입한 아이디">
+                        <a href="#">비밀번호 찾기</a>
+                    </div>
+                </fieldset>
+            </form> 
         </div>
     </div>
     <!-- 조인 팝업창 -->
@@ -354,7 +357,7 @@
         <a href="#" class="couponTop"><img src="" alt="가입시 신규회원 20%할인 쿠폰증정"></a>
         <a href="#" class="close">
             <span>1일동안 보지 않음</span>
-            <span class="btn"></span><!--폰트어썸-->
+            <span class="closePop"></span><!--폰트어썸-->
         </a>
     </div>
     <!-- 헤더 시작 -->
