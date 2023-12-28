@@ -14,6 +14,82 @@
 .loginPop .login #loginPage fieldset .joinSearch {}
 .loginPop .login #loginPage fieldset .joinSearch a {}
 .loginPop .login #loginPage fieldset .joinSearch a {}
+.loginPop .login #loginPage fieldset span {}
+.loginPop .login #loginPage fieldset span span {}
+.loginPop .login #loginPage fieldset a {}
+.loginPop .login #loginPage fieldset a .naver {}
+.loginPop .login #loginPage fieldset a .kakao {}
+.loginPop .login #loginPage fieldset .nonShipping {}
+/* 아이디 비밀번호 찾기 */
+.loginPop .searchBox {}
+.loginPop .searchBox .title {}
+.loginPop .searchBox .title h1 {}
+.loginPop .searchBox .title .closeIdpw {}
+.loginPop .searchBox .searchIdPw {}
+.loginPop .searchBox .searchIdPw a {}
+.loginPop .searchBox .searchIdPw a h2 {}
+/* 아이디 찾기 */
+.loginPop .searchBox .idpwBox {} 
+.loginPop .searchBox .idpwBox fieldset {}
+.loginPop .searchBox .idpwBox fieldset .searchId {}
+.loginPop .searchBox .idpwBox fieldset .searchId span {}
+.loginPop .searchBox .idpwBox fieldset .searchId label {}
+.loginPop .searchBox .idpwBox fieldset .searchId label #selectBox {}
+.loginPop .searchBox .idpwBox fieldset .searchId #emailId {}
+.loginPop .searchBox .idpwBox fieldset .searchId #name {}
+.loginPop .searchBox .idpwBox fieldset .searchId #phNumber {}
+.loginPop .searchBox .idpwBox fieldset .searchId .findIdPw {}
+/* 비밀번호찾기 */
+.loginPop .searchBox .idpwBox fieldset .searchPw {}
+.loginPop .searchBox .idpwBox fieldset .searchPw #joinId {}
+.loginPop .searchBox .idpwBox fieldset .searchPw a {}
+/* 조인 팝업창 */
+.joinWrap {}
+.joinWrap .joinPop {}
+.joinWrap .joinPop .title {}
+.joinWrap .joinPop .title h1 {}
+.joinWrap .joinPop .title .joinCloseBtn {}
+.joinWrap .joinPop a {}
+.joinWrap .joinPop span {}
+.joinWrap .joinPop span span {}
+.joinWrap .joinPop a .naver {}
+.joinWrap .joinPop a .kakao {}
+/* 약관동의 */
+.terms {}
+.terms .container {}
+.terms .container .title {}
+.terms .container .title h1 {}
+.terms .container .title a {}
+.terms .container #terms {}
+.terms .container #terms fieldset {}
+.terms .container #terms fieldset #chkAll {}
+.terms .container #terms fieldset .agree {}
+.terms .container #terms fieldset .agree {}
+.terms .container #terms fieldset .mainChk1 {}
+.terms .container #terms fieldset .mainChk1 .chk {}
+.terms .container #terms fieldset .mainChk1 .agree1 {}
+.terms .container #terms fieldset .mainChk1 .agree1 span {}
+/* 이용약관 텍스트 박스 */
+.terms .container #terms fieldset .mainChk1 .textBox {}
+.terms .container #terms fieldset .mainChk1 .textBox h2 {}
+.terms .container #terms fieldset .mainChk1 .textBox p {}
+/* 개인정보 동의 텍스트 박스 */
+.terms .container #terms fieldset .mainChk2 .chk {}
+.terms .container #terms fieldset .mainChk2 .agree1 {}
+.terms .container #terms fieldset .mainChk2 .agree1 span {}
+.terms .container #terms fieldset .mainChk2 .textBox {}
+.terms .container #terms fieldset .mainChk2 .textBox h2 {}
+.terms .container #terms fieldset .mainChk2 .textBox p {}
+.terms .container #terms fieldset .mainChk2 .textBox p {}
+.terms .container #terms fieldset .mainChk2 .agree1 {}
+.terms .container #terms fieldset .mainChk2 .agree1 span {}
+.terms .container #terms fieldset .selectBtn {}
+.terms .container #terms fieldset .selectBtn .reserBtn {}
+.terms .container #terms fieldset .selectBtn .signupBtn {}
+.terms .container #terms fieldset .selectBtn .signupBtn a {}
+/* 가입하기 */
+
+
 
 
 
