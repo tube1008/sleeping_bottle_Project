@@ -1,16 +1,22 @@
 /* main */
 main {background-color: aqua;}
 /* section-1 */
-main .productPage {}
+main .productPage {background-color: brown;}
 /* 태블릿, 모바일 슬라이드 화면 */
 main .productPage .slide {}
 main .productPage .slide .selectSlide {}
+main .productPage .slide .selectSlide .left:nth-child(1) {}
+main .productPage .slide .selectSlide .left:nth-child(2) {}
+main .productPage .slide .selectSlide .left:nth-child(3) {}
 main .productPage .slide .selectSlide .left {}
-main .productPage .slide .selectSlide .left h1 {}
-/* 두번째 슬라이드 */
+main .productPage .slide .selectSlide .left h1 {
+    font-family: 'Cardo', serif; font-size: 2rem;
+}
 main .productPage .slide .selectSlide .left h1 em {}
 main .productPage .slide .selectSlide .left .boldTxt {}
-main .productPage .slide .selectSlide .left p{}
+main .productPage .slide .selectSlide .left p{
+    font-size: 1rem;
+}
 main .productPage .slide .selectSlide .left a {}
 main .productPage .slide .selectSlide .left .shopBtn {}
 main .productPage .slide .prev {}
