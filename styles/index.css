@@ -1,127 +1,98 @@
-/* 로그인 팝업 */
-.loginPop {}
-.loginPop .login {}
-.loginPop .login .top {}
-.loginPop .login .top h1 {}
-.loginPop .login .top h1 .closeLogin{} /* 폰트어썸 */
-.loginPop .login #loginPage {}
-.loginPop .login #loginPage fieldset {}
-.loginPop .login #loginPage fieldset #frmId {}
-.loginPop .login #loginPage fieldset #frmPw {}
-.loginPop .login #loginPage fieldset label {}
-.loginPop .login #loginPage fieldset label #chkBtn {}
-.loginPop .login #loginPage fieldset .loginSel {}
-.loginPop .login #loginPage fieldset .joinSearch {}
-.loginPop .login #loginPage fieldset .joinSearch a {}
-.loginPop .login #loginPage fieldset .joinSearch a {}
-.loginPop .login #loginPage fieldset span {}
-.loginPop .login #loginPage fieldset span span {}
-.loginPop .login #loginPage fieldset a {}
-.loginPop .login #loginPage fieldset a .naver {}
-.loginPop .login #loginPage fieldset a .kakao {}
-.loginPop .login #loginPage fieldset .nonShipping {}
-/* 아이디 비밀번호 찾기 */
-.loginPop .searchBox {}
-.loginPop .searchBox .title {}
-.loginPop .searchBox .title h1 {}
-.loginPop .searchBox .title .closeIdpw {}
-.loginPop .searchBox .searchIdPw {}
-.loginPop .searchBox .searchIdPw a {}
-.loginPop .searchBox .searchIdPw a h2 {}
-/* 아이디 찾기 */
-.loginPop .searchBox .idpwBox {} 
-.loginPop .searchBox .idpwBox fieldset {}
-.loginPop .searchBox .idpwBox fieldset .searchId {}
-.loginPop .searchBox .idpwBox fieldset .searchId span {}
-.loginPop .searchBox .idpwBox fieldset .searchId label {}
-.loginPop .searchBox .idpwBox fieldset .searchId label #selectBox {}
-.loginPop .searchBox .idpwBox fieldset .searchId #emailId {}
-.loginPop .searchBox .idpwBox fieldset .searchId #name {}
-.loginPop .searchBox .idpwBox fieldset .searchId #phNumber {}
-.loginPop .searchBox .idpwBox fieldset .searchId .findIdPw {}
-/* 비밀번호찾기 */
-.loginPop .searchBox .idpwBox fieldset .searchPw {}
-.loginPop .searchBox .idpwBox fieldset .searchPw #joinId {}
-.loginPop .searchBox .idpwBox fieldset .searchPw a {}
-/* 조인 팝업창 */
-.joinWrap {}
-.joinWrap .joinPop {}
-.joinWrap .joinPop .title {}
-.joinWrap .joinPop .title h1 {}
-.joinWrap .joinPop .title .joinCloseBtn {}
-.joinWrap .joinPop a {}
-.joinWrap .joinPop span {}
-.joinWrap .joinPop span span {}
-.joinWrap .joinPop a .naver {}
-.joinWrap .joinPop a .kakao {}
-/* 약관동의 */
-.joinWrap .terms {}
-.joinWrap .terms .container {}
-.joinWrap .terms .container .title {}
-.joinWrap .terms .container .title h1 {}
-.joinWrap .terms .container .title a {}
-.joinWrap .terms .container #terms {}
-.joinWrap .terms .container #terms fieldset {}
-.joinWrap .terms .container #terms fieldset #chkAll {}
-.joinWrap .terms .container #terms fieldset .agree {}
-.joinWrap .terms .container #terms fieldset .agree {}
-.joinWrap .terms .container #terms fieldset .mainChk1 {}
-.joinWrap .terms .container #terms fieldset .mainChk1 .chk {}
-.joinWrap .terms .container #terms fieldset .mainChk1 .agree1 {}
-.joinWrap .terms .container #terms fieldset .mainChk1 .agree1 span {}
-/* 이용약관 텍스트 박스 */
-.joinWrap .terms .container #terms fieldset .mainChk1 .textBox {}
-.joinWrap .terms .container #terms fieldset .mainChk1 .textBox h2 {}
-.joinWrap .terms .container #terms fieldset .mainChk1 .textBox p {}
-/* 개인정보 동의 텍스트 박스 */
-.joinWrap .terms .container #terms fieldset .mainChk2 .chk {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .agree1 {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .agree1 span {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .textBox {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .textBox h2 {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .textBox p {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .textBox p {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .agree {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .agree span {}
-.joinWrap .terms .container #terms fieldset .selectBtn {}
-.joinWrap .terms .container #terms fieldset .selectBtn .reserBtn {}
-.joinWrap .terms .container #terms fieldset .selectBtn .signupBtn {}
-.joinWrap .terms .container #terms fieldset .selectBtn .signupBtn a {}
-/* 가입하기 */
-.signContainer {}
-.signContainer .wrap {}
-.signContainer .wrap .title {}
-.signContainer .wrap .title h1 {}
-.signContainer .wrap .title h1 a {}
-.signContainer .wrap .title h1 a .signCloseBtn {}
-.signContainer .wrap .container {}
-.signContainer .wrap .container #signUp {}
-.signContainer .wrap .container #signUp fieldset {}
-.signContainer .wrap .container #signUp fieldset .photo {}
-.signContainer .wrap .container #signUp fieldset .photo a {}
-.signContainer .wrap .container #signUp fieldset .photo .phOption {}
-.signContainer .wrap .container #signUp fieldset .photo .phOption a {}
-.signContainer .wrap .container #signUp fieldset .idPw {}
-.signContainer .wrap .container #signUp fieldset .idPw #email {}
-.signContainer .wrap .container #signUp fieldset .idPw #pw {}
-.signContainer .wrap .container #signUp fieldset .idPw #rePw {}
-.signContainer .wrap .container #signUp fieldset .name {}
-.signContainer .wrap .container #signUp fieldset .name h2 {}
-.signContainer .wrap .container #signUp fieldset .name #userName {}
-.signContainer .wrap .container #signUp fieldset .gender {}
-.signContainer .wrap .container #signUp fieldset .gender h2 {}
-.signContainer .wrap .container #signUp fieldset .gender .male {}
-.signContainer .wrap .container #signUp fieldset .gender .female {}
-.signContainer .wrap .container #signUp fieldset .num {}
-.signContainer .wrap .container #signUp fieldset .num h2 {}
-.signContainer .wrap .container #signUp fieldset .num #userNumber {}
-.signContainer .wrap .container #signUp fieldset h2 {}
-.signContainer .wrap .container #signUp fieldset .birth {}
-.signContainer .wrap .container #signUp fieldset .birth .year {}
-.signContainer .wrap .container #signUp fieldset .birth .month {}
-.signContainer .wrap .container #signUp fieldset .birth .day {}
-.signContainer .wrap .container #signUp fieldset .sign {}
-.signContainer .wrap .container #signUp fieldset .sign .signUp {}
+/* main */
+main {background-color: aqua;}
+/* section-1 */
+main .productPage {}
+/* 태블릿, 모바일 슬라이드 화면 */
+main .productPage .slide {}
+main .productPage .slide .selectSlide {}
+main .productPage .slide .selectSlide .left {}
+main .productPage .slide .selectSlide .left h1 {}
+/* 두번째 슬라이드 */
+main .productPage .slide .selectSlide .left h1 em {}
+main .productPage .slide .selectSlide .left .boldTxt {}
+main .productPage .slide .selectSlide .left p{}
+main .productPage .slide .selectSlide .left a {}
+main .productPage .slide .selectSlide .left .shopBtn {}
+main .productPage .slide .prev {}
+main .productPage .slide .next {}
+/* section-2 */
+main .sleepPage {}
+main .sleepPage title {}
+main .sleepPage title h2 {}
+main .sleepPage title p {}
+main .sleepPage .sleepLeft {}
+main .sleepPage .sleepLeft h3 {}
+main .sleepPage .sleepLeft h3 span {}
+main .sleepPage .sleepLeft p {}
+main .sleepPage .sleepLeft .moreBtn {}
+main .sleepPage p {}
+main .sleepPage p img {}
+/* section-3_이벤트 페이지 */
+main .eventPage {}
+main .eventPage a {}
+main .eventPage a h2 {}
+main .eventPage a p {}
+/* section-4 */
+main .deeperPage {}
+main .deeperPage .title {}
+main .deeperPage .title h2 {}
+main .deeperPage .title p {}
+main .deeperPage .title p span {}
+main .deeperPage .healthier {}
+main .deeperPage .healthier .health {}
+main .deeperPage .healthier .health .cilcle {}
+main .deeperPage .healthier .health .cilcle img {}
+main .deeperPage .healthier .health h3 {}
+main .deeperPage .veganBnr {}
+main .deeperPage .veganBnr img {}
+/* section-5 */
+main .shopPage {}
+main .shopPage .title {}
+main .shopPage .title h2 {}
+main .shopPage .title h2 p {}
+main .shopPage .productItem {}
+main .shopPage .productItem .item {}
+main .shopPage .productItem .item p {}
+main .shopPage .productItem .item p img {}
+main .shopPage .productItem .item .colorSelect {}
+main .shopPage .productItem .item .colorSelect .white {}
+main .shopPage .productItem .item .colorSelect .brown {}
+main .shopPage .productItem .item h2 {}
+main .shopPage .productItem .item .price {}
+main .shopPage .productItem .item .price del {}
+main .shopPage .productItem .item .saleMd {}
+main .shopPage .productItem .item .saleMd span {}
+main .shopPage .productItem .item .saleMd .md {}
+/* section-6 */
+main .storyPage {}
+main .storyPage .title {}
+main .storyPage .title h2 {}
+main .storyPage .title p {}
+main .storyPage .interview {}
+main .storyPage .interview a {}
+main .storyPage .interview a img {}
+main .storyPage .interview a img .info {}
+main .storyPage .interview a img .info span {}
+main .storyPage .interview .viewLink {}
+/* section-7 */
+main .blueBottle {}
+main .blueBottle a {}
+main .blueBottle a .left {}
+main .blueBottle a .right {}
+main .blueBottle a .right img {}
+/* section-8 */
+main .newsPage {}
+main .newsPage .title {}
+main .newsPage .title h2 {}
+main .newsPage .title p {}
+main .newsPage .instagram {}
+main .newsPage .instagram a {}
+/* section-9 */
+main .goodNightPage {}
+main .goodNightPage h2 {}
+main .goodNightPage p {}
+main .goodNightPage .moreBtn {}
+
 
 
 
