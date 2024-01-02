@@ -1,7 +1,7 @@
 /* main */
-main {background-color: aqua;}
+main {}
 /* section-1 */
-main .productPage {background-color: brown;}
+main .productPage {}
 /* 태블릿, 모바일 슬라이드 화면 */
 main .productPage .slide {}
 main .productPage .slide .selectSlide {}

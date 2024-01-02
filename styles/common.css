@@ -137,16 +137,21 @@
 .signContainer .wrap .container #signUp fieldset .sign {}
 .signContainer .wrap .container #signUp fieldset .sign .signUp {}
 /* 일회성 광고창 */
-.popUp {}
+.popUp {position: relative;}
 .popUp .couponTop {}
 .popUp .couponTop img {}
-.popUp .close {}
+.popUp .close {
+    display: flex; flex-flow: row nowrap;
+    position: absolute; right: 0; top: 0;
+    align-items: center;
+    margin: 5px 5px 0;
+}
 .popUp .close span {}
-.popUp .close span .closePop {}
+.popUp .close .closePop {width: 35px;}
 /* header */
 header {}
 /* 태블릿, 모바일 */
-header .mMenuWrap {}
+header .mMenuWrap {display: none;}
 header .mMenuWrap .mMenuLeft {}
 header .mMenuWrap .mMenuLeft .mLogin {}
 header .mMenuWrap .mMenuLeft nav {}
@@ -164,27 +169,34 @@ header .mMenuWrap .mMenuLeft nav .language .langOpen .langKo {}
 header .mMenuWrap .mMenuLeft nav .language .langOpen .langEn {}
 header .mMenuWrap .mMenuLeft nav .language .closeBtn {}
 /* 데스크탑 메뉴 */
-header .mainMenu {}
+header .mainMenu {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
 /* 태블릿, 모바일 메뉴 (햄버거) */
 header .mainMenu .mMenu {}
 /* 태블릿, 모바일 메인로고 */
-header .mainMenu .mLogo {}
+header .mainMenu .mLogo {display: none;}
 header .mainMenu .mLogo a {}
 header .mainMenu .mLogo a img {}
 /* 데스크탑 메인로고 */
 header .mainMenu .dLogo {}
 header .mainMenu .dLogo a {}
-header .mainMenu .dLogo a img {}
+header .mainMenu .dLogo a img {width: 103.16px;}
 /* 데스크탑 메인 카테고리 */
-header .mainMenu nav {}
-header .mainMenu nav .gnb {}
+header .mainMenu nav {
+    
+}
+header .mainMenu nav .gnb {
+    display: flex; flex-flow: row nowrap;
+}
 header .mainMenu nav .gnb li {}
 header .mainMenu nav .gnb li a {}
 header .mainMenu nav .gnb li .lnb {}
 header .mainMenu nav .gnb li .lnb li {}
 header .mainMenu nav .gnb li .lnb li a {}
 header .mainMenu nav .gnb li .lnb li a {}
-header .mainMenu .menuRight {}
+header .mainMenu .menuRight {display: flex; flex-flow: row nowrap;}
 /* 태블릿, 모바일 메뉴 동일 */
 header .mainMenu .menuRight a {}
 header .mainMenu .menuRight .advertise {}
