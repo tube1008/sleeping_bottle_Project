@@ -8,12 +8,12 @@ main .productPage .slide .selectSlide {}
 
 /* section slide01 */
 main .productPage .slide .selectSlide:nth-child(1) {
-    background-color: #ebeaea; height: 669px;
+    background-color: #ebeaea; height: 100%;
     display: flex; flex-flow: row nowrap;
     justify-content: center; padding: 60px 350px; 
 }
 main .productPage .slide .selectSlide .left01 {
-    width: 500px; margin-right: 150px; text-align: center;
+    margin-right: 150px; text-align: center;
     padding: 50px 0;
 }
 main .productPage .slide .selectSlide .left01 h1 {
@@ -38,13 +38,16 @@ main .productPage .slide .selectSlide .left01 .shopBtn {
 main .productPage .slide .selectSlide:nth-child(2) {background-color: #759ca4; height: 669px;}
 main .productPage .slide .selectSlide .left02 {
     display: flex; flex-flow: row nowrap;
-    justify-content: center; padding: 120px 350px;
+    justify-content: center; padding: 120px 250px;
 }
-main .productPage .slide .selectSlide .left02 .leftTxt {
+main .productPage .slide .selectSlide .left02 .leftTxt {}
+main .productPage .slide .selectSlide .left02 .leftTxt h1 {
+    color: #fff; font-size: 3.5rem; font-weight: 700;
 }
-main .productPage .slide .selectSlide .left02 .leftTxt h1 {}
-main .productPage .slide .selectSlide .left02 .leftTxt h1 em {}
-main .productPage .slide .selectSlide .left02 .leftTxt p {}
+main .productPage .slide .selectSlide .left02 .leftTxt h1 em {
+    color: #fff; font-size: 3.5rem; font-weight: 700;}
+main .productPage .slide .selectSlide .left02 .leftTxt p {
+    color: #fff; font-size: 1.325rem; font-weight: 500;}
 main .productPage .slide .selectSlide .left02 p {}
 main .productPage .slide .selectSlide .left02 .shopBtn {}
 /* section slide03 */
