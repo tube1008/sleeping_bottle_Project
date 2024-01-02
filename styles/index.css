@@ -5,20 +5,54 @@ main .productPage {}
 /* 태블릿, 모바일 슬라이드 화면 */
 main .productPage .slide {}
 main .productPage .slide .selectSlide {}
-main .productPage .slide .selectSlide .left:nth-child(1) {}
-main .productPage .slide .selectSlide .left:nth-child(2) {}
-main .productPage .slide .selectSlide .left:nth-child(3) {}
-main .productPage .slide .selectSlide .left {}
-main .productPage .slide .selectSlide .left h1 {
-    font-family: 'Cardo', serif; font-size: 2rem;
+
+/* section slide01 */
+main .productPage .slide .selectSlide:nth-child(1) {
+    background-color: #ebeaea; height: 669px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; padding: 60px 350px; 
 }
-main .productPage .slide .selectSlide .left h1 em {}
-main .productPage .slide .selectSlide .left .boldTxt {}
-main .productPage .slide .selectSlide .left p{
-    font-size: 1rem;
+main .productPage .slide .selectSlide .left01 {
+    width: 500px; margin-right: 150px; text-align: center;
+    padding: 50px 0;
 }
-main .productPage .slide .selectSlide .left a {}
-main .productPage .slide .selectSlide .left .shopBtn {}
+main .productPage .slide .selectSlide .left01 h1 {
+    font-family: 'Cardo', serif; font-size: 3rem; font-weight: 700;
+    padding-bottom: 60px; color: #3d7352;
+}
+main .productPage .slide .selectSlide .left01 .boldTxt {
+    color: #3d7352; font-size: 1.325rem; font-weight: 500;
+    padding-bottom: 30px;
+}
+main .productPage .slide .selectSlide .left01 p {
+    color: #3d7352; font-size: 1.125rem; font-weight: 400;
+    padding-bottom: 80px; line-height: 1.5;
+}
+main .productPage .slide .selectSlide .left01 .shopBtn {
+    color: #3d7352; font-family: 'Cardo', serif; font-size: 1.325rem;
+    border: 1px solid #3d7352; font-weight: 600;
+    padding: 10px 60px;
+    border-radius: 5px;
+}
+/* section slide02 */
+main .productPage .slide .selectSlide:nth-child(2) {background-color: #759ca4; height: 669px;}
+main .productPage .slide .selectSlide .left02 {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; padding: 120px 350px;
+}
+main .productPage .slide .selectSlide .left02 .leftTxt {
+}
+main .productPage .slide .selectSlide .left02 .leftTxt h1 {}
+main .productPage .slide .selectSlide .left02 .leftTxt h1 em {}
+main .productPage .slide .selectSlide .left02 .leftTxt p {}
+main .productPage .slide .selectSlide .left02 p {}
+main .productPage .slide .selectSlide .left02 .shopBtn {}
+/* section slide03 */
+main .productPage .slide .selectSlide:nth-child(3) {}
+main .productPage .slide .selectSlide .left03 h1 {}
+main .productPage .slide .selectSlide .left03 .boldTxt {}
+main .productPage .slide .selectSlide .left03 p {}
+main .productPage .slide .selectSlide .left03 .shopBtn {}
 main .productPage .slide .prev {}
 main .productPage .slide .next {}
 /* section-2 */
