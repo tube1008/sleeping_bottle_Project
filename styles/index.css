@@ -37,18 +37,24 @@ main .productPage .slide .selectSlide .left01 .shopBtn {
 /* section slide02 */
 main .productPage .slide .selectSlide:nth-child(2) {background-color: #759ca4; height: 669px;}
 main .productPage .slide .selectSlide .left02 {
-    display: flex; flex-flow: row nowrap;
-    justify-content: center; padding: 120px 250px;
+    display: flex; flex-flow: row nowrap; text-align: center;
+    justify-content: center; padding: 120px 250px; 
 }
-main .productPage .slide .selectSlide .left02 .leftTxt {}
+main .productPage .slide .selectSlide .left02 .leftTxt {margin-right: 120px;}
 main .productPage .slide .selectSlide .left02 .leftTxt h1 {
-    color: #fff; font-size: 3.5rem; font-weight: 700;
+    color: #fff; font-size: 4rem; font-weight: 700;
+    padding-bottom: 60px; margin-top: 70px;
 }
 main .productPage .slide .selectSlide .left02 .leftTxt h1 em {
-    color: #fff; font-size: 3.5rem; font-weight: 700;}
+    color: #fff; font-size: 4.5rem; font-weight: 700;
+}
 main .productPage .slide .selectSlide .left02 .leftTxt p {
-    color: #fff; font-size: 1.325rem; font-weight: 500;}
-main .productPage .slide .selectSlide .left02 p {}
+    color: #fff; font-weight: 400;
+    padding-bottom: 60px;
+}
+main .productPage .slide .selectSlide .left02 .leftTxt .boldTxt {font-size: 2.5rem;}
+
+main .productPage .slide .selectSlide .left02 .left02 p {font-size: 2rem;}
 main .productPage .slide .selectSlide .left02 .shopBtn {}
 /* section slide03 */
 main .productPage .slide .selectSlide:nth-child(3) {}

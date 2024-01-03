@@ -193,12 +193,12 @@ header .mainMenu nav .gnb {
     display: flex; flex-flow: row nowrap; 
 }
 header .mainMenu nav .gnb li {}
-header .mainMenu nav .gnb li a {
+header .mainMenu nav .gnb li a { 
     font-size: 0.938rem; letter-spacing: 2px; font-family: 'Cardo', serif;
     color: #212121; padding: 0 30px;
 }
 header .mainMenu nav .gnb li .lnb {}
-header .mainMenu nav .gnb li .lnb li {
+header .mainMenu nav .gnb li .lnb li {     display: none;
     color: #797979; padding: 8px 0; border: 1px solid #e5e5e5;
 }
 header .mainMenu nav .gnb li .lnb li a {
@@ -216,7 +216,7 @@ header .mainMenu .menuRight > a::after {
     content: ''; display: inline-block;
     width: 1px ; height: 10px;
     background-color: #4f4f4f;
-    margin: 0 15px;  
+    margin: 0 15px;
 }
 header .mainMenu .menuRight .advertise {position: relative;}
 /* 태블릿, 모바일 모드에서 join 없어짐 */
@@ -226,6 +226,7 @@ header .mainMenu .menuRight .advertise .couponBtn {
     width: 125.36px; background-color: #4f4f4f; color: #fff;
     position: absolute; right: -50px; top: 25px; padding: 5px 8px;
     border-radius: 5px;
+    display: none;
 }
 /* -------------------------------------------------------------------------- */
 /* footer */
