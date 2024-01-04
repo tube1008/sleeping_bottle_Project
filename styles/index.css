@@ -87,41 +87,90 @@ main .productPage .slide .prev {}
 main .productPage .slide .next {}
 /* section-2 */
 main .sleepPage {
-    height: 829px;
+    height: 825px;
 }
-main .sleepPage .title {text-align: center; padding-top: 150px;}
-main .sleepPage .title h2 {font-family: 'Cardo', serif; font-size: 2.25rem; padding-bottom: 15px; color:#5d5d5d;}
-main .sleepPage .title p {font-size: 1.375rem; font-weight: 600; color:#5d5d5d;}
-main .sleepPage .sleepLeft {}
-main .sleepPage .sleepLeft h3 {font-size: 1.25rem; color:#5d5d5d;}
-main .sleepPage .sleepLeft h3 span {font-weight: 600; color:#5d5d5d;}
-main .sleepPage .sleepLeft p {color:#5d5d5d;}
-main .sleepPage .sleepLeft .moreBtn {}
-main .sleepPage p {}
-main .sleepPage p img {}
+main .sleepPage .title {
+    text-align: center; padding-top: 110px;
+}
+main .sleepPage .title h2 {
+    font-family: 'Cardo', serif; font-size: 2.25rem; 
+    padding-bottom: 15px; color:#5d5d5d;
+}
+main .sleepPage .title p {
+    font-size: 1.375rem; font-weight: 600; color:#5d5d5d; 
+    margin-bottom: 100px;
+}
+main .sleepPage .sleep {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; margin: 0 300px;
+}
+main .sleepPage .sleep .sleepLeft {padding: 25px;}
+main .sleepPage .sleep .sleepLeft h3 {
+    font-size: 1.5rem; color:#5d5d5d; padding-bottom: 30px;
+    margin-top: 35px;
+}
+main .sleepPage .sleep .sleepLeft h3 span {
+    font-weight: 600; color:#5d5d5d;
+}
+main .sleepPage .sleep .sleepLeft p {
+    color:#5d5d5d; font-size: 1.125rem; line-height: 1.5;
+    padding-bottom: 50px; margin-right: 40px;
+}
+main .sleepPage .sleep .sleepLeft .moreBtn {
+    color:#5d5d5d; border: 1px solid #e5e7eb; border-radius: 10px;
+    padding: 10px 20px; 
+}
+main .sleepPage .sleep img {width: 700px; height: 400px;}
 /* section-3_이벤트 페이지 */
-main .eventPage {}
+main .eventPage {
+    background-color: #cbd3d3f2; height: 130px;
+    text-align: center;
+}
 main .eventPage a {}
-main .eventPage a h2 {}
-main .eventPage a p {}
+main .eventPage a h2 {
+    font-size: 1.5rem; color: #fff; font-weight: 600; padding-top: 30px
+}
+main .eventPage a p {font-size: 1.125rem; color: #fff; padding-top: 20px}
 /* section-4 */
-main .deeperPage {}
-main .deeperPage .title {}
-main .deeperPage .title h2 {}
-main .deeperPage .title p {}
-main .deeperPage .title p span {}
-main .deeperPage .healthier {}
-main .deeperPage .healthier .health {}
-main .deeperPage .healthier .health .cilcle {}
-main .deeperPage .healthier .health .cilcle img {}
-main .deeperPage .healthier .health h3 {}
+main .deeperPage {height: 745px;}
+main .deeperPage .title {text-align: center; margin-top: 110px;}
+main .deeperPage .title h2 {
+    font-family: 'Cardo', serif; font-size: 2.25rem; 
+    padding-bottom: 15px; color:#5d5d5d;
+}
+main .deeperPage .title p {
+    font-size: 1.375rem; font-weight: 600; color:#5d5d5d; 
+}
+main .deeperPage .title p span {
+    font-size: 1.375rem; font-weight: 600; color:#5d5d5d; 
+}
+main .deeperPage .healthier {
+    display: flex; flex-flow: row nowrap; justify-content: center;
+    text-align: center;
+}
+main .deeperPage .healthier .health {margin-bottom: 100px; padding: 100px;}
+main .deeperPage .healthier .health .circle {}
+main .deeperPage .healthier .health .circle img {width: 232px; padding-bottom: 25px;}
+main .deeperPage .healthier .health h3 {
+    font-family: 'Cardo', serif; font-weight: 600; font-size: 1.25rem; 
+    color:#5d5d5d; padding-bottom: 10px;
+}
+main .deeperPage .healthier .health p {
+    font-size: 1rem; color:#5d5d5d; width: 230px;
+}
 main .deeperPage .veganBnr {}
-main .deeperPage .veganBnr img {}
+main .deeperPage .veganBnr img {height: 310px;}
 /* section-5 */
 main .shopPage {}
-main .shopPage .title {}
-main .shopPage .title h2 {}
-main .shopPage .title h2 p {}
+main .shopPage .title {text-align: center; margin-top: 50px;}
+main .shopPage .title h2 {
+    font-family: 'Cardo', serif; font-size: 2.25rem; 
+    padding-bottom: 15px; color:#5d5d5d;
+}
+main .shopPage .title p {
+    font-size: 1rem; font-weight: 600; color:#5d5d5d;
+    margin-bottom: 50px; 
+}
 main .shopPage .productItem {}
 main .shopPage .productItem .item {}
 main .shopPage .productItem .item p {}
