@@ -202,7 +202,7 @@ header .mainMenu nav .gnb li .lnb li {     display: none;
     color: #797979; padding: 8px 0; border: 1px solid #e5e5e5;
 }
 header .mainMenu nav .gnb li .lnb li a {
-    font-size: 0.75rem; 
+    font-size: 0.75rem; color: #212121;
 }
 header .mainMenu .menuRight {
     display: flex; flex-flow: row nowrap; 

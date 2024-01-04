@@ -12,3 +12,4 @@
 * 23/12/29 index, common(header,footer) css 선택자 내일까지 완성하고 주말에 50%정도 완성해야함 // 메인페이지 이미지 다운완료 // 작업자 만들면서 의문점 readme에 적어놓기
 * 23/12/29 index, common css 선택자 완료 // 이미지 빼먹은거 있는지 체크 // css 시작 (~1/5까지완성해야함)
 
+* 24/01/04 index, common css 작업중

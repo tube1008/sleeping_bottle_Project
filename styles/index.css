@@ -8,7 +8,7 @@ main .productPage .slide .selectSlide {}
 
 /* section slide01 */
 main .productPage .slide .selectSlide:nth-child(1) {
-    background-color: #ebeaea; height: 100%;
+    background-color: #ebeaea; height: 669px;
     display: flex; flex-flow: row nowrap;
     justify-content: center; padding: 60px 350px; 
 }
@@ -35,44 +35,67 @@ main .productPage .slide .selectSlide .left01 .shopBtn {
     border-radius: 5px;
 }
 /* section slide02 */
-main .productPage .slide .selectSlide:nth-child(2) {background-color: #759ca4; height: 669px;}
-main .productPage .slide .selectSlide .left02 {
-    display: flex; flex-flow: row nowrap; text-align: center;
-    justify-content: center; padding: 120px 250px; 
+main .productPage .slide .selectSlide:nth-child(2) {
+    background-color: #759ca4; height: 669px;
 }
-main .productPage .slide .selectSlide .left02 .leftTxt {margin-right: 120px;}
+main .productPage .slide .selectSlide .left02 {
+    display: flex; flex-flow: row nowrap; 
+    justify-content: center; text-align: center; 
+    padding: 105px 225px; 
+}
+main .productPage .slide .selectSlide .left02 .leftTxt {padding: 0 50px;}
 main .productPage .slide .selectSlide .left02 .leftTxt h1 {
-    color: #fff; font-size: 4rem; font-weight: 700;
-    padding-bottom: 60px; margin-top: 70px;
+    color: #fff; font-size: 2.5rem; font-weight: 700;
+    padding-bottom: 40px; margin-top: 100px;
 }
 main .productPage .slide .selectSlide .left02 .leftTxt h1 em {
-    color: #fff; font-size: 4.5rem; font-weight: 700;
+    color: #fff; font-size: 3.5rem; font-weight: 700;
 }
-main .productPage .slide .selectSlide .left02 .leftTxt p {
-    color: #fff; font-weight: 400;
+main .productPage .slide .selectSlide .left02 .leftTxt p {padding-bottom: 70px;}
+main .productPage .slide .selectSlide .left02 .leftTxt .boldTxt {
+    font-size: 2rem; line-height: 1.2; font-weight: 400; color: #fff;
+}
+main .productPage .slide .selectSlide .left02 .leftTxt .leftLogo {}
+main .productPage .slide .selectSlide .left02 img {}
+/* section slide03 */
+main .productPage .slide .selectSlide:nth-child(3) {
+    height: 669px; 
+    background-color: #fbf9f4; display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    padding: 120px 225px; align-items: center;
+}
+main .productPage .slide .selectSlide .left03 {margin-left: 80px;}
+main .productPage .slide .selectSlide .left03 h1 {
+    font-family: 'Cardo', serif; font-size: 3.5rem; color: #f29a9d;
+    padding-bottom: 70px;
+}
+main .productPage .slide .selectSlide .left03 .boldTxt {
+    color: #f29a9d; font-size: 1.75rem; font-weight: 600;
+    padding-bottom: 40px;
+}
+main .productPage .slide .selectSlide .left03 > p {
+    color: #f29a9d; font-size: 1.125rem; line-height: 1.5;
     padding-bottom: 60px;
 }
-main .productPage .slide .selectSlide .left02 .leftTxt .boldTxt {font-size: 2.5rem;}
-
-main .productPage .slide .selectSlide .left02 .left02 p {font-size: 2rem;}
-main .productPage .slide .selectSlide .left02 .shopBtn {}
-/* section slide03 */
-main .productPage .slide .selectSlide:nth-child(3) {}
-main .productPage .slide .selectSlide .left03 h1 {}
-main .productPage .slide .selectSlide .left03 .boldTxt {}
-main .productPage .slide .selectSlide .left03 p {}
-main .productPage .slide .selectSlide .left03 .shopBtn {}
+main .productPage .slide .selectSlide .left03 .shopBtn {
+    font-family: 'Cardo', serif; font-size: 1.75rem; color: #f29a9d;
+    border: 1px solid #f29a9d; border-radius: 10px;
+    padding: 10px 85px;
+}
+main .productPage .slide .selectSlide img {}
 main .productPage .slide .prev {}
 main .productPage .slide .next {}
 /* section-2 */
-main .sleepPage {}
-main .sleepPage title {}
-main .sleepPage title h2 {}
-main .sleepPage title p {}
+main .sleepPage {
+    height: 829px;
+}
+main .sleepPage .title {text-align: center; padding-top: 150px;}
+main .sleepPage .title h2 {font-family: 'Cardo', serif; font-size: 2.25rem; padding-bottom: 15px; color:#5d5d5d;}
+main .sleepPage .title p {font-size: 1.375rem; font-weight: 600; color:#5d5d5d;}
 main .sleepPage .sleepLeft {}
-main .sleepPage .sleepLeft h3 {}
-main .sleepPage .sleepLeft h3 span {}
-main .sleepPage .sleepLeft p {}
+main .sleepPage .sleepLeft h3 {font-size: 1.25rem; color:#5d5d5d;}
+main .sleepPage .sleepLeft h3 span {font-weight: 600; color:#5d5d5d;}
+main .sleepPage .sleepLeft p {color:#5d5d5d;}
 main .sleepPage .sleepLeft .moreBtn {}
 main .sleepPage p {}
 main .sleepPage p img {}
