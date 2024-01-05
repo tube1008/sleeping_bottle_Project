@@ -4,21 +4,18 @@ main {}
 main .productPage {}
 /* 태블릿, 모바일 슬라이드 화면 */
 main .productPage .slide {}
-main .productPage .slide .selectSlide {}
-
+main .productPage .slide .selectSlide {
+    width: 100%; display: flex; flex-flow: row nowrap; justify-content: center;}
 /* section slide01 */
 main .productPage .slide .selectSlide:nth-child(1) {
-    background-color: #ebeaea; height: 669px;
-    display: flex; flex-flow: row nowrap;
-    justify-content: center; padding: 60px 350px; 
+    background-color: #ebeaea; padding: 60px 350px; 
 }
 main .productPage .slide .selectSlide .left01 {
     margin-right: 150px; text-align: center;
-    padding: 50px 0;
 }
 main .productPage .slide .selectSlide .left01 h1 {
     font-family: 'Cardo', serif; font-size: 3rem; font-weight: 700;
-    padding-bottom: 60px; color: #3d7352;
+    padding: 50px 0 60px 0; color: #3d7352;
 }
 main .productPage .slide .selectSlide .left01 .boldTxt {
     color: #3d7352; font-size: 1.325rem; font-weight: 500;
@@ -36,11 +33,11 @@ main .productPage .slide .selectSlide .left01 .shopBtn {
 }
 /* section slide02 */
 main .productPage .slide .selectSlide:nth-child(2) {
-    background-color: #759ca4; height: 669px;
+    background-color: #759ca4;
 }
 main .productPage .slide .selectSlide .left02 {
     display: flex; flex-flow: row nowrap; 
-    justify-content: center; text-align: center; 
+    justify-content: space-between; text-align: center; 
     padding: 105px 225px; 
 }
 main .productPage .slide .selectSlide .left02 .leftTxt {padding: 0 50px;}
@@ -59,10 +56,7 @@ main .productPage .slide .selectSlide .left02 .leftTxt .leftLogo {}
 main .productPage .slide .selectSlide .left02 img {}
 /* section slide03 */
 main .productPage .slide .selectSlide:nth-child(3) {
-    height: 669px; 
-    background-color: #fbf9f4; display: flex; flex-flow: row nowrap;
-    justify-content: center;
-    padding: 120px 225px; align-items: center;
+    background-color: #fbf9f4; padding: 120px 225px;
 }
 main .productPage .slide .selectSlide .left03 {margin-left: 80px;}
 main .productPage .slide .selectSlide .left03 h1 {
@@ -132,7 +126,7 @@ main .eventPage a h2 {
 }
 main .eventPage a p {font-size: 1.125rem; color: #fff; padding-top: 20px}
 /* section-4 */
-main .deeperPage {height: 745px;}
+main .deeperPage {width: 100%;}
 main .deeperPage .title {text-align: center; margin-top: 110px;}
 main .deeperPage .title h2 {
     font-family: 'Cardo', serif; font-size: 2.25rem; 
@@ -148,7 +142,7 @@ main .deeperPage .healthier {
     display: flex; flex-flow: row nowrap; justify-content: center;
     text-align: center;
 }
-main .deeperPage .healthier .health {margin-bottom: 100px; padding: 100px;}
+main .deeperPage .healthier .health {padding: 100px;}
 main .deeperPage .healthier .health .circle {}
 main .deeperPage .healthier .health .circle img {width: 232px; padding-bottom: 25px;}
 main .deeperPage .healthier .health h3 {
@@ -158,10 +152,12 @@ main .deeperPage .healthier .health h3 {
 main .deeperPage .healthier .health p {
     font-size: 1rem; color:#5d5d5d; width: 230px;
 }
-main .deeperPage .veganBnr {}
-main .deeperPage .veganBnr img {height: 310px;}
+/* 이벤트 베너 */
+main .eventBnr {background-color: #f7f6f1; width: 100%;}
+main .eventBnr .veganBnr {display: flex; justify-content: center;}
+main .eventBnr .veganBnr img {height: 310px;}
 /* section-5 */
-main .shopPage {}
+main .shopPage {width: 100%;}
 main .shopPage .title {text-align: center; margin-top: 50px;}
 main .shopPage .title h2 {
     font-family: 'Cardo', serif; font-size: 2.25rem; 
@@ -172,7 +168,9 @@ main .shopPage .title p {
     margin-bottom: 50px; 
 }
 main .shopPage .productItem {}
-main .shopPage .productItem .item {}
+main .shopPage .productItem .item {
+    display: flex; flex-flow: column nowrap;
+}
 main .shopPage .productItem .item p {}
 main .shopPage .productItem .item p img {}
 main .shopPage .productItem .item .colorSelect {}
