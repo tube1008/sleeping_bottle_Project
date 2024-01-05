@@ -43,7 +43,7 @@ main .productPage .slide .selectSlide .left02 {
 main .productPage .slide .selectSlide .left02 .leftTxt {padding: 0 50px;}
 main .productPage .slide .selectSlide .left02 .leftTxt h1 {
     color: #fff; font-size: 2.5rem; font-weight: 700;
-    padding-bottom: 40px; margin-top: 100px;
+    padding-bottom: 40px; margin-top: 80px;
 }
 main .productPage .slide .selectSlide .left02 .leftTxt h1 em {
     color: #fff; font-size: 3.5rem; font-weight: 700;
@@ -153,9 +153,9 @@ main .deeperPage .healthier .health p {
     font-size: 1rem; color:#5d5d5d; width: 230px;
 }
 /* 이벤트 베너 */
-main .eventBnr {background-color: #f7f6f1; width: 100%;}
-main .eventBnr .veganBnr {display: flex; justify-content: center;}
-main .eventBnr .veganBnr img {height: 310px;}
+main .eventBnr {background-color: #f7f6f1;}
+main .eventBnr .veganBnr {}
+main .eventBnr .veganBnr img {width: 100%;}
 /* section-5 */
 main .shopPage {width: 100%;}
 main .shopPage .title {text-align: center; margin-top: 50px;}
@@ -167,18 +167,22 @@ main .shopPage .title p {
     font-size: 1rem; font-weight: 600; color:#5d5d5d;
     margin-bottom: 50px; 
 }
-main .shopPage .productItem {}
-main .shopPage .productItem .item {
-    display: flex; flex-flow: column nowrap;
+main .shopPage .productItem {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    width: 100%;
 }
+main .shopPage .productItem .item {}
 main .shopPage .productItem .item p {}
-main .shopPage .productItem .item p img {}
+main .shopPage .productItem .item p img {width: 407px;}
 main .shopPage .productItem .item .colorSelect {}
 main .shopPage .productItem .item .colorSelect .white {}
 main .shopPage .productItem .item .colorSelect .brown {}
+main .shopPage .productItem .item h2, .price {font-size: 0.938rem;}
 main .shopPage .productItem .item h2 {}
 main .shopPage .productItem .item .price {}
-main .shopPage .productItem .item .price del {}
+main .shopPage .productItem .item .price del {
+    font-size: 0.688rem; text-decoration: line-through;
+}
 main .shopPage .productItem .item .saleMd {}
 main .shopPage .productItem .item .saleMd span {}
 main .shopPage .productItem .item .saleMd .md {}
@@ -189,7 +193,7 @@ main .storyPage .title h2 {}
 main .storyPage .title p {}
 main .storyPage .interview {}
 main .storyPage .interview a {}
-main .storyPage .interview a img {}
+main .storyPage .interview a img {height: 470px;}
 main .storyPage .interview a img .info {}
 main .storyPage .interview a img .info span {}
 main .storyPage .interview .viewLink {}
@@ -206,11 +210,17 @@ main .newsPage .title h2 {}
 main .newsPage .title p {}
 main .newsPage .instagram {}
 main .newsPage .instagram a {}
+main .newsPage .instagram a img {height: 309px;}
 /* section-9 */
-main .goodNightPage {}
-main .goodNightPage h2 {}
-main .goodNightPage p {}
-main .goodNightPage .moreBtn {}
+main .goodNightPage {
+    text-align: center; background-color: #f29a9d;
+}
+main .goodNightPage h2 {font-size: 2.25rem;}
+main .goodNightPage p {font-size: 1.25rem; margin: 20px 10px;}
+main .goodNightPage .moreBtn {
+    font-size: 0.75; color: #4f4f4f; background-color: #fff;
+    border: 1px solid #fff; padding: 10px 20px; border-radius: 10px;
+}
 
 
 

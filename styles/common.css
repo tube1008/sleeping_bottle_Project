@@ -232,31 +232,36 @@ header .mainMenu .menuRight .advertise .couponBtn {
 /* footer */
 footer {}
 footer .top {}
-footer .top h2 {}
-footer .top p {}
-footer .top p strong {}
+footer .top h2 {font-size: 1.875rem;}
+footer .top p {font-size: 0.75rem;}
+footer .top p strong {font-size: 1.5rem;}
 footer .bottomBg {}
-footer .bottomBg .bottom {}
+footer .bottomBg .bottom {
+    padding: 30px 0;
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+}
 footer .bottomBg .bottom .add {}
-footer .bottomBg .bottom .add a {}
+footer .bottomBg .bottom .add a {font-size: 0.75rem; margin-bottom: 10px;}
 footer .bottomBg .bottom .add .sns {}
 footer .bottomBg .bottom .add .sns a {}
-footer .bottomBg .bottom .addTitle {}
-footer .bottomBg .bottom address {}
+footer .bottomBg .bottom .addTitle {margin-bottom: 10px;}
+footer .bottomBg .bottom address {font-size: 0.75rem; line-height: 1.7;}
 footer .bottomBg .bottom address a {}
 /* 푸터내에 이용약관, 개인정보처리방침 팝업창 */
 /* 이용약관 */
-.terms {}
+.terms {display: none;}
 .terms .utiliTitle {}
-.terms .utiliTitle .utiliBody {}
-.terms .utiliTitle .utiliBody h1 {}
+.terms .utiliTitle .utiliBody {width: 600px;}
+.terms .utiliTitle .utiliBody h1 {font-size: 1.125rem; color: #212121;}
 .terms .utiliTitle .utiliBody .closeBtn {}
-.terms .utiliTitle .utiliBody p {}
+.terms .utiliTitle .utiliBody h2, p {font-size: 0.75rem; color: #212121;}
 .terms .utiliTitle .utiliBody h2 {}
+.terms .utiliTitle .utiliBody p {}
 /* 개인정보처리방침 */
 .terms .policyTitle {}
-.terms .policyTitle .policyBody {}
-.terms .policyTitle .policyBody h1 {}
+.terms .policyTitle .policyBody {width: 600px;}
+.terms .policyTitle .policyBody h1 {font-size: 1.125rem; color: #212121;}
 .terms .policyTitle .policyBody .closeBtn {}
-.terms .policyTitle .policyBody p {}
+.terms .policyTitle .policyBody h2, p {font-size: 0.75rem; color: #212121;}
 .terms .policyTitle .policyBody h2 {}
+.terms .policyTitle .policyBody p {}
