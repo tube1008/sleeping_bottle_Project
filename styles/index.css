@@ -145,7 +145,7 @@ main .deeperPage .healthier {
 main .deeperPage .healthier .health {padding: 100px;}
 main .deeperPage .healthier .health .circle {}
 main .deeperPage .healthier .health .circle img:hover {
-    transition: 0.5s ease-out;
+    transition: 0.4s ease-in-out;
     transform: scale(1.2);
 }
 main .deeperPage .healthier .health .circle img {
@@ -164,7 +164,7 @@ main .eventBnr {background-color: #f7f6f1;}
 main .eventBnr .veganBnr {}
 main .eventBnr .veganBnr img {width: 100%;}
 /* section-5 */
-main .shopPage {width: 100%;}
+main .shopPage {width: 100%; margin: 100px 0 100px 0;}
 main .shopPage .title {text-align: center; margin-top: 50px;}
 main .shopPage .title h2 {
     font-family: 'Cardo', serif; font-size: 2.25rem; 
@@ -178,19 +178,29 @@ main .shopPage .productItem {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     width: 100%;
 }
-main .shopPage .productItem .item {padding: 14px 0 20px 0;}
-main .shopPage .productItem .item p {}
-main .shopPage .productItem .item p img {width: 407px;}
-main .shopPage .productItem .item .colorSelect {margin: 10px 0 10px 0;}
-main .shopPage .productItem .item .white {
-    border: 1px solid #ccc; background-color: #fff; width: 5px; height: 5px;
+main .shopPage .productItem .item {padding: 14px 0 20px 0; margin: 0 10px;}
+main .shopPage .productItem .item p {font-family: Arial, Helvetica, sans-serif;}
+main .shopPage .productItem .item p img {width: 407px; }
+main .shopPage .productItem .item .colorSelect {margin-top: 5px;}
+main .shopPage .productItem .item .white::after {
+    content: ''; display: inline-block;
+    width: 10px ; height: 10px;
+    background-color: #fff;
+    margin-right: 1px;
+    border: 1px solid #ccc;
 }
-main .shopPage .productItem .item .brown {
-    border: 1px solid #ccc; background-color: #655e52; width: 5px;
+main .shopPage .productItem .item .brown::after {
+    content: ''; display: inline-block;
+    width: 10px ; height: 10px;
+    background-color: #655e52;
+    border: 1px solid #ccc;
 }
+main .shopPage .productItem .item .white {}
+main .shopPage .productItem .item .brown {}
 main .shopPage .productItem .item h2, .price {color: #4f4f4f; font-size: 0.938rem;}
+main .shopPage .productItem .item h2:nth-child(6) {padding: 0px;}
 main .shopPage .productItem .item h2 {
-    padding-top: 20px; font-weight: 600;
+    padding-top: 10px; font-weight: 600;
 }
 main .shopPage .productItem .item .price {padding-top: 10px;}
 main .shopPage .productItem .item .price del {
@@ -209,30 +219,64 @@ main .shopPage .productItem .item .saleMd .md {
     font-size: 0.688rem;
 }
 /* section-6 */
-main .storyPage {}
-main .storyPage .title {}
-main .storyPage .title h2 {}
-main .storyPage .title p {}
-main .storyPage .interview {}
+main .storyPage {width: 100%; background-color: rgba(168, 181, 181, 0.05);;}
+main .storyPage .title {text-align: center; padding-top: 40px;}
+main .storyPage .title h2 {    
+    font-family: 'Cardo', serif; font-size: 2.25rem; 
+    padding-bottom: 15px; color:#5d5d5d;
+}
+main .storyPage .title p {    
+    font-size: 1rem; font-weight: 600; color:#5d5d5d;
+    margin-bottom: 30px;
+}
+main .storyPage .interview {
+    display: flex; flex-flow: row nowrap; 
+    justify-content: space-between;
+}
 main .storyPage .interview a {}
-main .storyPage .interview a img {height: 470px;}
-main .storyPage .interview a img .info {}
-main .storyPage .interview a img .info span {}
-main .storyPage .interview .viewLink {}
+main .storyPage .interview a img {margin: 7.5px; width: 616px; height: 464px;}
+main .storyPage .interview a .info {}
+main .storyPage .interview a .info span {
+    font-size: 1.125rem; text-align: center;
+}
+main .storyPage > p {text-align: center; margin-top: 10px;}
+main .storyPage p .viewLink {
+    color: #4f4f4f; font-size: 0.75rem; padding: 10px 20px; 
+    border: 1px solid #ccc; border-radius: 10px;
+}
 /* section-7 */
-main .blueBottle {}
-main .blueBottle a {}
-main .blueBottle a .left {}
+main .blueBottle {
+    width: 100%; height: 130px; background-color: #cbd3d3f2;
+}
+main .blueBottle a {
+    padding-top: 26px;
+    display: flex; flex-flow: row nowrap; justify-content: center;
+    align-items: center; text-align: center;
+}
+main .blueBottle a .left {
+    color: #fff; font-size: 1.875rem; font-weight: 600;
+}
 main .blueBottle a .right {}
-main .blueBottle a .right img {}
+main .blueBottle a .right img {width: 72px;}
 /* section-8 */
 main .newsPage {}
-main .newsPage .title {}
-main .newsPage .title h2 {}
-main .newsPage .title p {}
-main .newsPage .instagram {}
-main .newsPage .instagram a {}
-main .newsPage .instagram a img {height: 309px;}
+main .newsPage .title {text-align: center; padding-top: 40px;}
+main .newsPage .title h2 {
+    font-family: 'Cardo', serif; font-size: 2.25rem; 
+    padding-bottom: 15px; color:#5d5d5d;
+}
+main .newsPage .title p {
+    font-size: 1rem; font-weight: 600; color:#5d5d5d;
+    margin-bottom: 30px;
+}
+main .newsPage .instagram {
+    display: grid; 
+    grid-template-areas: ;
+    grid-template-rows:
+    grid-template-columns:
+}
+main .newsPage .instagram .item {}
+main .newsPage .instagram .item img {}
 /* section-9 */
 main .goodNightPage {
     text-align: center; background-color: #f29a9d;

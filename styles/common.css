@@ -152,7 +152,14 @@
 }
 .popUp .close .closePop {width: 30px;}
 /* header */
-header {width: 100%;}
+header {
+    /* width: 100%;
+    padding:0 20px; height:60px;
+    background:rgba(0,0,0,0.2);
+    position:fixed; left:0; top:0; width:100%; z-index:9999;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items:center; */
+}
 /* 태블릿, 모바일 */
 header .mMenuWrap {display: none;}
 header .mMenuWrap .mMenuLeft {}
@@ -230,9 +237,8 @@ header .mainMenu .menuRight .advertise .couponBtn {
 }
 /* -------------------------------------------------------------------------- */
 /* footer */
-footer {}
+footer {margin: 30px 300px 30px 300px;}
 footer .top {
-    margin: 20px 300px 30px 300px;
     border-top:  1px solid #4f4f4f;
 }
 footer .top h2, p, strong {color: #4f4f4f;}
@@ -248,8 +254,11 @@ footer .bottomBg .bottom .add {}
 footer .bottomBg .bottom .add a {font-size: 0.75rem; margin-bottom: 10px;}
 footer .bottomBg .bottom .add .sns {}
 footer .bottomBg .bottom .add .sns a {}
+footer .bottomBg .bottom p {}
 footer .bottomBg .bottom .addTitle {margin-bottom: 10px;}
-footer .bottomBg .bottom address {font-size: 0.75rem; line-height: 1.7;}
+footer .bottomBg .bottom address {
+    font-size: 0.75rem; line-height: 1.7;
+}
 footer .bottomBg .bottom address a {}
 /* 푸터내에 이용약관, 개인정보처리방침 팝업창 */
 /* 이용약관 */
