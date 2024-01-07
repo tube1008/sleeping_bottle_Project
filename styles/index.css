@@ -144,10 +144,17 @@ main .deeperPage .healthier {
 }
 main .deeperPage .healthier .health {padding: 100px;}
 main .deeperPage .healthier .health .circle {}
-main .deeperPage .healthier .health .circle img {width: 232px; padding-bottom: 25px;}
+main .deeperPage .healthier .health .circle img:hover {
+    transition: 0.5s ease-out;
+    transform: scale(1.2);
+}
+main .deeperPage .healthier .health .circle img {
+    width: 232px; 
+    border-radius: 50%;
+}
 main .deeperPage .healthier .health h3 {
     font-family: 'Cardo', serif; font-weight: 600; font-size: 1.25rem; 
-    color:#5d5d5d; padding-bottom: 10px;
+    color:#5d5d5d; padding:40px 0 10px 0;
 }
 main .deeperPage .healthier .health p {
     font-size: 1rem; color:#5d5d5d; width: 230px;
@@ -171,21 +178,36 @@ main .shopPage .productItem {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     width: 100%;
 }
-main .shopPage .productItem .item {}
+main .shopPage .productItem .item {padding: 14px 0 20px 0;}
 main .shopPage .productItem .item p {}
 main .shopPage .productItem .item p img {width: 407px;}
-main .shopPage .productItem .item .colorSelect {}
-main .shopPage .productItem .item .colorSelect .white {}
-main .shopPage .productItem .item .colorSelect .brown {}
-main .shopPage .productItem .item h2, .price {font-size: 0.938rem;}
-main .shopPage .productItem .item h2 {}
-main .shopPage .productItem .item .price {}
+main .shopPage .productItem .item .colorSelect {margin: 10px 0 10px 0;}
+main .shopPage .productItem .item .white {
+    border: 1px solid #ccc; background-color: #fff; width: 5px; height: 5px;
+}
+main .shopPage .productItem .item .brown {
+    border: 1px solid #ccc; background-color: #655e52; width: 5px;
+}
+main .shopPage .productItem .item h2, .price {color: #4f4f4f; font-size: 0.938rem;}
+main .shopPage .productItem .item h2 {
+    padding-top: 20px; font-weight: 600;
+}
+main .shopPage .productItem .item .price {padding-top: 10px;}
 main .shopPage .productItem .item .price del {
     font-size: 0.688rem; text-decoration: line-through;
+    padding-left: 5px;
 }
-main .shopPage .productItem .item .saleMd {}
-main .shopPage .productItem .item .saleMd span {}
-main .shopPage .productItem .item .saleMd .md {}
+main .shopPage .productItem .item .saleMd {
+    padding-top: 10px;
+}
+main .shopPage .productItem .item .saleMd .sale {
+    padding: 2px 8px; color: #fff; background-color: #fe5356;
+    font-size: 0.688rem;
+}
+main .shopPage .productItem .item .saleMd .md {
+    padding: 2px 8px; border: 1px solid #ccc;
+    font-size: 0.688rem;
+}
 /* section-6 */
 main .storyPage {}
 main .storyPage .title {}

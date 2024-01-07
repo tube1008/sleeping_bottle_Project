@@ -231,8 +231,12 @@ header .mainMenu .menuRight .advertise .couponBtn {
 /* -------------------------------------------------------------------------- */
 /* footer */
 footer {}
-footer .top {}
-footer .top h2 {font-size: 1.875rem;}
+footer .top {
+    margin: 20px 300px 30px 300px;
+    border-top:  1px solid #4f4f4f;
+}
+footer .top h2, p, strong {color: #4f4f4f;}
+footer .top h2 {font-size: 1.875rem; padding: 20px 0;}
 footer .top p {font-size: 0.75rem;}
 footer .top p strong {font-size: 1.5rem;}
 footer .bottomBg {}
