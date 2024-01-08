@@ -243,7 +243,7 @@ main .storyPage .interview a .info {
     text-align: center; position: absolute; left: 0; top: 0px; 
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%; height: 100%;
-    transition: 0.3s;
+    transition: 0.4s ease-out;
     display: none;
 }
 main .storyPage .interview a .info span {
@@ -280,14 +280,14 @@ main .newsPage .title p {
     font-size: 1rem; font-weight: 600; color:#5d5d5d;
     margin-bottom: 30px;
 }
-main .newsPage .instagram {
-    display: grid; 
-}
-main .newsPage .instagram .item {}
-main .newsPage .instagram .item img {}
+main .newsPage .instagram {text-align: center;}
+main .newsPage .instagram .up {}
+main .newsPage .instagram .up a img {width: 303px; margin: 5px;}
+main .newsPage .instagram .down {}
+main .newsPage .instagram .down a img {width: 303px; margin: 5px;}
 /* section-9 */
 main .goodNightPage {
-    text-align: center; background-image: url(../images/bg3.jpg);
+    text-align: center; background-image: url(../images/bg3.jpg); 
 }
 main .goodNightPage h2 {font-size: 2.25rem;}
 main .goodNightPage p {font-size: 1.25rem; margin: 20px 10px;}
