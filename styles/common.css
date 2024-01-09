@@ -152,14 +152,7 @@
 }
 .popUp .close .closePop {width: 30px;}
 /* header */
-header {
-    /* width: 100%;
-    padding:0 20px; height:60px;
-    background:rgba(0,0,0,0.2);
-    position:fixed; left:0; top:0; width:100%; z-index:9999;
-    display:flex; flex-flow:row nowrap;
-    justify-content:space-between; align-items:center; */
-}
+header {}
 /* 태블릿, 모바일 */
 header .mMenuWrap {display: none;}
 header .mMenuWrap .mMenuLeft {}
@@ -229,40 +222,48 @@ header .mainMenu .menuRight .advertise {position: relative;}
 /* 태블릿, 모바일 모드에서 join 없어짐 */
 header .mainMenu .menuRight .advertise .join {}
 header .mainMenu .menuRight .advertise .couponBtn {
-    font-size: 0.75rem; font-family: Arial, Helvetica, sans-serif;
-    width: 125.36px; background-color: #4f4f4f; color: #fff;
-    position: absolute; right: -50px; top: 25px; padding: 5px 8px;
-    border-radius: 5px;
-    display: none;
+    width: 125.36px; background-color: #4f4f4f;
+    font-size: 0.75rem; color: #fff; font-family: Arial, Helvetica, sans-serif;
+    position: absolute; right: -50px; top: 25px; 
+    border-radius: 5px; padding: 5px 8px;
 }
 /* -------------------------------------------------------------------------- */
 /* footer */
-footer {margin: 30px 300px 30px 300px;}
+footer {width: 100%;}
 footer .top {
-    border-top:  1px solid #4f4f4f;
+    border-top: 1px solid #4f4f4f;
+    margin: 30px 300px 30px 300px;
 }
-footer .top h2, p, strong {color: #4f4f4f;}
-footer .top h2 {font-size: 1.875rem; padding: 20px 0;}
-footer .top p {font-size: 0.75rem;}
+footer .top p:nth-child(1) {color: #4f4f4f;}
+footer .top h2 {font-family: 'Cardo', serif; font-size: 1.875rem; padding: 20px 0;}
+footer .top p {font-size: 0.75rem; margin-bottom: 5px; opacity: 0.5;}
+footer .top p img {height: 11px; text-align: center; margin-right: 5px;}
 footer .top p strong {font-size: 1.5rem;}
-footer .bottomBg {}
+footer .bottomBg {background-color: #fafafa;}
 footer .bottomBg .bottom {
-    padding: 30px 0;
     display: flex; flex-flow: column nowrap; justify-content: space-between;
+    padding: 20px 300px 20px 300px;
 }
-footer .bottomBg .bottom .add {}
-footer .bottomBg .bottom .add a {font-size: 0.75rem; margin-bottom: 10px;}
-footer .bottomBg .bottom .add .sns {}
-footer .bottomBg .bottom .add .sns a {}
-footer .bottomBg .bottom p {}
-footer .bottomBg .bottom .addTitle {margin-bottom: 10px;}
+footer .bottomBg .bottom .add {padding-bottom: 20px;}
+footer .bottomBg .bottom .add a:nth-child(3) {font-weight: 700;}
+footer .bottomBg .bottom .add a {font-size: 0.75rem; color: #3B3B3B; margin:0 15px 10px 0;}
+footer .bottomBg .bottom .add .sns {position: absolute; right: 550px;}
+footer .bottomBg .bottom .add .sns .instagram {}
+footer .bottomBg .bottom .add .sns .youTube {}
+footer .bottomBg .bottom .add .sns .instagram img {height: 20px;}
+footer .bottomBg .bottom .add .sns .youTube img {height: 20px;}
+footer .bottomBg .bottom p {font-weight: 500;}
+footer .bottomBg .bottom .addTitle {
+    color: #3B3B3B; margin-bottom: 10px;
+}
 footer .bottomBg .bottom address {
-    font-size: 0.75rem; line-height: 1.7;
+    font-size: 0.75rem; color: #696969; line-height: 1.7; letter-spacing: 0.7px;
 }
-footer .bottomBg .bottom address a {}
+footer .bottomBg .bottom address a {color: #696969;}
+footer .bottomBg .bottom address em {color: #3B3B3B; font-weight: 500;}
 /* 푸터내에 이용약관, 개인정보처리방침 팝업창 */
 /* 이용약관 */
-.terms {display: none;}
+.terms {}
 .terms .utiliTitle {}
 .terms .utiliTitle .utiliBody {width: 600px;}
 .terms .utiliTitle .utiliBody h1 {font-size: 1.125rem; color: #212121;}
