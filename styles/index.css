@@ -1,16 +1,21 @@
 /* main */
-main {width: 100%;}
+main {}
 /* section-1 */
 main .productPage {position: relative;}
 /* 태블릿, 모바일 슬라이드 화면 */
-main .productPage .slide {}
+main .productPage .slide {
+    width: max-content;
+    display: flex; flex-flow: row nowrap;
+}
 main .productPage .slide .selectSlide {
-    width: 100%; display: flex; flex-flow: row nowrap; justify-content: center;}
+    width: 1920px;
+    display: flex; flex-flow: row nowrap; justify-content: center;
+}
 /* section slide01 */
 main .productPage .slide .selectSlide:nth-child(1) {
-    background-color: #ebeaea; padding: 60px 350px; 
+    background-color: #ebeaea; padding: 60px 350px;
 }
-main .productPage .slide .selectSlide .left01 {
+main .productPage .slide .selectSlide .left01 { 
     margin-right: 150px; text-align: center;
 }
 main .productPage .slide .selectSlide .left01 h1 {
@@ -76,16 +81,17 @@ main .productPage .slide .selectSlide .left03 .shopBtn {
     border: 1px solid #f29a9d; border-radius: 10px;
     padding: 10px 85px;
 }
-main .productPage .prev {position: absolute; left: 20px; top: 300px;}
+main .productPage .prev {position: absolute; left: 20px; top: 330px;}
 main .productPage .prev img {height: 40px;}
-main .productPage .next {position: absolute; right: 20px; top: 300px;}
+main .productPage .next {position: absolute; right: 20px; top: 330px;}
 main .productPage .next img {height: 40px;}
 /* section-2 */
 main .sleepPage {
-    height: 825px; 
+    max-width: 1920px; margin: 0 auto;
+    padding: 100px 0;
 }
 main .sleepPage .title {
-    text-align: center; padding-top: 110px;
+    text-align: center;
 }
 main .sleepPage .title h2 {
     font-family: 'Cardo', serif; font-size: 2.25rem; 
@@ -102,20 +108,21 @@ main .sleepPage .sleep {
 main .sleepPage .sleep .sleepLeft {padding: 25px;}
 main .sleepPage .sleep .sleepLeft h3 {
     font-size: 1.5rem; color:#5d5d5d; padding-bottom: 30px;
-    margin-top: 35px;
+    margin-top: 45px;
 }
 main .sleepPage .sleep .sleepLeft h3 span {
     font-weight: 600; color:#5d5d5d;
 }
 main .sleepPage .sleep .sleepLeft p {
-    color:#5d5d5d; font-size: 1.125rem; line-height: 1.5;
+    color:#5d5d5d; font-size: 1rem; line-height: 1.7;
     padding-bottom: 50px; margin-right: 40px;
 }
 main .sleepPage .sleep .sleepLeft .moreBtn {
     color:#5d5d5d; border: 1px solid #e5e7eb; border-radius: 10px;
     padding: 10px 20px; 
 }
-main .sleepPage .sleep img {width: 700px; height: 400px;}
+main .sleepPage .sleep .sleepRight {}
+main .sleepPage .sleep .sleepRight img {width: 500px;}
 /* section-3_이벤트 페이지 */
 main .eventPage {
     background-color: #cbd3d3f2; height: 130px;
@@ -127,7 +134,7 @@ main .eventPage a h2 {
 }
 main .eventPage a p {font-size: 1.125rem; color: #fff; padding-top: 20px}
 /* section-4 */
-main .deeperPage {width: 100%;}
+main .deeperPage {max-width: 1920px; margin: 0 auto;}
 main .deeperPage .title {text-align: center; margin-top: 110px;}
 main .deeperPage .title h2 {
     font-family: 'Cardo', serif; font-size: 2.25rem; 
@@ -149,7 +156,7 @@ main .deeperPage .healthier .health .circle img:hover {
     transform: scale(1.2);
 }
 main .deeperPage .healthier .health .circle img {
-    width: 232px; 
+    width: 100%; margin: 0 auto;
     border-radius: 50%;
     transition: 0.4s ease-out;
 }
@@ -165,7 +172,10 @@ main .eventBnr {background-color: #f7f6f1;}
 main .eventBnr .veganBnr {}
 main .eventBnr .veganBnr img {width: 100%;}
 /* section-5 */
-main .shopPage {width: 100%; margin: 100px 0 100px 0;}
+main .shopPage {
+    max-width: 1920px; margin: 0 auto;
+    margin: 100px 0 100px 0;
+}
 main .shopPage .title {text-align: center; margin-top: 50px;}
 main .shopPage .title h2 {
     font-family: 'Cardo', serif; font-size: 2.25rem; 
@@ -177,7 +187,6 @@ main .shopPage .title p {
 }
 main .shopPage .productItem {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
-    width: 100%;
 }
 main .shopPage .productItem .item {padding: 14px 0 20px 0; margin: 0 10px;}
 main .shopPage .productItem .item p {font-family: Arial, Helvetica, sans-serif;}
@@ -220,7 +229,11 @@ main .shopPage .productItem .item .saleMd .md {
     font-size: 0.688rem;
 }
 /* section-6 */
-main .storyPage {width: 100%; height: 600px; background-color: rgba(168, 181, 181, 0.05);;}
+main .storyPage {
+    max-width: 1920px; margin: 0 auto;
+    background: rgba(168, 181, 181, 0.05);
+    padding: 60px 0;
+}
 main .storyPage .title {text-align: center; padding-top: 30px;}
 main .storyPage .title h2 {    
     font-family: 'Cardo', serif; font-size: 2.25rem; 
@@ -258,7 +271,7 @@ main .storyPage p .viewLink {
 }
 /* section-7 */
 main .blueBottle {
-    width: 100%; height: 130px; background-color: #cbd3d3f2;
+    height: 130px; background-color: #cbd3d3f2;
 }
 main .blueBottle a {
     padding-top: 26px;
@@ -271,7 +284,10 @@ main .blueBottle a .left {
 main .blueBottle a .right {}
 main .blueBottle a .right img {width: 72px;}
 /* section-8 */
-main .newsPage {margin: 60px 0 100px 0;}
+main .newsPage {
+    max-width: 1920px; margin: 0 auto;
+    margin: 60px 0 100px 0;
+}
 main .newsPage .title {text-align: center; padding-top: 40px;}
 main .newsPage .title h2 {
     font-family: 'Cardo', serif; font-size: 2.25rem; 
@@ -296,6 +312,13 @@ main .newsPage .instagram .down a img {}
 /* section-9 */
 main .goodNightPage {
     width: 100%; height: 100%; text-align: center; 
+    position: relative;
+}
+main .goodNightPage .bg::before {
+    content: ''; display: block;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute; left: 0; top: 0;
 }
 main .goodNightPage .bg {
     padding: 100px;
@@ -303,11 +326,12 @@ main .goodNightPage .bg {
     background-attachment: fixed;
     background-size:cover;
     background-position:center;
-    
 }
+main .goodNightPage .bg h2, p, .moreBtn {position: relative; z-index: 999;}
 main .goodNightPage .bg h2 {
     font-family: 'Cardo', serif; 
-    font-size: 2.25rem; color: #fff;
+    font-size: 2.25rem; color: #fff;  
+    text-align: center;
 }
 main .goodNightPage .bg p {
     font-size: 1.25rem; color: #fff; 
