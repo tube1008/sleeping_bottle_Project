@@ -1,27 +1,62 @@
 /* 로그인 팝업 */
-.loginPop {}
-.loginPop .login {}
-.loginPop .login .top {}
-.loginPop .login .top h1 {}
-.loginPop .login .top h1 .closeLogin{} /* 폰트어썸 */
-.loginPop .login #loginPage {}
+.loginPop {background-color: #212121;}
+.loginPop .login {
+    width: 370px; background-color:#fff;
+    padding: 30px;
+}
+.loginPop .login .top {text-align: center; position: relative;}
+.loginPop .login .top h1 {
+    font-size: 1.5rem; color: #212121; font-weight: 700;
+}
+.loginPop .login .top .closeLogin {
+    position: absolute; right: 1px; top: 1px;
+} 
+.loginPop .login .top .closeLogin img {height: 20px;} 
+.loginPop .login #loginPage {width: 310px;}
 .loginPop .login #loginPage fieldset {}
-.loginPop .login #loginPage fieldset #frmId {}
-.loginPop .login #loginPage fieldset #frmPw {}
-.loginPop .login #loginPage fieldset label {}
-.loginPop .login #loginPage fieldset label #chkBtn {}
-.loginPop .login #loginPage fieldset .loginSel {}
-.loginPop .login #loginPage fieldset .joinSearch {}
-.loginPop .login #loginPage fieldset .joinSearch a {}
-.loginPop .login #loginPage fieldset .joinSearch a {}
+.loginPop .login #loginPage fieldset #frmId {
+    width: 100%; border: 1px solid #d4d4d4;
+    border-bottom: none;
+    padding: 12px 16px;
+    margin-top: 30px; 
+}
+.loginPop .login #loginPage fieldset #frmPw {
+    width: 100%; border: 1px solid #d4d4d4; 
+    padding: 12px 16px;
+    margin-bottom: 15px;
+}
+.loginPop .login #loginPage fieldset label {
+    font-size: 0.75rem; color: #212121; 
+    display: block;
+}
+.loginPop .login #loginPage fieldset label #chkBtn {
+    width: 15px; background: #4f4f4f; 
+    border: 1px solid #4f4f4f; 
+    margin: 0 5px 15px 0;
+}
+.loginPop .login #loginPage fieldset .loginSel {
+    height: 40px; color: #4f4f4f; border: 1px solid #d4d4d4;
+    padding: 10px 20px; display: block; text-align: center;
+}
+.loginPop .login #loginPage fieldset .joinSearch {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin: 10px 0;
+}
+.loginPop .login #loginPage fieldset .joinSearch a {
+    font-size: 0.75rem; color: #000; font-weight: 500;
+}
 .loginPop .login #loginPage fieldset span {}
 .loginPop .login #loginPage fieldset span span {}
 .loginPop .login #loginPage fieldset a {}
-.loginPop .login #loginPage fieldset a .naver {}
-.loginPop .login #loginPage fieldset a .kakao {}
+.loginPop .login #loginPage fieldset a .naver {
+    background: #27d34a; height: 42px; padding: 10px 25px;
+}
+.loginPop .login #loginPage fieldset a .kakao {
+    background #ffeb00: 42px; padding: 10px 25px;
+}
 .loginPop .login #loginPage fieldset .nonShipping {}
 /* 아이디 비밀번호 찾기 */
-.loginPop .searchBox {}
+.loginPop .searchBox {background: violet;}
 .loginPop .searchBox .title {}
 .loginPop .searchBox .title h1 {}
 .loginPop .searchBox .title .closeIdpw {}
@@ -29,7 +64,7 @@
 .loginPop .searchBox .searchIdPw a {}
 .loginPop .searchBox .searchIdPw a h2 {}
 /* 아이디 찾기 */
-.loginPop .searchBox #idpwBox {} 
+.loginPop .searchBox #idpwBox {background: tomato;} 
 .loginPop .searchBox #idpwBox fieldset {}
 .loginPop .searchBox #idpwBox fieldset .searchId {}
 .loginPop .searchBox #idpwBox fieldset .searchId span {}
@@ -40,11 +75,11 @@
 .loginPop .searchBox #idpwBox fieldset .searchId #phNumber {}
 .loginPop .searchBox #idpwBox fieldset .searchId .findIdPw {}
 /* 비밀번호찾기 */
-.loginPop .searchBox #idpwBox fieldset .searchPw {}
+.loginPop .searchBox #idpwBox fieldset .searchPw {background: slateblue;}
 .loginPop .searchBox #idpwBox fieldset .searchPw #joinId {}
 .loginPop .searchBox #idpwBox fieldset .searchPw a {}
 /* 비회원 배송 조회 */
-.loginPop {}
+.loginPop {background: sandybrown;}
 .loginPop .nondelivery {}
 .loginPop .nondelivery .title {}
 .loginPop .nondelivery .title h1 {}
@@ -55,7 +90,7 @@
 .loginPop .nondelivery #delivery fieldset #adressNum {}
 .loginPop .nondelivery #delivery fieldset a {}
 /* 조인 팝업창 */
-.joinWrap {}
+.joinWrap {background: cadetblue;}
 .joinWrap .joinPop {}
 .joinWrap .joinPop .title {}
 .joinWrap .joinPop .title h1 {}

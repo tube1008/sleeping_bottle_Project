@@ -281,14 +281,18 @@ main .newsPage .title p {
     font-size: 1rem; font-weight: 600; color:#5d5d5d;
     margin-bottom: 30px;
 }
-main .newsPage .instagram{text-align: center;}
-main .newsPage .instagram .up {}
-main .newsPage .instagram .up a img {}
-main .newsPage .instagram .down {}
-main .newsPage .instagram .down a img {}
 /* 공통 */
 main .newsPage .instagram .up a img,
 main .newsPage .instagram .down a img {width: 303px; margin: 5px;}
+/* 개별 */
+main .newsPage .instagram{text-align: center;}
+main .newsPage .instagram .up {}
+main .newsPage .instagram .up a img:hover {filter: opacity(70%);}
+main .newsPage .instagram .up a img {}
+main .newsPage .instagram .up a .bg {}
+main .newsPage .instagram .down {}
+main .newsPage .instagram .down a img:hover {filter: opacity(70%);}
+main .newsPage .instagram .down a img {}
 /* section-9 */
 main .goodNightPage {
     width: 100%; height: 100%; text-align: center; 
@@ -299,6 +303,7 @@ main .goodNightPage .bg {
     background-attachment: fixed;
     background-size:cover;
     background-position:center;
+    
 }
 main .goodNightPage .bg h2 {
     font-family: 'Cardo', serif; 
@@ -313,7 +318,7 @@ main .goodNightPage .bg .moreBtn {
     background-color: #fff;
     border: 1px solid #fff; padding: 10px 20px; 
     border-radius: 10px;
-}
+    }
 
 
 
