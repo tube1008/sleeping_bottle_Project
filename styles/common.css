@@ -48,8 +48,19 @@
 .loginPop .login #loginPage fieldset span {}
 .loginPop .login #loginPage fieldset span span {}
 .loginPop .login #loginPage fieldset a {}
-.loginPop .login #loginPage fieldset .naver {background: #27d34a; height: 42px; padding: 10px 25px;}
-.loginPop .login #loginPage fieldset .kakao {background: #ffeb00; height: 42px; padding: 10px 25px;}
+.loginPop .login #loginPage fieldset .naverAndKakao {
+    display: flex; flex-flow: column nowrap; margin: 10px 0;
+}
+.loginPop .login #loginPage fieldset .naverAndKakao .naver {
+    background: #27d34a; height: 42px; padding: 10px 25px;
+    color: #fff;
+}
+.loginPop .login #loginPage fieldset .naverAndKakao .kakao {
+    background: #ffeb00; height: 42px; padding: 10px 25px; margin: 10px 0;
+    color: #fff;
+}
+.loginPop .login #loginPage fieldset .naverAndKakao .naver img, 
+.loginPop .login #loginPage fieldset .naverAndKakao .kakao img {height: 24px;}
 .loginPop .login #loginPage fieldset .nonShipping {}
 /* 아이디 비밀번호 찾기 */
 .loginPop .searchBox {background: violet;}
@@ -265,13 +276,16 @@ footer .top {
     border-top: 1px solid #4f4f4f;
     margin: 30px 300px 30px 300px;
 }
-footer .top p:nth-child(1) {color: #4f4f4f;}
+footer .top p:nth-child(1) {}
 footer .top p:nth-child(3),
 footer .top p:nth-child(4) {opacity: 0.3;}
-footer .top h2 {font-family: 'Cardo', serif; font-size: 1.875rem; padding: 20px 0;}
-footer .top p {font-size: 0.75rem; margin-bottom: 5px; }
+footer .top h2 {
+    font-family: 'Cardo', serif; font-size: 1.875rem; color: #4f4f4f; 
+    padding: 20px 0;
+}
+footer .top p {font-size: 0.75rem; margin-bottom: 5px; align-items: center;}
 footer .top p img {height: 11px; text-align: center; margin-right: 5px;}
-footer .top p strong {font-size: 1.5rem;}
+footer .top p strong {font-size: 1.5rem; color: #4f4f4f;}
 footer .bottomBg {background-color: #fafafa;}
 footer .bottomBg .bottom {
     display: flex; flex-flow: column nowrap; justify-content: space-between;
@@ -306,10 +320,10 @@ footer .bottomBg .bottom address em {color: #3B3B3B; font-weight: 500;}
     padding: 25px;
 }
 .terms .utiliTitle .utiliBody .top h1 {font-size: 1.125rem; color: #212121;}
-.terms .utiliTitle .utiliBody .top .closeBtn {height: 18px;}
+.terms .utiliTitle .utiliBody .top .closeBtn {}
+.terms .utiliTitle .utiliBody .top .closeBtn img {}
 .terms .utiliTitle .utiliBody h2, p {
     font-size: 0.75rem; color: #212121;
-    padding: 0 25px;
 }
 .terms .utiliTitle .utiliBody h2 {
 }
