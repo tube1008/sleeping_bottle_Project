@@ -299,9 +299,9 @@ footer .bottomBg .bottom .add .sns .instagram {}
 footer .bottomBg .bottom .add .sns .youTube {}
 footer .bottomBg .bottom .add .sns .instagram img {height: 20px;}
 footer .bottomBg .bottom .add .sns .youTube img {height: 20px;}
-footer .bottomBg .bottom p {font-weight: 500;}
+footer .bottomBg .bottom p {}
 footer .bottomBg .bottom .addTitle {
-    color: #3B3B3B; margin-bottom: 10px;
+    color: #3B3B3B; margin-bottom: 10px; font-weight: 500;
 }
 footer .bottomBg .bottom address {
     font-size: 0.75rem; color: #696969; line-height: 1.7; letter-spacing: 0.7px;
@@ -333,6 +333,9 @@ footer .bottomBg .bottom address em {color: #3B3B3B; font-weight: 500;}
 .terms .policyTitle .policyBody {background: tomato; width: 600px;}
 .terms .policyTitle .policyBody h1 {font-size: 1.125rem; color: #212121;}
 .terms .policyTitle .policyBody .closeBtn {}
-.terms .policyTitle .policyBody h2, p {font-size: 0.75rem; color: #212121;}
+.terms .policyTitle .policyBody .closeBtn img {}
+.terms .policyTitle .policyBody h2, p {
+    font-size: 0.75rem; color: #212121;
+}
 .terms .policyTitle .policyBody h2 {}
 .terms .policyTitle .policyBody p {}
