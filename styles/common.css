@@ -1,8 +1,11 @@
 /* 로그인 팝업 */
-.loginPop {background-color: #212121;}
+.loginPop {
+    background: rgba(0, 0, 0, 0.3);
+}
 .loginPop .login {
     width: 370px; background-color:#fff;
-    padding: 30px;
+    padding: 30px; 
+    border-radius: 5px;
 }
 .loginPop .login .top {text-align: center; position: relative;}
 .loginPop .login .top h1 {
@@ -40,28 +43,44 @@
 }
 .loginPop .login #loginPage fieldset .joinSearch {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
 }
 .loginPop .login #loginPage fieldset .joinSearch a {
     font-size: 0.75rem; color: #000; font-weight: 500;
 }
-.loginPop .login #loginPage fieldset span {}
-.loginPop .login #loginPage fieldset span span {}
+.loginPop .login #loginPage fieldset > span {
+    content: ''; width: 310px; color: #000; height: 2px;
+    background: #27d34a; 
+}
+.loginPop .login #loginPage fieldset span span {
+    font-size: 0.75rem; font-weight: 500;
+    display: flex; justify-content: center;
+    position: relative; z-index: 999;
+
+}
 .loginPop .login #loginPage fieldset a {}
 .loginPop .login #loginPage fieldset .naverAndKakao {
-    display: flex; flex-flow: column nowrap; margin: 10px 0;
+    display: flex; flex-flow: column nowrap; margin: 20px 0;
 }
 .loginPop .login #loginPage fieldset .naverAndKakao .naver {
     background: #27d34a; height: 42px; padding: 10px 25px;
-    color: #fff;
+    display: flex; flex-flow: row nowrap; align-items: center;
 }
 .loginPop .login #loginPage fieldset .naverAndKakao .kakao {
     background: #ffeb00; height: 42px; padding: 10px 25px; margin: 10px 0;
-    color: #fff;
+    display: flex; flex-flow: row nowrap; align-items: center;
 }
 .loginPop .login #loginPage fieldset .naverAndKakao .naver img, 
-.loginPop .login #loginPage fieldset .naverAndKakao .kakao img {height: 24px;}
-.loginPop .login #loginPage fieldset .nonShipping {}
+.loginPop .login #loginPage fieldset .naverAndKakao .kakao img {height: 14px; padding-right: 60px;}
+.loginPop .login #loginPage fieldset .naverAndKakao .naver span {color: #fff;font-size: 0.875rem; }
+.loginPop .login #loginPage fieldset .naverAndKakao .kakao span {color: #000;font-size: 0.875rem;}
+.loginPop .login #loginPage fieldset .nonShipping {
+    display: flex; justify-content: center;
+    font-size: 0.875rem; color: #fff;
+    padding: 10px 25px; background: #8393A7;
+    margin-top: 20px;
+    border: 1px solid #eee;
+}
 /* 아이디 비밀번호 찾기 */
 .loginPop .searchBox {background: violet;}
 .loginPop .searchBox .title {}
@@ -86,7 +105,7 @@
 .loginPop .searchBox #idpwBox fieldset .searchPw #joinId {}
 .loginPop .searchBox #idpwBox fieldset .searchPw a {}
 /* 비회원 배송 조회 */
-.loginPop {background: sandybrown;}
+.loginPop { }
 .loginPop .nondelivery {}
 .loginPop .nondelivery .title {}
 .loginPop .nondelivery .title h1 {}
@@ -240,8 +259,8 @@ header .mainMenu nav .gnb li a {
     color: #212121; padding: 0 30px;
 }
 header .mainMenu nav .gnb li .lnb {}
-header .mainMenu nav .gnb li .lnb li {     display: none;
-    color: #797979; padding: 8px 0; border: 1px solid #e5e5e5;
+header .mainMenu nav .gnb li .lnb li {     
+    display: none; color: #797979; padding: 8px 0; border: 1px solid #e5e5e5;
 }
 header .mainMenu nav .gnb li .lnb li a {
     font-size: 0.75rem; color: #212121;
@@ -311,31 +330,44 @@ footer .bottomBg .bottom address em {color: #3B3B3B; font-weight: 500;}
 /* 푸터내에 이용약관, 개인정보처리방침 팝업창 */
 /* 이용약관 */
 .terms {}
-.terms .utiliTitle {}
+.terms .utiliTitle {background: rgba(0, 0, 0, 0.2);}
 .terms .utiliTitle .utiliBody {
-    background-color: steelblue; width: 600px;
+    background-color: #fff; width: 600px;
+    padding: 20px 0; border-radius: 5px;
 }
 .terms .utiliTitle .utiliBody .top{
     display: flex; flex-flow: row nowrap; justify-content: space-between;
-    padding: 25px;
+    padding: 5px 25px;
 }
-.terms .utiliTitle .utiliBody .top h1 {font-size: 1.125rem; color: #212121;}
+.terms .utiliTitle .utiliBody .top h1 {
+    font-size: 1.125rem; color: #212121; font-weight: 500;
+    padding-bottom: 30px; 
+}
 .terms .utiliTitle .utiliBody .top .closeBtn {}
-.terms .utiliTitle .utiliBody .top .closeBtn img {}
+.terms .utiliTitle .utiliBody .top .closeBtn img {height: 20px;}
 .terms .utiliTitle .utiliBody h2, p {
     font-size: 0.75rem; color: #212121;
 }
-.terms .utiliTitle .utiliBody h2 {
-}
-.terms .utiliTitle .utiliBody p {}
+.terms .utiliTitle .utiliBody h2 {padding: 15px 24px; font-weight: 500;}
+.terms .utiliTitle .utiliBody p {padding: 0 24px; line-height: 1.5;}
 /* 개인정보처리방침 */
-.terms .policyTitle {}
-.terms .policyTitle .policyBody {background: tomato; width: 600px;}
-.terms .policyTitle .policyBody h1 {font-size: 1.125rem; color: #212121;}
-.terms .policyTitle .policyBody .closeBtn {}
-.terms .policyTitle .policyBody .closeBtn img {}
+.terms .policyTitle {background: rgba(0, 0, 0, 0.2);}
+.terms .policyTitle .policyBody {
+    background: #fff; width: 600px;
+    padding: 20px 0; border-radius: 5px;
+}
+.terms .policyTitle .policyBody .top {
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    padding: 5px 25px;
+}
+.terms .policyTitle .policyBody .top h1 {
+    font-size: 1.125rem; color: #212121; font-weight: 500;
+    padding-bottom: 30px;
+}
+.terms .policyTitle .policyBody .top .closeBtn {}
+.terms .policyTitle .policyBody .top .closeBtn img {height: 20px;}
 .terms .policyTitle .policyBody h2, p {
     font-size: 0.75rem; color: #212121;
 }
-.terms .policyTitle .policyBody h2 {}
-.terms .policyTitle .policyBody p {}
+.terms .policyTitle .policyBody h2 {padding: 15px 24px; font-weight: 500;}
+.terms .policyTitle .policyBody p {padding: 0 24px; line-height: 1.5;}
