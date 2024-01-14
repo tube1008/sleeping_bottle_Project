@@ -6,6 +6,7 @@
     width: 370px; background-color:#fff;
     padding: 30px; 
     border-radius: 5px;
+    position: relative;
 }
 .loginPop .login .top {text-align: center; position: relative;}
 .loginPop .login .top h1 {
@@ -29,11 +30,11 @@
     margin-bottom: 15px;
 }
 .loginPop .login #loginPage fieldset label {
-    font-size: 0.75rem; color: #212121; 
-    display: block;
+    font-size: 0.75rem; font-weight: 500; color: #212121; 
+    display: flex; text-align: center;
 }
 .loginPop .login #loginPage fieldset label #chkBtn {
-    width: 15px; background: #4f4f4f; 
+    width: 15px; 
     border: 1px solid #4f4f4f; 
     margin: 0 5px 15px 0;
 }
@@ -48,19 +49,27 @@
 .loginPop .login #loginPage fieldset .joinSearch a {
     font-size: 0.75rem; color: #000; font-weight: 500;
 }
-.loginPop .login #loginPage fieldset > span {
-    content: ''; width: 310px; color: #000; height: 2px;
-    background: #27d34a; 
+.loginPop .login #loginPage fieldset > span::after {
+    content: ''; display: inline-block;
+    width: 310px ; height: 1px;
+    background-color: #d4d4d4;
 }
+.loginPop .login #loginPage fieldset .top span {
+    padding: 5px 20px; background: #fff;
+    position: absolute; left: 125px; top: 5px;
+}
+.loginPop .login #loginPage fieldset .bottom span {
+    padding: 5px 20px; background: #fff;
+    position: absolute; left: 155px; bottom: 82px;
+}
+.loginPop .login #loginPage fieldset span {}
 .loginPop .login #loginPage fieldset span span {
     font-size: 0.75rem; font-weight: 500;
     display: flex; justify-content: center;
-    position: relative; z-index: 999;
-
 }
 .loginPop .login #loginPage fieldset a {}
 .loginPop .login #loginPage fieldset .naverAndKakao {
-    display: flex; flex-flow: column nowrap; margin: 20px 0;
+    display: flex; flex-flow: column nowrap; margin: 20px 0 0 0;
 }
 .loginPop .login #loginPage fieldset .naverAndKakao .naver {
     background: #27d34a; height: 42px; padding: 10px 25px;
@@ -71,8 +80,8 @@
     display: flex; flex-flow: row nowrap; align-items: center;
 }
 .loginPop .login #loginPage fieldset .naverAndKakao .naver img, 
-.loginPop .login #loginPage fieldset .naverAndKakao .kakao img {height: 14px; padding-right: 60px;}
-.loginPop .login #loginPage fieldset .naverAndKakao .naver span {color: #fff;font-size: 0.875rem; }
+.loginPop .login #loginPage fieldset .naverAndKakao .kakao img {height: 14px; padding-right: 65px;}
+.loginPop .login #loginPage fieldset .naverAndKakao .naver span {color: #fff;font-size: 0.875rem;}
 .loginPop .login #loginPage fieldset .naverAndKakao .kakao span {color: #000;font-size: 0.875rem;}
 .loginPop .login #loginPage fieldset .nonShipping {
     display: flex; justify-content: center;
@@ -82,83 +91,289 @@
     border: 1px solid #eee;
 }
 /* 아이디 비밀번호 찾기 */
-.loginPop .searchBox {background: violet;}
-.loginPop .searchBox .title {}
-.loginPop .searchBox .title h1 {}
+.loginPop .searchBox {
+    width: 370px;
+    background: #fff;
+    border-radius: 5px;
+}
+.loginPop .searchBox .title {
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+}
+.loginPop .searchBox .title .titleId,
+.loginPop .searchBox .title .titlePw {
+    color: #212121; font-size: 0.938rem;
+    font-weight: 700; padding: 15px;
+}
+.loginPop .searchBox .title .titleId {text-align: center;}
+.loginPop .searchBox .title .titlePw {display: none;}
 .loginPop .searchBox .title .closeIdpw {}
-.loginPop .searchBox .searchIdPw {}
+.loginPop .searchBox .title .closeIdpw img {
+    height: 20px;
+    position: absolute; right: 30px; top: 13px;
+}
+.loginPop .searchBox .searchIdPw {
+    padding: 24px; padding-bottom: 0px;
+    display: flex;
+}
 .loginPop .searchBox .searchIdPw a {}
-.loginPop .searchBox .searchIdPw a h2 {}
+.loginPop .searchBox .searchIdPw a h2 {
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+}
 /* 아이디 찾기 */
-.loginPop .searchBox #idpwBox {background: tomato;} 
+.loginPop .searchBox #idpwBox {background: #fff;} 
 .loginPop .searchBox #idpwBox fieldset {}
-.loginPop .searchBox #idpwBox fieldset .searchId {}
-.loginPop .searchBox #idpwBox fieldset .searchId span {}
-.loginPop .searchBox #idpwBox fieldset .searchId label {}
-.loginPop .searchBox #idpwBox fieldset .searchId label #selectBox {}
-.loginPop .searchBox #idpwBox fieldset .searchId #emailId {}
-.loginPop .searchBox #idpwBox fieldset .searchId #name {}
-.loginPop .searchBox #idpwBox fieldset .searchId #phNumber {}
-.loginPop .searchBox #idpwBox fieldset .searchId .findIdPw {}
+.loginPop .searchBox #idpwBox fieldset .searchId {
+    padding: 24px;
+    display: flex; flex-flow: column nowrap;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId span {
+    font-size: 0.813rem; color: #21212199; font-weight: 500;
+    text-align: center;
+    padding: 16px 0 25px 0;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label {
+    padding-bottom: 10px;     
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBox {
+    font-size: 0.875rem; font-weight: 500;
+    margin: 5px;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId #emailId {
+    font-size: 0.875rem; font-weight: 500;
+    padding: 10px 16px; margin-bottom: 10px;
+    border: 1px solid #E0E0E0; 
+}
+.loginPop .searchBox #idpwBox fieldset .searchId #name {
+    font-size: 0.875rem; font-weight: 500;
+    padding: 10px 16px;
+    border: 1px solid #E0E0E0; 
+    border-bottom: none;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId #phNumber {
+    font-size: 0.875rem; font-weight: 500; font-weight: 500;
+    padding: 10px 16px; margin-bottom: 10px;
+    border: 1px solid #E0E0E0; 
+}
+.loginPop .searchBox #idpwBox fieldset .searchId .findIdPw {
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid #E0E0E0;
+    text-align: center;
+}
 /* 비밀번호찾기 */
-.loginPop .searchBox #idpwBox fieldset .searchPw {background: slateblue;}
-.loginPop .searchBox #idpwBox fieldset .searchPw #joinId {}
-.loginPop .searchBox #idpwBox fieldset .searchPw a {}
+.loginPop .searchBox #idpwBox fieldset .searchPw {
+    padding: 24px;
+    display: flex; flex-flow: column nowrap;
+}
+.loginPop .searchBox #idpwBox fieldset .searchPw #joinId {
+    font-size: 0.875rem; font-weight: 500;
+    padding: 10px 16px; margin-bottom: 10px;
+    border: 1px solid #E0E0E0; 
+}
+.loginPop .searchBox #idpwBox fieldset .searchPw a {
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid #E0E0E0;
+    text-align: center;
+}
 /* 비회원 배송 조회 */
-.loginPop { }
-.loginPop .nondelivery {}
-.loginPop .nondelivery .title {}
-.loginPop .nondelivery .title h1 {}
-.loginPop .nondelivery .title a {}
-.loginPop .nondelivery #delivery {}
-.loginPop .nondelivery #delivery fieldset {}
-.loginPop .nondelivery #delivery fieldset #orderNum {}
-.loginPop .nondelivery #delivery fieldset #adressNum {}
-.loginPop .nondelivery #delivery fieldset a {}
+.loginPop {
+    
+}
+.loginPop .nondelivery {
+    background-color: #fff;
+    width: 370px;
+    padding: 32px 24px;
+}
+.loginPop .nondelivery .title {
+    position: relative;
+}
+.loginPop .nondelivery .title h1 {
+    font-size: 1.5rem; color: #212121; font-weight: 700;
+    text-align: center; margin-bottom: 30px;
+}
+.loginPop .nondelivery .title .closeDeli {}
+.loginPop .nondelivery .title .closeDeli img {
+    height: 20px;
+    position: absolute; right: 0; top: 0;
+}
+.loginPop .nondelivery #delivery {
+}
+.loginPop .nondelivery #delivery fieldset {
+    display: flex; flex-flow: column nowrap;
+}
+.loginPop .nondelivery #delivery fieldset #orderNum {
+    font-size: 0.875rem; font-weight: 500;
+    padding: 10px 16px;
+    border: 1px solid #E0E0E0; border-bottom: none;
+}
+.loginPop .nondelivery #delivery fieldset #adressNum {
+    font-size: 0.875rem; font-weight: 500;
+    padding: 10px 16px; margin-bottom: 10px;
+    border: 1px solid #E0E0E0;
+}
+.loginPop .nondelivery #delivery fieldset a {
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid #E0E0E0;
+    text-align: center;
+}
 /* 조인 팝업창 */
-.joinWrap {background: cadetblue;}
-.joinWrap .joinPop {}
+.joinWrap {
+    position: relative;
+}
+.joinWrap .joinPop {
+    background-color: #fff;
+    width: 370px;
+    display: flex; flex-flow: column nowrap;
+    padding: 24px;
+    border-radius: 5px;
+}
 .joinWrap .joinPop .title {}
-.joinWrap .joinPop .title h1 {}
+.joinWrap .joinPop .title h1 {
+    font-size: 1.5rem; color: #212121; font-weight: 700;
+    text-align: center; margin-bottom: 40px;
+}
 .joinWrap .joinPop .title .joinCloseBtn {}
-.joinWrap .joinPop a {}
-.joinWrap .joinPop span {}
-.joinWrap .joinPop span span {}
-.joinWrap .joinPop a .naver {}
-.joinWrap .joinPop a .kakao {}
+.joinWrap .joinPop .title .joinCloseBtn img {
+    height: 20px;
+    position: absolute; left: 310px; top: 30px;
+}
+.joinWrap .joinPop > a {
+    background-color: #fff;
+    font-size: 0.875rem; font-weight: 500;
+    padding: 10px 16px;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 20px;
+}
+.joinWrap .joinPop .joinHr::after  {
+    content: ''; display: inline-block;
+    width: 322px ; height: 1px;
+    background-color: #d4d4d4;
+}
+.joinWrap .joinPop .joinHr {
+    
+}
+.joinWrap .joinPop .joinHr span {
+    padding: 5px 20px; background: #fff;
+    position: absolute; left: 150px; top: 150px;
+}
+.joinWrap .joinPop .naverKaKao {
+    margin-top: 30px;
+}
+.joinWrap .joinPop .naverKaKao .naver {
+    background: #27d34a; height: 42px; padding: 10px 25px;
+    display: flex; flex-flow: row nowrap; align-items: center;
+    margin-bottom: 10px;
+}
+.joinWrap .joinPop .naverKaKao .kakao {
+    background: #ffeb00; height: 42px; padding: 10px 25px;
+    display: flex; flex-flow: row nowrap; align-items: center;
+}
+.joinWrap .joinPop .naverKaKao .naver img {
+    height: 14px; margin-right: 65px;
+}
+.joinWrap .joinPop .naverKaKao .kakao img {
+    height: 14px; margin-right: 65px;
+}
+.joinWrap .joinPop .naverKaKao .naver span {color: #fff; font-size: 0.875rem;}
+.joinWrap .joinPop .naverKaKao .kakao span {color: #000; font-size: 0.875rem;}
 /* 약관동의 */
-.joinWrap .terms {}
+.joinWrap .terms {
+    width: 370px;
+    background: #fafafa;
+    padding-top: 20px;
+}
 .joinWrap .terms .container {}
-.joinWrap .terms .container .title {}
-.joinWrap .terms .container .title h1 {}
-.joinWrap .terms .container .title a {}
-.joinWrap .terms .container #terms {}
+.joinWrap .terms .container .title {position: relative;}
+.joinWrap .terms .container .title h1 {
+    font-size: 1.5rem; color: #212121; font-weight: 700;
+    text-align: center; margin-bottom: 20px;
+}
+.joinWrap .terms .container .title .closeTerms {}
+.joinWrap .terms .container .title .closeTerms img {
+    height: 20px;
+    position: absolute; left: 320px; top: 5px;
+}
+.joinWrap .terms .container #terms {
+    padding: 24px;
+}
 .joinWrap .terms .container #terms fieldset {}
-.joinWrap .terms .container #terms fieldset #chkAll {}
-.joinWrap .terms .container #terms fieldset .agree {}
-.joinWrap .terms .container #terms fieldset .agree {}
+.joinWrap .terms .container #terms fieldset #chkAll {margin-bottom: 20px;}
+.joinWrap .terms .container #terms fieldset .agree {
+    font-size: 0.75rem; color: #212121; font-weight: 600;
+}
 .joinWrap .terms .container #terms fieldset .mainChk1 {}
-.joinWrap .terms .container #terms fieldset .mainChk1 .chk {}
-.joinWrap .terms .container #terms fieldset .mainChk1 .agree1 {}
-.joinWrap .terms .container #terms fieldset .mainChk1 .agree1 span {}
+.joinWrap .terms .container #terms fieldset .mainChk1 .chk {margin-bottom: 20px;}
+.joinWrap .terms .container #terms fieldset .mainChk1 .agree1 {
+    font-size: 0.75rem; color: #212121; font-weight: 600;
+}
+.joinWrap .terms .container #terms fieldset .mainChk1 .agree1 span {
+    color: #f84a71;
+}
 /* 이용약관 텍스트 박스 */
-.joinWrap .terms .container #terms fieldset .mainChk1 .textBox {}
-.joinWrap .terms .container #terms fieldset .mainChk1 .textBox h2 {}
-.joinWrap .terms .container #terms fieldset .mainChk1 .textBox p {}
+.joinWrap .terms .container #terms fieldset .mainChk1 .textBox {
+    border: 1px solid #dfe0df; overflow-y: auto;
+    height: 100px;
+    padding: 12px 14px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.joinWrap .terms .container #terms fieldset .mainChk1 .textBox h2 {
+    font-size: 0.75rem; color: #212121; margin-bottom: 10px;
+    font-weight: 600;
+}
+.joinWrap .terms .container #terms fieldset .mainChk1 .textBox p {
+    font-size: 0.75rem; color: #212121; margin-bottom: 10px;
+    font-weight: 600;
+}
 /* 개인정보 동의 텍스트 박스 */
 .joinWrap .terms .container #terms fieldset .mainChk2 .chk {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .agree1 {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .agree1 span {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .textBox {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .textBox h2 {}
+.joinWrap .terms .container #terms fieldset .mainChk2 .agree {
+    font-size: 0.75rem; color: #212121; font-weight: 600;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 .agree1 span {
+    color: #f84a71;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 .textBox {
+    border: 1px solid #dfe0df; overflow-y: auto;
+    height: 100px;
+    padding: 12px 14px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 .textBox h2 {
+    font-size: 0.75rem; color: #212121; margin-bottom: 10px;
+    font-weight: 900;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 .textBox p {
+    font-size: 0.75rem; color: #212121; margin-bottom: 10px;
+    font-weight: 600;
+}
 .joinWrap .terms .container #terms fieldset .mainChk2 .textBox p {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .textBox p {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .agree {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .agree span {}
-.joinWrap .terms .container #terms fieldset .selectBtn {}
-.joinWrap .terms .container #terms fieldset .selectBtn .reserBtn {}
-.joinWrap .terms .container #terms fieldset .selectBtn .signupBtn {}
-.joinWrap .terms .container #terms fieldset .selectBtn .signupBtn a {}
+.joinWrap .terms .container #terms fieldset .mainChk2 .agree1 {
+    font-size: 0.75rem; color: #212121; font-weight: 600; 
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 .agree span {color: #f84a71;}
+.joinWrap .terms .container #terms fieldset .selectBtn {
+    display: flex; flex-flow: row nowrap; 
+}
+.joinWrap .terms .container #terms fieldset .selectBtn button {
+    color: #4f4f4f; 
+    padding: 15px 20px;
+    border: 1px solid #dfe0df;
+    text-align: center;
+}
+.joinWrap .terms .container #terms fieldset .selectBtn .signupBtn {
+    color: #4f4f4f; 
+    padding: 15px 20px;
+    border: 1px solid #dfe0df;
+    text-align: center;
+}
+.joinWrap .terms .container #terms fieldset .selectBtn .signupBtn a {
+    
+}
 /* 가입하기 */
 .signContainer {}
 .signContainer .wrap {}

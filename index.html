@@ -31,20 +31,21 @@
                         <a href="#">회원가입</a>
                         <a href="#">아이디 · 비밀번호찾기</a>
                     </div>
-                    <span><span>또는</span></span>
+                    <span class="top"><span>또는</span></span>
                     <div class="naverAndKakao">
                         <a href="#" class="naver"><img src="./images/naver_login.png"  alt="네이버"><span>네이버로 시작하기</span></a>
                         <a href="#" class="kakao"><img src="./images/kakao_icon.png"  alt="카카오"><span>카카오로 시작하기</span></a>
                     </div>
-                    <span><span>또는</span></span>
+                    <span class="bottom"><span>또는</span></span>
                     <a href="#" class="nonShipping">비회원 주문배송 조회</a>
                 </fieldset>
             </form>
         </div>
         <div class="searchBox"><!--아이디 비밀번호 찾기-->
             <div class="title">
-                <h1>아이디 찾기</h1>
-                <a href="#" class="closeIdpw"></a><!--폰트어썸-->
+                <h1 class="titleId">아이디 찾기</h1>
+                <h1 class="titlePw">비밀번호 찾기</h1>
+                <a href="#" class="closeIdpw"><img src="./images/icon-close.png" alt=""></a>
             </div>
             <div class="searchIdPw">
                 <a href="#"><h2>아이디 찾기</h2></a>
@@ -55,9 +56,9 @@
                     <legend class="skip">아이디 비밀번호 찾기 양식</legend>
                     <div class="searchId">
                         <span>아이디를 찾을 방법을 선택해주세요.</span><!--아이디 찾기-->
-                        <label for="selectBox"><input type="checkbox" name="selectBox" id="selectBox">가입한 이메일로 찾기</label>
+                        <label for="selectBox"><input type="radio" name="selectBox" id="selectBox">가입한 이메일로 찾기</label>
                         <input type="text" name="emailId" id="emailId" placeholder="이메일 또는 아이디">
-                        <label for="selectBox"><input type="checkbox" name="selectBox" id="selectBox">가입한 휴대폰으로 찾기</label>
+                        <label for="selectBox"><input type="radio" name="selectBox" id="selectBox">가입한 휴대폰으로 찾기</label>
                         <input type="text" name="name" id="name" placeholder="이름 또는 닉네임">
                         <input type="text" name="phNumber" id="phNumber" placeholder="휴대폰 번호">
                         <a href="#" class="findIdPw">아이디 찾기</a>
@@ -73,7 +74,7 @@
         <div class="nondelivery">
             <div class="title">
                 <h1>비회원 주문조회</h1>
-                <a href="#" class="closeDeli"></a>
+                <a href="#" class="closeDeli"><img src="./images/icon-close.png" alt=""></a>
             </div>
             <form action="#" method="get" id="delivery">
                 <fieldset>
@@ -90,19 +91,21 @@
         <div class="joinPop">
             <div class="title">
                 <h1>회원가입</h1>
-                <a href="#" class="joinCloseBtn"></a><!--폰트어썸-->
+                <a href="#" class="joinCloseBtn"><img src="./images/icon-close.png" alt="closeBtn"></a>
             </div>
             <a href="#">ID/PW 회원가입</a>
-            <span><span>또는</span></span>
-            <a href="#"><img src="./images/naver_login.png" class="naver" alt="네이버">네이버로 시작하기</a>
-            <a href="#"><img src="./images/kakao_icon.png" class="kakao" alt="카카오">카카오로 시작하기</a>
+            <span class="joinHr"><span>또는</span></span>
+            <div class="naverKaKao">
+                <a href="#"class="naver"><img src="./images/naver_login.png" alt="네이버"><span>네이버로 시작하기</span></a>
+                <a href="#" class="kakao"><img src="./images/kakao_icon.png" alt="카카오"><span>카카오로 시작하기</span></a>
+            </div>
         </div>
         <!-- 약관동의 -->
         <div class="terms">
             <div class="container">
                 <div class="title">
                     <h1>약관동의</h1>
-                    <a href="#"></a><!--폰트어썸-->
+                    <a href="#" class="closeTerms"><img src="./images/icon-close.png" alt="closeBtn"></a>
                 </div>
                 <form action="#" method="get" id="terms">
                     <fieldset>
@@ -220,11 +223,12 @@
                                 <p>물품 배송, 서비스 제공, 계약서?청구서 발송, 콘텐츠 제공, 맞춤 서비스 제공, 본인인증, 연령인증, 요금 결제 및 정산, 채권추심 등의 목적</p>
                                 <p>(3) 고충 처리</p>
                                 <p>민원인의 신원 확인, 민원사항 확인, 사실조사를 위한 연락?통지, 처리 결과 통보 등</p>
-                                <p>2. 수집하는 개인정보 항목</p>
+                                <h2>2. 수집하는 개인정보 항목</h2>
                                 <p>ID, 성명, 비밀번호, 주소, 휴대폰 번호, 이메일, 14세 미만 가입자의 경우 법정대리인 정보</p>
-                                <p>3. 개인정보 보유 및 이용기간</p>
+                                <h2>3. 개인정보 보유 및 이용기간</h2>
                                 <p>회원탈퇴 시까지 (단, 관계 법령에 보존 근거가 있는 경우 해당 기간 시까지 보유, 개인정보처리방침에서 확인 가능)</p>
                             </div>
+                            <input type="checkbox" class="chk">
                             <label for="chkall" class="agree1">
                                 만 14세 이상입니다.
                                 <span>(필수)</span>
