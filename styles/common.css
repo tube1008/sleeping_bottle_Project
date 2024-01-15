@@ -3,7 +3,7 @@
     background: rgba(0, 0, 0, 0.3);
 }
 .loginPop .login {
-    width: 370px; background-color:#fff;
+    max-width: 370px; background-color:#fff;
     padding: 30px; 
     border-radius: 5px;
     position: relative;
@@ -92,7 +92,7 @@
 }
 /* 아이디 비밀번호 찾기 */
 .loginPop .searchBox {
-    width: 370px;
+    max-width: 370px;
     background: #fff;
     border-radius: 5px;
 }
@@ -114,14 +114,23 @@
 }
 .loginPop .searchBox .searchIdPw {
     padding: 24px; padding-bottom: 0px;
-    display: flex;
+    display: flex; justify-content: center;
 }
-.loginPop .searchBox .searchIdPw a {}
+.loginPop .searchBox .searchIdPw a {
+}
 .loginPop .searchBox .searchIdPw a h2 {
     font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+    padding: 15px 30px;
+}
+.loginPop .searchBox .searchIdPw a:first-child > h2 {
+    border: 1px solid #212121; border-bottom: 0px;
+}
+.loginPop .searchBox .searchIdPw a:last-child > h2 {
+    border: 1px solid #E5E5E5; border-bottom: 1px solid #212121;
+    background: #eee;
 }
 /* 아이디 찾기 */
-.loginPop .searchBox #idpwBox {background: #fff;} 
+.loginPop .searchBox #idpwBox {} 
 .loginPop .searchBox #idpwBox fieldset {}
 .loginPop .searchBox #idpwBox fieldset .searchId {
     padding: 24px;
@@ -137,7 +146,7 @@
 }
 .loginPop .searchBox #idpwBox fieldset .searchId label #selectBox {
     font-size: 0.875rem; font-weight: 500;
-    margin: 5px;
+    margin-right: 5px;
 }
 .loginPop .searchBox #idpwBox fieldset .searchId #emailId {
     font-size: 0.875rem; font-weight: 500;
@@ -178,13 +187,12 @@
     text-align: center;
 }
 /* 비회원 배송 조회 */
-.loginPop {
-    
-}
+.loginPop {}
 .loginPop .nondelivery {
     background-color: #fff;
-    width: 370px;
+    max-width: 370px;
     padding: 32px 24px;
+    border-radius: 5px;
 }
 .loginPop .nondelivery .title {
     position: relative;
@@ -221,11 +229,10 @@
 }
 /* 조인 팝업창 */
 .joinWrap {
+    max-width: 370px;
     position: relative;
 }
 .joinWrap .joinPop {
-    background-color: #fff;
-    width: 370px;
     display: flex; flex-flow: column nowrap;
     padding: 24px;
     border-radius: 5px;
@@ -233,7 +240,8 @@
 .joinWrap .joinPop .title {}
 .joinWrap .joinPop .title h1 {
     font-size: 1.5rem; color: #212121; font-weight: 700;
-    text-align: center; margin-bottom: 40px;
+    text-align: center; 
+    margin-bottom: 40px;
 }
 .joinWrap .joinPop .title .joinCloseBtn {}
 .joinWrap .joinPop .title .joinCloseBtn img {
@@ -242,10 +250,11 @@
 }
 .joinWrap .joinPop > a {
     background-color: #fff;
-    font-size: 0.875rem; font-weight: 500;
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
     padding: 10px 16px;
     border: 1px solid #E0E0E0;
     margin-bottom: 20px;
+    text-align: center;
 }
 .joinWrap .joinPop .joinHr::after  {
     content: ''; display: inline-block;
@@ -281,7 +290,7 @@
 .joinWrap .joinPop .naverKaKao .kakao span {color: #000; font-size: 0.875rem;}
 /* 약관동의 */
 .joinWrap .terms {
-    width: 370px;
+    max-width: 370px;
     background: #fafafa;
     padding-top: 20px;
 }
@@ -364,63 +373,159 @@
 }
 .joinWrap .terms .container #terms fieldset .mainChk2 .agree span {color: #f84a71;}
 .joinWrap .terms .container #terms fieldset .selectBtn {
-    display: flex; flex-flow: row nowrap; 
+    display: flex; flex-flow: row nowrap; justify-content: space-between;
+    margin-top: 25px;
 }
-.joinWrap .terms .container #terms fieldset .selectBtn button {
-    display: block;
-    background-color: yellowgreen;
-    /* color: #4f4f4f; 
-    padding: 15px 20px;
+.joinWrap .terms .container #terms fieldset .selectBtn .resetBtn {
+    color: #4f4f4f; font-weight: 500;
+    padding: 15px 55px;
     border: 1px solid #dfe0df;
-    text-align: center; */
+    text-align: center;
+    margin-right: 3px;
+    letter-spacing: 3px;
 }
 .joinWrap .terms .container #terms fieldset .selectBtn .signupBtn {
     color: #4f4f4f; 
-    padding: 15px 20px;
+    padding: 15px 56px;
     border: 1px solid #dfe0df;
     text-align: center;
+    letter-spacing: 3px;
 }
 .joinWrap .terms .container #terms fieldset .selectBtn .signupBtn a {
-    
+    font-weight: 500;
 }
 /* 가입하기 */
-.signContainer {}
-.signContainer .wrap {}
-.signContainer .wrap .title {}
-.signContainer .wrap .title h1 {}
-.signContainer .wrap .title h1 a {}
-.signContainer .wrap .title h1 a .signCloseBtn {}
+.signContainer {
+    max-width: 370px;
+}
+.signContainer .wrap {
+    padding: 24px;
+}
+.signContainer .wrap .title {
+    position: relative;
+}
+.signContainer .wrap .title h1 {
+    font-size: 1.5rem; color: #212121; font-weight: 700;
+    text-align: center; margin-bottom: 20px;
+}
+.signContainer .wrap .title h1{}
+.signContainer .wrap .title .signCloseBtn {}
+.signContainer .wrap .title .signCloseBtn img {
+    height: 20px;
+    position: absolute; left: 320px; top: 5px;
+}
 .signContainer .wrap .container {}
 .signContainer .wrap .container #signUp {}
 .signContainer .wrap .container #signUp fieldset {}
 .signContainer .wrap .container #signUp fieldset .photo {}
+.signContainer .wrap .container #signUp fieldset .photo .profile {}
+.signContainer .wrap .container #signUp fieldset .photo .profile img {
+    width: 80px;
+    border-radius: 50%;
+}
 .signContainer .wrap .container #signUp fieldset .photo a {}
 .signContainer .wrap .container #signUp fieldset .photo .phOption {}
 .signContainer .wrap .container #signUp fieldset .photo .phOption a {}
-.signContainer .wrap .container #signUp fieldset .idPw {}
-.signContainer .wrap .container #signUp fieldset .idPw #email {}
-.signContainer .wrap .container #signUp fieldset .idPw #pw {}
-.signContainer .wrap .container #signUp fieldset .idPw #rePw {}
-.signContainer .wrap .container #signUp fieldset .name {}
-.signContainer .wrap .container #signUp fieldset .name h2 {}
-.signContainer .wrap .container #signUp fieldset .name #userName {}
-.signContainer .wrap .container #signUp fieldset .gender {}
-.signContainer .wrap .container #signUp fieldset .gender h2 {}
-.signContainer .wrap .container #signUp fieldset .gender .male {}
-.signContainer .wrap .container #signUp fieldset .gender .female {}
-.signContainer .wrap .container #signUp fieldset .num {}
-.signContainer .wrap .container #signUp fieldset .num h2 {}
-.signContainer .wrap .container #signUp fieldset .num #userNumber {}
-.signContainer .wrap .container #signUp fieldset h2 {}
-.signContainer .wrap .container #signUp fieldset .birth {}
-.signContainer .wrap .container #signUp fieldset .birth .year {}
+.signContainer .wrap .container #signUp fieldset .idPw {
+    display: flex; flex-flow: column nowrap;
+    margin: 20px 0;
+}
+.signContainer .wrap .container #signUp fieldset .idPw #email {
+    font-size: 0.75rem; font-weight: 600;
+    padding: 12px 16px;
+    border: 1px solid #E5E5E5;
+}
+.signContainer .wrap .container #signUp fieldset .idPw #pw {
+    font-size: 0.75rem; font-weight: 600;
+    padding: 12px 16px;
+    border: 1px solid #E5E5E5;
+    border-top: none; border-bottom: none;
+}
+.signContainer .wrap .container #signUp fieldset .idPw #rePw {
+    font-size: 0.75rem; font-weight: 600;
+    padding: 12px 16px;
+    border: 1px solid #E5E5E5;
+}
+.signContainer .wrap .container #signUp fieldset .name {
+    display: flex; flex-flow: column nowrap;
+}
+.signContainer .wrap .container #signUp fieldset .name h2 {
+    font-size: 0.875rem; color: #212121;
+    margin-bottom: 10px;
+}
+.signContainer .wrap .container #signUp fieldset .name #userName {
+    font-size: 0.75rem; font-weight: 600;
+    padding: 12px 16px;
+    border: 1px solid #E5E5E5;
+    margin-bottom: 20px;
+}
+.signContainer .wrap .container #signUp fieldset .gender {
+    display: flex; flex-flow: column nowrap;
+}
+.signContainer .wrap .container #signUp fieldset .gender h2 {
+    font-size: 0.875rem; color: #212121;
+    margin-bottom: 10px;
+}
+.signContainer .wrap .container #signUp fieldset .gender .male {
+    margin-bottom: 5px;
+}
+.signContainer .wrap .container #signUp fieldset .gender .female {
+    margin-bottom: 20px;
+}
+.signContainer .wrap .container #signUp fieldset .num {
+    display: flex; flex-flow: column nowrap;
+}
+.signContainer .wrap .container #signUp fieldset .num h2 {
+    font-size: 0.875rem; color: #212121;
+    margin-bottom: 10px;
+}
+.signContainer .wrap .container #signUp fieldset .num #userNumber {
+    font-size: 0.75rem; font-weight: 600;
+    padding: 12px 16px;
+    border: 1px solid #E5E5E5;
+    margin-bottom: 20px;
+}
+.signContainer .wrap .container #signUp fieldset h2 {
+    font-size: 0.875rem; color: #212121;
+    margin-bottom: 10px;
+}
+.signContainer .wrap .container #signUp fieldset .birth {
+    display: flex; justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.signContainer .wrap .container #signUp fieldset .birth .year {
+    width: 102.97px;
+    font-size: 0.875rem; color: #212121;
+    border: 1px solid #E5E5E5;
+    padding: 6px 0 6px 16px;
+    margin-right: 5px; 
+}
 .signContainer .wrap .container #signUp fieldset .birth .year option {}
-.signContainer .wrap .container #signUp fieldset .birth .month {}
-.signContainer .wrap .container #signUp fieldset .birth .month option {}
-.signContainer .wrap .container #signUp fieldset .birth .day {}
+.signContainer .wrap .container #signUp fieldset .birth .month {
+    width: 102.97px;
+    font-size: 0.875rem; color: #212121;
+    border: 1px solid #E5E5E5;
+    padding: 6px 0 6px 16px; 
+    margin-right: 5px; 
+}
+.signContainer .wrap .container #signUp fieldset .birth .month option {
+    font-size: 0.875rem; color: #212121;
+}
+.signContainer .wrap .container #signUp fieldset .birth .day {
+    width: 102.97px;
+    font-size: 0.875rem; color: #212121;
+    border: 1px solid #E5E5E5;
+    padding: 6px 0 6px 16px;  
+}
 .signContainer .wrap .container #signUp fieldset .birth .day option {}
-.signContainer .wrap .container #signUp fieldset .sign {}
-.signContainer .wrap .container #signUp fieldset .sign .signUp {}
+.signContainer .wrap .container #signUp fieldset .sign {
+    display: flex; flex-flow: column nowrap;
+}
+.signContainer .wrap .container #signUp fieldset .sign .signUp {
+    font-size: 0.875rem; color: #fff;
+    background: #4f4f4f;
+    padding: 10px 25px; 
+}
 /* 일회성 광고창 */
 .popUp {width: 1920px; position: relative;}
 .popUp .couponTop {}
