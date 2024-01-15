@@ -300,12 +300,17 @@
     padding: 24px;
 }
 .joinWrap .terms .container #terms fieldset {}
-.joinWrap .terms .container #terms fieldset #chkAll {margin-bottom: 20px;}
+.joinWrap .terms .container #terms fieldset #chkAll {
+    position: relative; top: 2px;
+    margin-bottom: 20px;
+}
 .joinWrap .terms .container #terms fieldset .agree {
     font-size: 0.75rem; color: #212121; font-weight: 600;
 }
 .joinWrap .terms .container #terms fieldset .mainChk1 {}
-.joinWrap .terms .container #terms fieldset .mainChk1 .chk {margin-bottom: 20px;}
+.joinWrap .terms .container #terms fieldset .mainChk1 .chk {
+    position: relative; top: 2px;
+    margin-bottom: 20px;}
 .joinWrap .terms .container #terms fieldset .mainChk1 .agree1 {
     font-size: 0.75rem; color: #212121; font-weight: 600;
 }
@@ -329,7 +334,9 @@
     font-weight: 600;
 }
 /* 개인정보 동의 텍스트 박스 */
-.joinWrap .terms .container #terms fieldset .mainChk2 .chk {}
+.joinWrap .terms .container #terms fieldset .mainChk2 .chk {
+    position: relative; top: 2px;
+}
 .joinWrap .terms .container #terms fieldset .mainChk2 .agree {
     font-size: 0.75rem; color: #212121; font-weight: 600;
 }
@@ -360,10 +367,12 @@
     display: flex; flex-flow: row nowrap; 
 }
 .joinWrap .terms .container #terms fieldset .selectBtn button {
-    color: #4f4f4f; 
+    display: block;
+    background-color: yellowgreen;
+    /* color: #4f4f4f; 
     padding: 15px 20px;
     border: 1px solid #dfe0df;
-    text-align: center;
+    text-align: center; */
 }
 .joinWrap .terms .container #terms fieldset .selectBtn .signupBtn {
     color: #4f4f4f; 
