@@ -422,7 +422,6 @@
 .signContainer .wrap .container #signUp fieldset .photo {
     margin-top: 20px;
 }
-.signContainer .wrap .container #signUp fieldset .photo .phOption{}
 .signContainer .wrap .container #signUp fieldset .photo .profile {
     
 }
@@ -431,14 +430,6 @@
     border-radius: 50%;
     position: relative; left: 120px;
 }
-.signContainer .wrap .container #signUp fieldset .photo .phOption .settings {
-    color: #212121; font-size: 0.875rem;
-    background: #27d34a;
-    border: 1px solid #4f4f4f;
-    width: 70px;
-    display: flex; flex-flow: column nowrap; text-align: center; align-items: center;
-    border-radius: 10px;
-}
 .signContainer .wrap .container #signUp fieldset .photo .phOption .nonimage {
     border: 1px solid #d4d4d4;
     background-color: #fff;
@@ -446,17 +437,23 @@
     width: 30px; height: 30px;
     position: absolute; left: 175px; top: 65px;
 }
-.signContainer .wrap .container #signUp fieldset .photo .phOption .revise {
-    
-    
-}
-.signContainer .wrap .container #signUp fieldset .photo .phOption .delete {
-}
 .signContainer .wrap .container #signUp fieldset .photo .phOption .nonimage img{
     position: relative; left: 6px; top: 5px;
 }
-.signContainer .wrap .container #signUp fieldset .photo .phOption .revise img {}
-.signContainer .wrap .container #signUp fieldset .photo .phOption .delete img {}
+.signContainer .wrap .container #signUp fieldset .photo .phOption{}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .settings {
+    color: #212121; font-size: 0.875rem;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    width: 70px;
+    display: flex; flex-flow: column nowrap; text-align: center; align-items: center;
+    border-radius: 10px;
+    position: absolute; right: 95px; top: 98px;
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .settings .revise {padding: 10px 10px 5px 10px; }
+.signContainer .wrap .container #signUp fieldset .photo .phOption .settings .delete {padding: 10px 10px 5px 10px;}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .settings .revise img {padding-right: 5px;}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .settings .delete img {padding-right: 5px;}
 .signContainer .wrap .container #signUp fieldset .idPw {
     display: flex; flex-flow: column nowrap;
     margin: 20px 0;
@@ -497,12 +494,8 @@
     font-size: 0.875rem; color: #212121;
     margin-bottom: 10px;
 }
-.signContainer .wrap .container #signUp fieldset .gender span {
-    
-}
-.signContainer .wrap .container #signUp fieldset .gender span input {
-    
-}
+.signContainer .wrap .container #signUp fieldset .gender span {}
+.signContainer .wrap .container #signUp fieldset .gender span input {}
 .signContainer .wrap .container #signUp fieldset .gender span .male {
     margin: 0 5px 5px;
     font-size: 0.75rem; color: #212121;
@@ -587,12 +580,20 @@ header .mMenuWrap {display: none;}
 header .mMenuWrap .mMenuLeft {}
 header .mMenuWrap .mMenuLeft .mLogin {}
 header .mMenuWrap .mMenuLeft nav {}
-header .mMenuWrap .mMenuLeft nav .gnb {}
+header .mMenuWrap .mMenuLeft nav .gnb {
+    
+}
 header .mMenuWrap .mMenuLeft nav .gnb li {}
-header .mMenuWrap .mMenuLeft nav .gnb li a {}
+header .mMenuWrap .mMenuLeft nav .gnb li a {
+
+}
 header .mMenuWrap .mMenuLeft nav .gnb li .lnb {}
-header .mMenuWrap .mMenuLeft nav .gnb li .lnb li {}
-header .mMenuWrap .mMenuLeft nav .gnb li .lnb li a {}
+header .mMenuWrap .mMenuLeft nav .gnb li .lnb li {
+    
+}
+header .mMenuWrap .mMenuLeft nav .gnb li .lnb li a {
+    
+}
 header .mMenuWrap .mMenuLeft nav .language {}
 header .mMenuWrap .mMenuLeft nav .language .lang {}
 header .mMenuWrap .mMenuLeft nav .language .lang .langSelect {}
@@ -602,22 +603,23 @@ header .mMenuWrap .mMenuLeft nav .language .langOpen .langEn {}
 header .mMenuWrap .mMenuLeft nav .language .closeBtn {}
 /* 데스크탑 메뉴 */
 header .mainMenu {
+    display: none;
     display: flex; flex-flow: row nowrap; margin: 0 auto;
     justify-content: space-between; align-items: center;
     margin: 30px 60px;
 }
 /* 태블릿, 모바일 메뉴 (햄버거) */
-header .mainMenu .mMenu {display: none;}
+header .mainMenu .mMenu {}
 /* 태블릿, 모바일 메인로고 */
-header .mainMenu .mLogo {display: none;}
+header .mainMenu .mLogo {}
 header .mainMenu .mLogo a {}
 header .mainMenu .mLogo a img {}
 /* 데스크탑 메인로고 */
-header .mainMenu .dLogo {}
+header .mainMenu .dLogo {display: none;}
 header .mainMenu .dLogo a {}
 header .mainMenu .dLogo a img {width: 103.16px;}
 /* 데스크탑 메인 카테고리 */
-header .mainMenu nav {}
+header .mainMenu nav {display: none;}
 header .mainMenu nav .gnb {
     display: flex; flex-flow: row nowrap; 
 }
