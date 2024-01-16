@@ -416,18 +416,47 @@
     height: 20px;
     position: absolute; left: 320px; top: 5px;
 }
-.signContainer .wrap .container {}
+.signContainer .wrap .container {position: relative;}
 .signContainer .wrap .container #signUp {}
 .signContainer .wrap .container #signUp fieldset {}
-.signContainer .wrap .container #signUp fieldset .photo {}
-.signContainer .wrap .container #signUp fieldset .photo .profile {}
+.signContainer .wrap .container #signUp fieldset .photo {
+    margin-top: 20px;
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption{}
+.signContainer .wrap .container #signUp fieldset .photo .profile {
+    
+}
 .signContainer .wrap .container #signUp fieldset .photo .profile img {
     width: 80px;
     border-radius: 50%;
+    position: relative; left: 120px;
 }
-.signContainer .wrap .container #signUp fieldset .photo a {}
-.signContainer .wrap .container #signUp fieldset .photo .phOption {}
-.signContainer .wrap .container #signUp fieldset .photo .phOption a {}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .settings {
+    color: #212121; font-size: 0.875rem;
+    background: #27d34a;
+    border: 1px solid #4f4f4f;
+    width: 70px;
+    display: flex; flex-flow: column nowrap; text-align: center; align-items: center;
+    border-radius: 10px;
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .nonimage {
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+    border-radius: 50%; 
+    width: 30px; height: 30px;
+    position: absolute; left: 175px; top: 65px;
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .revise {
+    
+    
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .delete {
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .nonimage img{
+    position: relative; left: 6px; top: 5px;
+}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .revise img {}
+.signContainer .wrap .container #signUp fieldset .photo .phOption .delete img {}
 .signContainer .wrap .container #signUp fieldset .idPw {
     display: flex; flex-flow: column nowrap;
     margin: 20px 0;
@@ -462,22 +491,28 @@
     margin-bottom: 20px;
 }
 .signContainer .wrap .container #signUp fieldset .gender {
-
+    display: flex; flex-flow: column nowrap;
 }
 .signContainer .wrap .container #signUp fieldset .gender h2 {
     font-size: 0.875rem; color: #212121;
     margin-bottom: 10px;
 }
-.signContainer .wrap .container #signUp fieldset .gender input {
+.signContainer .wrap .container #signUp fieldset .gender span {
+    
 }
-.signContainer .wrap .container #signUp fieldset .gender .male {
-    margin-bottom: 5px;
+.signContainer .wrap .container #signUp fieldset .gender span input {
+    
 }
-.signContainer .wrap .container #signUp fieldset .gender .female {
-    margin-bottom: 20px;
+.signContainer .wrap .container #signUp fieldset .gender span .male {
+    margin: 0 5px 5px;
+    font-size: 0.75rem; color: #212121;
+}
+.signContainer .wrap .container #signUp fieldset .gender span .female {
+    margin: 0 5px 5px;
+    font-size: 0.75rem; color: #212121;
 }
 .signContainer .wrap .container #signUp fieldset .num {
-    display: flex; flex-flow: column nowrap;
+    display: flex; flex-flow: column nowrap; margin-top: 20px;
 }
 .signContainer .wrap .container #signUp fieldset .num h2 {
     font-size: 0.875rem; color: #212121;

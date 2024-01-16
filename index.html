@@ -257,9 +257,11 @@
                         <div class="photo">
                             <a href="#" class="profile"><img src="./images/default_profile.png" alt="profile"></a>
                             <div class="phOption">
-                                <a href="#"></a><!--이미지 선택-->
-                                <a href="#">수정</a>
-                                <a href="#">삭제</a>
+                                <a href="#" class="nonimage"><img src="./images/camera.png" alt="프로필 이미지 수정"></a>
+                                <div class="settings">
+                                    <a href="#" class="revise"><img src="./images/pen.png" alt="이미지 수정">수정</a>
+                                    <a href="#" class="delete"><img src="./images/trash.png" alt="이미지 삭제">삭제</a>
+                                </div>
                             </div>
                         </div>
                         <div class="idPw">
@@ -273,8 +275,12 @@
                         </div>
                         <div class="gender">
                             <h2 class="">성별</h2>
-                            <input type="radio"><label for="genderChk" class="male">남자</label>
-                            <input type="radio"><label for="genderChk" class="female">여자</label>
+                            <span>
+                                <input type="radio"><label for="genderChk" class="male">남자</label>
+                            </span>
+                            <span>
+                                <input type="radio"><label for="genderChk" class="female">여자</label>
+                            </span>
                         </div>
                         <div class="num">
                             <h2>연락처</h2>
