@@ -293,6 +293,7 @@
     max-width: 370px;
     background: #fafafa;
     padding-top: 20px;
+    border-radius: 5px;
 }
 .joinWrap .terms .container {}
 .joinWrap .terms .container .title {position: relative;}
@@ -397,6 +398,7 @@
 /* 가입하기 */
 .signContainer {
     max-width: 370px;
+    border-radius: 5px;
 }
 .signContainer .wrap {
     padding: 24px;
@@ -460,11 +462,13 @@
     margin-bottom: 20px;
 }
 .signContainer .wrap .container #signUp fieldset .gender {
-    display: flex; flex-flow: column nowrap;
+
 }
 .signContainer .wrap .container #signUp fieldset .gender h2 {
     font-size: 0.875rem; color: #212121;
     margin-bottom: 10px;
+}
+.signContainer .wrap .container #signUp fieldset .gender input {
 }
 .signContainer .wrap .container #signUp fieldset .gender .male {
     margin-bottom: 5px;
