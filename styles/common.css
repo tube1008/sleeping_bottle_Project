@@ -592,23 +592,66 @@
 /* header */
 header {}
 /* 태블릿, 모바일 */
-header .mMenuWrap {display: none;}
-header .mMenuWrap .mMenuLeft {}
-header .mMenuWrap .mMenuLeft .mLogin {}
+header .mMenuWrap {
+
+}
+header .mMenuWrap .mMenuLeft {
+    width: 300px; background: #fff; 
+    position: relative;
+}
+header .mMenuWrap .mMenuLeft .mLogin {
+    height: 68px;
+    color: #fff;
+    padding: 20px;
+    background: #2b2b2b;
+    display: flex; align-items: center;
+}
 header .mMenuWrap .mMenuLeft nav {}
 header .mMenuWrap .mMenuLeft nav .gnb {}
-header .mMenuWrap .mMenuLeft nav .gnb li {}
+header .mMenuWrap .mMenuLeft nav .gnb > li {
+    font-size: 0.875rem; color: #212121E3;
+    padding: 13px 50px 14px 20px;
+    border-bottom: 1px solid #e5e7eb;;
+}
 header .mMenuWrap .mMenuLeft nav .gnb li a {}
-header .mMenuWrap .mMenuLeft nav .gnb li .lnb {}
+header .mMenuWrap .mMenuLeft nav .gnb li a img {}
+header .mMenuWrap .mMenuLeft nav .gnb li:nth-child(1) a img {position: relative; left: 200px; top: 1px;}
+header .mMenuWrap .mMenuLeft nav .gnb li:nth-child(5) a img {position: relative; left: 185px; top: 1px;}
+header .mMenuWrap .mMenuLeft nav .gnb li .lnb {display: none;}
 header .mMenuWrap .mMenuLeft nav .gnb li .lnb li {}
 header .mMenuWrap .mMenuLeft nav .gnb li .lnb li a {}
-header .mMenuWrap .mMenuLeft nav .language {}
-header .mMenuWrap .mMenuLeft nav .language .lang {}
-header .mMenuWrap .mMenuLeft nav .language .lang .langSelect {}
-header .mMenuWrap .mMenuLeft nav .language .langOpen {}
-header .mMenuWrap .mMenuLeft nav .language .langOpen .langKo {}
-header .mMenuWrap .mMenuLeft nav .language .langOpen .langEn {}
-header .mMenuWrap .mMenuLeft nav .language .closeBtn {}
+header .mMenuWrap .mMenuLeft .language {
+    padding: 15px 20px;
+}
+header .mMenuWrap .mMenuLeft .language .lang {
+    
+}
+header .mMenuWrap .mMenuLeft .language .lang .langsSelect {
+    font-size: 0.75rem; color: #212121E3;
+    display: flex; align-items: center;
+}
+header .mMenuWrap .mMenuLeft .language .lang .langsSelect img {padding-right: 5px;}
+header .mMenuWrap .mMenuLeft .language .langOpen {
+    display: flex; flex-flow: column nowrap; 
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    position: relative; top: -95px;
+    border-radius: 5px;
+    display: none;
+}
+header .mMenuWrap .mMenuLeft .language .langOpen .langKo {
+    font-size: 0.875rem;
+    color: #212121;
+    padding-bottom: 10px;}
+header .mMenuWrap .mMenuLeft .language .langOpen .langEn {
+    font-size: 0.875rem;
+    color: #212121;
+}
+header .mMenuWrap .mMenuLeft .closeBtn {
+    position: absolute; left: 320px; top: 23px;
+}
+header .mMenuWrap .mMenuLeft .closeBtn img {width: 16px;}
 /* 데스크탑 메뉴 */
 header .mainMenu {
     display: flex; flex-flow: row nowrap; margin: 0 auto;
@@ -616,28 +659,28 @@ header .mainMenu {
     margin: 30px 60px;
 }
 /* 태블릿, 모바일 메뉴 (햄버거) */
-header .mainMenu .mMenu {display: none;}
+header .mainMenu .mMenu {}
+header .mainMenu .mMenu img {width: 18px;}
 /* 태블릿, 모바일 메인로고 */
-header .mainMenu .mLogo {display: none;}
+header .mainMenu .mLogo {}
 header .mainMenu .mLogo a {}
-header .mainMenu .mLogo a img {}
+header .mainMenu .mLogo a img {width: 135.4px;}
 /* 데스크탑 메인로고 */
-header .mainMenu .dLogo {}
+header .mainMenu .dLogo {display: none;}
 header .mainMenu .dLogo a {}
 header .mainMenu .dLogo a img {width: 103.16px;}
 /* 데스크탑 메인 카테고리 */
-header .mainMenu nav {}
+header .mainMenu nav {display: none;}
 header .mainMenu nav .gnb {
     display: flex; flex-flow: row nowrap; 
 }
-header .mainMenu nav .gnb li {
-}
+header .mainMenu nav .gnb li {}
 header .mainMenu nav .gnb li a { 
     font-size: 0.938rem; letter-spacing: 2px; font-family: 'Cardo', serif;
     color: #212121; padding: 0 30px;
 }
 header .mainMenu nav .gnb li .lnb {
-    position: absolute; z-index: 999;
+    position: absolute; z-index: 100; display: none;
 }
 header .mainMenu nav .gnb li .lnb li {
     background-color: #fff;     
@@ -646,6 +689,10 @@ header .mainMenu nav .gnb li .lnb li {
 header .mainMenu nav .gnb li .lnb li:nth-child(1) {
     border-top-right-radius: 5px; border-top-left-radius: 5px;
     border-bottom: none; margin-top: 10px;
+}
+header .mainMenu nav .gnb li:nth-child(1) .lnb li:nth-child(2) {
+    border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;
+    position: relative; 
 }
 header .mainMenu nav .gnb li:nth-child(5) .lnb li:nth-child(2) {
     border-bottom: none; 
@@ -672,7 +719,7 @@ header .mainMenu .menuRight > a::after {
 }
 header .mainMenu .menuRight .advertise {position: relative;}
 /* 태블릿, 모바일 모드에서 join 없어짐 */
-header .mainMenu .menuRight .advertise .join {}
+header .mainMenu .menuRight .advertise .join {display: none;}
 header .mainMenu .menuRight .advertise .couponBtn::before {
     content: ''; display: inline-block;
     width: 10px; height: 10px;
@@ -680,7 +727,7 @@ header .mainMenu .menuRight .advertise .couponBtn::before {
     position: absolute; left: 60px; top: -5px;
     transform: rotate(45deg);
 }
-header .mainMenu .menuRight .advertise .couponBtn {
+header .mainMenu .menuRight .advertise .couponBtn {display: none;
     width: 125.36px; background-color: #4f4f4f;
     font-size: 0.75rem; color: #fff; font-family: Arial, Helvetica, sans-serif;
     position: absolute; right: -50px; top: 25px; 
@@ -727,7 +774,7 @@ footer .bottomBg .bottom address a {color: #696969;}
 footer .bottomBg .bottom address em {color: #3B3B3B; font-weight: 500;}
 /* 푸터내에 이용약관, 개인정보처리방침 팝업창 */
 /* 이용약관 */
-.terms {}
+.terms {display: none;}
 .terms .utiliTitle {background: rgba(0, 0, 0, 0.2);}
 .terms .utiliTitle .utiliBody {
     background-color: #fff; width: 600px;

@@ -26,19 +26,20 @@ main .productPage .slide .selectSlide .left01 .boldTxt {
     color: #3d7352; font-size: 1.325rem; font-weight: 500;
     padding-bottom: 30px;
 }
+main .productPage .slide .selectSlide .left01{}
 main .productPage .slide .selectSlide .left01 p {
     color: #3d7352; font-size: 1.125rem; font-weight: 400;
     padding-bottom: 80px; line-height: 1.5;
 }
-main .productPage .slide .selectSlide p img {
-   
-}
+
 main .productPage .slide .selectSlide .left01 .shopBtn {
     color: #3d7352; font-family: 'Cardo', serif; font-size: 1.325rem;
     border: 1px solid #3d7352; font-weight: 600;
     padding: 10px 60px;
     border-radius: 5px;
 }
+main .productPage .slide .selectSlide .left01Img {position: relative; z-index: 0;}
+main .productPage .slide .selectSlide .left01Img img {}
 /* section slide02 */
 main .productPage .slide .selectSlide:nth-child(2) {
     background-color: #759ca4;
