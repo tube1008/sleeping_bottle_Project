@@ -637,9 +637,10 @@ header .mainMenu nav .gnb li a {
     color: #212121; padding: 0 30px;
 }
 header .mainMenu nav .gnb li .lnb {
-    position: absolute; z-index: 100;
+    position: absolute; z-index: 999;
 }
-header .mainMenu nav .gnb li .lnb li {     
+header .mainMenu nav .gnb li .lnb li {
+    background-color: #fff;     
     color: #797979; padding: 8px 0; border: 1px solid #e5e5e5;
 }
 header .mainMenu nav .gnb li .lnb li:nth-child(1) {
@@ -647,7 +648,7 @@ header .mainMenu nav .gnb li .lnb li:nth-child(1) {
     border-bottom: none; margin-top: 10px;
 }
 header .mainMenu nav .gnb li:nth-child(5) .lnb li:nth-child(2) {
-    border-bottom: none;
+    border-bottom: none; 
 }
 header .mainMenu nav .gnb li .lnb li:nth-child(3) {
     border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;

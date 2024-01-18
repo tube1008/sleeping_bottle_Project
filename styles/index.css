@@ -30,6 +30,9 @@ main .productPage .slide .selectSlide .left01 p {
     color: #3d7352; font-size: 1.125rem; font-weight: 400;
     padding-bottom: 80px; line-height: 1.5;
 }
+main .productPage .slide .selectSlide p img {
+   
+}
 main .productPage .slide .selectSlide .left01 .shopBtn {
     color: #3d7352; font-family: 'Cardo', serif; font-size: 1.325rem;
     border: 1px solid #3d7352; font-weight: 600;
