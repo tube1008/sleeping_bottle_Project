@@ -1,5 +1,5 @@
 /* 로그인 팝업 */
-.loginPop {display: none; /* ----------------------아이디,비번찾기, 배송조회---------------------------!! */
+.loginPop { /* ----------------------아이디,비번찾기, 배송조회---------------------------!! */
     background: rgba(0, 0, 0, 0.3);
 }
 .loginPop .login {
@@ -229,7 +229,7 @@
     text-align: center;
 }
 /* 회원가입 팝업창 */
-.joinWrap {display: none; /* --------------------약관동의----------------------------!! */
+.joinWrap {/* --------------------약관동의----------------------------!! */
     max-width: 370px;
     position: relative;
 }
@@ -397,9 +397,10 @@
     font-weight: 500;
 }
 /* 회원가입 */
-.signContainer {display: none; /* ----------------------회원가입---------------------------!! */
+.signContainer {/* ----------------------회원가입---------------------------!! */
     max-width: 370px;
     border-radius: 5px;
+    display: none;
 }
 .signContainer .wrap {
     padding: 24px;
@@ -440,11 +441,12 @@
 .signContainer .wrap .container #signUp fieldset .photo .phOption .settings {
     border: 1px solid #E5E5E5;
     background: #fff;
-    width: 70px;
+    width: 100px;
     display: flex; flex-flow: column nowrap; text-align: center; align-items: center;
     border-radius: 10px;
     padding: 10px 10px;
     position: absolute; left: 155px; top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 .signContainer .wrap .container #signUp fieldset .photo .phOption .revise {
     font-size: 0.875rem; color: #212121;
@@ -590,14 +592,20 @@
 }
 .popUp .close .closePop {width: 30px;}
 /* header */
-header {}
+header {position: relative;}
 /* 태블릿, 모바일 */
 header .mMenuWrap {
-
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0; top: 0; z-index: 900;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
 }
 header .mMenuWrap .mMenuLeft {
-    width: 300px; background: #fff; 
-    position: relative;
+    width: 300px; background: #fff;
+    height: 100vh;
+    position: fixed; z-index: 999;
 }
 header .mMenuWrap .mMenuLeft .mLogin {
     height: 68px;
@@ -617,20 +625,29 @@ header .mMenuWrap .mMenuLeft nav .gnb li a {}
 header .mMenuWrap .mMenuLeft nav .gnb li a img {}
 header .mMenuWrap .mMenuLeft nav .gnb li:nth-child(1) a img {position: relative; left: 200px; top: 1px;}
 header .mMenuWrap .mMenuLeft nav .gnb li:nth-child(5) a img {position: relative; left: 185px; top: 1px;}
-header .mMenuWrap .mMenuLeft nav .gnb li .lnb {display: none;}
-header .mMenuWrap .mMenuLeft nav .gnb li .lnb li {}
-header .mMenuWrap .mMenuLeft nav .gnb li .lnb li a {}
-header .mMenuWrap .mMenuLeft .language {
-    padding: 15px 20px;
+header .mMenuWrap .mMenuLeft nav .gnb li .lnb {}
+header .mMenuWrap .mMenuLeft nav .gnb li .lnb li {
+    padding: 10px 50px 10px 30px;
+    display: none;
 }
-header .mMenuWrap .mMenuLeft .language .lang {
+header .mMenuWrap .mMenuLeft nav .gnb li .lnb li a {
+    font-size: 0.813rem; color: #212121E3;
     
 }
+header .mMenuWrap .mMenuLeft .language {
+    padding: 15px 20px; 
+    position: absolute; left: 10px; bottom: 20px;
+}
+header .mMenuWrap .mMenuLeft .language .lang {position: relative;}
 header .mMenuWrap .mMenuLeft .language .lang .langsSelect {
-    font-size: 0.75rem; color: #212121E3;
+    font-size: 0.75rem; font-weight: 600;
+    color: #212121E3;
     display: flex; align-items: center;
+    padding-right: 5px;
 }
 header .mMenuWrap .mMenuLeft .language .lang .langsSelect img {padding-right: 5px;}
+header .mMenuWrap .mMenuLeft .language .lang .selectBtn {position: absolute; left: 60px; top: -2px;}
+header .mMenuWrap .mMenuLeft .language .lang .selectBtn img {width: 10px;}
 header .mMenuWrap .mMenuLeft .language .langOpen {
     display: flex; flex-flow: column nowrap; 
     width: 100px;
@@ -638,6 +655,7 @@ header .mMenuWrap .mMenuLeft .language .langOpen {
     border: 1px solid #e5e5e5;
     position: relative; top: -95px;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: none;
 }
 header .mMenuWrap .mMenuLeft .language .langOpen .langKo {
@@ -659,18 +677,18 @@ header .mainMenu {
     margin: 30px 60px;
 }
 /* 태블릿, 모바일 메뉴 (햄버거) */
-header .mainMenu .mMenu {}
+header .mainMenu .mMenu {display: none;}
 header .mainMenu .mMenu img {width: 18px;}
 /* 태블릿, 모바일 메인로고 */
-header .mainMenu .mLogo {}
+header .mainMenu .mLogo {display: none;}
 header .mainMenu .mLogo a {}
 header .mainMenu .mLogo a img {width: 135.4px;}
 /* 데스크탑 메인로고 */
-header .mainMenu .dLogo {display: none;}
+header .mainMenu .dLogo {}
 header .mainMenu .dLogo a {}
 header .mainMenu .dLogo a img {width: 103.16px;}
 /* 데스크탑 메인 카테고리 */
-header .mainMenu nav {display: none;}
+header .mainMenu nav {}
 header .mainMenu nav .gnb {
     display: flex; flex-flow: row nowrap; 
 }
@@ -719,7 +737,7 @@ header .mainMenu .menuRight > a::after {
 }
 header .mainMenu .menuRight .advertise {position: relative;}
 /* 태블릿, 모바일 모드에서 join 없어짐 */
-header .mainMenu .menuRight .advertise .join {display: none;}
+header .mainMenu .menuRight .advertise .join {}
 header .mainMenu .menuRight .advertise .couponBtn::before {
     content: ''; display: inline-block;
     width: 10px; height: 10px;
@@ -727,7 +745,7 @@ header .mainMenu .menuRight .advertise .couponBtn::before {
     position: absolute; left: 60px; top: -5px;
     transform: rotate(45deg);
 }
-header .mainMenu .menuRight .advertise .couponBtn {display: none;
+header .mainMenu .menuRight .advertise .couponBtn {
     width: 125.36px; background-color: #4f4f4f;
     font-size: 0.75rem; color: #fff; font-family: Arial, Helvetica, sans-serif;
     position: absolute; right: -50px; top: 25px; 
