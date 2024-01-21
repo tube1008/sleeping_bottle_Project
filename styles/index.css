@@ -2,14 +2,15 @@
 main {}
 /* section-1 */
 main .productPage {
-    position: relative;}
+    position: relative;
+}
 /* 태블릿, 모바일 슬라이드 화면 */
 main .productPage .slide {
     width: max-content;
     display: flex; flex-flow: row nowrap;
 }
 main .productPage .slide .selectSlide {
-    width: 1920px;
+    max-width: 1920px;
     display: flex; flex-flow: row nowrap; justify-content: center;
 }
 /* section slide01 */
