@@ -8,9 +8,10 @@
 }
 .loginPop .login {
     max-width: 370px; background-color:#fff;
-    padding: 30px; 
+    padding: 24px; 
     border-radius: 5px;
-    position: absolute; left: 775px; top: 200px;
+    position: absolute; left: 50%; top: 20%;
+    transform: translateX(-50%);
     display: none;
 }
 .loginPop .login .top {text-align: center; position: relative;}
@@ -38,12 +39,12 @@
     font-size: 0.75rem; font-weight: 500; color: #212121; 
     display: flex; text-align: center;
 }
-.loginPop .login #loginPage fieldset label #chkBtn {display: none;}
 .loginPop .login #loginPage fieldset label #chkBtn {
     width: 15px; 
     border: 1px solid #4f4f4f;
     background: #4f4f4f; 
     margin: 0 5px 15px 0;
+    display: none;
 }
 .loginPop .login #loginPage fieldset .loginSel {
     font-size: 0.875rem; font-weight: 500;
@@ -51,6 +52,7 @@
     border: 1px solid #d4d4d4;
     padding: 10px 20px; 
     display: block; text-align: center;
+    margin-top: 10px;
 }
 .loginPop .login #loginPage fieldset .joinSearch {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
@@ -105,7 +107,9 @@
     max-width: 370px;
     background: #fff;
     border-radius: 5px;
-    position: absolute; left: 775px; top: 200px;
+    position: absolute; left: 50%; top: 20%;
+    transform: translateX(-50%);
+    display: none;
 }
 .loginPop .searchBox .title {
     border-bottom: 1px solid #E5E5E5;
@@ -121,27 +125,28 @@
 .loginPop .searchBox .title .closeIdpw {}
 .loginPop .searchBox .title .closeIdpw img {
     height: 20px;
-    position: absolute; right: 30px; top: 13px;
+    position: absolute; right: 20px; top: 15px;
 }
 .loginPop .searchBox .searchIdPw {
     padding: 24px; padding-bottom: 0px;
     display: flex; justify-content: center;
 }
-.loginPop .searchBox .searchIdPw a {
+.loginPop .searchBox .searchIdPw a:first-child {
+    border: 1px solid #212121; border-bottom: none;
+}
+.loginPop .searchBox .searchIdPw a:last-child {
+    border: 1px solid #E5E5E5; border-bottom: 1px solid #212121;;
+    background: #eee;
+    
 }
 .loginPop .searchBox .searchIdPw a h2 {
     font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
     padding: 15px 30px;
 }
-.loginPop .searchBox .searchIdPw a:first-child h2 {
-    border: 1px solid #212121; border-bottom: 0px;
-}
-.loginPop .searchBox .searchIdPw a:last-child h2 {
-    border: 1px solid #E5E5E5; border-bottom: 1px solid #212121;
-    background: #eee;
-}
+.loginPop .searchBox .searchIdPw a h2 {}
+.loginPop .searchBox .searchIdPw a h2 {}
 /* 아이디 찾기 */
-.loginPop .searchBox {display: none;}
+.loginPop .searchBox {}
 .loginPop .searchBox #idpwBox {} 
 .loginPop .searchBox #idpwBox fieldset {}
 .loginPop .searchBox #idpwBox fieldset .searchId {
@@ -208,7 +213,8 @@
     max-width: 370px;
     padding: 32px 24px;
     border-radius: 5px;
-    position: absolute; left: 775px; top: 200px;
+    position: relative; left: 50%; top: 20%;
+    transform: translateX(-50%);
     display: none;
 }
 .loginPop .nondelivery .title {
@@ -231,7 +237,8 @@
 .loginPop .nondelivery #delivery fieldset #orderNum {
     font-size: 0.75rem; font-weight: 500;
     padding: 10px 16px;
-    border: 1px solid #E0E0E0; border-bottom: none;
+    border: 1px solid #E0E0E0; 
+    border-bottom: none;
 }
 .loginPop .nondelivery #delivery fieldset #adressNum {
     font-size: 0.75rem; font-weight: 500;
@@ -251,14 +258,15 @@
     position: relative; z-index: 950;
     position: fixed;
     display: none;
-}
+}   
 .joinWrap .joinPop {
     max-width: 370px; background-color:#fff;
     border-radius: 5px;
     display: flex; flex-flow: column nowrap;
     padding: 24px;
     border-radius: 5px;
-    position: absolute; left: 775px; top: 200px;
+    position: relative; left: 50%; top: 20%;
+    transform: translateX(-50%);
     display: none;
 }
 .joinWrap .joinPop .title {}
@@ -316,10 +324,13 @@
     background: #fafafa;
     padding-top: 20px;
     border-radius: 5px;
-    position: absolute; left: 775px; top: 200px;
+    position: relative; left: 50%; top: 20%;
+    transform: translateX(-50%);
     display: none;
 }
-.joinWrap .terms .container {}
+.joinWrap .terms .container {    
+
+}
 .joinWrap .terms .container .title {position: relative;}
 .joinWrap .terms .container .title h1 {
     font-size: 1.5rem; color: #212121; font-weight: 700;
@@ -432,7 +443,8 @@
     max-width: 370px;
     border-radius: 5px;
     padding: 24px;
-    position: absolute; left: 775px; top: 200px;
+    position: relative; left: 50%; top: 20%;
+    transform: translateX(-50%);
 }
 .signContainer .wrap .title {
     position: relative;
@@ -475,7 +487,7 @@
     border-radius: 10px;
     padding: 10px 10px;
     position: absolute; left: 155px; top: 100px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: none;
 }
 .signContainer .wrap .container #signUp fieldset .photo .phOption .revise {
@@ -625,7 +637,7 @@ header .mMenuWrap {
     height: 100vh;
     position: fixed;
     left: 0; top: 0; z-index: 900;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     display: none;
 }
 header .mMenuWrap .mMenuLeft {
@@ -654,7 +666,7 @@ header .mMenuWrap .mMenuLeft nav .gnb li:nth-child(5) a img {position: relative;
 header .mMenuWrap .mMenuLeft nav .gnb li .lnb {}
 header .mMenuWrap .mMenuLeft nav .gnb li .lnb li {
     padding: 10px 50px 10px 30px;
-    display: none;
+
 }
 header .mMenuWrap .mMenuLeft nav .gnb li .lnb li a {
     font-size: 0.813rem; color: #212121E3;
@@ -701,18 +713,19 @@ header .mainMenu {
     display: flex; flex-flow: row nowrap; margin: 0 auto;
     justify-content: space-between; align-items: center;
     margin: 30px 60px;
+
 }
 /* 태블릿, 모바일 메뉴 (햄버거) */
 header .mainMenu .mMenu {display: none;}
-header .mainMenu .mMenu img {width: 18px;}
+header .mainMenu .mMenu img {max-width: 18px;}
 /* 태블릿, 모바일 메인로고 */
 header .mainMenu .mLogo {display: none;}
 header .mainMenu .mLogo a {}
-header .mainMenu .mLogo a img {width: 135.4px;}
+header .mainMenu .mLogo a img {max-width: 135.4px;}
 /* 데스크탑 메인로고 */
 header .mainMenu .dLogo {}
 header .mainMenu .dLogo a {}
-header .mainMenu .dLogo a img {width: 103.16px;}
+header .mainMenu .dLogo a img {max-width: 103.16px;}
 /* 데스크탑 메인 카테고리 */
 header .mainMenu nav {}
 header .mainMenu nav .gnb {
@@ -760,7 +773,7 @@ header .mainMenu .menuRight a:last-child {padding: 0;}
 header .mainMenu .menuRight > a::after {
     content: ''; display: inline-block;
     width: 1px ; height: 10px;
-    background-color: #4f4f4f;
+    background: #4f4f4f;
     margin: 0 15px;
 }
 header .mainMenu .menuRight .advertise {position: relative;}
@@ -774,7 +787,7 @@ header .mainMenu .menuRight .advertise .couponBtn::before {
     transform: rotate(45deg);
 }
 header .mainMenu .menuRight .advertise .couponBtn {
-    width: 125.36px; background-color: #4f4f4f;
+    width: 125.36px; background: #4f4f4f;
     font-size: 0.75rem; color: #fff; font-family: Arial, Helvetica, sans-serif;
     position: absolute; right: -50px; top: 25px; 
     border-radius: 5px; padding: 5px 8px;
@@ -797,7 +810,7 @@ footer .top h2 {
 footer .top p {font-size: 0.75rem; margin-bottom: 5px; align-items: center;}
 footer .top p img {height: 11px; text-align: center; margin-right: 5px;}
 footer .top p strong {font-size: 1.5rem; color: #4f4f4f;}
-footer .bottomBg {background-color: #fafafa;}
+footer .bottomBg {background: #fafafa; padding: 10px 0;}
 footer .bottomBg .bottom {
     display: flex; flex-flow: column nowrap; justify-content: space-between;
     margin: 30px auto;
@@ -822,55 +835,58 @@ footer .bottomBg .bottom address a {color: #696969;}
 footer .bottomBg .bottom address em {color: #3B3B3B; font-weight: 500;}
 /* 푸터내에 이용약관, 개인정보처리방침 팝업창 */
 /* 이용약관 */
-.btmTerms {
-    width: 100%; height: 100%;
-    background:rgba(0, 0, 0, 0.3);
-    position: relative; z-index: 950;
-    position: fixed;
+
+.btmTerms {display: none;}
+.btmTerms .term {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed; left: 0; top: 0;
+    z-index: 999;    
+    width: 100vw; height: 100vh; 
+    overflow-y: scroll;
 }
-.btmTerms .utiliTitle {
-    max-width: 600px; background-color:#fff;
-    position: absolute; left: 775px; top: 200px;
-    padding: 20px; border-radius: 5px;
+.btmTerms .term .utiliTitle {    
+    position: relative; left: 35%;
+    display: none;
 }
-.btmTerms .utiliTitle .utiliBody {
-    padding: 20px 0;
+.btmTerms .term .utiliTitle .utiliBody {
+    background: #fff;
+    max-width: 600px;
+    padding: 20px 0; border-radius: 5px; 
 }
-.btmTerms .utiliTitle .utiliBody .top{
+.btmTerms .term .utiliTitle .utiliBody .top{
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     padding: 5px 25px;
 }
-.btmTerms .utiliTitle .utiliBody .top h1 {
+.btmTerms .term .utiliTitle .utiliBody .top h1 {
     font-size: 1.125rem; color: #212121; font-weight: 500;
     padding-bottom: 30px; 
 }
-.btmTerms .utiliTitle .utiliBody .top .closeBtn {}
-.btmTerms .utiliTitle .utiliBody .top .closeBtn img {height: 20px;}
-.btmTerms .utiliTitle .utiliBody h2, p {
+.btmTerms .term .utiliTitle .utiliBody .top .closeBtn {}
+.btmTerms .term .utiliTitle .utiliBody .top .closeBtn img {height: 20px;}
+.btmTerms .term .utiliTitle .utiliBody h2, p {
     font-size: 0.75rem; color: #212121;
 }
-.btmTerms .utiliTitle .utiliBody h2 {padding: 15px 24px; font-weight: 500;}
-.btmTerms .utiliTitle .utiliBody p {padding: 0 24px; line-height: 1.5;}
+.btmTerms .term .utiliTitle .utiliBody h2 {padding: 15px 24px; font-weight: 500;}
+.btmTerms .term .utiliTitle .utiliBody p {padding: 0 24px; line-height: 1.5;}
 /* 개인정보처리방침 */
-.btmTerms .policyTitle {}
-.btmTerms .policyTitle .policyBody {
+.btmTerms .term .policyTitle {
+    position: relative; left: 35%;}
+.btmTerms .term .policyTitle .policyBody {
     padding: 20px 0; border-radius: 5px;
     max-width: 600px; background-color:#fff;
-    position: absolute; left: 775px; top: 200px;
-    display: none;
 }
-.btmTerms .policyTitle .policyBody .top {
+.btmTerms .term .policyTitle .policyBody .top {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     padding: 5px 25px;
 }
-.btmTerms .policyTitle .policyBody .top h1 {
+.btmTerms .term .policyTitle .policyBody .top h1 {
     font-size: 1.125rem; color: #212121; font-weight: 500;
     padding-bottom: 30px;
 }
-.btmTerms .policyTitle .policyBody .top .closeBtn {}
-.btmTerms .policyTitle .policyBody .top .closeBtn img {height: 20px;}
-.btmTerms .policyTitle .policyBody h2, p {
+.btmTerms .term .policyTitle .policyBody .top .closeBtn {}
+.btmTerms .term .policyTitle .policyBody .top .closeBtn img {height: 20px;}
+.btmTerms .term .policyTitle .policyBody h2, p {
     font-size: 0.75rem; color: #212121;
 }
-.btmTerms .policyTitle .policyBody h2 {padding: 15px 24px; font-weight: 500;}
-.btmTerms .policyTitle .policyBody p {padding: 0 24px; line-height: 1.5;}
+.btmTerms .term .policyTitle .policyBody h2 {padding: 15px 24px; font-weight: 500;}
+.btmTerms .term .policyTitle .policyBody p {padding: 0 24px; line-height: 1.5;}

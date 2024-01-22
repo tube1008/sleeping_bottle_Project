@@ -67,7 +67,7 @@ main .productPage .slide .selectSlide .left02 .leftTxt .leftLogo {}
 main .productPage .slide .selectSlide .left02 img {}
 /* section slide03 */
 main .productPage .slide .selectSlide:nth-child(3) {
-    background-color: #fbf9f4; padding: 120px 225px;
+    background: #fbf9f4; padding: 120px 225px;
 }
 main .productPage .slide .selectSlide .left03 {margin-left: 80px;}
 main .productPage .slide .selectSlide .left03 h1 {
