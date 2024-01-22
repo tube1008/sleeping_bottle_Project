@@ -4,7 +4,7 @@
     background:rgba(0, 0, 0, 0.3);
     position: relative; z-index: 950;
     position: fixed;
-    display: none;
+
 }
 .loginPop .login {
     max-width: 370px; background-color:#fff;
@@ -12,7 +12,7 @@
     border-radius: 5px;
     position: absolute; left: 50%; top: 20%;
     transform: translateX(-50%);
-    display: none;
+
 }
 .loginPop .login .top {text-align: center; position: relative;}
 .loginPop .login .top h1 {
@@ -44,7 +44,7 @@
     border: 1px solid #4f4f4f;
     background: #4f4f4f; 
     margin: 0 5px 15px 0;
-    display: none;
+
 }
 .loginPop .login #loginPage fieldset .loginSel {
     font-size: 0.875rem; font-weight: 500;
