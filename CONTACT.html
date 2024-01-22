@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/CONTACT.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     <title>Contact</title>
 </head>
 <body>
@@ -14,7 +16,15 @@
         <form action="" method="get">
             <fieldset>
                 <legend class="skip"></legend>
-                <input type="text" id="name">
+                <span>이름</span>
+                <input type="text" id="contactName">
+                <span>연락처</span>
+                <input type="number" id="contactNum" maxlength="3">-
+                <input type="number" id="contactNum" maxlength="3">-
+                <input type="number" id="contactNum" maxlength="3">-
+                <span>내용</span>
+                <textarea name="textBox" id="contactTxt" cols="30" rows="10"></textarea>
+                <a href="#" class="writing">작성</a>
             </fieldset>
         </form>
     </div>
