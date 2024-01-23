@@ -4,7 +4,7 @@
     background:rgba(0, 0, 0, 0.3);
     position: relative; z-index: 950;
     position: fixed;
-
+    display: none;
 }
 .loginPop .login {
     max-width: 370px; background-color:#fff;
@@ -12,7 +12,7 @@
     border-radius: 5px;
     position: absolute; left: 50%; top: 20%;
     transform: translateX(-50%);
-
+    display: none;
 }
 .loginPop .login .top {text-align: center; position: relative;}
 .loginPop .login .top h1 {
@@ -35,16 +35,32 @@
     padding: 12px 16px;
     margin-bottom: 15px;
 }
-.loginPop .login #loginPage fieldset label {
-    font-size: 0.75rem; font-weight: 500; color: #212121; 
-    display: flex; text-align: center;
+.loginPop .login #loginPage fieldset label {}
+.loginPop .login #loginPage fieldset label #chkBtn {display: none;}
+.loginPop .login #loginPage fieldset label #chkBtn + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: 1.5px;
 }
-.loginPop .login #loginPage fieldset label #chkBtn {
-    width: 15px; 
+.loginPop .login #loginPage fieldset label #chkBtn:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box_outline_blank.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: 1.5px;
+}
+.loginPop .login #loginPage fieldset label span {
+    font-size: 0.75rem; font-weight: 500; color: #212121; 
+    cursor: pointer;
+    position: relative; left: 20px;
+}
+.loginPop .login #loginPage fieldset .loginSel:hover {
+    background: #4f4f4f; color: #fff;
     border: 1px solid #4f4f4f;
-    background: #4f4f4f; 
-    margin: 0 5px 15px 0;
-
 }
 .loginPop .login #loginPage fieldset .loginSel {
     font-size: 0.875rem; font-weight: 500;
@@ -109,7 +125,7 @@
     border-radius: 5px;
     position: absolute; left: 50%; top: 20%;
     transform: translateX(-50%);
-    display: none;
+    display: none
 }
 .loginPop .searchBox .title {
     border-bottom: 1px solid #E5E5E5;
@@ -122,7 +138,7 @@
 }
 .loginPop .searchBox .title .titleId {text-align: center;}
 .loginPop .searchBox .title .titlePw {display: none;}
-.loginPop .searchBox .title .closeIdpw {}
+.loginPop .searchBox .title .closeIdpw {text-align: center;}
 .loginPop .searchBox .title .closeIdpw img {
     height: 20px;
     position: absolute; right: 20px; top: 15px;
@@ -137,7 +153,6 @@
 .loginPop .searchBox .searchIdPw a:last-child {
     border: 1px solid #E5E5E5; border-bottom: 1px solid #212121;;
     background: #eee;
-    
 }
 .loginPop .searchBox .searchIdPw a h2 {
     font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
@@ -153,20 +168,53 @@
     padding: 24px;
     display: flex; flex-flow: column nowrap;
 }
-.loginPop .searchBox #idpwBox fieldset .searchId span {
+.loginPop .searchBox #idpwBox fieldset .searchId > span {
     font-size: 0.813rem; color: #21212199; font-weight: 500;
     text-align: center;
     padding: 16px 0 25px 0;
 }
-.loginPop .searchBox #idpwBox fieldset .searchId label {
+.loginPop .searchBox #idpwBox fieldset .searchId label {}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_checked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: 0;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_unchecked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: 0;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_checked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: 0;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_unchecked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: 0;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail,
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum {display: none;}
+.loginPop .searchBox #idpwBox fieldset .searchId label span {    
+    display: block;
     font-size: 0.75rem; font-weight: 500;
     color: #212121; 
-    padding-bottom: 10px;     
-}
-.loginPop .searchBox #idpwBox fieldset .searchId label #selectBox {
-    font-size: 0.75rem; font-weight: 500;
-    color: #212121;
-    margin-right: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative; left: 20px;
 }
 .loginPop .searchBox #idpwBox fieldset .searchId #emailId {
     font-size: 0.75rem; font-weight: 500;
@@ -190,6 +238,10 @@
     border: 1px solid #E0E0E0;
     text-align: center;
 }
+.loginPop .searchBox #idpwBox fieldset .searchId .findIdPw:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+}
 /* 비밀번호찾기 */
 .loginPop .searchBox #idpwBox fieldset .searchPw {
     padding: 24px;
@@ -202,10 +254,14 @@
     border: 1px solid #E0E0E0; 
 }
 .loginPop .searchBox #idpwBox fieldset .searchPw a {
-    font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+    font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
     padding: 10px 20px;
     border: 1px solid #E0E0E0;
     text-align: center;
+}
+.loginPop .searchBox #idpwBox fieldset .searchPw a:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
 }
 /* 비회원 배송 조회 */
 .loginPop .nondelivery {
@@ -251,13 +307,17 @@
     border: 1px solid #E0E0E0;
     text-align: center;
 }
+.loginPop .nondelivery #delivery fieldset a:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+}
 /* 회원가입 팝업창 */
 .joinWrap {/* --------------------약관동의----------------------------!! */
     width: 100%; height: 100%;
     background:rgba(0, 0, 0, 0.3);
     position: relative; z-index: 950;
     position: fixed;
-    display: none;
+    
 }   
 .joinWrap .joinPop {
     max-width: 370px; background-color:#fff;
@@ -288,6 +348,10 @@
     margin-bottom: 20px;
     text-align: center;
 }
+.joinWrap .joinPop > a:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+}
 .joinWrap .joinPop .joinHr::after  {
     content: ''; display: inline-block;
     width: 322px ; height: 1px;
@@ -295,8 +359,9 @@
 }
 .joinWrap .joinPop .joinHr {}
 .joinWrap .joinPop .joinHr span {
+    font-size: 0.875rem;
     padding: 5px 20px; background: #fff;
-    position: absolute; left: 150px; top: 150px;
+    position: absolute; left: 150px; top: 153px;
 }
 .joinWrap .joinPop .naverKaKao {
     margin-top: 30px;
@@ -328,9 +393,7 @@
     transform: translateX(-50%);
     display: none;
 }
-.joinWrap .terms .container {    
-
-}
+.joinWrap .terms .container {}
 .joinWrap .terms .container .title {position: relative;}
 .joinWrap .terms .container .title h1 {
     font-size: 1.5rem; color: #212121; font-weight: 700;
@@ -344,23 +407,56 @@
 .joinWrap .terms .container #terms {
     padding: 24px;
 }
+/* 첫번째 체크박스 */
 .joinWrap .terms .container #terms fieldset {}
-.joinWrap .terms .container #terms fieldset #chkAll {
-    position: relative; top: 2px;
-    margin-bottom: 20px;
+.joinWrap .terms .container #terms fieldset label #chkAll {display: none;}
+.joinWrap .terms .container #terms fieldset label #chkAll + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: 1.5px;
 }
-.joinWrap .terms .container #terms fieldset .agree {
+.joinWrap .terms .container #terms fieldset label #chkAll:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box_outline_blank.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: 1.5px;
+}
+.joinWrap .terms .container #terms fieldset label span {
     font-size: 0.75rem; color: #212121; font-weight: 600;
+    position: relative; left: 20px; top: -20px;
+    cursor: pointer;
 }
+/* 두번째 체크박스 */
 .joinWrap .terms .container #terms fieldset .mainChk1 {}
-.joinWrap .terms .container #terms fieldset .mainChk1 .chk {
-    position: relative; top: 2px;
-    margin-bottom: 20px;}
-.joinWrap .terms .container #terms fieldset .mainChk1 .agree1 {
-    font-size: 0.75rem; color: #212121; font-weight: 600;
+.joinWrap .terms .container #terms fieldset .mainChk1 label {}
+.joinWrap .terms .container #terms fieldset .mainChk1 label #chkAllone {display: none;}
+.joinWrap .terms .container #terms fieldset label #chkAllone + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: 2px;
 }
-.joinWrap .terms .container #terms fieldset .mainChk1 .agree1 span {
-    color: #f84a71;
+.joinWrap .terms .container #terms fieldset label #chkAllone:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box_outline_blank.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: 2px;
+}
+.joinWrap .terms .container #terms fieldset .mainChk1 label span {
+    font-size: 0.75rem; color: #212121; font-weight: 600;
+    position: relative; top: 0px;
+}
+.joinWrap .terms .container #terms fieldset .mainChk1 label span em {
+    font-size: 0.75rem; color: #f84a71; padding-left: 5px; font-weight: 600;
 }
 /* 이용약관 텍스트 박스 */
 .joinWrap .terms .container #terms fieldset .mainChk1 .textBox {
@@ -368,7 +464,7 @@
     height: 100px;
     padding: 12px 14px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 .joinWrap .terms .container #terms fieldset .mainChk1 .textBox h2 {
     font-size: 0.75rem; color: #212121; margin-bottom: 10px;
@@ -379,21 +475,39 @@
     font-weight: 600;
 }
 /* 개인정보 동의 텍스트 박스 */
-.joinWrap .terms .container #terms fieldset .mainChk2 .chk {
-    position: relative; top: 2px;
+/* 세번째 체크박스 */
+.joinWrap .terms .container #terms fieldset .mainChk2 {}
+.joinWrap .terms .container #terms fieldset .mainChk2 label{}
+.joinWrap .terms .container #terms fieldset .mainChk2 label #chkAlltwo {display: none;}
+.joinWrap .terms .container #terms fieldset label #chkAlltwo + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: 2px;
 }
-.joinWrap .terms .container #terms fieldset .mainChk2 .agree {
+.joinWrap .terms .container #terms fieldset label #chkAlltwo:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box_outline_blank.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: 2px;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 label span {
     font-size: 0.75rem; color: #212121; font-weight: 600;
+    position: relative; top: 15px;
 }
-.joinWrap .terms .container #terms fieldset .mainChk2 .agree1 span {
-    color: #f84a71;
+.joinWrap .terms .container #terms fieldset .mainChk2 label span em {
+    font-size: 0.75rem; color: #f84a71; padding-left: 5px; font-weight: 600;
 }
 .joinWrap .terms .container #terms fieldset .mainChk2 .textBox {
     border: 1px solid #dfe0df; overflow-y: auto;
     height: 100px;
     padding: 12px 14px;
     border-radius: 5px;
-    margin: 20px 0;
+    margin: 20px 0 5px 0;
 }
 .joinWrap .terms .container #terms fieldset .mainChk2 .textBox h2 {
     font-size: 0.75rem; color: #212121; margin-bottom: 10px;
@@ -403,32 +517,53 @@
     font-size: 0.75rem; color: #212121; margin-bottom: 10px;
     font-weight: 600;
 }
-.joinWrap .terms .container #terms fieldset .mainChk2 .textBox p {}
-.joinWrap .terms .container #terms fieldset .mainChk2 .agree1 {
-    font-size: 0.75rem; color: #212121; font-weight: 600; 
+.joinWrap .terms .container #terms fieldset .mainChk2 label {}
+.joinWrap .terms .container #terms fieldset .mainChk2 label #chkAdult {display: none;}
+.joinWrap .terms .container #terms fieldset label #chkAdult + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: 2px;
 }
-.joinWrap .terms .container #terms fieldset .mainChk2 .agree span {color: #f84a71;}
+.joinWrap .terms .container #terms fieldset label #chkAdult:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/check_box_outline_blank.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -21px; top: 2px;
+}
+.joinWrap .terms .container #terms fieldset .mainChk2 label span {}
+.joinWrap .terms .container #terms fieldset .mainChk2 label span em {}
 .joinWrap .terms .container #terms fieldset .selectBtn {
     display: flex; flex-flow: row nowrap; justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 .joinWrap .terms .container #terms fieldset .selectBtn .resetBtn {
     color: #4f4f4f; font-weight: 500;
-    padding: 15px 55px;
+    padding: 15px 60px;
     border: 1px solid #dfe0df;
     text-align: center;
     margin-right: 3px;
     letter-spacing: 3px;
 }
 .joinWrap .terms .container #terms fieldset .selectBtn .signupBtn {
-    color: #4f4f4f; 
-    padding: 15px 56px;
+    padding: 15px 50px;
     border: 1px solid #dfe0df;
-    text-align: center;
-    letter-spacing: 3px;
+    
 }
 .joinWrap .terms .container #terms fieldset .selectBtn .signupBtn a {
+    color: #4f4f4f; 
+    text-align: center;
+    letter-spacing: 3px;
     font-weight: 500;
+}
+.joinWrap .terms .container #terms fieldset .selectBtn .signupBtn:hover {
+    background: #4f4f4f;
+    color: #fff;
+    border: 1px solid #4f4f4f;
 }
 /* 회원가입 */
 .signContainer {/* ----------------------회원가입---------------------------!! */
@@ -436,7 +571,7 @@
     background:rgba(0, 0, 0, 0.3);
     position: relative; z-index: 950;
     position: fixed;
-    display: none;
+    
 }
 .signContainer .wrap {
     background: #fff;
@@ -453,7 +588,6 @@
     font-size: 1.5rem; color: #212121; font-weight: 700;
     text-align: center; margin-bottom: 20px;
 }
-.signContainer .wrap .title h1{}
 .signContainer .wrap .title .signCloseBtn {}
 .signContainer .wrap .title .signCloseBtn img {
     height: 20px;
@@ -532,7 +666,7 @@
     display: flex; flex-flow: column nowrap;
 }
 .signContainer .wrap .container #signUp fieldset .name h2 {
-    font-size: 0.875rem; color: #212121;
+    font-size: 0.875rem; color: #212121; font-weight: 600;
     margin-bottom: 10px;
 }
 .signContainer .wrap .container #signUp fieldset .name #userName {
@@ -545,26 +679,27 @@
     display: flex; flex-flow: column nowrap;
 }
 .signContainer .wrap .container #signUp fieldset .gender h2 {
-    font-size: 0.875rem; color: #212121;
+    font-size: 0.875rem; color: #212121; font-weight: 600;
     margin-bottom: 10px;
 }
-.signContainer .wrap .container #signUp fieldset .gender span {}
-.signContainer .wrap .container #signUp fieldset .gender span input {}
-.signContainer .wrap .container #signUp fieldset .gender span .male {
-    margin: 0 5px 5px;
-    font-size: 0.75rem; font-weight: 500;
-    color: #212121;
+.signContainer .wrap .container #signUp fieldset .gender label {}
+.signContainer .wrap .container #signUp fieldset .gender label #maleChk {}
+.signContainer .wrap .container #signUp fieldset .gender label span {
+    
 }
-.signContainer .wrap .container #signUp fieldset .gender span .female {
-    margin: 0 5px 5px;
-    font-size: 0.75rem; font-weight: 500;
+.signContainer .wrap .container #signUp fieldset .gender label #femaleChk {}
+.signContainer .wrap .container #signUp fieldset .gender label span {}
+.signContainer .wrap .container #signUp fieldset .gender label span,
+.signContainer .wrap .container #signUp fieldset .gender label span {
     color: #212121;
+    font-size: 0.75rem; font-weight: 600;
+    margin: 0 5px 5px;
 }
 .signContainer .wrap .container #signUp fieldset .num {
     display: flex; flex-flow: column nowrap; margin-top: 20px;
 }
 .signContainer .wrap .container #signUp fieldset .num h2 {
-    font-size: 0.875rem; color: #212121;
+    font-size: 0.875rem; color: #212121; font-weight: 600;
     margin-bottom: 10px;
 }
 .signContainer .wrap .container #signUp fieldset .num #userNumber {
@@ -574,7 +709,7 @@
     margin-bottom: 20px;
 }
 .signContainer .wrap .container #signUp fieldset h2 {
-    font-size: 0.875rem; color: #212121;
+    font-size: 0.875rem; color: #212121; font-weight: 600;
     margin-bottom: 10px;
 }
 .signContainer .wrap .container #signUp fieldset .birth {
@@ -610,9 +745,14 @@
     display: flex; flex-flow: column nowrap;
 }
 .signContainer .wrap .container #signUp fieldset .sign .signUp {
-    font-size: 0.875rem; color: #fff;
-    background: #4f4f4f;
+    font-size: 0.875rem; color: #4f4f4f; font-weight: 600;
+    background: #fff;
+    border: 1px solid #dfe0df;
     padding: 10px 25px; 
+}
+.signContainer .wrap .container #signUp fieldset .sign .signUp:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
 }
 /* 일회성 광고창 */
 .popUp {width: 1920px; position: relative;}
