@@ -4,7 +4,6 @@ main .ourStory {
     width: 100%; height: 100%; text-align: center; 
     position: relative;
 }
-
 main .ourStory .topBg {
     padding: 80px;
     background-image: url(../images/about_ourstory/1_title.jpg); 
@@ -21,7 +20,7 @@ main .ourStory .topBg::before {
 main .ourStory .topBg h1 {
     font-size: 3rem; color: #fff;
     font-family: 'Cardo', serif;
-    position: relative; left: -500px;
+    position: relative; left: -455px;
 }
 main .ourStory .topPage {}
 main .ourStory .topPage .firstSubject {}
