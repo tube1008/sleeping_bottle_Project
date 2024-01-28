@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/story_detail.css">
+    <title>story_detail</title>
+</head>
+<body>
+    <div class="manager">
+        <p>작성시 등록하신 비밀번호를 입력해주세요.</p>
+        <form action="#" method="get" id="managerPW">
+            <fieldset>
+                <legend class="skip"></legend>
+                <input type="password" name="managerPW" id="managerPW" placeholder="비밀번호">
+                <a href="#">확인</a>
+            </fieldset>
+        </form>
+    </div>
+    <main>
+        <div class="sleepingStory">
+            <div class="bg">
+                <h1>Sleeping Story</h1>
+            </div>
+            <div class="title">
+                <h2>[EP10.] 셰프 송훈</h2>
+                <div class="menu">
+                    <a href="#">슬리핑 스토리</a>
+                    <a href="#">수정</a>
+                    <a href="#">지우기</a>
+                </div>
+                <div class="storyDetail">
+                    <p><img src="./images/story/story_detail.jpg" alt="셰프 송훈"></p>
+                    <h3>"슬리핑보틀 이건 10칼로리 밖에 안됩니다. 그리고 100ml 밖에 안돼서 중간에 화장실에 갈 위험성이 없죠"</h3>
+                    <p class="question">Q) 평소에 잘 주무세요?</p>
+                    <p class="answer">A) 셰프는 서비스업이다 보니까 잠을 잘 못자요. 잠은 저한테 5시간 이상은 자야 하는 가장 소중한 시간이죠.</p>
+                    <p class="question">Q) 슬리핑보틀 어떤 점이 좋으셨어요?</p>
+                    <p class="answer">A) 슬리핑보틀 이건 10칼로리 밖에 안됩니다. 그리고 100ml 밖에 안돼서 중간에 화장실에 갈 위험성이 없죠. 감태, 타트체리, 홍삼, 가시오가피, 치자, 밝힐수 없는 특허 농축액, 10kcal, 100ml, 국내 최초! 흐흐흐 슬리핑 보틀.</p>
+                    <a href="#">송훈 셰프 인터뷰 영상 바로가기</a>
+                </div>
+                <div class="btmPage">
+                    <a href="#" class="like">♡ 0 </a>
+                    <a href="#" class="share"><img src="./images/about_press/icon_share.png" alt="공유"></a>
+                </div>
+                <form action="#" method="get" id="comments">
+                    <fieldset>
+                        <legend class="skip">댓글양식</legend>
+                        <input type="text" name="coName" id="coName" placeholder="이름">
+                        <input type="password" name="coPw" id="coPw" placeholder="비밀번호">
+                        <div class="txtArea">
+                            <textarea name="text" id="text" placeholder="댓글을 남겨주세요" cols="30" rows="10"></textarea>
+                            <div class="txtData">
+                                <a href="#"><img src="./images/about_press/icon_images.png" alt="사진첨부"></a>
+                                <a href="#" class="btn">작성</a>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="next">
+                    <a href="./3_1_story_detail.html" class="nextPage">
+                        <img src="./images/about_press/icon_down.png" alt="다음 인터뷰로 넘어가기">
+                        <span>[EP 09.] 아나운서 장새별</span>
+                    </a>
+                    <p class="btn"><a href="#" class="backPress">목록</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
