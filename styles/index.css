@@ -40,6 +40,11 @@ main .productPage .slide .selectSlide .left01 .shopBtn {
     padding: 10px 60px;
     border-radius: 5px;
 }
+main .productPage .slide .selectSlide .left01 .shopBtn:hover {
+    background: #3d7352; color: #fff;
+    border: 1px solid #3d7352;
+    transition: 0.4s ease-out;
+}
 main .productPage .slide .selectSlide .left01Img {position: relative; z-index: 0;}
 main .productPage .slide .selectSlide .left01Img img {}
 /* section slide02 */
@@ -87,6 +92,11 @@ main .productPage .slide .selectSlide .left03 .shopBtn {
     border: 1px solid #f29a9d; border-radius: 10px;
     padding: 10px 85px;
 }
+main .productPage .slide .selectSlide .left03 .shopBtn:hover {
+    background: #f29a9d; color: #fff;
+    border: 1px solid #f29a9d;
+    transition: 0.4s ease-out;
+}
 main .productPage .prev {position: absolute; left: 20px; top: 330px;}
 main .productPage .prev img {height: 40px;}
 main .productPage .next {position: absolute; right: 20px; top: 330px;}
@@ -124,8 +134,16 @@ main .sleepPage .sleep .sleepLeft p {
     padding-bottom: 50px; margin-right: 40px;
 }
 main .sleepPage .sleep .sleepLeft .moreBtn {
-    color:#5d5d5d; border: 1px solid #e5e7eb; border-radius: 10px;
+    font-size: 0.75rem;
+    color:#5d5d5d; 
+    border: 1px solid #e5e7eb; 
+    border-radius: 5px;
     padding: 10px 20px; 
+}
+main .sleepPage .sleep .sleepLeft .moreBtn:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+    transition: 0.3s ease-out;
 }
 main .sleepPage .sleep .sleepRight {}
 main .sleepPage .sleep .sleepRight img {width: 500px;}
@@ -164,7 +182,7 @@ main .deeperPage .healthier .health .circle img:hover {
 main .deeperPage .healthier .health .circle img {
     width: 100%; margin: 0 auto;
     border-radius: 50%;
-    transition: 0.4s ease-out;
+    transition: 0.5s ease-out;
 }
 main .deeperPage .healthier .health h3 {
     font-family: 'Cardo', serif; font-weight: 600; font-size: 1.25rem; 
@@ -263,7 +281,6 @@ main .storyPage .interview a .info {
     text-align: center; position: absolute; left: 0; top: 0px; 
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%; height: 100%;
-    transition: 0.4s ease-out;
     display: none;
 }
 main .storyPage .interview a .info span {
@@ -273,7 +290,12 @@ main .storyPage .interview a .info span {
 main .storyPage > p {text-align: center; margin-top: 10px;}
 main .storyPage p .viewLink {
     font-size: 0.75rem; color: #4f4f4f;  padding: 10px 20px; 
-    border: 1px solid #ccc; border-radius: 10px; 
+    border: 1px solid #ccc; border-radius: 5px; 
+}
+main .storyPage p .viewLink:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+    transition: 0.3s ease-out;
 }
 /* section-7 */
 main .blueBottle {
@@ -309,11 +331,17 @@ main .newsPage .instagram .down a img {width: 303px; margin: 5px;}
 /* 개별 */
 main .newsPage .instagram{text-align: center;}
 main .newsPage .instagram .up {}
-main .newsPage .instagram .up a img:hover {filter: opacity(70%);}
+main .newsPage .instagram .up a img:hover {
+    filter: opacity(70%);
+    transition: 0.2s ease-out;
+}
 main .newsPage .instagram .up a img {}
 main .newsPage .instagram .up a .bg {}
 main .newsPage .instagram .down {}
-main .newsPage .instagram .down a img:hover {filter: opacity(70%);}
+main .newsPage .instagram .down a img:hover {
+    filter: opacity(70%);
+    transition: 0.2s ease-out;
+}
 main .newsPage .instagram .down a img {}
 /* section-9 */
 main .goodNightPage {
@@ -348,4 +376,9 @@ main .goodNightPage .bg .moreBtn {
     background-color: #fff;
     border: 1px solid #fff; padding: 10px 20px; 
     border-radius: 5px;
-    }
+}
+main .goodNightPage .bg .moreBtn:hover {
+    background: #4f4f4f; color: #fff;
+    border: 1px solid #4f4f4f;
+    transition: 0.3s ease-out;
+}

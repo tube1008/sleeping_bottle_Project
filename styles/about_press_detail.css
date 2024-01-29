@@ -120,6 +120,6 @@ main .pressDetailpage .next .btn .backPress{
     border: 1px solid #e5e7eb;
     margin: 20px 0;
 }
-main .pressDetailpage .next .btn .backPress:hover {
+main .pressDetailpage .next .backPress:hover {
     background: #4f4f4f; border: 1px solid #4f4f4f; color: #fff;
 }

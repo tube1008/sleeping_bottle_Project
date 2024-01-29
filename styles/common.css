@@ -992,9 +992,30 @@ footer .bottomBg .bottom {
 footer .bottomBg .bottom .add {padding-bottom: 20px;}
 footer .bottomBg .bottom .add a:nth-child(3) {font-weight: 700;}
 footer .bottomBg .bottom .add a {font-size: 0.75rem; color: #3B3B3B; margin:0 15px 10px 0;}
+footer .bottomBg .bottom .add a:hover {
+    opacity: 70%;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    transition: 0.3s ease-out;
+    width: 20px;
+}
 footer .bottomBg .bottom .add .sns {position: absolute; right: 550px;}
 footer .bottomBg .bottom .add .sns .instagram {}
+footer .bottomBg .bottom .add .sns .instagram:hover {
+    opacity: 60%;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    transition: 0.3s ease-out;
+    width: 20px;
+}
 footer .bottomBg .bottom .add .sns .youTube {}
+footer .bottomBg .bottom .add .sns .youTube:hover {
+    opacity: 60%;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    transition: 0.3s ease-out;
+    width: 20px;
+}
 footer .bottomBg .bottom .add .sns .instagram img {height: 20px;}
 footer .bottomBg .bottom .add .sns .youTube img {height: 20px;}
 footer .bottomBg .bottom p {}
