@@ -803,7 +803,10 @@
 }
 .popUp .close .closePop {width: 30px;}
 /* header */
-header {position: relative;}
+header {
+    /* background:rgba(0,0,0,0.01);
+    position:fixed; left:0; top:0; width:100%; z-index:9999; */
+}
 /* 태블릿, 모바일 */
 header .mMenuWrap {
     width: 100%;
@@ -839,11 +842,9 @@ header .mMenuWrap .mMenuLeft nav .gnb li:nth-child(5) a img {position: relative;
 header .mMenuWrap .mMenuLeft nav .gnb li .lnb {}
 header .mMenuWrap .mMenuLeft nav .gnb li .lnb li {
     padding: 10px 50px 10px 30px;
-
 }
 header .mMenuWrap .mMenuLeft nav .gnb li .lnb li a {
     font-size: 0.813rem; color: #212121E3;
-    
 }
 header .mMenuWrap .mMenuLeft .language {
     padding: 15px 20px; 
@@ -886,7 +887,6 @@ header .mainMenu {
     display: flex; flex-flow: row nowrap; margin: 0 auto;
     justify-content: space-between; align-items: center;
     margin: 30px 60px;
-
 }
 /* 태블릿, 모바일 메뉴 (햄버거) */
 header .mainMenu .mMenu {display: none;} /* --------------------none----------------------------!! */
@@ -904,15 +904,13 @@ header .mainMenu nav {}
 header .mainMenu nav .gnb {
     display: flex; flex-flow: row nowrap; 
 }
-header .mainMenu nav .gnb li {
-
-}
+header .mainMenu nav .gnb li {}
 header .mainMenu nav .gnb li a { 
     font-size: 0.938rem; letter-spacing: 2px; font-family: 'Cardo', serif;
     color: #212121; padding: 0 30px;
 }
 header .mainMenu nav .gnb li .lnb {
-    position: absolute; z-index: 100; display: none; /* --------------------none----------------------------!! */
+    position: absolute; z-index: 100;  /* --------------------none----------------------------!! */
 }
 header .mainMenu nav .gnb li .lnb li {
     background-color: #fff;     
@@ -928,6 +926,9 @@ header .mainMenu nav .gnb li:nth-child(1) .lnb li:nth-child(2) {
 }
 header .mainMenu nav .gnb li:nth-child(5) .lnb li:nth-child(2) {
     border-bottom: none; 
+}
+header .mainMenu nav .gnb li:nth-child(5) .lnb {
+    width: 150px;
 }
 header .mainMenu nav .gnb li .lnb li:nth-child(3) {
     border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;

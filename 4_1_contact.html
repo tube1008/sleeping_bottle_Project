@@ -11,22 +11,34 @@
     <title>Contact</title>
 </head>
 <body>
-    <div class="contact">
-        <h1>Contact Us</h1>
-        <form action="#" method="get">
-            <fieldset>
-                <legend class="skip"></legend>
-                <span>이름</span>
-                <input type="text" id="contactName">
-                <span>연락처</span>
-                <input type="number" id="contactNum" maxlength="3">-
-                <input type="number" id="contactNum" maxlength="3">-
-                <input type="number" id="contactNum" maxlength="3">-
-                <span>내용</span>
-                <textarea name="textBox" id="contactTxt" cols="30" rows="10"></textarea>
-                <a href="#" class="writing">작성</a>
-            </fieldset>
-        </form>
-    </div>
+    <main>
+        <div class="contactWrap">
+            <div class="bg">
+                <h1>Contact Us</h1>
+            </div>
+            <form action="#" method="get" id="contact">
+                <fieldset>
+                    <legend class="skip"></legend>
+                    <label for="contactName">
+                        <span>이름</span>
+                        <input type="text" id="contactName">
+                    </label>
+                    <label for="contactTel">
+                        <span>연락처</span>
+                        <div class="tel">
+                            <input type="tel" id="contactTel" maxlength="3">-
+                            <input type="tel" id="contactTel" maxlength="4">-
+                            <input type="tel" id="contactTel" maxlength="4">
+                        </div>
+                    </label>
+                    <label for="contactTxt">
+                        <span>내용</span>
+                        <textarea name="textBox" id="contactTxt" ></textarea>
+                    </label>
+                    <a href="#" class="writing">작성</a>
+                </fieldset>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
