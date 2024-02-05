@@ -805,9 +805,9 @@
 /* header */
 header {
     max-width: 1920px;
-    padding:15px 20px 120px 20px; height:100px;
-    position:sticky; left:0; top:0px; width:100%; z-index:9999;
-    background: #fff; opacity: 90%;
+    padding:10px 20px 100px 20px; height:100px;
+    position:sticky; left:50%; top:0px; width:100%; z-index:900;
+    background: rgba(255, 255, 255, 0.6)
 }
 /* 태블릿, 모바일 */
 header .mMenuWrap {
@@ -888,7 +888,8 @@ header .mMenuWrap .mMenuLeft .closeBtn img {width: 16px;}
 header .mainMenu {
     display: flex; flex-flow: row nowrap; margin: 0 auto;
     justify-content: space-between; align-items: center;
-    margin: 30px 60px;
+    margin: 30px 30px;
+    position: relative; top: -13px;
 }
 /* 태블릿, 모바일 메뉴 (햄버거) */
 header .mainMenu .mMenu {display: none;} /* --------------------none----------------------------!! */
@@ -905,6 +906,7 @@ header .mainMenu .dLogo a img {max-width: 103.16px;}
 header .mainMenu nav {}
 header .mainMenu nav .gnb {
     display: flex; flex-flow: row nowrap; 
+    
 }
 header .mainMenu nav .gnb li {}
 header .mainMenu nav .gnb li a { 
