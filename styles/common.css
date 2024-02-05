@@ -788,9 +788,9 @@
     border: 1px solid #4f4f4f;
 }
 /* 일회성 광고창 */
-.popUp {width: 1920px; position: relative;}
+.popUp {max-width: 1920px; position: relative;}
 .popUp .couponTop {}
-.popUp .couponTop img {width: 100%;}
+.popUp .couponTop img {}
 .popUp .close {
     display: flex; flex-flow: row nowrap;
     position: absolute; right: 0; top: 0;
@@ -804,8 +804,10 @@
 .popUp .close .closePop {width: 30px;}
 /* header */
 header {
-    /* background:rgba(0,0,0,0.01);
-    position:fixed; left:0; top:0; width:100%; z-index:9999; */
+    max-width: 1920px;
+    padding:15px 20px 120px 20px; height:100px;
+    position:sticky; left:0; top:0px; width:100%; z-index:9999;
+    background: #fff; opacity: 90%;
 }
 /* 태블릿, 모바일 */
 header .mMenuWrap {
