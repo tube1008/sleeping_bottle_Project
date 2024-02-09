@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
@@ -480,7 +482,7 @@
     <main>
         <section class="productPage">
             <!-- 태블릿, 모바일 슬라이드화면  -->
-            <div class="slide"><!--이미지만 있는 슬라이드는 제거함-->
+            <div id="slide"><!--이미지만 있는 슬라이드는 제거함-->
                 <div class="selectSlide">
                     <div class="left01">
                         <h1>"ONE BOTTLE FOR BETTER SLEEP."</h1>
@@ -509,9 +511,11 @@
                     </div>
                     <p><img src="./images/1.sectionSlide03(modify).png" alt="좋은 잠을 위한 한 병, 슬리핑 보틀"></p>
                 </div>
+                <div class="swiper-pagination"></div><!--페이지 번호 만드는 기능 표시용-->
+                <div class="pagination_progress"></div><!-- 페이지 로딩표시-->
+                <a href="#" id="prev"><img src="./images/icon-prev.png" alt="prev"></a>
+                <a href="#" id="next"><img src="./images/icon-next.png" alt="next"></a>
             </div>
-            <a href="#" class="prev"><img src="./images/icon-prev.png" alt="prev"></a>
-            <a href="#" class="next"><img src="./images/icon-next.png" alt="next"></a>
         </section>    
         <section class="sleepPage">
             <div class="title">

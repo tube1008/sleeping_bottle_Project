@@ -1,0 +1,60 @@
+main {}
+main .title {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+main .title h1 {
+    color: #4A4A4A; font-size: 1.25rem; font-weight: 500;
+}
+main .title .right {}
+main .title .right a {
+    font-size: 0.75rem; font-weight: 500;
+    padding: 7px 15px; border-radius: 5px;
+}
+main .title .right a:nth-child(1) {
+    color: #4f4f4f;
+    border: 1px solid #d3d3d3;
+}
+main .title .right a:nth-child(2) {
+    color: #fff; background: #4f4f4f;
+    border: 1px solid #4f4f4f;
+}
+main .container {display: flex;}
+main .container .leftImage {
+    width: 250px; height: 100vh;
+    background: #fafafa;
+    border-right: 1px solid #ccc;
+}
+main .container .leftImage p {
+    font-size: 0.875rem; color: #333; font-weight: 600;
+    padding: 20px;
+}
+main .container #writing {
+    width: 1000px; text-align: center;
+    padding: 100px 50px;
+}
+main .container #writing fieldset {}
+main .container #writing fieldset .top {
+    display: flex; 
+}
+main .container #writing fieldset .top .profile {
+    width: 36px; border-radius: 50%;
+}
+main .container #writing fieldset .top #name {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+main .container #writing fieldset .top #pw {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+main .container #writing fieldset .top .unlock {
+    width: 22px; height: 23px;
+}
+main .container #writing fieldset .top .lock {
+    width: 22px; height: 23px;
+}
+main .container #writing fieldset #title {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+main .container #writing fieldset #textArea {}
