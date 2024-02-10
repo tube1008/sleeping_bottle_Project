@@ -968,6 +968,15 @@ header .mainMenu .menuRight .advertise .couponBtn {
     font-size: 0.75rem; color: #fff; font-family: Arial, Helvetica, sans-serif;
     position: absolute; right: -50px; top: 25px; 
     border-radius: 5px; padding: 5px 8px;
+    animation: moveUpDown 0.5s linear infinite alternate;
+}
+@keyframes moveUpDown {
+    from {
+        top: 25px;
+    }
+    to {
+      top: 30px; /* 원하는 위치로 조절 */
+    }
 }
 /* -------------------------------------------------------------------------- */
 /* footer */
