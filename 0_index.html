@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
     <title>Sleeping Bottle | 슬리핑 보틀</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!-- 로그인 팝업창 -->
@@ -482,39 +482,41 @@
     <main>
         <section class="productPage">
             <!-- 태블릿, 모바일 슬라이드화면  -->
-            <div id="slide"><!--이미지만 있는 슬라이드는 제거함-->
-                <div class="selectSlide">
-                    <div class="left01">
-                        <h1>"ONE BOTTLE FOR BETTER SLEEP."</h1>
-                        <p class="boldTxt">진정한 휴식을 위한 음료, 슬리핑 보틀</p>
-                        <p>슬리핑보틀은 휴식에 도움을 주는<br> 감태추출물, 타트체리, L-테아닌 그리고 특허받은<br> SB 농축액 등 10가지 자연성분으로 만들어진 혼합음료로<br> 누구나 부작용 걱정없이 음용할 수 있습니다.</p>
-                        <a href="#" class="shopBtn">Shop</a>
-                    </div>
-                    <p class="left01Img"><img src="./images/1.sectionSlide01(Modify).png" alt="진정한 휴식을 위한 음료, 슬리핑 보틀"></p>
-                </div>
-                <div class="selectSlide">
-                    <a class="left02">
-                        <div class="leftTxt">
-                            <h1>"국내 <em>유일</em>, 국내 <em>최초</em>"</h1>
-                            <p class="boldTxt">특허받은 수면 음료,<br> 슬리핑보틀</p>
-                            <img class="leftLogo" src="./images/1.sectionSlide02logo(modify).png" alt="sleeping bottle logo">
+            <div class="swiper-container" id="slide"><!--이미지만 있는 슬라이드는 제거함-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide selectSlide1">
+                        <div class="left01">
+                            <h1>"ONE BOTTLE FOR BETTER SLEEP."</h1>
+                            <p class="boldTxt">진정한 휴식을 위한 음료, 슬리핑 보틀</p>
+                            <p>슬리핑보틀은 휴식에 도움을 주는<br> 감태추출물, 타트체리, L-테아닌 그리고 특허받은<br> SB 농축액 등 10가지 자연성분으로 만들어진 혼합음료로<br> 누구나 부작용 걱정없이 음용할 수 있습니다.</p>
+                            <a href="#" class="shopBtn">Shop</a>
                         </div>
-                        <img src="./images/1.sectionSlide02(Modify).png" alt="특허받은 수면음료, 슬리핑보틀">
-                    </a>
-                </div>
-                <div class="selectSlide">
-                    <div class="left03">
-                        <h1>"Good Night Sleep Tight."</h1>
-                        <p class="boldTxt">좋은 잠을 위한 한병, 슬리핑보틀</p>
-                        <p>국내최초 수면리듬 개선음료 슬리핑보틀은 타트체리, 감태추출물,<br> 특허받은 SB농축액 등 12가지 천연성분으로 만들어진 혼합음료로<br> 누구나 부작용 걱정 없이 음용할 수 있습니다. 슬리핑 보틀과 함께<br> 건강한 수면리듬을 찾아보세요.</p>
-                        <a href="#" class="shopBtn">Shop</a>
+                        <p class="left01Img"><img src="./images/1.sectionSlide01(Modify).png" alt="진정한 휴식을 위한 음료, 슬리핑 보틀"></p>
                     </div>
-                    <p><img src="./images/1.sectionSlide03(modify).png" alt="좋은 잠을 위한 한 병, 슬리핑 보틀"></p>
+                    <div class="swiper-slide selectSlide2">
+                        <a class="left02">
+                            <div class="leftTxt">
+                                <h1>"국내 <em>유일</em>, 국내 <em>최초</em>"</h1>
+                                <p class="boldTxt">특허받은 수면 음료,<br> 슬리핑보틀</p>
+                                <img class="leftLogo" src="./images/1.sectionSlide02logo(modify).png" alt="sleeping bottle logo">
+                            </div>
+                            <img src="./images/1.sectionSlide02(Modify).png" alt="특허받은 수면음료, 슬리핑보틀">
+                        </a>
+                    </div>
+                    <div class="swiper-slide selectSlide3">
+                        <div class="left03">
+                            <h1>"Good Night Sleep Tight."</h1>
+                            <p class="boldTxt">좋은 잠을 위한 한병, 슬리핑보틀</p>
+                            <p>국내최초 수면리듬 개선음료 슬리핑보틀은 타트체리, 감태추출물,<br> 특허받은 SB농축액 등 12가지 천연성분으로 만들어진 혼합음료로<br> 누구나 부작용 걱정 없이 음용할 수 있습니다. 슬리핑 보틀과 함께<br> 건강한 수면리듬을 찾아보세요.</p>
+                            <a href="#" class="shopBtn">Shop</a>
+                        </div>
+                        <p><img src="./images/1.sectionSlide03(modify).png" alt="좋은 잠을 위한 한 병, 슬리핑 보틀"></p>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <a href="#" id="prev"><img src="./images/icon-prev.png" alt="prev"></a>
+                    <a href="#" id="next"><img src="./images/icon-next.png" alt="next"></a>
                 </div>
-                <div class="swiper-pagination"></div><!--페이지 번호 만드는 기능 표시용-->
-                <div class="pagination_progress"></div><!-- 페이지 로딩표시-->
-                <a href="#" id="prev"><img src="./images/icon-prev.png" alt="prev"></a>
-                <a href="#" id="next"><img src="./images/icon-next.png" alt="next"></a>
             </div>
         </section>    
         <section class="sleepPage">
@@ -577,59 +579,69 @@
                 <p>좋은 잠을 위한 한 병, 슬리핑보틀</p>
             </div>
             <div class="productItem">
-                <a href="./2_1_shop_detail.html" class="item"><!-- 호버시 새로운 이미지가 뜸 -->
-                    <p><img src="./images/5.sectionproduct01.jpg" alt="슬리핑 보틀 1병"></p>
-                    <h2>[슬리핑보틀]1병(100ml)</h2>
-                    <p class="price">5,000원</p>
-                    <div class="saleMd">
-                        <span class="sale">SALE</span>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <a href="./2_1_shop_detail.html" class="swiper-slide item"><!-- 호버시 새로운 이미지가 뜸 -->
+                            <p><img src="./images/5.sectionproduct01.jpg" alt="슬리핑 보틀 1병"></p>
+                            <p class="hoverImg"><img src="./images/5.sectionproduct01-1.jpg" alt="슬리핑 보틀 1병"></p>
+                            <h2>[슬리핑보틀]1병(100ml)</h2>
+                            <p class="price">5,000원</p>
+                            <div class="saleMd">
+                                <span class="sale">SALE</span>
+                            </div>
+                        </a>
+                        <a href="./2_1_shop_detail.html" class="swiper-slide item">
+                            <p><img src="./images/5.sectionproduct02.jpg" alt="슬리핑 보틀 1박스[10개입]"></p>
+                            <p class="hoverImg"><img src="./images/5.sectionproduct02-1.jpg" alt="슬리핑 보틀 1박스[10개입]"></p>
+                            <h2>[슬리핑 보틀] 1박스(10개입)</h2>
+                            <p class="price">45,000원<del>50,000원</del></p>
+                            <div class="saleMd">
+                                <span class="sale">SALE</span>
+                            </div>
+                        </a>
+                        <a href="./2_1_shop_detail.html" class="swiper-slide item">
+                            <p><img src="./images/5.sectionproduct03.jpg" alt="슬리핑 보틀 2박스[20개입]"></p>
+                            <p class="hoverImg"><img src="./images/5.sectionproduct03-1.jpg" alt="슬리핑 보틀 2박스[20개입]"></p>
+                            <h2>[슬리핑 보틀] 2박스(20개입)</h2>
+                            <p class="price">90,000원<del>100,000원</del></p>
+                            <div class="saleMd">
+                                <span class="sale">SALE</span>
+                            </div>
+                        </a>
+                        <a href="./2_1_shop_detail.html" class="swiper-slide item">
+                            <p><img src="./images/5.sectionproduct04.jpg" alt="슬리핑 보틀 3박스[30개입]"></p>
+                            <p class="hoverImg"><img src="./images/5.sectionproduct04-1.jpg" alt="슬리핑 보틀 3박스[30개입]"></p>
+                            <h2>[슬리핑 보틀] 3박스(30개입)</h2>
+                            <p class="price">127,500원<del>150,000원</del></p>
+                            <div class="saleMd">
+                                <span class="sale">SALE</span>
+                            </div>
+                        </a>
+                        <a href="./2_1_shop_detail.html" class="swiper-slide item">
+                            <p><img src="./images/5.sectionproduct05.jpg" alt="슬리핑 보틀 5박스[50개입]"></p>
+                            <p class="hoverImg"><img src="./images/5.sectionproduct05-1.jpg" alt="슬리핑 보틀 5박스[50개입]"></p>
+                            <h2>[슬리핑 보틀] 5박스(50개입)</h2>
+                            <p class="price">200,000원<del>250,000원</del></p>
+                            <div class="saleMd">
+                                <span class="sale">SALE</span>
+                            </div>
+                        </a>
+                        <a href="./2_1_shop_detail.html" class="swiper-slide item">
+                            <p><img src="./images/5.sectionproduct06.jpg" alt="[슬리핑로브] 프리미엄 호텔식 로브"></p>
+                            <p class="hoverImg"><img src="./images/5.sectionproduct06-1.jpg" alt="[슬리핑로브] 프리미엄 호텔식 로브"></p>
+                            <div class="colorSelect">
+                                <span class="white"></span>
+                                <span class="brown"></span>
+                            </div>
+                            <h2>[슬리핑로브] 프리미엄 호텔식 로브</h2>
+                            <p class="price">79,000원<del>150,000원</del></p>
+                            <div class="saleMd">
+                                <span class="sale">SALE</span>
+                                <span class="md">MD</span>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <a href="./2_1_shop_detail.html" class="item">
-                    <p><img src="./images/5.sectionproduct02.jpg" alt="슬리핑 보틀 1박스[10개입]"></p>
-                    <h2>[슬리핑 보틀] 1박스(10개입)</h2>
-                    <p class="price">45,000원<del>50,000원</del></p>
-                    <div class="saleMd">
-                        <span class="sale">SALE</span>
-                    </div>
-                </a>
-                <a href="./2_1_shop_detail.html" class="item">
-                    <p><img src="./images/5.sectionproduct03.jpg" alt="슬리핑 보틀 2박스[20개입]"></p>
-                    <h2>[슬리핑 보틀] 2박스(20개입)</h2>
-                    <p class="price">90,000원<del>100,000원</del></p>
-                    <div class="saleMd">
-                        <span class="sale">SALE</span>
-                    </div>
-                </a>
-                <a href="./2_1_shop_detail.html" class="item">
-                    <p><img src="./images/5.sectionproduct04.jpg" alt="슬리핑 보틀 3박스[30개입]"></p>
-                    <h2>[슬리핑 보틀] 3박스(30개입)</h2>
-                    <p class="price">127,500원<del>150,000원</del></p>
-                    <div class="saleMd">
-                        <span class="sale">SALE</span>
-                    </div>
-                </a>
-                <a href="./2_1_shop_detail.html" class="item">
-                    <p><img src="./images/5.sectionproduct05.jpg" alt="슬리핑 보틀 5박스[50개입]"></p>
-                    <h2>[슬리핑 보틀] 5박스(50개입)</h2>
-                    <p class="price">200,000원<del>250,000원</del></p>
-                    <div class="saleMd">
-                        <span class="sale">SALE</span>
-                    </div>
-                </a>
-                <a href="./2_1_shop_detail.html" class="item">
-                    <p><img src="./images/5.sectionproduct06.jpg" alt="[슬리핑로브] 프리미엄 호텔식 로브"></p>
-                    <div class="colorSelect">
-                        <span class="white"></span>
-                        <span class="brown"></span>
-                    </div>
-                    <h2>[슬리핑로브] 프리미엄 호텔식 로브</h2>
-                    <p class="price">79,000원<del>150,000원</del></p>
-                    <div class="saleMd">
-                        <span class="sale">SALE</span>
-                        <span class="md">MD</span>
-                    </div>
-                </a>
+                </div>
             </div>
         </section>
         <section class="storyPage">
