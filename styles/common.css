@@ -4,7 +4,6 @@
     background:rgba(0, 0, 0, 0.3);
     position: relative; z-index: 950;
     position: fixed;
-    display: none; /* --------------------none----------------------------!! */
 }
 .loginPop .login {
     max-width: 370px; background-color:#fff;
@@ -12,7 +11,6 @@
     border-radius: 5px;
     position: absolute; left: 50%; top: 20%;
     transform: translateX(-50%);
-    display: none; /* --------------------none----------------------------!! */
 }
 .loginPop .login .top {text-align: center; position: relative;}
 .loginPop .login .top h1 {
@@ -74,7 +72,8 @@
     display: flex; flex-flow: row nowrap; justify-content: space-between;
     margin: 10px 0 20px 0;
 }
-.loginPop .login #loginPage fieldset .joinSearch a {
+.loginPop .login #loginPage fieldset .joinSearch .joinGo,
+.loginPop .login #loginPage fieldset .joinSearch .idPwfind {
     font-size: 0.75rem; color: #000; font-weight: 500;
 }
 .loginPop .login #loginPage fieldset > span::after {
@@ -84,11 +83,11 @@
 }
 .loginPop .login #loginPage fieldset .top span {
     padding: 5px 20px; background: #fff;
-    position: absolute; left: 125px; top: 5px;
+    position: absolute; left: 120px; top: 5px;
 }
 .loginPop .login #loginPage fieldset .bottom span {
     padding: 5px 20px; background: #fff;
-    position: absolute; left: 155px; bottom: 82px;
+    position: absolute; left: 145px; bottom: 75px;
 }
 .loginPop .login #loginPage fieldset span {}
 .loginPop .login #loginPage fieldset span span {
@@ -125,7 +124,6 @@
     border-radius: 5px;
     position: absolute; left: 50%; top: 20%;
     transform: translateX(-50%);
-    display: none /* --------------------none----------------------------!! */
 }
 .loginPop .searchBox .title {
     border-bottom: 1px solid #E5E5E5;
@@ -266,12 +264,11 @@
 /* 비회원 배송 조회 */
 .loginPop .nondelivery {
     background-color: #fff;
-    max-width: 370px;
+    width: 370px; height: 260px;
     padding: 32px 24px;
     border-radius: 5px;
     position: relative; left: 50%; top: 20%;
     transform: translateX(-50%);
-    display: none; /* --------------------none----------------------------!! */
 }
 .loginPop .nondelivery .title {
     position: relative;
@@ -317,17 +314,16 @@
     background:rgba(0, 0, 0, 0.3);
     position: relative; z-index: 950;
     position: fixed;
-    display: none; /* --------------------none-bg---------------------------!! */
 }   
 .joinWrap .joinPop {
-    max-width: 370px; background-color:#fff;
+    max-width: 370px; height: 324px;
+    background-color:#fff;
     border-radius: 5px;
     display: flex; flex-flow: column nowrap;
     padding: 24px;
     border-radius: 5px;
     position: relative; left: 50%; top: 20%;
     transform: translateX(-50%);
-    display: none; /* --------------------none----------------------------!! */
 }
 .joinWrap .joinPop .title {}
 .joinWrap .joinPop .title h1 {
@@ -343,10 +339,10 @@
 .joinWrap .joinPop > a {
     background-color: #fff;
     font-size: 0.875rem; color: #4f4f4f; font-weight: 500;
+    display: flex; justify-content: center;
     padding: 10px 16px;
     border: 1px solid #E0E0E0;
     margin-bottom: 20px;
-    text-align: center;
 }
 .joinWrap .joinPop > a:hover {
     background: #4f4f4f; color: #fff;
@@ -953,17 +949,22 @@ header .mainMenu .menuRight {
     font-size: 0.813rem;
 }
 /* 태블릿, 모바일 메뉴 동일 */
-header .mainMenu .menuRight a {}
-header .mainMenu .menuRight a:last-child {padding: 0;}
-header .mainMenu .menuRight > a::after {
+header .mainMenu .menuRight #login {}
+header .mainMenu .menuRight #login:last-child {padding: 0;}
+header .mainMenu .menuRight > #login::after {
     content: ''; display: inline-block;
     width: 1px ; height: 10px;
     background: #4f4f4f;
     margin: 0 15px;
 }
+header .mainMenu .menuRight #login:hover,
+header .mainMenu .menuRight .advertise #join:hover {
+    opacity: 50%;
+    transition: 0.3s;
+}
 header .mainMenu .menuRight .advertise {position: relative;}
 /* 태블릿, 모바일 모드에서 join 없어짐 */
-header .mainMenu .menuRight .advertise .join {}
+header .mainMenu .menuRight .advertise #join {}
 header .mainMenu .menuRight .advertise .couponBtn::before {
     content: ''; display: inline-block;
     width: 10px; height: 10px;
