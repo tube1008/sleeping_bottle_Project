@@ -19,7 +19,7 @@ main .qnaWrap .bg::before {
 main .qnaWrap .bg h1 {
     font-size: 3rem; color: #fff;
     font-family: 'Cardo', serif;
-    position: relative; left: 250px;
+    position: relative; left: 160px;
 }
 main .qnaWrap .container {
     max-width: 1250px; margin: 0 auto;
