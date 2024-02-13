@@ -35,18 +35,19 @@ join_access.style.display = 'none'
 login.addEventListener('click',function(){
     loginpopup_bg.style.display = 'flex'
     login_access.style.display = 'block'
-    idPwfind.addEventListener('click', function(){
-        searchBox.style.display = 'block'
-        login_access.style.display = 'none'
-        loginpopup_bg.style.display = 'flex'
-        bottom.style.display = 'none'
-        nonshipping.style.display = 'none'
-    })
-    nonshipping.addEventListener('click', function(){
-        nondelivery.style.display = 'block'
-        loginpopup_bg.style.display = 'flex'
-        login_access.style.display = 'none'
-    })
+})
+
+idPwfind.addEventListener('click', function(){
+    searchBox.style.display = 'block'
+    login_access.style.display = 'none'
+    loginpopup_bg.style.display = 'flex'
+    bottom.style.display = 'none'
+    nonshipping.style.display = 'none'
+})
+nonshipping.addEventListener('click', function(){
+    nondelivery.style.display = 'block'
+    loginpopup_bg.style.display = 'flex'
+    login_access.style.display = 'none'
 })
 
 loginpopup_bg.addEventListener('click', function() {
@@ -61,12 +62,11 @@ joinGo.addEventListener('click', function(){
     login_access.style.display = 'block'
 })
 
-
-
 join.addEventListener('click',function(){
     joinpopup_bg.style.display = 'flex'
     join_access.style.display = 'block'
 })
+
 
 
 

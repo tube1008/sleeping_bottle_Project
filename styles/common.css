@@ -270,6 +270,7 @@
     border-radius: 5px;
     position: relative; left: 50%; top: 20%;
     transform: translateX(-50%);
+    display: none;
 }
 .loginPop .nondelivery .title {
     position: relative;
@@ -278,10 +279,11 @@
     font-size: 1.5rem; color: #212121; font-weight: 700;
     text-align: center; margin-bottom: 30px;
 }
-.loginPop .nondelivery .title .closeDeli {}
+.loginPop .nondelivery .title .closeDeli {
+    position: absolute; right: 0; top: 0;
+}
 .loginPop .nondelivery .title .closeDeli img {
     height: 20px;
-    position: absolute; right: 0; top: 0;
 }
 .loginPop .nondelivery #delivery {
 }
@@ -315,6 +317,7 @@
     background:rgba(0, 0, 0, 0.3);
     position: relative; z-index: 950;
     position: fixed;
+    display: none;
 }   
 .joinWrap .joinPop {
     max-width: 370px; height: 324px;

@@ -7,8 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/about_ourstory.css">
-    <title>ABOUT | ourstory</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Sleeping Bottle | 슬리핑 보틀</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!-- 로그인 팝업창 -->
@@ -16,7 +18,7 @@
         <div class="login">
             <div class="top">
                 <h1>로그인</h1>
-                <a href="./0_index.html" class="closeLogin"><img src="./images/icon-close.png" alt="로그인에서 나가기"></a>
+                <a href="./index.html" class="closeLogin"><img src="./images/icon-close.png" alt="로그인에서 나가기"></a>
             </div>
             <form action="#" method="get" id="loginPage">
                 <fieldset>
@@ -24,7 +26,7 @@
                     <input type="text" name="frmId" id="frmId" placeholder="이메일">
                     <input type="password" name="frmPw" id="frmPw" placeholder="비밀번호">
                     <label for="chkBtn">
-                        <input type="checkbox" name="chkBtn" id="chkBtn" checked></input>
+                        <input type="checkbox" name="chkBtn" id="chkBtn" checked>
                         <span>로그인상태유지</span>
                     </label>
                     <a href="#" class="loginSel">로그인</a>
@@ -46,7 +48,7 @@
             <div class="title">
                 <h1 class="titleId">아이디 찾기</h1>
                 <h1 class="titlePw">비밀번호 찾기</h1>
-                <a href="./0_index.html" class="closeIdpw"><img src="./images/icon-close.png" alt=""></a>
+                <a href="./index.html" class="closeIdpw"><img src="./images/icon-close.png" alt="아이디비번찾기에서나가기"></a>
             </div>
             <div class="searchIdPw">
                 <a href="#" class="active"><h2>아이디 찾기</h2></a><!--클릭시 비밀번호 찾기로 바뀜 class'active''-->
@@ -63,7 +65,7 @@
                         </label>
                         <input type="text" name="emailId" id="emailId" placeholder="이메일 또는 아이디">
                         <label for="selectBoxNum">
-                            <input type="tel" name="selectBoxMail" id="selectBoxNum" checked>
+                            <input type="tel" name="selectBoxNum" id="selectBoxNum" checked>
                             <span>가입한 휴대폰으로 찾기</span>
                         </label>
                         <input type="text" name="name" id="name" placeholder="이름 또는 닉네임">
@@ -81,7 +83,7 @@
         <div class="nondelivery">
             <div class="title">
                 <h1>비회원 주문조회</h1>
-                <a href="#" class="closeDeli"><img src="./images/icon-close.png" alt=""></a>
+                <a href="./index.html" class="closeDeli"><img src="./images/icon-close.png" alt="메인페이지로 돌아가기"></a>
             </div>
             <form action="#" method="get" id="delivery">
                 <fieldset>
@@ -98,12 +100,12 @@
         <div class="joinPop">
             <div class="title">
                 <h1>회원가입</h1>
-                <a href="./0_index.html" class="joinCloseBtn"><img src="./images/icon-close.png" alt="closeBtn"></a>
+                <a href="./index.html" class="joinCloseBtn"><img src="./images/icon-close.png" alt="closeBtn"></a>
             </div>
             <a href="#">ID/PW 회원가입</a>
             <span class="joinHr"><span>또는</span></span>
             <div class="naverKaKao">
-                <a href="#"class="naver"><img src="./images/naver_login.png" alt="네이버"><span>네이버로 시작하기</span></a>
+                <a href="#" class="naver"><img src="./images/naver_login.png" alt="네이버"><span>네이버로 시작하기</span></a>
                 <a href="#" class="kakao"><img src="./images/kakao_icon.png" alt="카카오"><span>카카오로 시작하기</span></a>
             </div>
         </div>
@@ -112,7 +114,7 @@
             <div class="container">
                 <div class="title">
                     <h1>약관동의</h1>
-                    <a href="./0_index.html" class="closeTerms"><img src="./images/icon-close.png" alt="closeBtn"></a>
+                    <a href="./index.html" class="closeTerms"><img src="./images/icon-close.png" alt="closeBtn"></a>
                 </div>
                 <form action="#" method="get" id="terms">
                     <fieldset>
@@ -240,7 +242,7 @@
                         </div>
                         <div class="selectBtn">
                             <button type="reset" class="resetBtn">취소</button>
-                            <button type="submit" class="signupBtn"><a href="#">가입하기</a></button>
+                            <button type="submit" class="signupBtn">가입하기</button>
                         </div>
                     </fieldset>
                 </form>
@@ -390,7 +392,7 @@
         <a href="#" class="couponTop"><img src="./images/advertise.jpg.png" alt="가입시 신규회원 20%할인 쿠폰증정"></a>
         <a href="#" class="close">
             <span>1일동안 보지 않음</span>
-            <img src="./images/close.png" class="closePop"></img><!--폰트어썸-->
+            <img src="./images/close.png" class="closePop"></img>
         </a>
     </div>
     <!-- 헤더 시작 -->
@@ -403,21 +405,21 @@
                     <!-- 태블릿,모바일 모드 메뉴 -->
                     <ul class="gnb">
                         <li>
-                            <a href="./1_1_about_ourstory.html">ABOUT<img src="./images/arrow.png" alt="서브메뉴 펼치기"></a>
+                            <a href="./about_ourstory.html">ABOUT<img src="./images/arrow.png" alt="서브메뉴 펼치기"></a>
                             <ul class="lnb">
-                                <li><a href="./1_1_about_ourstory.html">- Our story</a></li>
-                                <li><a href="./1_2_about_press.html">- Press</a></li>
+                                <li><a href="./about_ourstory.html">- Our story</a></li>
+                                <li><a href="./about_press.html">- Press</a></li>
                             </ul>
                         </li>
-                        <li><a href="./2_shop.html">SHOP</a></li>
-                        <li><a href="./3_story.html">STORY</a></li>
+                        <li><a href="./shop.html">SHOP</a></li>
+                        <li><a href="./story.html">STORY</a></li>
                         <li><a href="./music.html">MUSIC</a></li>
                         <li>
-                            <a href="./4_1_contact.html">CONTACT<img src="./images/arrow.png" alt="서브메뉴 펼치기"></a>
+                            <a href="./contact.html">CONTACT<img src="./images/arrow.png" alt="서브메뉴 펼치기"></a>
                             <ul class="lnb">
                                 <li><a href="#">- Notice</a></li><!--내용부실로 삭제함-->
-                                <li><a href="./4_2_contact_faq.html">- FAQ</a></li>
-                                <li><a href="./4_3_contact_qna.html">- Q&A</a></li>
+                                <li><a href="./contact_faq.html">- FAQ</a></li>
+                                <li><a href="./contact_qna.html">- Q&A</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -433,35 +435,35 @@
                         <a href="#" class="langEn">English</a>
                     </div>
                 </div>      
-                <a href="./0_index.html" class="closeBtn"><img src="./images/icon-close.png" alt=""></a>
+                <a href="./index.html" class="closeBtn"><img src="./images/icon-close.png" alt=""></a>
             </div>
         </div>
         <div class="mainMenu">
             <!-- 태블릿,모바일 메뉴 (햄버거) -->
             <a href="#" class="mMenu"><img src="./images/icon-menu.png" alt="mobileMenu"></a>
             <!-- 태블릿,모바일 모드 메인로고 -->
-            <h1 class="mLogo"><a href="./0_index.html"><img src="./images/mobile,tablletmodelogo.png" alt="Sleeping Bottle"></a></h1>  
+            <h1 class="mLogo"><a href="./index.html"><img src="./images/mobile,tablletmodelogo.png" alt="Sleeping Bottle"></a></h1>  
             <!-- 메인로고(데스크탑) -->
-            <h1 class="dLogo"><a href="./0_index.html"><img src="./images/mainlogo.png" alt="Sleeping Bottle"></a></h1>
+            <h1 class="dLogo"><a href="./index.html"><img src="./images/mainlogo.png" alt="Sleeping Bottle"></a></h1>
             <!-- 메인 카테고리(데스크탑) -->
             <nav>
                 <ul class="gnb">
                     <li>
-                        <a href="./1_1_about_ourstory.html">ABOUT</a>
+                        <a href="./about_ourstory.html">ABOUT</a>
                         <ul class="lnb">
-                            <li><a href="./1_1_about_ourstory.html">Our story</a></li>
-                            <li><a href="./1_2_about_press.html">Press</a></li>
+                            <li><a href="./about_ourstory.html">Our story</a></li>
+                            <li><a href="./about_press.html">Press</a></li>
                         </ul>
                     </li>
-                    <li><a href="./2_shop.html">SHOP</a></li>
-                    <li><a href="./3_story.html">STORY</a></li>
+                    <li><a href="./shop.html">SHOP</a></li>
+                    <li><a href="./story.html">STORY</a></li>
                     <li><a href="./music.html">MUSIC</a></li>
                     <li>
-                        <a href="./4_1_contact.html">CONTACT</a>
+                        <a href="./contact.html">CONTACT</a>
                         <ul class="lnb">
                             <li><a href="#">Notice</a></li>
-                            <li><a href="./4_2_contact_faq.html">FAQ</a></li>
-                            <li><a href="./4_3_contact_qna.html">Q&A</a></li>
+                            <li><a href="./contact_faq.html">FAQ</a></li>
+                            <li><a href="./contact_qna.html">Q&A</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -475,40 +477,218 @@
                 </div>
             </div>
         </div>
-    </header> 
+    </header>
+    <!-- 메인 시작 -->
     <main>
-        <div class="ourStory">
-            <div class="topBg"><!--bg이미지-->
-                <h1>Our Story</h1>
+        <section class="productPage">
+            <!-- 태블릿, 모바일 슬라이드화면  -->
+            <div class="swiper-container" id="slide"><!--이미지만 있는 슬라이드는 제거함-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide selectSlide1">
+                        <div class="left01">
+                            <h1>"ONE BOTTLE FOR BETTER SLEEP."</h1>
+                            <p class="boldTxt">진정한 휴식을 위한 음료, 슬리핑 보틀</p>
+                            <p>슬리핑보틀은 휴식에 도움을 주는<br> 감태추출물, 타트체리, L-테아닌 그리고 특허받은<br> SB 농축액 등 10가지 자연성분으로 만들어진 혼합음료로<br> 누구나 부작용 걱정없이 음용할 수 있습니다.</p>
+                            <a href="./1_1_about_ourstory.html" class="shopBtn">Shop</a>
+                        </div>
+                        <p class="left01Img"><img src="./images/1.sectionSlide01(Modify).png" alt="진정한 휴식을 위한 음료, 슬리핑 보틀"></p>
+                    </div>
+                    <div class="swiper-slide selectSlide2">
+                        <a href="./2_shop.html" class="left02">
+                            <div class="leftTxt">
+                                <h1>"국내 <em>유일</em>, 국내 <em>최초</em>"</h1>
+                                <p class="boldTxt">특허받은 수면 음료,<br> 슬리핑보틀</p>
+                                <img class="leftLogo" src="./images/1.sectionSlide02logo(modify).png" alt="sleeping bottle logo">
+                            </div>
+                            <img src="./images/1.sectionSlide02(Modify).png" alt="특허받은 수면음료, 슬리핑보틀">
+                        </a>
+                    </div>
+                    <div class="swiper-slide selectSlide3">
+                        <div class="left03">
+                            <h1>"Good Night Sleep Tight."</h1>
+                            <p class="boldTxt">좋은 잠을 위한 한병, 슬리핑보틀</p>
+                            <p>국내최초 수면리듬 개선음료 슬리핑보틀은 타트체리, 감태추출물,<br> 특허받은 SB농축액 등 12가지 천연성분으로 만들어진 혼합음료로<br> 누구나 부작용 걱정 없이 음용할 수 있습니다. 슬리핑 보틀과 함께<br> 건강한 수면리듬을 찾아보세요.</p>
+                            <a href="./2_shop.html" class="shopBtn">Shop</a>
+                        </div>
+                        <p><img src="./images/1.sectionSlide03(modify).png" alt="좋은 잠을 위한 한 병, 슬리핑 보틀"></p>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <a href="#" id="prev"><img src="./images/icon-prev.png" alt="prev"></a>
+                    <a href="#" id="next"><img src="./images/icon-next.png" alt="next"></a>
+                </div>
             </div>
-            <div class="topPage">
-                <div class="firstSubject">
-                    <h2>"Our Bottle For Better Sleep"</h2>
-                    <p>진정한 휴식을 위한 음료, 슬리핑보틀</p>
-                    <p>너무 바쁘니까, 쉴시간이 부족하니까,<br> 그러니까 잠깐 쉬더라도 제대로 쉬어야죠.<br> 지친 우리 삶의 진정한 휴식을 위한 음료, 슬리핑보틀</p>
-                    <div class="image">
-                        <img src="./images/about_ourstory/2.left.jpg" alt="sleepingBottle">
-                        <img src="./images/about_ourstory/3.right.jpg" alt="sleepingBottle">
-                    </div>
+        </section>    
+        <section class="sleepPage">
+            <div class="title">
+                <h2>One Bottle For Better Sleep</h2>
+                <p>진정한 휴식을 위한 음료, 슬리핑 보틀</p>
+            </div>
+            <div class="sleep">
+                <div class="sleepLeft">
+                    <h3>현대인들에게 가장 중요한<span>'휴식'</span></h3>
+                    <p>많은 현대인들이 스트레스와 과도한 긴장상태에 자주 노출되다 보니 제대로된 휴식과 숙면을
+                        취하지 못해 힘들어하는 경우를 보게되는 데요, 휴식과 숙면은 우리가 사용한 에너지를 충전
+                        하고 우리 몸이 회복되는 데에 아주 중요한 부분입니다. 제대로된 휴식을 취하지 못할 경우 피
+                        로가 충분히 회복되지 않고 피곤한 상태로 하루하루 지내다 보면 극심한 만성피로에 시달리게
+                        되죠. 휴식에 도움을 주는 감태추출물, 타트체리, L-테아닌, 특어받은 SB 농축액 등 10가지
+                        자연성분으로 이루어진 슬리핑보틀과 함께 진정한 휴식을 경험해 보세요.</p>
+                    <a href="./about_ourstory.html" class="moreBtn">Discover More</a>
                 </div>
-                <div class="midPage">
-                    <p class="midimage"><img src="./images/about_ourstory/4.flower.png" alt="flower"></p>
-                    <div class="secondSubject">
-                        <h2>"Good Night, Sleep tight."</h2>
-                        <p><em>진정한휴식</em>을 위한 음료, <em>슬리핑보틀</em></p>
-                        <p>슬리핑보틀은 휴식에 도움을 주는<br> 감태추출물, 타트체리, L-테아닌 그리고 특허받은<br> SB 농축액 등 10가지 자연성분으로 만들어진 혼합음료로,<br> 남녀노소 누구나 부담없이 음용할 수 있습니다.</p>
-                        <img src="./images/about_ourstory/5.product.png" alt="sleepingBottle">
-                    </div>
-                </div>
-                <div class="goodNightPage">
-                    <div class="bg">
-                        <h2>Good night, Sleep tight.</h2>
-                        <p>진정한 휴식을 위한 음료, 슬리핑보틀</p>
-                        <a href="./2_shop.html" class="moreBtn">Shop</a>
-                    </div>
+                <div class="sleepRight">
+                    <img src="./images/2.section.png" alt="제품이미지">
                 </div>
             </div>
+        </section>
+        <div class="eventPage"><!--이벤트페이지-->
+            <a href="#">
+                <h2>슬리핑보틀 웹사이트 오픈기념 이벤트</h2>
+                <p>지금 회원가입하고 20% 할인 쿠폰 받아 가세요!</p>
+                <!-- 오른쪽 얼굴 이미지 삭제 (디자인수정) -->
+            </a>
         </div>
+        <section class="deeperPage">
+            <div class="title">
+                <h2>Helps You Sleep Deeper & Healthier</h2>
+                <p>슬리핑보틀과 함께 <span>진정한 휴식</span>을 경험해보세요.</p>
+            </div>
+            <ul class="healthier">
+                <li class="health"><!-- 호버-->
+                    <p class="circle"><img src="./images/3.sectionHover1.jpg" alt="상차림이미지"></p>
+                    <h3>Good Ingredients</h3>
+                    <p>의약품이 아닌 혼합음료로 누구나 부작용 걱정없이 드실 수 있습니다.</p>
+                </li>
+                <li class="health">
+                    <p class="circle"><img src="./images/3.sectionHover2.jpg" alt="침대와식물이미지"></p>
+                    <h3>Calm & Relaxation</h3>
+                    <p>감태추출물, 타트체리 등이 함유되어 당신의 밤을 편안하게 만들어 드립니다.</p>
+                </li>
+                <li class="health">
+                    <p class="circle"><img src="./images/3.sectionHover3.jpg" alt="유리병이미지"></p>
+                    <h3>Zero Sugar</h3>
+                    <p>당류 0%로 다이어터분들도 부담없이 드실 수 있습니다.</p>
+                </li>
+            </ul>
+        </section>
+        <div class="eventBnr">
+            <a href="./shop.html" class="veganBnr"><img src="./images/4.section.png" alt="now it's vegan"></a>
+        </div>
+        <section class="shopPage"><!--총상품6개, 자동슬라이드? 마우스로 왼쪽오른쪽 끌어당겨 원하는 상품볼수있음-->
+            <div class="title">
+                <h2>Product</h2>
+                <p>좋은 잠을 위한 한 병, 슬리핑보틀</p>
+            </div>
+            <div class="productItem">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <a href="./shop_detail.html" class="swiper-slide item"><!-- 호버시 새로운 이미지가 뜸 -->
+                            <p><img src="./images/5.sectionproduct01.jpg" alt="슬리핑 보틀 1병"></p>
+                            <p class="hoverImg"><img src="./images/5.sectionproduct01-1.jpg" alt="슬리핑 보틀 1병"></p>
+                            <h2>[슬리핑보틀]1병(100ml)</h2>
+                            <p class="price">5,000원</p>
+                            <div class="saleMd">
+                                <span class="sale">SALE</span>
+                            </div>
+                        </a>
+                        <a href="./shop_detail.html" class="swiper-slide item">
+                            <p><img src="./images/5.sectionproduct02.jpg" alt="슬리핑 보틀 1박스[10개입]"></p>
+                            <p class="hoverImg"><img src="./images/5.sectionproduct02-1.jpg" alt="슬리핑 보틀 1박스[10개입]"></p>
+                            <h2>[슬리핑 보틀] 1박스(10개입)</h2>
+                            <p class="price">45,000원<del>50,000원</del></p>
+                            <div class="saleMd">
+                                <span class="sale">SALE</span>
+                            </div>
+                        </a>
+                        <a href="./shop_detail.html" class="swiper-slide item">
+                            <p><img src="./images/5.sectionproduct03.jpg" alt="슬리핑 보틀 2박스[20개입]"></p>
+                            <p class="hoverImg"><img src="./images/5.sectionproduct03-1.jpg" alt="슬리핑 보틀 2박스[20개입]"></p>
+                            <h2>[슬리핑 보틀] 2박스(20개입)</h2>
+                            <p class="price">90,000원<del>100,000원</del></p>
+                            <div class="saleMd">
+                                <span class="sale">SALE</span>
+                            </div>
+                        </a>
+                        <a href="./shop_detail.html" class="swiper-slide item">
+                            <p><img src="./images/5.sectionproduct04.jpg" alt="슬리핑 보틀 3박스[30개입]"></p>
+                            <p class="hoverImg"><img src="./images/5.sectionproduct04-1.jpg" alt="슬리핑 보틀 3박스[30개입]"></p>
+                            <h2>[슬리핑 보틀] 3박스(30개입)</h2>
+                            <p class="price">127,500원<del>150,000원</del></p>
+                            <div class="saleMd">
+                                <span class="sale">SALE</span>
+                            </div>
+                        </a>
+                        <a href="./shop_detail.html" class="swiper-slide item">
+                            <p><img src="./images/5.sectionproduct05.jpg" alt="슬리핑 보틀 5박스[50개입]"></p>
+                            <p class="hoverImg"><img src="./images/5.sectionproduct05-1.jpg" alt="슬리핑 보틀 5박스[50개입]"></p>
+                            <h2>[슬리핑 보틀] 5박스(50개입)</h2>
+                            <p class="price">200,000원<del>250,000원</del></p>
+                            <div class="saleMd">
+                                <span class="sale">SALE</span>
+                            </div>
+                        </a>
+                        <a href="./shop_detail.html" class="swiper-slide item">
+                            <p><img src="./images/5.sectionproduct06.jpg" alt="[슬리핑로브] 프리미엄 호텔식 로브"></p>
+                            <p class="hoverImg"><img src="./images/5.sectionproduct06-1.jpg" alt="[슬리핑로브] 프리미엄 호텔식 로브"></p>
+                            <div class="colorSelect">
+                                <span class="white"></span>
+                                <span class="brown"></span>
+                            </div>
+                            <h2>[슬리핑로브] 프리미엄 호텔식 로브</h2>
+                            <p class="price">79,000원<del>150,000원</del></p>
+                            <div class="saleMd">
+                                <span class="sale">SALE</span>
+                                <span class="md">MD</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="storyPage">
+            <div class="title">
+                <h2>Sleeping Story</h2>
+                <p>슬리핑보틀 엠버서더들의 인터뷰</p>
+            </div>
+            <div class="interview"><!--호버-->   
+                <a href="./story_detail.html"><img src="./images/6.sectionInterview1.png" alt="사진작가 오중석"><span class="info"><span>[EP01. 사진작가 오중석]</span></span></a>
+                <a href="./story_detail.html"><img src="./images/6.sectionInterview2.jpg" alt="음악감독 김문정"><span class="info"><span>[EP02. 음악감독 김문정]</span></span></a>
+                <a href="./story_detail.html"><img src="./images/6.sectionInterview3.jpg" alt="의사 현일식"><span class="info"><span>[EP03. 의사 현일식]</span></span></a>
+            </div>
+            <p><a href="./story.html" class="viewLink">More</a></p>
+        </section>
+        <section class="blueBottle">
+            <a href="./shop.html">
+                <p class="left">Good Night, Sleep Tight.<br> Sleeping Bottle</p>
+                <p class="right"><img src="./images/bluebottle.png" alt="goodbight,sleeptight."></p>
+            </a>
+        </section>
+        <section class="newsPage"><!--호버-->
+            <div class="title">
+                <h2>Instagram</h2>
+                <p>슬리핑보틀의 다양한 소식과 리뷰를 만나보세요</p>
+            </div>
+            <div class="instagram">
+                <div class="up">
+                    <a href="https://www.instagram.com/p/C1lvchALlSp/"><img src="./images/7.sectionInsta1(Modify).png" alt="연말맞이특별할인"><span class="bg"></span></a>
+                    <a href="https://www.instagram.com/p/C1JlgxcLdMs/"><img src="./images/7.sectionInsta2.jpg" alt="날이 추울땐 슬리핑 보틀 한잔"><span class="bg"></span></a>
+                    <a href="https://www.instagram.com/p/C1JXvA6LJjn/?img_index=1"><img src="./images/7.sectionInsta3.jpg" alt="[ep86]슬리핑 뮤직 플레이 리스트"><span class="bg"></span></a>
+                    <a href="https://www.instagram.com/p/C1I6Tbovg0E/"><img src="./images/7.sectionInsta4(Modify).png" alt="금요일 오후는 슬리핑보틀과 함께"><span class="bg"></span></a>
+                </div>
+                <div class="down">
+                    <a href="https://www.instagram.com/p/C1B0awvLHzl/?img_index=1"><img src="./images/7.sectionInsta5.jpg" alt="미국에 이어 호주까지 슬리핑보틀 진출"></a>
+                    <a href="https://www.instagram.com/p/C1BJfGSvV7T/"><img src="./images/7.sectionInsta6(modify).png" alt="몸을 망치는 최악의 수면 자세?"></a>
+                    <a href="https://www.instagram.com/p/C03cV4trceW/?img_index=1"><img src="./images/7.sectionInsta7.jpg" alt="[ep85]슬리핑 뮤직 플레이 리스트"></a>
+                    <a href="https://www.instagram.com/p/C028VIEvZN_/"><img src="./images/7.sectionInsta8(Modify).png" alt="약사들이 선택한 수면음료, 슬리핑보틀"></a>
+                </div>
+            </div>
+        </section>
+        <section class="goodNightPage">
+            <div class="bg">
+                <h2>Good night, Sleep tight.</h2>
+                <p>진정한 휴식을 위한 음료, 슬리핑보틀</p>
+                <a href="./about_ourstory.html" class="moreBtn">Our story</a>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="top">
@@ -761,4 +941,4 @@
     </div>
     <script src="./script/index.js" defer></script>
 </body>
-</html>
+</html> 
