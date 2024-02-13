@@ -64,13 +64,15 @@ main .contactWrap #contact fieldset label #contactTxt {
 
 }
 main .contactWrap #contact fieldset .writing {
+    display: flex; justify-content: center;
+    margin: 30px 0 50px 0;
+}
+main .contactWrap #contact fieldset .writing .writingBtn {
     color: #4f4f4f; font-size: 0.75rem;
     padding: 10px 20px;
     border: 1px solid #ccc;
-    position: relative; left: 50%; top: 30px;
-    transform: translateX(-50%);
 }
-main .contactWrap #contact fieldset .writing:hover {
+main .contactWrap #contact fieldset .writing .writingBtn:hover {
     color: #fff; background: #4f4f4f;
     border: 1px solid #4f4f4f;
     transition: 0.5s;

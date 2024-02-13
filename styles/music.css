@@ -19,7 +19,7 @@ main .sleepingMusic .bg::before {
 main .sleepingMusic .bg h1 {
     font-size: 3rem; color: #fff;
     font-family: 'Cardo', serif;
-    position: relative; left: 160px;
+    position: relative; left: 245px;
 }
 main .sleepingMusic .music {
     position: relative; left: 50%; top: 0;

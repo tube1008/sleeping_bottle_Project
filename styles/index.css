@@ -112,7 +112,7 @@ main .productPage #slide #next {position: absolute; right: 20px; top: 330px;}
 main .productPage #slide #next img {height: 40px;}
 /* section-2 */
 main .sleepPage {
-    max-width: 1920px;
+    max-width:max-content;
     padding: 100px 0;
 }
 main .sleepPage .title {

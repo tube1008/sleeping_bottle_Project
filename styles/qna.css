@@ -66,12 +66,15 @@ main .qnaWrap .container .boardPage .boardDetail a {
     padding: 0 16%;
 }
 main .qnaWrap .container .writing {
+    display: flex; justify-content: right;
+    padding: 20px 0 100px 0;
+}
+main .qnaWrap .container .writing .writingBtn {
     font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
     border: 1px solid #ccc;
     padding: 6px 20px;
-    position: absolute; right: 0; top: 140px;
 }
-main .qnaWrap .container .writing:hover {
+main .qnaWrap .container .writing .writingBtn:hover {
     font-size: 0.75rem; color: #fff; font-weight: 500;
     border: 1px solid #4f4f4f;
     background: #4f4f4f;
