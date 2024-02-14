@@ -13,7 +13,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
     <style>
         .hide {display: none !important;}
-        .hide * {cursor: not-allowed;}
     </style>
 </head>
 <body>
@@ -94,7 +93,7 @@
                     <legend class="skip">배송조회 양식</legend>
                         <input type="text" name="orderNum" id="orderNum" placeholder="주문번호">
                         <input type="text" name="addressNum" id="adressNum" placeholder="연락처">
-                    <a href="#">로그인</a>
+                    <a href="#" class="nonlogin">로그인</a>
                 </fieldset>
             </form>
         </div>
@@ -106,7 +105,7 @@
                 <h1>회원가입</h1>
                 <a href="./index.html" class="joinCloseBtn"><img src="./images/icon-close.png" alt="closeBtn"></a>
             </div>
-            <a href="#">ID/PW 회원가입</a>
+            <a href="#" class="joinMembership">ID/PW 회원가입</a>
             <span class="joinHr"><span>또는</span></span>
             <div class="naverKaKao">
                 <a href="#" class="naver"><img src="./images/naver_login.png" alt="네이버"><span>네이버로 시작하기</span></a>
@@ -245,7 +244,7 @@
                             </label>
                         </div>
                         <div class="selectBtn">
-                            <button type="reset" class="resetBtn">취소</button>
+                            <a href="./index.html" type="reset" class="resetBtn">취소</a>
                             <button type="submit" class="signupBtn">가입하기</button>
                         </div>
                     </fieldset>

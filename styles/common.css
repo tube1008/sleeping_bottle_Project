@@ -385,7 +385,7 @@
 .joinWrap .joinPop .naverKaKao .kakao span {color: #000; font-size: 0.875rem;}
 /* 약관동의 */
 .joinWrap .terms {
-    max-width: 370px;
+    max-width: 370px; height: 525px;
     background: #fafafa;
     padding-top: 20px;
     border-radius: 5px;
@@ -548,11 +548,16 @@
     text-align: center;
     margin-right: 3px;
     letter-spacing: 3px;
+    font-size: 0.875rem;
+}
+.joinWrap .terms .container #terms fieldset .selectBtn .resetBtn:hover {
+    background: rgba(247,247,247,1);
+    transition: 0.3s;
 }
 .joinWrap .terms .container #terms fieldset .selectBtn .signupBtn {
     padding: 15px 50px;
     border: 1px solid #dfe0df;
-    
+    font-size: 0.875rem;
 }
 .joinWrap .terms .container #terms fieldset .selectBtn .signupBtn a {
     color: #4f4f4f; 
@@ -564,6 +569,7 @@
     background: #4f4f4f;
     color: #fff;
     border: 1px solid #4f4f4f;
+    transition: 0.3s;
 }
 /* 회원가입 */
 .signContainer {/* ----------------------회원가입---------------------------!! */
