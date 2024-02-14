@@ -54,8 +54,8 @@
                 <a href="./index.html" class="closeIdpw"><img src="./images/icon-close.png" alt="아이디비번찾기에서나가기"></a>
             </div>
             <div class="searchIdPw">
-                <a href="#" class="active"><h2>아이디 찾기</h2></a><!--클릭시 비밀번호 찾기로 바뀜 class'active''-->
-                <a href="#"><h2>비밀번호 찾기</h2></a>
+                <a href="#" class="searchIdd active"><h2>아이디 찾기</h2></a><!--클릭시 비밀번호 찾기로 바뀜 class'active''-->
+                <a href="#" class="searchPww"><h2>비밀번호 찾기</h2></a>
             </div>
             <form action="#" method="get" id="idpwBox">
                 <fieldset>
@@ -64,15 +64,15 @@
                         <span>아이디를 찾을 방법을 선택해주세요.</span><!--아이디 찾기-->
                         <label for="selectBoxMail">
                             <input type="checkbox" name="selectBoxMail" id="selectBoxMail" checked>
-                            <span>가입한 이메일로 찾기</span>
+                            <span class="mail">가입한 이메일로 찾기</span>
                         </label>
                         <input type="text" name="emailId" id="emailId" placeholder="이메일 또는 아이디">
                         <label for="selectBoxNum">
-                            <input type="tel" name="selectBoxNum" id="selectBoxNum" checked>
-                            <span>가입한 휴대폰으로 찾기</span>
+                            <input type="checkbox" name="selectBoxNum" id="selectBoxNum" checked>
+                            <span class="num">가입한 휴대폰으로 찾기</span>
                         </label>
-                        <input type="text" name="name" id="name" placeholder="이름 또는 닉네임">
-                        <input type="text" name="phNumber" id="phNumber" placeholder="휴대폰 번호">
+                        <input type="text" name="username" id="username" placeholder="이름 또는 닉네임">
+                        <input type="tel" name="phNumber" id="phNumber" maxlength="11" placeholder="휴대폰 번호">
                         <a href="#" class="findIdPw">아이디 찾기</a>
                     </div>
                     <div class="searchPw"><!--비밀번호 찾기-->
@@ -257,7 +257,7 @@
         <div class="wrap">
             <div class="title">
                 <h1>회원가입</h1>
-                <a href="#" class="signCloseBtn"><img src="./images/icon-close.png" alt="closeBtn"></a>
+                <a href="./index.html" class="signCloseBtn"><img src="./images/icon-close.png" alt="closeBtn"></a>
             </div>  
             <div class="container">
                 <form action="#" method="post" id="signUp">
@@ -703,10 +703,10 @@
         <div class="bottomBg">
             <div class="bottom">
                 <div class="add">
-                    <a href="#">제휴문의</a>
-                    <a href="#">이용약관</a>
-                    <a href="#">개인정보처리방침</a>
-                    <div class="sns"><!--폰트어썸 sns-->
+                    <a href="./contact.html">제휴문의</a>
+                    <a href="#" class="useTerms">이용약관</a>
+                    <a href="#" class="infoPolicy">개인정보처리방침</a>
+                    <div class="sns">
                         <a href="https://www.instagram.com/sleepingbottle_official/" class="instagram"><img src="./images/icon-instagram-.png" alt="슬리핑보틀 인스타그램"></a>
                         <a href="https://www.youtube.com/channel/UCnsMrSyt9ZjXBFXHu7Epafw" class="youTube"><img src="./images/icon-youtube-.png" alt="슬리핑뮤직 유튜브"></a>
                     </div>
@@ -714,7 +714,7 @@
                 <p class="addTitle">Sleeping Bottle 슬리핑보틀</p>
                 <address>
                     상호명:주식회사 머스카/대표:김은경/주소:서울특별시 용산구 한남동 805,101-101/전화:15510508<br>
-                    사업자등록번호:306-87-01330/<a href="#">통신판매업신고번호:2020-서울용산-0760/</a><a href="#">/문의:hq@muska.kr</a><br>
+                    사업자등록번호:306-87-01330/<a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=3068701330">통신판매업신고번호:2020-서울용산-0760/</a><a href="#">/문의:hq@muska.kr</a><br>
                     <em>Copy2023&copy; Sleeping Bottle 슬리핑보틀 All rights reserved</em>
                 </address>
             </div>
@@ -726,7 +726,7 @@
                 <div class="utiliBody">
                     <div class="top">
                         <h1>이용약관</h1>
-                        <a href="#" class="closeBtn"><img src="./images/icon(ver2)-close.png" alt="close"></a>
+                        <a href="./index.html" class="closeBtn"><img src="./images/icon(ver2)-close.png" alt="close"></a>
                     </div>
                     <h2>제1조 목적</h2>
                     <p>본 이용약관은 “슬리핑보틀”(이하 "슬리핑보틀")의 서비스의 이용조건과 운영에 관한 제반 사항 규정을 목적으로 합니다.</p>
@@ -821,7 +821,7 @@
                 <div class="policyBody">
                     <div class="top">
                         <h1>개인정보처리방침</h1>
-                        <a href="#" class="closeBtn"><img src="./images/icon(ver2)-close.png" alt="close"></a>
+                        <a href="./index.html" class="closeBtn"><img src="./images/icon(ver2)-close.png" alt="close"></a>
                     </div>
                     <p>회사명(이하 ‘슬리핑보틀’라 한다)는 개인정보 보호법 제30조에 따라 정보 주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리지침을 수립, 공개합니다.</p>
                     <h2>제1조 (개인정보의 처리목적)</h2>

@@ -205,7 +205,7 @@
     position:relative; right: 20px;
     position: absolute; left: -20px; top: 0;
 }
-.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail,
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail {display: none;}
 .loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum {display: none;}
 .loginPop .searchBox #idpwBox fieldset .searchId label span {    
     display: block;
@@ -584,7 +584,7 @@
     max-width: 370px;
     border-radius: 5px;
     padding: 24px;
-    position: relative; left: 50%; top: 20%;
+    position: relative; left: 50%; top: 10%;
     transform: translateX(-50%);
 }
 .signContainer .wrap .title {
@@ -1062,13 +1062,14 @@ footer .bottomBg .bottom address em {color: #3B3B3B; font-weight: 500;}
 /* 푸터내에 이용약관, 개인정보처리방침 팝업창 */
 /* 이용약관 */
 
-.btmTerms {display: none;} /* --------------------none----------------------------!! */
+.btmTerms {} /* --------------------none----------------------------!! */
 .btmTerms .term {
     background: rgba(0, 0, 0, 0.3);
     position: fixed; left: 0; top: 0;
     z-index: 999;    
     width: 100vw; height: 100vh; 
     overflow-y: scroll;
+    display: none;
 }
 .btmTerms .term .utiliTitle {    
     position: relative; left: 35%;
@@ -1096,7 +1097,9 @@ footer .bottomBg .bottom address em {color: #3B3B3B; font-weight: 500;}
 .btmTerms .term .utiliTitle .utiliBody p {padding: 0 24px; line-height: 1.5;}
 /* 개인정보처리방침 */
 .btmTerms .term .policyTitle {
-    position: relative; left: 35%;}
+    position: relative; left: 35%;
+    display: none;
+}
 .btmTerms .term .policyTitle .policyBody {
     padding: 20px 0; border-radius: 5px;
     max-width: 600px; background-color:#fff;
