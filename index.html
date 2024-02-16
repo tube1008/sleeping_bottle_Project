@@ -62,17 +62,21 @@
                     <legend class="skip">아이디 비밀번호 찾기 양식</legend>
                     <div class="searchId">
                         <span>아이디를 찾을 방법을 선택해주세요.</span><!--아이디 찾기-->
-                        <label for="selectBoxMail">
-                            <input type="checkbox" name="selectBoxMail" id="selectBoxMail" checked>
-                            <span class="mail">가입한 이메일로 찾기</span>
-                        </label>
-                        <input type="text" name="emailId" id="emailId" placeholder="이메일 또는 아이디">
-                        <label for="selectBoxNum">
-                            <input type="checkbox" name="selectBoxNum" id="selectBoxNum" checked>
-                            <span class="num">가입한 휴대폰으로 찾기</span>
-                        </label>
-                        <input type="text" name="username" id="username" placeholder="이름 또는 닉네임">
-                        <input type="tel" name="phNumber" id="phNumber" maxlength="11" placeholder="휴대폰 번호">
+                        <div class="mail">
+                            <label for="selectBoxMail" class="boxMail">
+                                <input type="checkbox" name="selectBoxMail" id="selectBoxMail" checked>
+                                <span class="mail">가입한 이메일로 찾기</span>
+                            </label>
+                            <input type="text" name="emailId" id="emailId" placeholder="이메일 또는 아이디">
+                        </div>
+                        <div class="numName">
+                            <label for="selectBoxNum" class="boxNum">
+                                <input type="checkbox" name="selectBoxNum" id="selectBoxNum" checked>
+                                <span class="num">가입한 휴대폰으로 찾기</span>
+                            </label>
+                            <input type="text" name="userName" id="userName" placeholder="이름 또는 닉네임">
+                            <input type="tel" name="phNumber" id="phNumber" maxlength="11" placeholder="휴대폰 번호">
+                        </div>
                         <a href="#" class="findIdPw">아이디 찾기</a>
                     </div>
                     <div class="searchPw"><!--비밀번호 찾기-->

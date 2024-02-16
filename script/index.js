@@ -111,16 +111,27 @@ infoPolicy.addEventListener('click', function(){
 const searchIdd = document.querySelector ('.searchIdd') // 아이디 찾기
 const emailId = document.querySelector ('#emailId') // 이메일로 찾기
 const searchPww = document.querySelector ('.searchPww') // 비밀번호 찾기
-const username = document.querySelector ('#username') // 이름으로 찾기
+const username = document.querySelector ('#userName') // 이름으로 찾기
 const phNumber = document.querySelector ('#phNumber') // 번호로 찾기
 const selectBoxNum = document.querySelector ('#selectBoxNum') //체크박스 지워야함
-const selectBoxMail = document.querySelector ('#selectBoxMail .mail')
-console.log (searchIdd, searchPww, emailId, username, phNumber, selectBoxMail )
+const boxMail = document.querySelector ('.boxMail')
+const boxNum = document.querySelector ('.boxNum')
 
-emailId.style.display = 'none'
+console.log (searchIdd, searchPww, emailId, username, phNumber, boxMail, boxNum )
+
+emailId.style.display = 'block'
 username.style.display = 'none'
 phNumber.style.display = 'none'
 selectBoxNum.style.display = 'none'
 
+boxMail.addEventListener ('click', function(){
+    emailId.style.display = 'block'
+    username.style.display = 'none'
+    phNumber.style.display = 'none'
+})
 
-
+boxNum.addEventListener ('click', function(){
+    emailId.style.display = 'none'
+    username.style.display = 'block'
+    phNumber.style.display = 'block'
+})

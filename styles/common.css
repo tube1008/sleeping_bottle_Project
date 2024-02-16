@@ -207,7 +207,12 @@
 }
 .loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail {display: none;}
 .loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum {display: none;}
-.loginPop .searchBox #idpwBox fieldset .searchId label span {    
+.loginPop .searchBox #idpwBox fieldset .searchId .mail,
+.loginPop .searchBox #idpwBox fieldset .searchId .numName {
+    border-bottom: 1px solid #E0E0E0; 
+}
+.loginPop .searchBox #idpwBox fieldset .searchId .mail label span,
+.loginPop .searchBox #idpwBox fieldset .searchId .numName label span {    
     display: block;
     font-size: 0.75rem; font-weight: 500;
     color: #212121; 
@@ -215,18 +220,18 @@
     cursor: pointer;
     position: relative; left: 20px;
 }
-.loginPop .searchBox #idpwBox fieldset .searchId #emailId {
+.loginPop .searchBox #idpwBox fieldset .searchId .mail #emailId {
     font-size: 0.75rem; font-weight: 500;
     padding: 10px 16px; margin-bottom: 10px;
     border: 1px solid #E0E0E0; 
 }
-.loginPop .searchBox #idpwBox fieldset .searchId #name {
+.loginPop .searchBox #idpwBox fieldset .searchId .numName #userName {
     font-size: 0.75rem; font-weight: 500;
     padding: 10px 16px;
     border: 1px solid #E0E0E0; 
     border-bottom: none;
 }
-.loginPop .searchBox #idpwBox fieldset .searchId #phNumber {
+.loginPop .searchBox #idpwBox fieldset .searchId .numName #phNumber {
     font-size: 0.75rem; font-weight: 500; font-weight: 500;
     padding: 10px 16px; margin-bottom: 10px;
     border: 1px solid #E0E0E0; 
@@ -675,7 +680,7 @@
     font-size: 0.75rem; color: #212121; font-weight: 600;
     margin-bottom: 10px;
 }
-.signContainer .wrap .container #signUp fieldset .name #userName {
+.signContainer .wrap .container #signUp fieldset .name #username {
     font-size: 0.75rem; font-weight: 600;
     padding: 12px 16px;
     border: 1px solid #E5E5E5;
