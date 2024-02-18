@@ -116,8 +116,12 @@ const phNumber = document.querySelector ('#phNumber') // 번호로 찾기
 const selectBoxNum = document.querySelector ('#selectBoxNum') //체크박스 지워야함
 const boxMail = document.querySelector ('.boxMail')
 const boxNum = document.querySelector ('.boxNum')
+const titleId = document.querySelector ('.titleId')
+const titlePw = document.querySelector ('.titlePw')
+const searchId = document.querySelector ('.searchId')
+const searchPw = document.querySelector ('.searchPw')
 
-console.log (searchIdd, searchPww, emailId, username, phNumber, boxMail, boxNum )
+console.log (searchIdd, searchPww, emailId, username, phNumber, boxMail, boxNum, titleId, titlePw, searchPw )
 
 emailId.style.display = 'block'
 username.style.display = 'none'
@@ -134,4 +138,15 @@ boxNum.addEventListener ('click', function(){
     emailId.style.display = 'none'
     username.style.display = 'block'
     phNumber.style.display = 'block'
+})
+
+searchPww.addEventListener ('click', function(){
+    searchId.style.display = 'none'
+    searchPw.style.display = 'block'
+    searchPww.style.backgraund = '#fff'
+})
+
+searchIdd.addEventListener ('click', function(){
+    searchId.style.display = 'flex'
+    searchPw.style.display = 'none'
 })
