@@ -45,6 +45,8 @@ term.style.display = 'none'
 login.addEventListener('click',function(){
     loginpopup_bg.style.display = 'flex'
     login_access.style.display = 'block'
+    result = textarea.value.length > 100 ? '등록' : '100자 이상 입력하세요'
+    window.alert(result)
 })
 
 idPwfind.addEventListener('click', function(){
@@ -91,9 +93,9 @@ joinMembership.addEventListener('click', function(){
 })
 
 signupBtn.addEventListener('click',function(){
-    joinpopup_bg.style.display = 'flex'
-    terms.style.display = 'none'
+    joinpopup_bg.style.display = 'block'
     signContainer.style.display = 'block'
+    terms.style.display = 'none'
 })
 
 // footer area
