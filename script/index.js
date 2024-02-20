@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-// 로그인, 회원가입, 아이디/비번찾기, 비회원 배송조회, 약관동의 팝업창
+// 팝업창
 const body = document.querySelector('body, html')
 const loginpopup_bg = document.querySelector ('.loginPop')//로그인 배경
 const joinpopup_bg = document.querySelector ('.joinWrap')// 회원가입 배경
@@ -36,16 +35,6 @@ const frmId = document.querySelector ('#frmId')
 const frmPw = document.querySelector ('#frmPw')
 const loginSel = document.querySelector ('.loginSel')
 
-loginSel.addEventListener('click',()=>{
-    if(frmPw.value == ''){
-        alert('비밀번호를 입력하세요.')
-    }
-    if(frmId.value == ''){
-        alert('아이디를 입력하세요.')
-    }
-})
-
-
 console.log(login, loginpopup_bg, body, login_access, join, join_access, joinpopup_bg, joinGo, idPwfind, searchBox, bottom, nonShipping, nondelivery, nonlogin, terms, joinMembership, signupBtn, signContainer, useTerms, infoPolicy, term, utiliTitle, policyTitle )
 
 loginpopup_bg.style.display = 'none'
@@ -56,11 +45,18 @@ join_access.style.display = 'none'
 term.style.display = 'none'
 
 
-
-
 login.addEventListener('click',function(){
     loginpopup_bg.style.display = 'flex'
     login_access.style.display = 'block'
+})
+
+loginSel.addEventListener('click',()=>{
+    if(frmPw.value == ''){
+        alert('비밀번호를 입력하세요.')
+    }
+    if(frmId.value == ''){
+        alert('아이디를 입력하세요.')
+    }
 })
 
 idPwfind.addEventListener('click', function(){
@@ -70,6 +66,8 @@ idPwfind.addEventListener('click', function(){
     bottom.style.display = 'none'
     nonShipping.style.display = 'none'
 })
+
+
 
 nonShipping.addEventListener('click', function(){
     nondelivery.style.display = 'block'
@@ -136,6 +134,9 @@ const titleId = document.querySelector ('.titleId')
 const titlePw = document.querySelector ('.titlePw')
 const searchId = document.querySelector ('.searchId')
 const searchPw = document.querySelector ('.searchPw')
+const findIdPw = document.querySelector ('.findIdPw')
+const findPwId = document.querySelector ('.findPwId')
+const joinId = document.querySelector ('#joinId')
 
 console.log (searchIdd, searchPww, emailId, username, phNumber, boxMail, boxNum, titleId, titlePw, searchPw )
 
@@ -167,3 +168,14 @@ searchIdd.addEventListener ('click', function(){
     searchPw.style.display = 'none'
 })
 
+findIdPw.addEventListener('click',()=>{
+    if(emailId.value == ''){
+        alert('입력하신 정보와 일치하는 계정이 없습니다. 다시 시도해주시거나 사이트 운영자에게 문의해주세요.')
+    }
+})
+
+findPwId.addEventListener('click',()=>{
+    if(joinId.value == ''){
+        alert('입력하신 정보와 일치하는 계정이 없습니다. 다시 시도해주시거나 사이트 운영자에게 문의해주세요.')
+    }
+})

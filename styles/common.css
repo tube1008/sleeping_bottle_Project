@@ -242,17 +242,20 @@
     position: relative; left: 20px;
 }
 .loginPop .searchBox #idpwBox fieldset .searchId .email #emailId {
+    width: 100%;
     font-size: 0.75rem; font-weight: 500;
     padding: 10px 16px; margin-bottom: 10px;
     border: 1px solid #E0E0E0; 
 }
 .loginPop .searchBox #idpwBox fieldset .searchId .numName #userName {
+    width: 100%;
     font-size: 0.75rem; font-weight: 500;
     padding: 10px 16px;
     border: 1px solid #E0E0E0; 
     border-bottom: none;
 }
 .loginPop .searchBox #idpwBox fieldset .searchId .numName #phNumber {
+    width: 100%;
     font-size: 0.75rem; font-weight: 500; font-weight: 500;
     padding: 10px 16px; margin-bottom: 10px;
     border: 1px solid #E0E0E0; 
@@ -280,14 +283,14 @@
     padding: 10px 16px; margin-bottom: 10px;
     border: 1px solid #E0E0E0; 
 }
-.loginPop .searchBox #idpwBox fieldset .searchPw a {
+.loginPop .searchBox #idpwBox fieldset .searchPw .findPwId {
     display: block;
     font-size: 0.75rem; color: #4f4f4f; font-weight: 500;
     padding: 10px 20px;
     border: 1px solid #E0E0E0;
     text-align: center;
 }
-.loginPop .searchBox #idpwBox fieldset .searchPw a:hover {
+.loginPop .searchBox #idpwBox fieldset .searchPw .findPwId:hover {
     background: #4f4f4f; color: #fff;
     border: 1px solid #4f4f4f;
 }

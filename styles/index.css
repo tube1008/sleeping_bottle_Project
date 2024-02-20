@@ -1,5 +1,7 @@
 /* main */
-main {}
+main {
+    max-width: 1903px; margin: 0 auto;
+}
 /* section-1 */
 main .productPage {
     position: relative;
