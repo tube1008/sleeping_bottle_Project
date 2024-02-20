@@ -32,6 +32,19 @@ const useTerms = document.querySelector ('.useTerms') // footer 이용약관 버
 const utiliTitle = document.querySelector ('.utiliTitle') // footer 이용약관
 const infoPolicy = document.querySelector ('.infoPolicy') // footer 개인정보처리방침 버튼
 const policyTitle = document.querySelector ('.policyTitle') // footer 개인정보처리방침 
+const frmId = document.querySelector ('#frmId')
+const frmPw = document.querySelector ('#frmPw')
+const loginSel = document.querySelector ('.loginSel')
+
+loginSel.addEventListener('click',()=>{
+    if(frmPw.value == ''){
+        alert('비밀번호를 입력하세요.')
+    }
+    if(frmId.value == ''){
+        alert('아이디를 입력하세요.')
+    }
+})
+
 
 console.log(login, loginpopup_bg, body, login_access, join, join_access, joinpopup_bg, joinGo, idPwfind, searchBox, bottom, nonShipping, nondelivery, nonlogin, terms, joinMembership, signupBtn, signContainer, useTerms, infoPolicy, term, utiliTitle, policyTitle )
 
@@ -42,11 +55,12 @@ login_access.style.display = 'none'
 join_access.style.display = 'none'
 term.style.display = 'none'
 
+
+
+
 login.addEventListener('click',function(){
     loginpopup_bg.style.display = 'flex'
     login_access.style.display = 'block'
-    result = textarea.value.length > 100 ? '등록' : '100자 이상 입력하세요'
-    window.alert(result)
 })
 
 idPwfind.addEventListener('click', function(){
@@ -152,3 +166,4 @@ searchIdd.addEventListener ('click', function(){
     searchId.style.display = 'flex'
     searchPw.style.display = 'none'
 })
+

@@ -23,16 +23,18 @@
 .loginPop .login .top .closeLogin img {height: 20px;} 
 .loginPop .login #loginPage {width: 310px;}
 .loginPop .login #loginPage fieldset {}
-.loginPop .login #loginPage fieldset #frmId {
-    width: 100%; border: 1px solid #d4d4d4;
-    border-bottom: none;
-    padding: 12px 16px;
-    margin-top: 30px; 
+.loginPop .login #loginPage fieldset .idPwfrm {
+    border: 1px solid #eee; margin: 20px 0;
 }
-.loginPop .login #loginPage fieldset #frmPw {
-    width: 100%; border: 1px solid #d4d4d4; 
+.loginPop .login #loginPage fieldset .idPwfrm #frmId {
+    width: 100%;
     padding: 12px 16px;
-    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.loginPop .login #loginPage fieldset .idPwfrm #frmPw {
+    width: 100%; 
+    padding: 12px 16px;
+
 }
 .loginPop .login #loginPage fieldset label {}
 .loginPop .login #loginPage fieldset label #chkBtn {display: none;}

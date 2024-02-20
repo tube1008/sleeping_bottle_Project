@@ -22,5 +22,5 @@ fieldset {border: 0;}
 input, select, option {background: none; border: 0;}
 .fa {font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
     font-weight: 600;}
-
+input:checked + input {border: none;}
 /* font-size:1.0rem; */
