@@ -179,3 +179,27 @@ findPwId.addEventListener('click',()=>{
         alert('입력하신 정보와 일치하는 계정이 없습니다. 다시 시도해주시거나 사이트 운영자에게 문의해주세요.')
     }
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    var titleElements = document.querySelectorAll('.faqWrap .faqContainer .detail ul li .title');
+
+    titleElements.forEach(function (titleElement) {
+        titleElement.addEventListener('click', function () {
+            var moreDetailElement = this.nextElementSibling;
+
+            if (moreDetailElement.style.display === 'block') {
+                moreDetailElement.style.display = 'none';
+            } else {
+                // Hide all other open details before opening the clicked one
+                titleElements.forEach(function (otherTitleElement) {
+                    var otherMoreDetailElement = otherTitleElement.nextElementSibling;
+                    if (otherMoreDetailElement !== moreDetailElement) {
+                        otherMoreDetailElement.style.display = 'none';
+                    }
+                });
+
+                moreDetailElement.style.display = 'block';
+            }
+        });
+    });
+});
