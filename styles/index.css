@@ -7,103 +7,98 @@ main .productPage {
     position: relative;
 }
 /* 태블릿, 모바일 슬라이드 화면 */
-main .productPage .swiper-container {
-    width: max-content;
-}
+main .productPage .swiper-container {}
 main .productPage .swiper-container .swiper-wrapper {}
-main .productPage .swiper-container .swiper-wrapper .swiper-slide {
-    
-}
+main .productPage .swiper-container .swiper-wrapper .swiper-slide {}
 main .productPage #slide {
-    width: max-content;
     display: flex; flex-flow: row nowrap;
 }
-main .productPage #slide .selectSlide1, 
-main .productPage #slide .selectSlide2, 
-main .productPage #slide .selectSlide3 {
+main .productPage #slide .selectSlide, 
+main .productPage #slide .selectSlide, 
+main .productPage #slide .selectSlide {
     max-width: 1903px;
     display: flex; flex-flow: row nowrap; justify-content: center;
 }
 /* section slide01 */
-main .productPage #slide .selectSlide1:nth-child(1) {
+main .productPage #slide .selectSlide:nth-child(1) {
     background-color: #ebeaea; padding: 60px 350px;
 }
-main .productPage #slide .selectSlide1 .left01 { 
+main .productPage #slide .selectSlide .left01 { 
     margin-right: 150px; text-align: center;
 }
-main .productPage #slide .selectSlide1 .left01 h1 {
+main .productPage #slide .selectSlide .left01 h1 {
     font-family: 'Cardo', serif; font-size: 3rem; font-weight: 700;
     padding: 50px 0 60px 0; color: #3d7352;
 }
-main .productPage #slide .selectSlide1 .left01 .boldTxt {
+main .productPage #slide .selectSlide .left01 .boldTxt {
     color: #3d7352; font-size: 1.325rem; font-weight: 500;
     padding-bottom: 30px;
 }
-main .productPage #slide .selectSlide1 .left01{}
-main .productPage #slide .selectSlide1 .left01 p {
+main .productPage #slide .selectSlide .left01{}
+main .productPage #slide .selectSlide .left01 p {
     color: #3d7352; font-size: 1.125rem; font-weight: 400;
     padding-bottom: 80px; line-height: 1.5;
 }
 
-main .productPage #slide .selectSlide1 .left01 .shopBtn {
+main .productPage #slide .selectSlide .left01 .shopBtn {
     color: #3d7352; font-family: 'Cardo', serif; font-size: 1.325rem;
     border: 1px solid #3d7352; font-weight: 600;
     padding: 10px 60px;
     border-radius: 5px;
 }
-main .productPage #slide .selectSlide1 .left01 .shopBtn:hover {
+main .productPage #slide .selectSlide .left01 .shopBtn:hover {
     background: #3d7352; color: #fff;
     border: 1px solid #3d7352;
     transition: 0.4s ease-out;
 }
-main .productPage #slide .selectSlide1 .left01Img {position: relative; z-index: 0;}
-main .productPage #slide .selectSlide1 .left01Img img {}
+main .productPage #slide .selectSlide .left01Img {position: relative; z-index: 0;}
+main .productPage #slide .selectSlide .left01Img img {}
 /* section slide02 */
-main .productPage #slide .selectSlide2:nth-child(2) {
+main .productPage #slide .selectSlide:nth-child(2) {
     background-color: #759ca4;
 }
-main .productPage #slide .selectSlide2 .left02 {
+main .productPage #slide .selectSlide .left02 {
     display: flex; flex-flow: row nowrap; 
     justify-content: space-between; text-align: center; 
     padding: 105px 225px; 
 }
-main .productPage #slide .selectSlide2 .left02 .leftTxt {padding: 0 50px;}
-main .productPage #slide .selectSlide2 .left02 .leftTxt h1 {
+main .productPage #slide .selectSlide .left02 .leftTxt {padding: 0 50px;}
+main .productPage #slide .selectSlide .left02 .leftTxt h1 {
     color: #fff; font-size: 2.5rem; font-weight: 700;
     padding-bottom: 40px; margin-top: 80px;
 }
-main .productPage #slide .selectSlide2 .left02 .leftTxt h1 em {
+main .productPage #slide .selectSlide .left02 .leftTxt h1 em {
     color: #fff; font-size: 3.5rem; font-weight: 700;
 }
-main .productPage #slide .selectSlide2 .left02 .leftTxt p {padding-bottom: 70px;}
-main .productPage #slide .selectSlide2 .left02 .leftTxt .boldTxt {
+main .productPage #slide .selectSlide .left02 .leftTxt p {padding-bottom: 70px;}
+main .productPage #slide .selectSlide .left02 .leftTxt .boldTxt {
     font-size: 2rem; line-height: 1.2; font-weight: 400; color: #fff;
 }
-main .productPage #slide .selectSlide2 .left02 .leftTxt .leftLogo {}
-main .productPage #slide .selectSlide2 .left02 img {}
+main .productPage #slide .selectSlide .left02 .leftTxt .leftLogo {}
+main .productPage #slide .selectSlide .left02 img {}
 /* section slide03 */
-main .productPage #slide .selectSlide3:nth-child(3) {
+main .productPage #slide .selectSlide:nth-child(3) {
     background: #fbf9f4; padding: 120px 225px;
 }
-main .productPage #slide .selectSlide3 .left03 {margin-left: 80px;}
-main .productPage #slide .selectSlide3 .left03 h1 {
+main .productPage #slide .selectSlide .left03 {margin-left: 80px;}
+main .productPage #slide .selectSlide .left03 h1 {
     font-family: 'Cardo', serif; font-size: 3.5rem; color: #f29a9d;
     padding-bottom: 70px;
 }
-main .productPage #slide .selectSlide3 .left03 .boldTxt {
+main .productPage #slide .selectSlide .left03 .boldTxt {
     color: #f29a9d; font-size: 1.75rem; font-weight: 600;
     padding-bottom: 40px;
 }
-main .productPage #slide .selectSlide3 .left03 > p {
+main .productPage #slide .selectSlide .left03 > p {
     color: #f29a9d; font-size: 1.125rem; line-height: 1.5;
     padding-bottom: 60px;
 }
-main .productPage #slide .selectSlide3 .left03 .shopBtn {
+main .productPage #slide .selectSlide .left03 .shopBtn {
     font-family: 'Cardo', serif; font-size: 1.75rem; color: #f29a9d;
     border: 1px solid #f29a9d; border-radius: 10px;
     padding: 10px 85px;
 }
-main .productPage #slide .selectSlide3 .left03 .shopBtn:hover {
+main .productPage #slide .selectSlide .left03 .shopBtn:hover {
     background: #f29a9d; color: #fff;
     border: 1px solid #f29a9d;
     transition: 0.4s ease-out;

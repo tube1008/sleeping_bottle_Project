@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <title>Sleeping Bottle | 슬리핑 보틀</title>
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/faviconV2.png" type="image/x-icon">
+    
     <style>
         .hide {display: none !important;}
     </style>
@@ -492,8 +498,8 @@
         <section class="productPage">
             <!-- 태블릿, 모바일 슬라이드화면  -->
             <div class="swiper-container" id="slide"><!--이미지만 있는 슬라이드는 제거함-->
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide selectSlide1">
+                <div class="swiper-wrapper pageWrapper">
+                    <div class="swiper-slide selectSlide">
                         <div class="left01">
                             <h1>"ONE BOTTLE FOR BETTER SLEEP."</h1>
                             <p class="boldTxt">진정한 휴식을 위한 음료, 슬리핑 보틀</p>
@@ -502,7 +508,7 @@
                         </div>
                         <p class="left01Img"><img src="./images/1.sectionSlide01(Modify).png" alt="진정한 휴식을 위한 음료, 슬리핑 보틀"></p>
                     </div>
-                    <div class="swiper-slide selectSlide2">
+                    <div class="swiper-slide selectSlide">
                         <a href="./shop.html" class="left02">
                             <div class="leftTxt">
                                 <h1>"국내 <em>유일</em>, 국내 <em>최초</em>"</h1>
@@ -512,7 +518,7 @@
                             <img src="./images/1.sectionSlide02(Modify).png" alt="특허받은 수면음료, 슬리핑보틀">
                         </a>
                     </div>
-                    <div class="swiper-slide selectSlide3">
+                    <div class="swiper-slide selectSlide">
                         <div class="left03">
                             <h1>"Good Night Sleep Tight."</h1>
                             <p class="boldTxt">좋은 잠을 위한 한병, 슬리핑보틀</p>
@@ -521,11 +527,9 @@
                         </div>
                         <p><img src="./images/1.sectionSlide03(modify).png" alt="좋은 잠을 위한 한 병, 슬리핑 보틀"></p>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <a href="#" id="prev"><img src="./images/icon-prev.png" alt="prev"></a>
-                    <a href="#" id="next"><img src="./images/icon-next.png" alt="next"></a>
                 </div>
+                <div class="swiper-button-next00"><a href="#" id="prev"><img src="./images/icon-prev.png" alt="prev"></a></div>
+                <div class="swiper-button-prev00"><a href="#" id="next"><img src="./images/icon-next.png" alt="next"></a></div>
             </div>
         </section>    
         <section class="sleepPage">
@@ -588,8 +592,8 @@
                 <p>좋은 잠을 위한 한 병, 슬리핑보틀</p>
             </div>
             <div class="productItem">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
+                <div class="swiper-container productContainer">
+                    <div class="swiper-wrapper productWrapper">
                         <a href="./shop_detail.html" class="swiper-slide item"><!-- 호버시 새로운 이미지가 뜸 -->
                             <p><img src="./images/5.sectionproduct01.jpg" alt="슬리핑 보틀 1병"></p>
                             <p class="hoverImg"><img src="./images/5.sectionproduct01-1.jpg" alt="슬리핑 보틀 1병"></p>
@@ -650,6 +654,8 @@
                             </div>
                         </a>
                     </div>
+                    <div class="swiper-button01-prev"><a href="#" id="prev"><img src="./images/icon-prev.png" alt="prev"></a></div>
+                    <div class="swiper-button01-next"><a href="#" id="next"><img src="./images/icon-next.png" alt="next"></a></div>
                 </div>
             </div>
         </section>
@@ -948,6 +954,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
     <script src="./script/index.js" defer></script>
 </body>
 </html> 
