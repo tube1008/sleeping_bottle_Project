@@ -190,40 +190,40 @@
     padding: 16px 0 25px 0;
 }
 .loginPop .searchBox #idpwBox fieldset .searchId label {}
-.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail + span::before {
+/* .loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
     background: url(../images/radio_button_checked.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
     position: absolute; left: -20px; top: 0;
-}
-.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail:checked + span::before {
+} */
+/* .loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail:checked + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
     background: url(../images/radio_button_unchecked.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
     position: absolute; left: -20px; top: 0;
-}
-.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum + span::before {
+} */
+/* .loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
     background: url(../images/radio_button_checked.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
     position: absolute; left: -20px; top: 0;
-}
-.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum:checked + span::before {
+} */
+/* .loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum:checked + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
     background: url(../images/radio_button_unchecked.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
     position: absolute; left: -20px; top: 0;
-}
-.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail {display: none;}
-.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum {display: none;}
+} */
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail {}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum {}
 .loginPop .searchBox #idpwBox fieldset .searchId .email,
 .loginPop .searchBox #idpwBox fieldset .searchId .numName {
     border-bottom: 1px solid #E0E0E0;
@@ -843,8 +843,8 @@
 /* header */
 header {
     max-width: 1920px;
-    padding:10px 20px 100px 20px; height:100px;
-    position:sticky; left:50%; top:0px; width:100%; z-index:900;
+    padding:10px 50px 100px 20px; height:100px;
+    position:sticky; left:0; top:0px; width:100%; z-index:900;
     background: rgba(255, 255, 255, 0.6)
 }
 /* 태블릿, 모바일 */
