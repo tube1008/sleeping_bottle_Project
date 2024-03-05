@@ -2,115 +2,164 @@
 main {
     max-width: 1903px; margin: 0 auto;
 }
-/* section-1 */
 main .productPage {
+    width: 100%;
+}
+main .productPage #slide {
+    width: 100%; 
     position: relative;
 }
-/* 태블릿, 모바일 슬라이드 화면 */
-main .productPage .swiper-container {}
-main .productPage .swiper-container .swiper-wrapper {}
-main .productPage .swiper-container .swiper-wrapper .swiper-slide {}
-main .productPage #slide {
+main .productPage #slide .pageWrapper {
+    height: 80%;
+}
+main .productPage #slide .pageWrapper .swiper-slide{
+    height: auto;
+}
+/* section-1 */
+/* slide01 */
+main .productPage #slide .pageWrapper .selectSlide01 {
     display: flex; flex-flow: row nowrap;
+    padding: 100px; justify-content: center;
+    background: #ebeaea;
 }
-main .productPage #slide .selectSlide, 
-main .productPage #slide .selectSlide, 
-main .productPage #slide .selectSlide {
-    max-width: 1903px;
-    display: flex; flex-flow: row nowrap; justify-content: center;
+main .productPage #slide .pageWrapper .selectSlide01 .left {
+    width: 30%;
+    display: flex; flex-flow: column nowrap;
+    justify-content: center; align-items: center;
+    text-align: center;
+    margin-right: 100px;
 }
-/* section slide01 */
-main .productPage #slide .selectSlide:nth-child(1) {
-    background-color: #ebeaea; padding: 60px 350px;
+main .productPage #slide .pageWrapper .selectSlide01 .left h1 {
+    font-family: 'Cardo', serif; 
+    font-size: 2.5rem; font-weight: 600;
+    color: #3e7352;
 }
-main .productPage #slide .selectSlide .left01 { 
-    margin-right: 150px; text-align: center;
+main .productPage #slide .pageWrapper .selectSlide01 .left .txt01 {
+    font-size: 1.25rem; font-weight: 600;
+    color: #3e7352;
+    padding: 60px 0 40px 0;
 }
-main .productPage #slide .selectSlide .left01 h1 {
-    font-family: 'Cardo', serif; font-size: 3rem; font-weight: 700;
-    padding: 50px 0 60px 0; color: #3d7352;
-}
-main .productPage #slide .selectSlide .left01 .boldTxt {
-    color: #3d7352; font-size: 1.325rem; font-weight: 500;
+main .productPage #slide .pageWrapper .selectSlide01 .left .txt02 {
+    font-size: 1rem; 
+    color: #3e7352;
+    line-height: 1.5;
     padding-bottom: 30px;
 }
-main .productPage #slide .selectSlide .left01{}
-main .productPage #slide .selectSlide .left01 p {
-    color: #3d7352; font-size: 1.125rem; font-weight: 400;
-    padding-bottom: 80px; line-height: 1.5;
+main .productPage #slide .pageWrapper .selectSlide01 .left .shopBtn {
+    font-family: 'Cardo', serif; 
+    font-size: 1.25rem; color: #3e7352;
+    border: 1px solid #3e7352;
+    padding: 6px 56px;
+    border-radius: 10px;
 }
-
-main .productPage #slide .selectSlide .left01 .shopBtn {
-    color: #3d7352; font-family: 'Cardo', serif; font-size: 1.325rem;
-    border: 1px solid #3d7352; font-weight: 600;
-    padding: 10px 60px;
-    border-radius: 5px;
+main .productPage #slide .pageWrapper .selectSlide01 .left .shopBtn:hover {
+    background: #3e7352;
+    color: #ebeaea;
+    transition: 0.5s;
 }
-main .productPage #slide .selectSlide .left01 .shopBtn:hover {
-    background: #3d7352; color: #fff;
-    border: 1px solid #3d7352;
-    transition: 0.4s ease-out;
+main .productPage #slide .pageWrapper .selectSlide01 .right {
+    margin-left: 100px;
 }
-main .productPage #slide .selectSlide .left01Img {position: relative; z-index: 0;}
-main .productPage #slide .selectSlide .left01Img img {}
-/* section slide02 */
-main .productPage #slide .selectSlide:nth-child(2) {
-    background-color: #759ca4;
+main .productPage #slide .pageWrapper .selectSlide01 .right img {
+    width: 80%;
 }
-main .productPage #slide .selectSlide .left02 {
-    display: flex; flex-flow: row nowrap; 
-    justify-content: space-between; text-align: center; 
-    padding: 105px 225px; 
+/* slide02 */
+main .productPage #slide .pageWrapper .selectSlide02 {
+    display: flex; flex-flow: row nowrap;
+    padding: 100px; justify-content: center;
+    background: #759ca4;
 }
-main .productPage #slide .selectSlide .left02 .leftTxt {padding: 0 50px;}
-main .productPage #slide .selectSlide .left02 .leftTxt h1 {
-    color: #fff; font-size: 2.5rem; font-weight: 700;
-    padding-bottom: 40px; margin-top: 80px;
+main .productPage #slide .pageWrapper .selectSlide02 a {
+    display: flex; flex-flow: row nowrap;
+    align-items: center; text-align: center;
+    justify-content: center;
 }
-main .productPage #slide .selectSlide .left02 .leftTxt h1 em {
-    color: #fff; font-size: 3.5rem; font-weight: 700;
+main .productPage #slide .pageWrapper .selectSlide02 a .left {
+    display: flex; flex-flow: column nowrap;
+    margin-right: 60px;
 }
-main .productPage #slide .selectSlide .left02 .leftTxt p {padding-bottom: 70px;}
-main .productPage #slide .selectSlide .left02 .leftTxt .boldTxt {
-    font-size: 2rem; line-height: 1.2; font-weight: 400; color: #fff;
+main .productPage #slide .pageWrapper .selectSlide02 a .left h1 {
+    font-size: 2.5rem; font-weight: 600;
+    color: #fff;
+    letter-spacing: 2px;
 }
-main .productPage #slide .selectSlide .left02 .leftTxt .leftLogo {}
-main .productPage #slide .selectSlide .left02 img {}
-/* section slide03 */
-main .productPage #slide .selectSlide:nth-child(3) {
-    background: #fbf9f4; padding: 120px 225px;
+main .productPage #slide .pageWrapper .selectSlide02 a .left .boldTxt {
+    font-size: 1.875rem; color: #fff;
+    padding: 30px 0 45px 0;
 }
-main .productPage #slide .selectSlide .left03 {margin-left: 80px;}
-main .productPage #slide .selectSlide .left03 h1 {
-    font-family: 'Cardo', serif; font-size: 3.5rem; color: #f29a9d;
-    padding-bottom: 70px;
+main .productPage #slide .pageWrapper .selectSlide02 a .left .btmLogo {}
+main .productPage #slide .pageWrapper .selectSlide02 a .left .btmLogo img {}
+main .productPage #slide .pageWrapper .selectSlide02 a .right {
+    margin-left: 60px;
 }
-main .productPage #slide .selectSlide .left03 .boldTxt {
-    color: #f29a9d; font-size: 1.75rem; font-weight: 600;
-    padding-bottom: 40px;
+main .productPage #slide .pageWrapper .selectSlide02 a .right img {
+    width: 95%;
 }
-main .productPage #slide .selectSlide .left03 > p {
-    color: #f29a9d; font-size: 1.125rem; line-height: 1.5;
-    padding-bottom: 60px;
+/* slide03 */
+main .productPage #slide .pageWrapper .selectSlide03 {
+    display: flex; flex-flow: row nowrap;
+    padding: 100px; justify-content: center;
+    background: #fbf9f4;
 }
-main .productPage #slide .selectSlide .left03 .shopBtn {
-    font-family: 'Cardo', serif; font-size: 1.75rem; color: #f29a9d;
-    border: 1px solid #f29a9d; border-radius: 10px;
-    padding: 10px 85px;
+main .productPage #slide .pageWrapper .selectSlide03 .left {
+    width: 30%;
+    display: flex; flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 60px;
 }
-main .productPage #slide .selectSlide .left03 .shopBtn:hover {
-    background: #f29a9d; color: #fff;
-    border: 1px solid #f29a9d;
-    transition: 0.4s ease-out;
+main .productPage #slide .pageWrapper .selectSlide03 .left h1 {
+    font-family: 'Cardo', serif; 
+    font-size: 2.5rem; font-weight: 600;
+    color: #f2989b;
 }
-main .productPage #slide #prev {position: absolute; left: 20px; top: 330px;}
-main .productPage #slide #prev img {height: 40px;}
-main .productPage #slide #next {position: absolute; right: 20px; top: 330px;}
-main .productPage #slide #next img {height: 40px;}
+main .productPage #slide .pageWrapper .selectSlide03 .left .txt01 {
+    font-size: 1.25rem; font-weight: 600;
+    color: #f2989b;
+    padding: 30px 0 30px 0;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .left .txt02 {
+    font-size: 1rem; 
+    color: #f2989b;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .left .shopBtn {
+    font-family: 'Cardo', serif; 
+    font-size: 1.25rem; color: #f2989b;
+    border: 1px solid #f2989b;
+    padding: 6px 56px;
+    border-radius: 10px;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .left .shopBtn:hover {
+    background: #f2989b;
+    color: #fff;
+    transition: 0.5s;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .right {
+    margin-left: 60px;
+}
+main .productPage #slide .pageWrapper .selectSlide03 .right img {
+    width: 90%;
+}
+main .productPage #slide .swiper-button-prev01  {
+    position: absolute; left: 1%; top: 45%; z-index: 10;
+}
+main .productPage #slide .swiper-button-prev01 img {
+    height: 40px;
+}
+main .productPage #slide .swiper-button-next01 {
+    position: absolute; right: 1%; top: 45%; z-index: 10;
+}
+main .productPage #slide .swiper-button-next01 img {
+    height: 40px;
+}
+main .productPage #slide .swiper-button-prev01::after {display: none;}
+main .productPage #slide .swiper-button-next01::after {display: none;}
 /* section-2 */
 main .sleepPage {
     max-width:max-content;
-    padding: 100px 0;
+    margin: 80px 0;
 }
 main .sleepPage .title {
     text-align: center;
@@ -164,7 +213,7 @@ main .eventPage a h2 {
 }
 main .eventPage a p {font-size: 1.125rem; color: #fff; padding-top: 20px}
 /* section-4 */
-main .deeperPage {max-width: 1920px; margin: 0 auto;}
+main .deeperPage {width: 100%; margin: 0 auto;}
 main .deeperPage .title {text-align: center; margin-top: 110px;}
 main .deeperPage .title h2 {
     font-family: 'Cardo', serif; font-size: 2.25rem; 
@@ -202,14 +251,20 @@ main .eventBnr {background-color: #f7f6f1;}
 main .eventBnr .veganBnr {}
 main .eventBnr .veganBnr img {width: 100%;}
 /* section-5 */
-main .shopPage .productItem .swiper-container {max-width: 1000px}
+main .shopPage {width: 100%; margin: 0 auto;}
+main .shopPage .productItem {width: 100%; height: 480px;}
+main .shopPage .productItem .swiper-container {
+    width: 80%; margin: 0 auto;
+    overflow: hidden;
+}
 main .shopPage .productItem .swiper-container .swiper-wrapper {}
 main .shopPage .productItem .swiper-container .swiper-wrapper .swiper-slide {
-    height:400px;
+    width: 300px; height:auto;
 }
 main .shopPage {
     max-width: 1920px; margin: 0 auto;
     margin: 100px 0 100px 0;
+    background: #fff;
 }
 main .shopPage .title {text-align: center; margin-top: 50px;}
 main .shopPage .title h2 {
@@ -278,7 +333,7 @@ main .shopPage .productItem .item .saleMd .md {
 }
 /* section-6 */
 main .storyPage {
-    max-width: 1920px; margin: 0 auto;
+    width: 100%; margin: 0 auto;
     background: rgba(168, 181, 181, 0.05);
     padding: 60px 0;
 }

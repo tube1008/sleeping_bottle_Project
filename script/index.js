@@ -205,33 +205,66 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-let swiperContainer = document.querySelector('#slide')
-let swiper = new Swiper('#slide', {
+let swiperContainer01 = document.querySelector('#slide')
+let swiper01 = new Swiper('#slide', {
     // 한 번에 보여줄 슬라이드 수
     slidesPerView: 1,
     // 슬라이드 사이의 간격
-    spaceBetween: 10,
+    spaceBetween: 0,
     // 한 번에 넘길 슬라이드 수
     slidesPerGroup: 1, 
     loop: true,
-    autoplay:{delay:2000,},
+    autoplay:{delay:6000,},
     centeredSlides : true,
     navigation: {
-        nextEl: ".swiper-button-next00",
-        prevEl: ".swiper-button-prev00",
+        nextEl: ".swiper-button-next01",
+        prevEl: ".swiper-button-prev01",
     },
     breakpoints: {
         // 윈도우 화면 너비가 800 이상일 때(min-width 기준)
         900: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 0,
             slidesPerGroup: 1,
             centeredSlides : false,
         },
         // 화면 너비가 1200px 이상일 때
         1200: {
         slidesPerView: 1,
-        spaceBetween: 25,
+        spaceBetween: 0,
+        slidesPerGroup: 1,
+        centeredSlides : false,
+        }
+    },
+})
+
+let swiperContainer02 = document.querySelector('#productContainer')
+let swiper02 = new Swiper('#productContainer', {
+    // 한 번에 보여줄 슬라이드 수
+    slidesPerView: 5,
+    // 슬라이드 사이의 간격
+    spaceBetween: 50,
+    // 한 번에 넘길 슬라이드 수
+    slidesPerGroup: 1, 
+    loop: true,
+    autoplay:{delay:2000,},
+    centeredSlides : true,
+    navigation: {
+        nextEl: ".swiper-button-next01",
+        prevEl: ".swiper-button-prev01",
+    },
+    breakpoints: {
+        // 윈도우 화면 너비가 800 이상일 때(min-width 기준)
+        900: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+            slidesPerGroup: 1,
+            centeredSlides : false,
+        },
+        // 화면 너비가 1200px 이상일 때
+        1200: {
+        slidesPerView: 5,
+        spaceBetween: 50,
         slidesPerGroup: 1,
         centeredSlides : false,
         }
