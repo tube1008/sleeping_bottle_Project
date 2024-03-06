@@ -1,162 +1,168 @@
 main {
     max-width: 1250px; margin: 0 auto;
 }
-main .stage {
+main section {
+    width: 100%;
+}
+main section .stage {
+    width: 1250px; margin: 0 auto;
     display: flex; align-items: center;
     margin-bottom: 15px;
 }
-main .stage a {
+main section .stage a {
     font-size: 0.75rem;
 }
-main .stage a:nth-child(1) {color: #4f4f4f66;}
-main .stage a:nth-child(2) {color: #4f4f4f;}
-main .stage img {
+main section .stage a:nth-child(1) {color: #4f4f4f66;}
+main section .stage a:nth-child(2) {color: #4f4f4f;}
+main section .stage img {
     color: #4f4f4f66;
     padding: 0 10px;
     height: 11px;
 }
-main .shopInfo {
+main section .shopInfo {
     display: flex; flex-flow: row nowrap;
+    justify-content: center;
 }
-main .shopInfo .shopImg {}
-main .shopInfo .shopImg .bigThumbnail {}
-main .shopInfo .shopImg .bigThumbnail img {width: 610px;}
-main .shopInfo .shopImg .smallThumbnail {
+main section .shopInfo .shopImg {}
+main section .shopInfo .shopImg .bigThumbnail {}
+main section .shopInfo .shopImg .bigThumbnail img {width: 610px;}
+main section .shopInfo .shopImg .smallThumbnail {
     text-align: center;
 }
-main .shopInfo .shopImg .smallThumbnail img {width: 60px; margin-top: 10px;}
-main .shopInfo .infoWrap {
+main section .shopInfo .shopImg .smallThumbnail img {width: 60px; margin-top: 10px;}
+main section .shopInfo .infoWrap {
     margin: 10px 0 0 113px;
 }
-main .shopInfo .infoWrap .container {}
-main .shopInfo .infoWrap .container .title {
+main section .shopInfo .infoWrap .container {}
+main section .shopInfo .infoWrap .container .title {
     display: flex; flex-flow: row nowrap; align-items: center;
     margin-bottom: 10px;
 }
-main .shopInfo .infoWrap .container .title h1 {
+main section .shopInfo .infoWrap .container .title h1 {
     font-size: 1.275rem; color: #4f4f4f; font-weight: 600;
 }
-main .shopInfo .infoWrap .container .title p {
+main section .shopInfo .infoWrap .container .title p {
+    display: block;
     font-size: 0.688rem; color: #000;
     padding: 2px 10px;
     border: 1px solid #ccc;
     margin-left: 5px;
 }
-main .shopInfo .infoWrap .container .price {
+main section .shopInfo .infoWrap .container .price {
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
 }
-main .shopInfo .infoWrap .container .price p {
+main section .shopInfo .infoWrap .container .price p {
     font-size: 1.125rem; color: #4f4f4f;
 }
-main .shopInfo .infoWrap .container .price a {}
-main .shopInfo .infoWrap .container .price a img {
+main section .shopInfo .infoWrap .container .price a {}
+main section .shopInfo .infoWrap .container .price a img {
     height: 20px;
 }
-main .shopInfo .infoWrap .container .explanation {}
-main .shopInfo .infoWrap .container .explanation > p {
+main section .shopInfo .infoWrap .container .explanation {}
+main section .shopInfo .infoWrap .container .explanation > p {
     font-size: 0.75rem; color: #4f4f4f66;
     margin: 20px 0;
 }
-main .shopInfo .infoWrap .container .explanation .deliveryInfo {}
-main .shopInfo .infoWrap .container .explanation .deliveryInfo p {
+main section .shopInfo .infoWrap .container .explanation .deliveryInfo {}
+main section .shopInfo .infoWrap .container .explanation .deliveryInfo p {
     font-size: 0.75rem; color: #4f4f4f; font-weight: 700;
     margin-bottom: 5px;
 }
-main .shopInfo .infoWrap .container .explanation .deliveryInfo p em {
+main section .shopInfo .infoWrap .container .explanation .deliveryInfo p em {
     font-size: 0.75rem; color: #4f4f4f;
     font-weight: 500; padding-left: 10px;
 }
-main .shopInfo .infoWrap .container .explanation .deliverState {
+main section .shopInfo .infoWrap .container .explanation .deliverState {
     display: flex; flex-flow: row nowrap; align-items: center;
     padding: 12px 14px; background: rgba(0,0,0,0.03);
     margin: 20px 0;
 }
-main .shopInfo .infoWrap .container .explanation .deliverState > p {
+main section .shopInfo .infoWrap .container .explanation .deliverState > p {
     background: #b4b4b4; border-radius: 50%; width: 25px; height: 25px;
     position: relative;
 }
-main .shopInfo .infoWrap .container .explanation .deliverState p > img {
+main section .shopInfo .infoWrap .container .explanation .deliverState p > img {
     width: 14px; position: absolute; left: 5px; top: 5px;
 }
-main .shopInfo .infoWrap .container .explanation .deliverState .state {
+main section .shopInfo .infoWrap .container .explanation .deliverState .state {
     margin-left: 10px;
 }
-main .shopInfo .infoWrap .container .explanation .deliverState .state p {
+main section .shopInfo .infoWrap .container .explanation .deliverState .state p {
     font-size: 0.875rem; color: #4f4f4f;
     font-weight: 600;
 }
-main .shopInfo .infoWrap .container .explanation .deliverState .state p em {
+main section .shopInfo .infoWrap .container .explanation .deliverState .state p em {
     color: #4f4f4f;
 }
-main .shopInfo .infoWrap .container .choice {
+main section .shopInfo .infoWrap .container .choice {
     display: flex; flex-flow: column nowrap;
 }
-main .shopInfo .infoWrap .container .choice p {
+main section .shopInfo .infoWrap .container .choice p {
     font-size: 0.688rem; color: #4f4f4f; font-weight: 600;
     margin-bottom: 10px;
 }
-main .shopInfo .infoWrap .container .choice .color {}
-main .shopInfo .infoWrap .container .choice .color .white {}
-main .shopInfo .infoWrap .container .choice .color .white::after {
+main section .shopInfo .infoWrap .container .choice .color {}
+main section .shopInfo .infoWrap .container .choice .color .white {}
+main section .shopInfo .infoWrap .container .choice .color .white::after {
     content: ''; display: inline-block;
     width: 24px ; height: 24px;
     background-color: #fff;
     margin-right: 1px;
     border: 1px solid #ccc;
 }
-main .shopInfo .infoWrap .container .choice .color .brown {}
-main .shopInfo .infoWrap .container .choice .color .brown::after {
+main section .shopInfo .infoWrap .container .choice .color .brown {}
+main section .shopInfo .infoWrap .container .choice .color .brown::after {
     content: ''; display: inline-block;
     width: 24px ; height: 24px;
     background-color: #655e5e;
     margin-right: 1px;
     border: 1px solid #ccc;
 }
-main .shopInfo .infoWrap .container .purchase .buy {
+main section .shopInfo .infoWrap .container .purchase .buy {
     display: flex; justify-content: space-between;
     margin: 40px 0 10px 0;
 }
-main .shopInfo .infoWrap .container .purchase .buy .buyNow {
+main section .shopInfo .infoWrap .container .purchase .buy .buyNow {
     color: #fff; font-size: 0.875rem; font-weight: 500;
     background: #4f4f4f;
     border: 1px solid #4f4f4f;
     padding: 12px 59px;
 }
-main .shopInfo .infoWrap .container .purchase .buy .cart {
+main section .shopInfo .infoWrap .container .purchase .buy .cart {
     color: #4f4f4f; font-size: 0.875rem; font-weight: 500;
     background: #fff;
     border: 1px solid #ccc;
     padding: 12px 59px;
 }
-main .shopInfo .infoWrap .container .purchase .buy .like {
+main section .shopInfo .infoWrap .container .purchase .buy .like {
     color: #4f4f4f; font-size: 0.875rem; font-weight: 500;
     background: #fff;
     border: 1px solid #ccc;
     padding: 12px 72px;
 }
-main .shopInfo .infoWrap .container .purchase .buy .buyNow:hover {
+main section .shopInfo .infoWrap .container .purchase .buy .buyNow:hover {
     transition: 1s;
     background: #000;
     border: 1px solid #000;
 }
-main .shopInfo .infoWrap .container .purchase .buy .cart:hover {
+main section .shopInfo .infoWrap .container .purchase .buy .cart:hover {
     transition: 1s;
     border: 1px solid #4f4f4f;
 }
-main .shopInfo .infoWrap .container .purchase .buy .like:hover {
+main section .shopInfo .infoWrap .container .purchase .buy .like:hover {
     transition: 1s;
     border: 1px solid #4f4f4f;
 }
-main .shopInfo .infoWrap .container .purchase .naverpay {
+main section .shopInfo .infoWrap .container .purchase .naverpay {
     display: flex; align-items: center;
 }
-main .shopInfo .infoWrap .container .purchase .naverpay .pay {
+main section .shopInfo .infoWrap .container .purchase .naverpay .pay {
     background: #00c73c; padding: 14px 180px;
 }
-main .shopInfo .infoWrap .container .purchase .naverpay .pay img {
+main section .shopInfo .infoWrap .container .purchase .naverpay .pay img {
     height: 18px;
 }
 main .shopInfo .infoWrap .container .purchase .naverpay .good {
@@ -165,46 +171,50 @@ main .shopInfo .infoWrap .container .purchase .naverpay .good {
     padding: 15px 17px;
     border: 1px solid #ccc;
 }
-main .contents {
+main section .contents {
     display: flex; align-items: center; justify-content: center;
     border-bottom: 1px solid #ccc;
     margin: 40px 0 40px 0;
     padding: 0 0 20px 0;
 }
-main .contents .detailInfo {
+main section .contents .detailInfo {
     font-size: 0.75rem; color: #4f4f4f4d;
     padding: 15px 45px;
 }
-main .contents .purchaseReview {
+main section .contents .purchaseReview {
     font-size: 0.75rem; color: #4f4f4f4d;
     padding: 15px 45px;
 }
-main .contents .purchaseReview em{
+main section .contents .purchaseReview em{
     font-size: 0.75rem; color: #4f4f4f;
     margin-left: 5px;
 }
-main .contents .qa {
+main section .contents .qa {
     font-size: 0.75rem; color: #4f4f4f4d;
     padding: 15px 45px;
 }
-main .contents .qa em {
+main section .contents .qa em {
     font-size: 0.75rem; color: #4f4f4f;
     margin-left: 5px;
 }
-main .contents p {color: #4f4f4f4d;}
-main .contents a:hover {
+main section .contents p {color: #4f4f4f4d;}
+main section .contents a:hover {
     color: #4f4f4f;
     transition: 0.5s;
 }
-main .detailImage{}
-main .detailImage img {
-    width: 1250px;
+main section .detailImage{
+    text-align: center;
 }
-main .review {
+main section .detailImage img {
+    width: 1250px; margin: 0 auto;
+}
+main section .review {
+    width: 1250px; margin: 0 auto;
     display: flex; flex-flow: column nowrap;
+    justify-content: center;
     display: none;
 }
-main .review .write {
+main section .review .write {
     width: 110px;
     font-size: 0.75rem; color: #4f4f4f; font-weight: 600;
     border: 1px solid #ccc;
@@ -212,55 +222,58 @@ main .review .write {
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
-main .review .write:hover {
+main section .review .write:hover {
     font-size: 0.75rem; color: #fff; font-weight: 600;
     background: #4f4f4f;
     border: 1px solid #4f4f4f;
     padding: 10px 20px;
     transition: 0.5s;
 }
-main .review .photoReview {
+main section .review .photoReview {
     display: flex; align-items: center;
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
 }
-main .review .photoReview img {
+main section .review .photoReview img {
     width: 16px; margin-right: 10px;
 }
-main .review .photoReview span {
+main section .review .photoReview span {
     font-size: 0.875rem; color: #4f4f4fa6;
 }
-main .review p {
+main section .review p {
     text-align: center;
     color: #4f4f4fa6; font-size: 0.75rem;
     padding: 100px 0 200px 0;
 }
-main .question {display: none;}
-main .question .qa {
+main section .question {
+    width: 1250px; margin: 0 auto;
+    display: flex; flex-flow: column nowrap;
+}
+main section .question .qa {
     font-size: 0.813rem; color: #4f4f4fb3;
     margin-bottom: 10px;
 }
-main .question .inquiry {
+main section .question .inquiry {
     display: flex;
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
 }
-main .question .inquiry a {
+main section .question .inquiry a {
     font-size: 0.75rem; color: #4f4f4f; font-weight: 600;
     border: 1px solid #ccc;
     padding: 10px 20px;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
-main .question .inquiry a:nth-child(1) {margin-right: 5px;}
-main .question .inquiry a:hover {
+main section .question .inquiry a:nth-child(1) {margin-right: 5px;}
+main section .question .inquiry a:hover {
     font-size: 0.75rem; color: #fff; font-weight: 600;
     background: #4f4f4f;
     border: 1px solid #4f4f4f;
     padding: 10px 20px;
     transition: 0.5s;
 }
-main .question .qaqa {
+main section .question .qaqa {
     text-align: center;
     color: #4f4f4fa6; font-size: 0.75rem;
     padding: 100px 0 200px 0;

@@ -44,7 +44,7 @@
     background: url(../images/check_box.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -20px; top: 1.5px;
+    position: absolute; left: -20px; top: -2px;
 }
 .loginPop .login #loginPage fieldset label #chkBtn:checked + span::before {
     content: ''; display: inline-block;
@@ -52,7 +52,7 @@
     background: url(../images/check_box_outline_blank.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -20px; top: 1.5px;
+    position: absolute; left: -20px; top: -2px;
 }
 .loginPop .login #loginPage fieldset label span {
     font-size: 0.75rem; font-weight: 500; color: #212121; 
@@ -190,39 +190,39 @@
     padding: 16px 0 25px 0;
 }
 .loginPop .searchBox #idpwBox fieldset .searchId label {}
-/* .loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail + span::before {
-    content: ''; display: inline-block;
-    width: 16px; height: 16px;
-    background: url(../images/radio_button_checked.png); 
-    background-position: 48px 48px;
-    position:relative; right: 20px;
-    position: absolute; left: -20px; top: 0;
-} */
-/* .loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail:checked + span::before {
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
     background: url(../images/radio_button_unchecked.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
     position: absolute; left: -20px; top: 0;
-} */
-/* .loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum + span::before {
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail:checked + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
     background: url(../images/radio_button_checked.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
     position: absolute; left: -20px; top: 0;
-} */
-/* .loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum:checked + span::before {
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
     background: url(../images/radio_button_unchecked.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
     position: absolute; left: -20px; top: 0;
-} */
-.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail {}
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum:checked + span::before {
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+    background: url(../images/radio_button_checked.png); 
+    background-position: 48px 48px;
+    position:relative; right: 20px;
+    position: absolute; left: -20px; top: 0;
+}
+.loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxMail {display: none;}
 .loginPop .searchBox #idpwBox fieldset .searchId label #selectBoxNum {}
 .loginPop .searchBox #idpwBox fieldset .searchId .email,
 .loginPop .searchBox #idpwBox fieldset .searchId .numName {
@@ -441,26 +441,27 @@
 }
 /* 첫번째 체크박스 */
 .joinWrap .terms .container #terms fieldset {}
-.joinWrap .terms .container #terms fieldset label #chkAll {display: none;}
-.joinWrap .terms .container #terms fieldset label #chkAll + span::before {
+.joinWrap .terms .container #terms fieldset .topchk {}
+.joinWrap .terms .container #terms fieldset .topchk label #chkAll {display: none;}
+.joinWrap .terms .container #terms fieldset .topchk label #chkAll + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
     background: url(../images/check_box.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -21px; top: 1.5px;
+    position: absolute; left: -21px; top: -2px;
 }
-.joinWrap .terms .container #terms fieldset label #chkAll:checked + span::before {
+.joinWrap .terms .container #terms fieldset .topchk label #chkAll:checked + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
     background: url(../images/check_box_outline_blank.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -21px; top: 1.5px;
+    position: absolute; left: -21px; top: -2px;
 }
 .joinWrap .terms .container #terms fieldset label span {
     font-size: 0.75rem; color: #212121; font-weight: 600;
-    position: relative; left: 20px; top: -20px;
+    position: relative; left: 20px; top: -22px;
     cursor: pointer;
 }
 /* 두번째 체크박스 */
@@ -473,7 +474,7 @@
     background: url(../images/check_box.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -21px; top: 2px;
+    position: absolute; left: -21px; top: -2px;
 }
 .joinWrap .terms .container #terms fieldset label #chkAllone:checked + span::before {
     content: ''; display: inline-block;
@@ -481,7 +482,7 @@
     background: url(../images/check_box_outline_blank.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -21px; top: 2px;
+    position: absolute; left: -21px; top: -2px;
 }
 .joinWrap .terms .container #terms fieldset .mainChk1 label span {
     font-size: 0.75rem; color: #212121; font-weight: 600;
@@ -517,7 +518,7 @@
     background: url(../images/check_box.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -21px; top: 2px;
+    position: absolute; left: -21px; top: -2px;
 }
 .joinWrap .terms .container #terms fieldset label #chkAlltwo:checked + span::before {
     content: ''; display: inline-block;
@@ -525,7 +526,7 @@
     background: url(../images/check_box_outline_blank.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -21px; top: 2px;
+    position: absolute; left: -21px; top: -2px;
 }
 .joinWrap .terms .container #terms fieldset .mainChk2 label span {
     font-size: 0.75rem; color: #212121; font-weight: 600;
@@ -557,7 +558,7 @@
     background: url(../images/check_box.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -21px; top: 2px;
+    position: absolute; left: -21px; top: -2px;
 }
 .joinWrap .terms .container #terms fieldset label #chkAdult:checked + span::before {
     content: ''; display: inline-block;
@@ -565,7 +566,7 @@
     background: url(../images/check_box_outline_blank.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -21px; top: 2px;
+    position: absolute; left: -21px; top: -2px;
 }
 .joinWrap .terms .container #terms fieldset .mainChk2 label span {}
 .joinWrap .terms .container #terms fieldset .mainChk2 label span em {}
@@ -725,18 +726,18 @@
 .signContainer .wrap .container #signUp fieldset .gender label #maleChk + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
-    background: url(../images/radio_button_checked.png); 
+    background: url(../images/radio_button_unchecked.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -21px; top: 1px;
+    position: absolute; left: -21px; top: -2px;
 }
 .signContainer .wrap .container #signUp fieldset .gender label #maleChk:checked + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
-    background: url(../images/radio_button_unchecked.png); 
+    background: url(../images/radio_button_checked.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -21px; top: 1px;
+    position: absolute; left: -21px; top: -2px;
 }
 .signContainer .wrap .container #signUp fieldset .gender label span {
     position: relative; left: 15px; 
@@ -745,18 +746,18 @@
 .signContainer .wrap .container #signUp fieldset .gender label #femaleChk + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
-    background: url(../images/radio_button_checked.png); 
+    background: url(../images/radio_button_unchecked.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -21px; top: 1px;
+    position: absolute; left: -21px; top: -2px;
 }
 .signContainer .wrap .container #signUp fieldset .gender label #femaleChk:checked + span::before {
     content: ''; display: inline-block;
     width: 16px; height: 16px;
-    background: url(../images/radio_button_unchecked.png); 
+    background: url(../images/radio_button_checked.png); 
     background-position: 48px 48px;
     position:relative; right: 20px;
-    position: absolute; left: -21px; top: 1px;
+    position: absolute; left: -21px; top: -2px;
 }
 .signContainer .wrap .container #signUp fieldset .gender label span {}
 .signContainer .wrap .container #signUp fieldset .gender label span,
@@ -815,13 +816,13 @@
 .signContainer .wrap .container #signUp fieldset .sign {
     display: flex; flex-flow: column nowrap;
 }
-.signContainer .wrap .container #signUp fieldset .sign .signUp {
+.signContainer .wrap .container #signUp fieldset .sign #signUpBtn {
     font-size: 0.875rem; color: #4f4f4f; font-weight: 600;
     background: #fff;
     border: 1px solid #dfe0df;
     padding: 10px 25px; 
 }
-.signContainer .wrap .container #signUp fieldset .sign .signUp:hover {
+.signContainer .wrap .container #signUp fieldset .sign #signUpBtn:hover {
     background: #4f4f4f; color: #fff;
     border: 1px solid #4f4f4f;
 }

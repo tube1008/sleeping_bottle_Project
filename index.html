@@ -134,13 +134,15 @@
                 <form action="#" method="get" id="terms">
                     <fieldset>
                         <legend class="skip">약관동의 양식</legend>
-                        <label for="chkAll">
-                            <input type="checkbox" name="chkAll" id="chkAll" checked>
-                            <span>이용약관, 개인정보 수집 및 이용에 모두 동의합니다.</span>
-                        </label>
-                        <div class="mainChk1">
-                            <label for="chkAllone" >
-                                <input type="checkbox" name="chkAllone" id="chkAllone" checked>
+                        <div class="topchk Allchk">
+                            <label for="chkAll">
+                                <input type="checkbox" class="chk" name="chkAll" id="chkAll" checked>
+                                <span>이용약관, 개인정보 수집 및 이용에 모두 동의합니다.</span>
+                            </label>
+                        </div>
+                        <div class="mainChk1 Allchk">
+                            <label for="chkAllone">
+                                <input type="checkbox" class="chk" name="chkAllone" id="chkAllone" checked>
                                 <span>이용약관 동의<em>(필수)</em></span>
                             </label>
                             <div class="textBox"><!--이용약관-->
@@ -232,9 +234,9 @@
                                 <p>이 약관은 &lt;사이트 개설일&gt;부터 시행합니다.</p>
                             </div>
                         </div>
-                        <div class="mainChk2">
+                        <div class="mainChk2 Allchk">
                             <label for="chkAlltwo">
-                                <input type="checkbox" name="chkAlltwo" id="chkAlltwo" checked>
+                                <input type="checkbox" class="chk" name="chkAlltwo" id="chkAlltwo" checked>
                                 <span>개인정보 수집 및 이용 동의<em>(필수)</em></span>
                             </label>
                             <div class="textBox"><!--개인정보 동의-->
@@ -251,7 +253,7 @@
                                 <p>회원탈퇴 시까지 (단, 관계 법령에 보존 근거가 있는 경우 해당 기간 시까지 보유, 개인정보처리방침에서 확인 가능)</p>
                             </div>
                             <label for="chkAdult">
-                                <input type="checkbox" name="chkAdult" id="chkAdult">
+                                <input type="checkbox" class="chk" name="chkAdult" id="chkAdult" checked>
                                 <span>만 14세 이상입니다.<em>(필수)</em></span>
                             </label>
                         </div>
@@ -296,11 +298,11 @@
                         <div class="gender">
                             <h2>성별</h2>
                             <label for="maleChk">
-                                <input type="checkbox" name="maleChk" id="maleChk" checked>
+                                <input type="radio" name="maleChk" id="maleChk" checked>
                                 <span>남자</span>
                             </label>
                             <label for="femaleChk">
-                                <input type="checkbox" name="femaleChk" id="femaleChk" checked>
+                                <input type="radio" name="maleChk" id="femaleChk" checked>
                                 <span>여자</span>
                             </label>
                         </div>
@@ -395,7 +397,7 @@
                             </select>
                         </div>
                         <div class="sign">
-                            <button type="submit" class="signUp">가입하기</button>
+                            <button type="button" id="signUpBtn">가입하기</button>
                         </div>
                     </fieldset>
                 </form>

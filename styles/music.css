@@ -1,4 +1,39 @@
-main {}
+/* popup */
+.musicDetail {
+    display: none;
+}
+.musicDetail .bg{
+    width: 100%; height: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    position: relative; z-index: 950;
+    position: fixed;
+}
+.musicDetail .bg .musicBox {}
+.musicDetail .bg .musicBox .closeBtn {
+    position: absolute; right: 5%; top: 5%;
+}
+.musicDetail .bg .musicBox .closeBtn img {width: 30px;}
+.musicDetail .bg .musicBox .fakeVideo {
+    position: absolute; left: 18%; top: 15%; 
+}
+.musicDetail .bg .musicBox .fakeVideo img {
+    width: 100%;
+}
+.musicDetail .bg .musicBox .text {
+    display: flex; flex-flow: column nowrap;
+    position: absolute; left: 20px; bottom: 20px;
+}
+.musicDetail .bg .musicBox .text .txt01 {
+    font-size: 1.188rem; color: #fff;
+}
+.musicDetail .bg .musicBox .text .txt02 {
+    font-size: 0.75rem; color: #fff;
+}
+/* main */
+main {
+    max-width: 1920px; margin: 0 auto;
+    overflow-x: hidden;
+}
 main .sleepingMusic {
     width: 100%; height: 100%;
     position: relative;

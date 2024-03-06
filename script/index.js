@@ -180,31 +180,6 @@ findPwId.addEventListener('click',()=>{
     }
 })
 
-document.addEventListener('DOMContentLoaded', function () {
-    var titleElements = document.querySelectorAll('.faqWrap .faqContainer .detail ul li .title');
-
-    titleElements.forEach(function (titleElement) {
-        titleElement.addEventListener('click', function () {
-            var moreDetailElement = this.nextElementSibling;
-
-            if (moreDetailElement.style.display === 'block') {
-                moreDetailElement.style.display = 'none';
-            } else {
-                // Hide all other open details before opening the clicked one
-                titleElements.forEach(function (otherTitleElement) {
-                    var otherMoreDetailElement = otherTitleElement.nextElementSibling;
-                    if (otherMoreDetailElement !== moreDetailElement) {
-                        otherMoreDetailElement.style.display = 'none';
-                    }
-                });
-
-                moreDetailElement.style.display = 'block';
-            }
-        });
-    });
-});
-
-
 let swiperContainer01 = document.querySelector('#slide')
 let swiper01 = new Swiper('#slide', {
     // 한 번에 보여줄 슬라이드 수
@@ -265,4 +240,21 @@ let swiper02 = new Swiper('#productContainer', {
         centeredSlides : false,
         }
     },
+})
+
+const chk = document.querySelectorAll('.Allchk .chk')
+console.log(chk)
+
+chk[0].addEventListener('change',()=>{
+    for(let i = 1; i < chk.length; i++){
+        chk[i].checked = chk[0].checked;
+        }
+});
+
+const signup = document.querySelector('#signUpBtn')
+console.log(signup)
+
+signup.addEventListener('click',()=>{
+    window.alert('회원가입이 완료 되었습니다.')
+    location.href = '../index.html'
 })
