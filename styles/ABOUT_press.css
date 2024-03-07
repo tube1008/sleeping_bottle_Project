@@ -81,10 +81,16 @@ main .slidePage .page .thumbPage {
 main .slidePage .page .thumbPage li {
     display: flex; align-items: center;
 }
-main .slidePage .page .thumbPage li a {
+main .slidePage .page .thumbPage li .number {
     font-size: 0.875rem;
     color: #4f4f4f66;
     padding: 0 10px;
+}
+main .slidePage .page .thumbPage li .active {
+    background: #ddd;
+    width: 32px; height: 32px;
+    color: #fff;
+    border-radius: 50%;
 }
 main .slidePage .page .thumbPage li:nth-child(1) a {color: #4f4f4f;}
 main .slidePage .page .next {margin-left: 15px;}

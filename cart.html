@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/shop_detail.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/cart.css">
+    <title>cart | SleepingBottle</title>
 </head>
 <body>
     <!-- 로그인 팝업창 -->
@@ -486,7 +486,64 @@
     </header>
     <main>
         <section>
-
+            <div class="title">
+                <h1>장바구니</h1>
+            </div>
+            <div class="shopInfo">
+                <div class="detail">
+                    <div class="productInfo">
+                        <input type="checkbox" name="allChk" id="allChk chk01">
+                        <p>상품 정보</p>
+                        <p>수량</p>
+                        <p>주문금액</p>
+                        <p>배송 정보</p>
+                    </div>
+                    <div class="product">
+                        <input type="checkbox" name="allChk" id="allChk chk02">
+                        <a href="./shop_detail.html" class="productImg"><img src="./images/shop/item01.jpg" alt="슬리핑보틀 로브"></a>
+                        <button type="button" class="closeBtn02"><img src="./images/icon-close.png" alt="상품삭제"></button>
+                        <div class="info">
+                            <h2>[슬리핑로브] 프리미엄 호텔식 로브</h2>
+                            <div class="option">
+                                <span>필수</span>
+                                <span>다크그레이 - 1개</span>
+                                <button type="button" class="closeBtn01"><img src="./images/icon-close.png" alt="상품삭제"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <span>1</span>
+                        <button type="button" class="optionChk">옵션/수량 변경</button>
+                    </div>
+                    <div class="price">
+                        <span>139,000원</span>
+                        <button type="button" class="purchase">바로구매</button>
+                    </div>
+                    <div class="delivery">
+                        <div class="data">
+                            <p>무료</p>
+                            <button type="button" class="dataChk"><img src="" alt="조건부 무료 배송"></button>
+                        </div>
+                        <p>택배</p>
+                    </div>
+                </div>
+                <div class="selectDelete">
+                    <div class="btn">
+                        <button type="button" class="choice">선택상품 삭제</button>
+                        <button type="button" class="outOfStock">품절상품 삭제</button>
+                    </div>
+                    <p>네이버페이 결제 시 할인금액과 배송비가 변경될 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="allprice">
+                <p>총 주문 상품 1개</p>
+                <p>139,000원<span>+</span>무료<span>=</span>139,000원</p>
+            </div>
+            <div class="order">
+                <button type="button" class="rightOrder">주문하기</button>
+                <button type="button" class="naverpay"><img src="" alt="">구매하기</button>
+                <a href="./index.html" class="continueShopping">계속 쇼핑하기</a>
+            </div>
         </section>
     </main> 
     <footer>
