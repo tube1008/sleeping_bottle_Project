@@ -112,7 +112,7 @@ main .pressDetailpage .next .nextPage span{
     font-size: 0.875rem; color: #4f4f4f;
     font-weight: 600;
 }
-main .pressDetailpage .next .btn .backPress{
+main .pressDetailpage .next .backPress{
     display: block;
     width: 66px;
     font-size: 0.75rem; color: #4f4f4f; font-weight: 500;

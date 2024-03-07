@@ -258,3 +258,32 @@ signup.addEventListener('click',()=>{
     window.alert('회원가입이 완료 되었습니다.')
     location.href = '../index.html'
 })
+
+// 모바일 메뉴
+
+const mMenu = document.querySelectorAll('.gnb li')
+
+const down01 = document.querySelector('.down01')
+const sub01 = document.querySelector('.sub01')
+
+const down02 = document.querySelector('down02')
+const sub02 = document.querySelector('.sub02')
+console.log(mMenu, down01, sub01, down02, sub02)
+
+sub01.style.display = 'none'
+sub02.style.display = 'none'
+
+let sub01_status = false
+down01.addEventListener ('click',function(){
+    if(sub01_status == false){
+        console.log(sub01_status)
+        sub01_status = !sub01_status
+        sub01.style.display = 'block';
+        down01.style.transform = 'scaleY(-1)'
+    }else{
+        console.log(sub01_status.status)
+        sub01.style.display = 'none';
+        down01.style.transform = 'scaleY(1)'
+        sub01_status = !sub01_status
+    }
+})
