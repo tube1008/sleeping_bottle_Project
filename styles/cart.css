@@ -1,0 +1,62 @@
+main {}
+main section {}
+main section .title {}
+main section .title h1 {
+    font-size: 1.875rem; font-weight: 600;
+    color: #4f4f4f;
+}
+main section .shopInfo {}
+main section .shopInfo .detail {}
+main section .shopInfo .detail .productInfo {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    padding: 12px 0;
+    border: 1px solid rgba(79, 79, 79, 0.15);
+}
+main section .shopInfo .detail .productInfo .chk1 {
+    
+}
+main section .shopInfo .detail .productInfo p {
+    font-size: 0.875rem; 
+    color: #4f4f4f99;
+}
+main section .shopInfo .detail .product {}
+main section .shopInfo .detail .product .chk02 {}
+main section .shopInfo .detail .product .productImg img {
+    width: 80px;
+}
+main section .shopInfo .detail .product .closeBtn02 img {
+    width: 12px;
+}
+main section .shopInfo .detail .product .info {}
+main section .shopInfo .detail .product .info h2 {}
+main section .shopInfo .detail .product .info .option {}
+main section .shopInfo .detail .product .info .option span {}
+main section .shopInfo .detail .product .info .option .closeBtn01 {}
+main section .shopInfo .detail .product .info .option .closeBtn01 img {
+    width: 12px;
+}
+main section .shopInfo .detail .quantity {}
+main section .shopInfo .detail .quantity p {}
+main section .shopInfo .detail .quantity .optionChk {}
+main section .shopInfo .detail .price {}
+main section .shopInfo .detail .price p {}
+main section .shopInfo .detail .price .purchase {}
+main section .shopInfo .detail .delivery {}
+main section .shopInfo .detail .delivery .data {}
+main section .shopInfo .detail .delivery .data p {}
+main section .shopInfo .detail .delivery .data .dataChk {}
+main section .shopInfo .detail .delivery .data .dataChk img {}
+main section .shopInfo .detail .delivery p {}
+main section .shopInfo .selectDelete {}
+main section .shopInfo .selectDelete .btn {}
+main section .shopInfo .selectDelete .btn .choice {}
+main section .shopInfo .selectDelete .btn .outOfStock {}
+main section .shopInfo .selectDelete p {}
+main section .allprice {}
+main section .allprice p {}
+main section .allprice p span {}
+main section .order {}
+main section .order .rightOrder {}
+main section .order .naverpay {}
+main section .order .continueShopping {}
