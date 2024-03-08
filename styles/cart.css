@@ -1,6 +1,4 @@
-main {
-    
-}
+main {}
 main section {
     max-width: 1250px; margin: 0 auto;
 }
@@ -11,7 +9,9 @@ main section .title h1 {
     font-size: 1.875rem; font-weight: 600;
     color: #4f4f4f;
 }
-main section .shopInfo {}
+main section .shopInfo {
+    
+}
 main section .shopInfo .detail {
     display: flex; flex-flow: row nowrap;
     align-items: center;
@@ -25,6 +25,7 @@ main section .shopInfo .detail .product .productInfo {
     display: flex; flex-flow: row nowrap;
     align-items: center;
     padding: 12px 0;
+    
 }
 main section .shopInfo .detail .product .productInfo .chk01 {
     margin-right: 16px;
@@ -36,8 +37,6 @@ main section .shopInfo .detail .product .productInfo h2 {
 main section .shopInfo .detail .product .productDetail {
     width: 760px;
     display: flex; flex-flow: row nowrap;
-    border-top: 1px solid rgba(79, 79, 79, 0.15);
-    border-right: 1px solid rgba(79, 79, 79, 0.15);
     padding: 20px 0;
 }
 main section .shopInfo .detail .product .productDetail .chk02 {
@@ -98,8 +97,6 @@ main section .shopInfo .detail .quantity h2 {
     
 }
 main section .shopInfo .detail .quantity .option {
-    border-top: 1px solid rgba(79, 79, 79, 0.15);
-    border-right: 1px solid rgba(79, 79, 79, 0.15);
     padding: 20px 30px;   
 }
 main section .shopInfo .detail .quantity .option p {
@@ -122,8 +119,6 @@ main section .shopInfo .detail .price h2 {
 }
 main section .shopInfo .detail .price .rightnow {
     padding: 20px 30px;
-    border-top: 1px solid rgba(79, 79, 79, 0.15);
-    border-right: 1px solid rgba(79, 79, 79, 0.15);
 }
 main section .shopInfo .detail .price .rightnow .allprice {
     font-size: 1.25rem; color: #4f4f4f; font-weight: 600;
@@ -145,8 +140,6 @@ main section .shopInfo .detail .delivery h2 {
 }
 main section .shopInfo .detail .delivery .data {
     padding: 20px 30px;
-    border-top: 1px solid rgba(79, 79, 79, 0.15);
-    border-right: 1px solid rgba(79, 79, 79, 0.15);
     display: flex; flex-flow: row nowrap;
 }
 main section .shopInfo .detail .delivery .data .free {
