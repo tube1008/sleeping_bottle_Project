@@ -138,43 +138,43 @@ join.addEventListener('click', function(e){
     joinpopup_bg.style.display = 'flex'
     join_access.style.display = 'block'
     terms.style.display = 'none'
-    e.preventDefault(e)
+    e.preventDefault()
 })
 
 joinCloseBtn.addEventListener('click', function(e){
     joinpopup_bg.style.display = 'none'
     join_access.style.display = 'none'
-    e.preventDefault(e)
+    e.preventDefault()
 })
 
 joinMembership.addEventListener('click', function(e){
     joinpopup_bg.style.display = 'flex'
     terms.style.display = 'block'
     join_access.style.display = 'none'
-    e.preventDefault(e)
+    e.preventDefault()
 })
 
 closeTerms.addEventListener('click',function(e){
     joinpopup_bg.style.display = 'none'
     join_access.style.display = 'none'
-    e.preventDefault(e)
+    e.preventDefault()
 })
 
 signupBtn.addEventListener('click',function(e){
     joinpopup_bg.style.display = 'block'
     signContainer.style.display = 'block'
     terms.style.display = 'none'
-    e.preventDefault(e)
+    e.preventDefault()
 })
 signCloseBtn.addEventListener('click',function(e){
     joinpopup_bg.style.display = 'none'
     signContainer.style.display = 'none'
-    e.preventDefault(e)
+    e.preventDefault()
 })
 resetBtn.addEventListener('click', function(e){
     joinpopup_bg.style.display = 'none'
     join_access.style.display = 'none'
-    e.preventDefault(e)
+    e.preventDefault()
 })
 
 // footer area
@@ -182,13 +182,13 @@ resetBtn.addEventListener('click', function(e){
 useTerms.addEventListener('click', function(e){
     term.style.display = 'flex'
     utiliTitle.style.display = 'block'
-    e.preventDefault(e)
+    e.preventDefault()
 })
 
 infoPolicy.addEventListener('click', function(e){
     term.style.display = 'flex'
     policyTitle.style.display = 'block'
-    e.preventDefault(e)
+    e.preventDefault()
 })
 
 const searchIdd = document.querySelector ('.searchIdd') // 아이디 찾기
