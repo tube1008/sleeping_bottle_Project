@@ -50,7 +50,7 @@
     border-bottom-right-radius: 10px;
 }
 /* popup */
-.sharing {}
+.sharing {display: none;}
 .sharing .bg {
     width: 100%; height: 100%;
     position: relative; z-index: 950;
