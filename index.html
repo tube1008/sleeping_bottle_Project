@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sleeping Bottle | 슬리핑 보틀</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--플러그인 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -27,7 +29,7 @@
         <div class="login">
             <div class="top">
                 <h1>로그인</h1>
-                <a href="./index.html" class="closeLogin"><img src="./images/icon-close.png" alt="로그인에서 나가기"></a>
+                <a href="#" class="closeLogin"><img src="./images/icon-close.png" alt="로그인에서 나가기"></a>
             </div>
             <form action="#" method="get" id="loginPage">
                 <fieldset>
@@ -59,17 +61,17 @@
             <div class="title">
                 <h1 class="titleId">아이디 찾기</h1>
                 <h1 class="titlePw">비밀번호 찾기</h1>
-                <a href="./index.html" class="closeIdpw"><img src="./images/icon-close.png" alt="아이디비번찾기에서나가기"></a>
+                <a href="#" class="closeIdpw"><img src="./images/icon-close.png" alt="아이디비번찾기에서나가기"></a>
             </div>
             <div class="searchIdPw">
-                <a href="#" class="searchIdd active"><h2>아이디 찾기</h2></a><!--클릭시 비밀번호 찾기로 바뀜 class'active''-->
+                <a href="#" class="searchIdd active"><h2>아이디 찾기</h2></a>
                 <a href="#" class="searchPww"><h2>비밀번호 찾기</h2></a>
             </div>
             <form action="#" method="get" id="idpwBox">
                 <fieldset>
                     <legend class="skip">아이디 비밀번호 찾기 양식</legend>
                     <div class="searchId">
-                        <span>아이디를 찾을 방법을 선택해주세요.</span><!--아이디 찾기-->
+                        <span>아이디를 찾을 방법을 선택해주세요.</span>
                         <div class="email">
                             <label for="selectBoxMail" class="boxMail">
                                 <input type="radio" name="selectBoxMail" id="selectBoxMail" >
@@ -87,7 +89,7 @@
                         </div>
                         <a href="#" class="findIdPw">아이디 찾기</a>
                     </div>
-                    <div class="searchPw"><!--비밀번호 찾기-->
+                    <div class="searchPw">
                         <input type="text" name="joinId" id="joinId" placeholder="가입한 아이디">
                         <a href="#" class="findPwId">비밀번호 찾기</a>
                     </div>
@@ -98,7 +100,7 @@
         <div class="nondelivery">
             <div class="title">
                 <h1>비회원 주문조회</h1>
-                <a href="./index.html" class="closeDeli"><img src="./images/icon-close.png" alt="메인페이지로 돌아가기"></a>
+                <a href="#" class="closeDeli"><img src="./images/icon-close.png" alt="메인페이지로 돌아가기"></a>
             </div>
             <form action="#" method="get" id="delivery">
                 <fieldset>
@@ -115,7 +117,7 @@
         <div class="joinPop">
             <div class="title">
                 <h1>회원가입</h1>
-                <a href="./index.html" class="joinCloseBtn"><img src="./images/icon-close.png" alt="closeBtn"></a>
+                <a href="#" class="joinCloseBtn"><img src="./images/icon-close.png" alt="closeBtn"></a>
             </div>
             <a href="#" class="joinMembership">ID/PW 회원가입</a>
             <span class="joinHr"><span>또는</span></span>
@@ -129,7 +131,7 @@
             <div class="container">
                 <div class="title">
                     <h1>약관동의</h1>
-                    <a href="./index.html" class="closeTerms"><img src="./images/icon-close.png" alt="closeBtn"></a>
+                    <a href="#" class="closeTerms"><img src="./images/icon-close.png" alt="closeBtn"></a>
                 </div>
                 <form action="#" method="get" id="terms">
                     <fieldset>
@@ -258,7 +260,7 @@
                             </label>
                         </div>
                         <div class="selectBtn">
-                            <a href="./index.html" type="reset" class="resetBtn">취소</a>
+                            <a href="#" type="reset" class="resetBtn">취소</a>
                             <button type="button" class="signupBtn">가입하기</button>
                         </div>
                     </fieldset>
@@ -271,7 +273,7 @@
         <div class="wrap">
             <div class="title">
                 <h1>회원가입</h1>
-                <a href="./index.html" class="signCloseBtn"><img src="./images/icon-close.png" alt="closeBtn"></a>
+                <a href="#" class="signCloseBtn"><img src="./images/icon-close.png" alt="closeBtn"></a>
             </div>  
             <div class="container">
                 <form action="#" method="post" id="signUp">
@@ -452,16 +454,16 @@
                         <a href="#" class="langEn">English</a>
                     </div>
                 </div>      
-                <a href="./index.html" class="closeBtn"><img src="./images/icon-close.png" alt=""></a>
+                <a href="#" class="closeBtn"><img src="./images/icon-close.png" alt=""></a>
             </div>
         </div>
         <div class="mainMenu">
             <!-- 태블릿,모바일 메뉴 (햄버거) -->
             <a href="#" class="mMenu"><img src="./images/icon-menu.png" alt="mobileMenu"></a>
             <!-- 태블릿,모바일 모드 메인로고 -->
-            <h1 class="mLogo"><a href="./index.html"><img src="./images/mobile,tablletmodelogo.png" alt="Sleeping Bottle"></a></h1>  
+            <h1 class="mLogo"><a href="#"><img src="./images/mobile,tablletmodelogo.png" alt="Sleeping Bottle"></a></h1>  
             <!-- 메인로고(데스크탑) -->
-            <h1 class="dLogo"><a href="./index.html"><img src="./images/mainlogo.png" alt="Sleeping Bottle"></a></h1>
+            <h1 class="dLogo"><a href="#"><img src="./images/mainlogo.png" alt="Sleeping Bottle"></a></h1>
             <!-- 메인 카테고리(데스크탑) -->
             <nav>
                 <ul class="gnb">
@@ -738,7 +740,7 @@
                 <div class="utiliBody">
                     <div class="top">
                         <h1>이용약관</h1>
-                        <a href="./index.html" class="closeBtn"><img src="./images/icon(ver2)-close.png" alt="close"></a>
+                        <a href="#" class="closeBtn"><img src="./images/icon(ver2)-close.png" alt="close"></a>
                     </div>
                     <h2>제1조 목적</h2>
                     <p>본 이용약관은 “슬리핑보틀”(이하 "슬리핑보틀")의 서비스의 이용조건과 운영에 관한 제반 사항 규정을 목적으로 합니다.</p>
@@ -833,7 +835,7 @@
                 <div class="policyBody">
                     <div class="top">
                         <h1>개인정보처리방침</h1>
-                        <a href="./index.html" class="closeBtn"><img src="./images/icon(ver2)-close.png" alt="close"></a>
+                        <a href="#" class="closeBtn"><img src="./images/icon(ver2)-close.png" alt="close"></a>
                     </div>
                     <p>회사명(이하 ‘슬리핑보틀’라 한다)는 개인정보 보호법 제30조에 따라 정보 주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보 처리지침을 수립, 공개합니다.</p>
                     <h2>제1조 (개인정보의 처리목적)</h2>
@@ -956,5 +958,6 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
     <script src="./script/index.js" defer></script>
+    <script src="./script/popup.js" defer></script>
 </body>
 </html> 

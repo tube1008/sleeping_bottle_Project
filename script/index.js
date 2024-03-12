@@ -6,7 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
         popup.style.display = 'none';
     });
 });
-
+// const body_a = document.querySelectorAll('body a')
+// for(let i of body_a){
+//     i.addEventListener('click',(e)=>{
+//         e.preventDefault()
+//     })
+// }
 // 팝업창
 const body = document.querySelector('body, html')
 const loginpopup_bg = document.querySelector ('.loginPop')//로그인 배경
@@ -34,92 +39,156 @@ const policyTitle = document.querySelector ('.policyTitle') // footer 개인정�
 const frmId = document.querySelector ('#frmId')
 const frmPw = document.querySelector ('#frmPw')
 const loginSel = document.querySelector ('.loginSel')
+const closeLogin = document.querySelector ('.closeLogin')
+const closeIdpw = document.querySelector ('.closeIdpw')
+const closeDeli = document.querySelector ('.closeDeli')
+const joinCloseBtn = document.querySelector ('.joinCloseBtn')
+const closeTerms = document.querySelector ('.closeTerms')
+const resetBtn = document.querySelector ('.resetBtn')
+const signCloseBtn = document.querySelector ('.signCloseBtn')
 
-console.log(login, loginpopup_bg, body, login_access, join, join_access, joinpopup_bg, joinGo, idPwfind, searchBox, bottom, nonShipping, nondelivery, nonlogin, terms, joinMembership, signupBtn, signContainer, useTerms, infoPolicy, term, utiliTitle, policyTitle )
+console.log(login, loginpopup_bg, body, login_access, join, join_access, joinpopup_bg, joinGo, idPwfind, searchBox, bottom, nonShipping, nondelivery, nonlogin, terms, joinMembership, signupBtn, signContainer, useTerms, infoPolicy, term, utiliTitle, policyTitle, closeLogin )
+console.log(closeIdpw)
 
 loginpopup_bg.style.display = 'none'
 joinpopup_bg.style.display = 'none'
-searchBox.style.display = 'none'
 login_access.style.display = 'none'
 join_access.style.display = 'none'
 term.style.display = 'none'
 
-
-login.addEventListener('click',function(){
+// 로그인 팝업
+login.addEventListener('click',function(e){
     loginpopup_bg.style.display = 'flex'
     login_access.style.display = 'block'
+    login_access.classList.remove('hide')
+    bottom.style.display = 'block'
+    nonShipping.style.display = 'block'
+    e.preventDefault()
+})
+closeLogin.addEventListener('click',function(e){
+    loginpopup_bg.style.display = 'none'
+    e.preventDefault()
 })
 
-loginSel.addEventListener('click',()=>{
+// 로그인 미입력시 알림
+loginSel.addEventListener('click',(e)=>{
     if(frmPw.value == ''){
         alert('비밀번호를 입력하세요.')
     }
     if(frmId.value == ''){
         alert('아이디를 입력하세요.')
     }
+    e.preventDefault()
 })
 
-idPwfind.addEventListener('click', function(){
+// 아이디 비밀번호 찾기
+idPwfind.addEventListener('click', function(e){
     searchBox.style.display = 'block'
     login_access.classList.add('hide')
     loginpopup_bg.style.display = 'flex'
     bottom.style.display = 'none'
     nonShipping.style.display = 'none'
+    e.preventDefault()
+})
+closeIdpw.addEventListener('click',function(e){
+    loginpopup_bg.style.display = 'none'
+    searchBox.style.display = 'none'
+    e.preventDefault()
 })
 
-
-
-nonShipping.addEventListener('click', function(){
+//비회원 배송조회 팝업
+nonShipping.addEventListener('click', function(e){
     nondelivery.style.display = 'block'
     login_access.classList.add('hide')
     loginpopup_bg.style.display = 'flex'
+    e.preventDefault()
 })
 
-nonlogin.addEventListener('click', function(){
+closeDeli.addEventListener('click', function(e){
+    loginpopup_bg.style.display = 'none'
+    nondelivery.style.display = 'none'
+    e.preventDefault()
+})
+
+nonlogin.addEventListener('click', function(e){
     nondelivery.style.display = 'none'
     login_access.classList.remove('hide')
     loginpopup_bg.style.display = 'flex'
+    e.preventDefault()
 })
 
-loginpopup_bg.addEventListener('click', function() {
+loginpopup_bg.addEventListener('click', function(e) {
     login_access.style.display = 'block'
     body.style.overflow = 'auto'
+    e.preventDefault()
 })
 
-joinGo.addEventListener('click', function(){
+joinGo.addEventListener('click', function(e){
     joinpopup_bg.style.display = 'flex'
     join_access.style.display = 'block'
     loginpopup_bg.style.display = 'none'
     login_access.style.display = 'block'
+    terms.style.display = 'none'
+    e.preventDefault()
 })
 
-join.addEventListener('click', function(){
+// 회원가입창
+
+join.addEventListener('click', function(e){
     joinpopup_bg.style.display = 'flex'
     join_access.style.display = 'block'
+    terms.style.display = 'none'
+    e.preventDefault(e)
 })
 
-joinMembership.addEventListener('click', function(){
+joinCloseBtn.addEventListener('click', function(e){
+    joinpopup_bg.style.display = 'none'
+    join_access.style.display = 'none'
+    e.preventDefault(e)
+})
+
+joinMembership.addEventListener('click', function(e){
     joinpopup_bg.style.display = 'flex'
     terms.style.display = 'block'
     join_access.style.display = 'none'
+    e.preventDefault(e)
 })
 
-signupBtn.addEventListener('click',function(){
+closeTerms.addEventListener('click',function(e){
+    joinpopup_bg.style.display = 'none'
+    join_access.style.display = 'none'
+    e.preventDefault(e)
+})
+
+signupBtn.addEventListener('click',function(e){
     joinpopup_bg.style.display = 'block'
     signContainer.style.display = 'block'
     terms.style.display = 'none'
+    e.preventDefault(e)
+})
+signCloseBtn.addEventListener('click',function(e){
+    joinpopup_bg.style.display = 'none'
+    signContainer.style.display = 'none'
+    e.preventDefault(e)
+})
+resetBtn.addEventListener('click', function(e){
+    joinpopup_bg.style.display = 'none'
+    join_access.style.display = 'none'
+    e.preventDefault(e)
 })
 
 // footer area
 
-useTerms.addEventListener('click', function(){
+useTerms.addEventListener('click', function(e){
     term.style.display = 'flex'
     utiliTitle.style.display = 'block'
+    e.preventDefault(e)
 })
 
-infoPolicy.addEventListener('click', function(){
+infoPolicy.addEventListener('click', function(e){
     term.style.display = 'flex'
     policyTitle.style.display = 'block'
+    e.preventDefault(e)
 })
 
 const searchIdd = document.querySelector ('.searchIdd') // 아이디 찾기
@@ -287,3 +356,5 @@ down01.addEventListener ('click',function(){
         sub01_status = !sub01_status
     }
 })
+
+
