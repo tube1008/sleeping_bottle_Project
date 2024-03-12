@@ -46,6 +46,8 @@ const joinCloseBtn = document.querySelector ('.joinCloseBtn')
 const closeTerms = document.querySelector ('.closeTerms')
 const resetBtn = document.querySelector ('.resetBtn')
 const signCloseBtn = document.querySelector ('.signCloseBtn')
+const closeBtn01 = document.querySelector ('.closeBtn01')
+const closeBtn02 = document.querySelector ('.closeBtn02')
 
 console.log(login, loginpopup_bg, body, login_access, join, join_access, joinpopup_bg, joinGo, idPwfind, searchBox, bottom, nonShipping, nondelivery, nonlogin, terms, joinMembership, signupBtn, signContainer, useTerms, infoPolicy, term, utiliTitle, policyTitle, closeLogin )
 console.log(closeIdpw)
@@ -191,6 +193,17 @@ infoPolicy.addEventListener('click', function(e){
     e.preventDefault()
 })
 
+closeBtn01.addEventListener('click',function(e){
+    term.style.display = 'none'
+    utiliTitle.style.display = 'none'
+    e.preventDefault()
+})
+closeBtn02.addEventListener('click',function(e){
+    term.style.display = 'none'
+    policyTitle.style.display = 'none'
+    e.preventDefault()
+})
+
 const searchIdd = document.querySelector ('.searchIdd') // 아이디 찾기
 const emailId = document.querySelector ('#emailId') // 이메일로 찾기
 const searchPww = document.querySelector ('.searchPww') // 비밀번호 찾기
@@ -214,27 +227,31 @@ username.style.display = 'none'
 phNumber.style.display = 'none'
 selectBoxNum.style.display = 'none'
 
-boxMail.addEventListener ('click', function(){
+boxMail.addEventListener ('click', function(e){
     emailId.style.display = 'block'
     username.style.display = 'none'
     phNumber.style.display = 'none'
+    e.preventDefault()
 })
 
-boxNum.addEventListener ('click', function(){
+boxNum.addEventListener ('click', function(e){
     emailId.style.display = 'none'
     username.style.display = 'block'
     phNumber.style.display = 'block'
+    e.preventDefault()
 })
 
-searchPww.addEventListener ('click', function(){
+searchPww.addEventListener ('click', function(e){
     searchId.style.display = 'none'
     searchPw.style.display = 'block'
     searchPww.style.backgraund = '#fff'
+    e.preventDefault()
 })
 
-searchIdd.addEventListener ('click', function(){
+searchIdd.addEventListener ('click', function(e){
     searchId.style.display = 'flex'
     searchPw.style.display = 'none'
+    e.preventDefault()
 })
 
 findIdPw.addEventListener('click',()=>{
