@@ -30,13 +30,18 @@
                     <h2>공유하기</h2>
                     <button type="button" class="sharingBtn"><img src="./images/icon-close.png" alt="닫기"></button>
                 </div>
-                <a href="#" class="line"><img src="./images/shop/line.png" alt="line"><span>라인</span></a>
-                <a href="#" class="band"><img src="./images/shop/band.png" alt="band"><span>밴드</span></a>
-                <a href="#" class="naver"><img src="./images/shop/naver.png" alt="naver"><span>네이버</span></a>
-                <a href="#" class="facebook"><img src="./images/shop/facebook.png" alt="facebook"><span>페이스북</span></a>
-                <a href="#" class="twitter"><img src="./images/shop/twitter.png" alt="twitter"><span>트위터</span></a>
+                <div class="box">
+                    <ul>
+                        <li><a href="#" class="line"><img src="./images/shop/line.png" alt="line"><span>라인</span></a></li>
+                        <li><a href="#" class="band"><img src="./images/shop/band.png" alt="band"><span>밴드</span></a></li>
+                        <li><a href="#" class="naver"><img src="./images/shop/naver.png" alt="naver"><span>네이버</span></a></li>
+                        <li><a href="#" class="facebook"><img src="./images/shop/facebook.png" alt="facebook"><span>페이스북</span></a></li>
+                        <li><a href="#" class="twitter"><img src="./images/shop/twitter.png" alt="twitter"><span>트위터</span></a></li>
+                    </ul>
+                </div>
                 <div class="copy">
-                    <p>https://sleeping-bottle.com/sleepinggoods/?idx=163<span>복사</span></p>
+                    <input type="text" id="snsCopy" value="https://sleeping-bottle.com/sleepinggoods/?idx=163" readonly>
+                    <button type="button" class="copySns">복사</button>
                 </div>
             </div>
         </div>
@@ -540,7 +545,7 @@
                         </div>
                         <div class="price">
                             <p>159,000원</p>
-                            <a href="#"><img src="./images/about_press/icon_share.png" alt="공유하기"></a>
+                            <button type="button" class="share"><img src="./images/about_press/icon_share.png" alt="공유하기"></button>
                         </div>
                         <div class="explanation">
                             <p>소중한 피부를 생각하며 구매하실 분들을 위해 마음을 담아 정성껏 제작했습니다. 하루의 피로를 씻어 내고<br> 슬리핑 로브의 정성어린 손길을 느껴보세요.</p>
@@ -560,9 +565,23 @@
                         <div class="choice">
                             <p>컬러*</p>
                             <div class="color">
-                                <p class="white"><span class="wh">오프화이트(139,000원)</span></p>
-                                <p class="gray"><span class="gr">다크그레이(139,000원)</span></p>
+                                <p class="white"><span class="wh">오프화이트(159,000원)</span></p>
+                                <p class="gray"><span class="gr">다크그레이(159,000원)</span></p>
                             </div>
+                        </div>
+                        <div class="productPrice">
+                            <span class="selectResult">
+                                <span class="opt_list">
+                                    <span class="opt"></span>
+                                </span>
+                                <span class="num_result">
+                                    <button type="button" id="minus">-</button>
+                                    <input type="text" id="num_count" readonly>
+                                    <button type="button" id="plus">+</button>
+                                </span>
+                                <span class="order_price">0원</span>
+                                <a href="#" class="shopClosebtn"><img src="./images/icon(ver2)-close.png" alt=""></a>
+                            </span>
                         </div>
                         <div class="purchase">
                             <div class="buy">

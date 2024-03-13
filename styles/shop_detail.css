@@ -58,36 +58,93 @@
     position: fixed;
 }
 .sharing .bg .sharingBox {
-    width: 310px;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     position: absolute; left: 45%; top: 40%;
 }
-.sharing .bg .sharingBox .title {}
-.sharing .bg .sharingBox .title h2 {}
+.sharing .bg .sharingBox .title {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 18px;
+}
+.sharing .bg .sharingBox .title h2 {
+    font-size: 0.938rem; font-weight: 600;
+}
 .sharing .bg .sharingBox .title .sharingBtn {}
-.sharing .bg .sharingBox .title .sharingBtn img {}
-.sharing .bg .sharingBox .a {}
-.sharing .bg .sharingBox .a img {}
-.sharing .bg .sharingBox .a span {}
-.sharing .bg .sharingBox .line {}
-.sharing .bg .sharingBox .band {}
-.sharing .bg .sharingBox .naver {}
-.sharing .bg .sharingBox .facebook {}
-.sharing .bg .sharingBox .twitter {}
-.sharing .bg .sharingBox .line img {}
-.sharing .bg .sharingBox .band img {}
-.sharing .bg .sharingBox .naver img {}
-.sharing .bg .sharingBox .facebook img {}
-.sharing .bg .sharingBox .twitter img {}
-.sharing .bg .sharingBox .line img span {}
-.sharing .bg .sharingBox .band img span {}
-.sharing .bg .sharingBox .naver img span {}
-.sharing .bg .sharingBox .facebook img span {}
-.sharing .bg .sharingBox .twitter img span {}
-.sharing .bg .sharingBox .copy {}
-.sharing .bg .sharingBox .copy p {}
-.sharing .bg .sharingBox .copy p span {}
+.sharing .bg .sharingBox .title .sharingBtn img {
+    width: 18px;
+}
+.sharing .bg .sharingBox .box {
+    padding: 0 18px 18px 18px;
+}
+.sharing .bg .sharingBox .box ul {
+    display: flex; flex-flow: row nowrap;
+} 
+.sharing .bg .sharingBox .box ul li {
+    padding: 5px;
+} 
+.sharing .bg .sharingBox .box ul li .line {
+    display: flex; flex-flow: column nowrap; 
+}
+.sharing .bg .sharingBox .box ul li .band {
+    display: flex; flex-flow: column nowrap;
+}
+.sharing .bg .sharingBox .box ul li .naver {
+    display: flex; flex-flow: column nowrap; 
+}
+.sharing .bg .sharingBox .box ul li .facebook {
+    display: flex; flex-flow: column nowrap;
+}
+.sharing .bg .sharingBox .box ul li .twitter {
+    display: flex; flex-flow: column nowrap;
+}
+.sharing .bg .sharingBox .box ul li .line img {width: 60px; padding-bottom: 5px;}
+.sharing .bg .sharingBox .box ul li .band img {width: 60px; padding-bottom: 5px;}
+.sharing .bg .sharingBox .box ul li .naver img {width: 60px; padding-bottom: 5px;}
+.sharing .bg .sharingBox .box ul li .facebook img {width: 60px; padding-bottom: 5px;}
+.sharing .bg .sharingBox .box ul li .twitter img {width: 60px; padding-bottom: 5px;}
+.sharing .bg .sharingBox .box ul li .line span {
+    font-size: 0.75rem;
+    color: #4f4f4f;
+    text-align: center;
+}
+.sharing .bg .sharingBox .box ul li .band span {
+    font-size: 0.75rem;
+    color: #4f4f4f;
+    text-align: center;
+}
+.sharing .bg .sharingBox .box ul li .naver span {
+    font-size: 0.75rem;
+    color: #4f4f4f;
+    text-align: center;
+}
+.sharing .bg .sharingBox .box ul li .facebook span {
+    font-size: 0.75rem;
+    color: #4f4f4f;
+    text-align: center;
+}
+.sharing .bg .sharingBox .box ul li .twitter span {
+    font-size: 0.75rem;
+    color: #4f4f4f;
+    text-align: center;
+}
+.sharing .bg .sharingBox .copy {
+    position: relative;
+    padding: 0 18px 18px 18px;
+}
+.sharing .bg .sharingBox .copy #snsCopy {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    padding: 6.5px 12px;
+    background: #ddd;
+}
+.sharing .bg .sharingBox .copy .copySns {
+    position: absolute; right: 18px; top: 0;
+    font-size: 0.813rem; color: #4f4f4f;
+    border: 1px solid #e5e7eb;
+    padding: 7px 16px;
+    background: #fff;
+}
 main {
     max-width: 1250px; margin: 0 auto;
 }
@@ -147,8 +204,8 @@ main section .shopInfo .infoWrap .container .price {
 main section .shopInfo .infoWrap .container .price p {
     font-size: 1.125rem; color: #4f4f4f;
 }
-main section .shopInfo .infoWrap .container .price a {}
-main section .shopInfo .infoWrap .container .price a img {
+main section .shopInfo .infoWrap .container .price .share {}
+main section .shopInfo .infoWrap .container .price .share img {
     height: 20px;
 }
 main section .shopInfo .infoWrap .container .explanation {}

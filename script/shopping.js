@@ -97,12 +97,30 @@ smallThumbnail[2].addEventListener('mouseover', function(){
     bigThumbnail.src = "./images/shop/item01_2_detail.jpg"
 })
 
-// // 컬러 마우스오버
+// 공유하기
 
-// const white = document.querySelector ('.white')
-// const brown = document.querySelector ('.brown')
-// console.log(white, brown)
+const share = document.querySelector('.share')
+const sharing = document.querySelector('.sharing')
+const sharingBtn = document.querySelector('.sharingBtn')
+console.log(share, sharing, sharingBtn)
 
-// white.addEventListener('mouseover',()=>{
-    
-// })
+share.addEventListener('click',function(){
+    sharing.style.display = 'flex'
+})
+
+sharingBtn.addEventListener('click',function(){
+    sharing.style.display = 'none'
+})
+
+//공유하기 에서 복사버튼을 클릭했을때 주소가 복사가 되는 기능
+
+const copyButton = document.querySelector('.copySns');
+const copyInput = document.querySelector('#snsCopy');
+
+copyButton.addEventListener('click', function () {
+    copyInput.select();
+    window.getSelection().removeAllRanges();
+    alert('주소가 복사되었습니다.');
+});
+
+
