@@ -148,8 +148,10 @@ main section .cartWrap .productDetail .delivery .delinfo {
 main section .cartWrap .productDetail .delivery .delinfo p {
     font-size: 0.938rem; color: #4f4f4f;
 }
-main section .cartWrap .productDetail .delivery .delinfo .qna {}
-main section .cartWrap .productDetail .delivery .delinfo .qna img {}
+main section .cartWrap .productDetail .delivery .delinfo .qna {padding-left: 5px;}
+main section .cartWrap .productDetail .delivery .delinfo .qna img {
+    width: 18px;
+}
 main section .cartWrap .productDetail .delivery p {
     font-size: 0.813rem; color: #4f4f4f;
 }

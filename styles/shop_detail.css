@@ -49,6 +49,45 @@
     transition: 0.2s;
     border-bottom-right-radius: 10px;
 }
+/* popup */
+.sharing {display: none;}
+.sharing .bg {
+    width: 100%; height: 100%;
+    position: relative; z-index: 950;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+}
+.sharing .bg .sharingBox {
+    width: 310px;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute; left: 45%; top: 40%;
+}
+.sharing .bg .sharingBox .title {}
+.sharing .bg .sharingBox .title h2 {}
+.sharing .bg .sharingBox .title .sharingBtn {}
+.sharing .bg .sharingBox .title .sharingBtn img {}
+.sharing .bg .sharingBox .a {}
+.sharing .bg .sharingBox .a img {}
+.sharing .bg .sharingBox .a span {}
+.sharing .bg .sharingBox .line {}
+.sharing .bg .sharingBox .band {}
+.sharing .bg .sharingBox .naver {}
+.sharing .bg .sharingBox .facebook {}
+.sharing .bg .sharingBox .twitter {}
+.sharing .bg .sharingBox .line img {}
+.sharing .bg .sharingBox .band img {}
+.sharing .bg .sharingBox .naver img {}
+.sharing .bg .sharingBox .facebook img {}
+.sharing .bg .sharingBox .twitter img {}
+.sharing .bg .sharingBox .line img span {}
+.sharing .bg .sharingBox .band img span {}
+.sharing .bg .sharingBox .naver img span {}
+.sharing .bg .sharingBox .facebook img span {}
+.sharing .bg .sharingBox .twitter img span {}
+.sharing .bg .sharingBox .copy {}
+.sharing .bg .sharingBox .copy p {}
+.sharing .bg .sharingBox .copy p span {}
 main {
     max-width: 1250px; margin: 0 auto;
 }
@@ -80,7 +119,7 @@ main section .shopInfo .shopImg .bigThumbnail img {width: 610px;}
 main section .shopInfo .shopImg .smallThumbnail {
     text-align: center;
 }
-main section .shopInfo .shopImg .smallThumbnail img {width: 60px; margin-top: 10px;}
+main section .shopInfo .shopImg .smallThumbnail img {width: 60px; margin-top: 10px; cursor: pointer;}
 main section .shopInfo .infoWrap {
     margin: 10px 0 0 113px;
 }
@@ -155,8 +194,11 @@ main section .shopInfo .infoWrap .container .choice p {
     font-size: 0.688rem; color: #4f4f4f; font-weight: 600;
     margin-bottom: 10px;
 }
-main section .shopInfo .infoWrap .container .choice .color {}
-main section .shopInfo .infoWrap .container .choice .color .white {}
+main section .shopInfo .infoWrap .container .choice .color {
+    position: relative;
+    display: flex; flex-flow: row nowrap;
+}
+main section .shopInfo .infoWrap .container .choice .color .white {margin-right: 5px;}
 main section .shopInfo .infoWrap .container .choice .color .white::after {
     content: ''; display: inline-block;
     width: 24px ; height: 24px;
@@ -164,13 +206,41 @@ main section .shopInfo .infoWrap .container .choice .color .white::after {
     margin-right: 1px;
     border: 1px solid #ccc;
 }
-main section .shopInfo .infoWrap .container .choice .color .brown {}
-main section .shopInfo .infoWrap .container .choice .color .brown::after {
+main section .shopInfo .infoWrap .container .choice .color .white .wh {
+    font-size: 0.815rem;
+    width: 100px; height: 35px;
+    color: #fff;
+    background: #4f4f4f;
+    padding: 3px;
+    border-radius: 3px;
+    text-align: center;
+    position: absolute; top: 35px; left: -35px;
+    display: none;
+}
+main section .shopInfo .infoWrap .container .choice .color .white:hover .wh {
+    display: block;
+}
+main section .shopInfo .infoWrap .container .choice .color .gray {}
+main section .shopInfo .infoWrap .container .choice .color .gray::after {
     content: ''; display: inline-block;
     width: 24px ; height: 24px;
     background-color: #655e5e;
     margin-right: 1px;
     border: 1px solid #ccc;
+}
+main section .shopInfo .infoWrap .container .choice .color .gray .gr {
+    font-size: 0.815rem;
+    width: 100px; height: 35px;
+    color: #fff;
+    background: #4f4f4f;
+    padding: 3px;
+    border-radius: 3px;
+    text-align: center;
+    position: absolute; top: 35px; left: -3px;
+    display: none;
+}
+main section .shopInfo .infoWrap .container .choice .color .gray:hover .gr {
+    display: block;
 }
 main section .shopInfo .infoWrap .container .purchase .buy {
     display: flex; justify-content: space-between;

@@ -12,6 +12,7 @@
     border-radius: 5px;
     position: absolute; left: 50%; top: 20%;
     transform: translateX(-50%);
+    display: none;
 }
 .loginPop .login .top {text-align: center; position: relative;}
 .loginPop .login .top h1 {
@@ -119,6 +120,7 @@
     padding: 10px 25px; background: #8393A7;
     margin-top: 20px;
     border: 1px solid #eee;
+    text-align: center;
 }
 /* 아이디 비밀번호 찾기 */
 .loginPop .searchBox {
@@ -127,6 +129,7 @@
     border-radius: 5px;
     position: absolute; left: 50%; top: 20%;
     transform: translateX(-50%);
+    display: none;
 }
 .loginPop .searchBox .title {
     border-bottom: 1px solid #E5E5E5;
@@ -177,7 +180,9 @@
 .loginPop .searchBox .searchIdPw a h2 {}
 .loginPop .searchBox .searchIdPw a h2 {}
 /* 아이디 찾기 */
-.loginPop .searchBox {}
+.loginPop .searchBox {
+    display: none;
+}
 .loginPop .searchBox #idpwBox {} 
 .loginPop .searchBox #idpwBox fieldset {}
 .loginPop .searchBox #idpwBox fieldset .searchId {
@@ -361,7 +366,7 @@
     position: relative; left: 50%; top: 20%;
     transform: translateX(-50%);
 }
-.joinWrap .joinPop .title {}
+.joinWrap .joinPop .title {position: relative;}
 .joinWrap .joinPop .title h1 {
     font-size: 1.5rem; color: #212121; font-weight: 700;
     text-align: center; 
@@ -370,7 +375,7 @@
 .joinWrap .joinPop .title .joinCloseBtn {}
 .joinWrap .joinPop .title .joinCloseBtn img {
     height: 20px;
-    position: absolute; left: 310px; top: 30px;
+    position: absolute; left: 305px; top: 5px;
 }
 .joinWrap .joinPop > a {
     background-color: #fff;
@@ -1121,8 +1126,8 @@ footer .bottomBg .bottom address em {color: #3B3B3B; font-weight: 500;}
     font-size: 1.125rem; color: #212121; font-weight: 500;
     padding-bottom: 30px; 
 }
-.btmTerms .term .utiliTitle .utiliBody .top .closeBtn {}
-.btmTerms .term .utiliTitle .utiliBody .top .closeBtn img {height: 20px;}
+.btmTerms .term .utiliTitle .utiliBody .top .closeBtn01 {}
+.btmTerms .term .utiliTitle .utiliBody .top .closeBtn01 img {height: 20px;}
 .btmTerms .term .utiliTitle .utiliBody h2, p {
     font-size: 0.75rem; color: #212121;
 }
@@ -1145,8 +1150,8 @@ footer .bottomBg .bottom address em {color: #3B3B3B; font-weight: 500;}
     font-size: 1.125rem; color: #212121; font-weight: 500;
     padding-bottom: 30px;
 }
-.btmTerms .term .policyTitle .policyBody .top .closeBtn {}
-.btmTerms .term .policyTitle .policyBody .top .closeBtn img {height: 20px;}
+.btmTerms .term .policyTitle .policyBody .top .closeBtn02 {}
+.btmTerms .term .policyTitle .policyBody .top .closeBtn02 img {height: 20px;}
 .btmTerms .term .policyTitle .policyBody h2, p {
     font-size: 0.75rem; color: #212121;
 }
