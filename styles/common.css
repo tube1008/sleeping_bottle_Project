@@ -834,7 +834,9 @@
 /* 일회성 광고창 */
 .popUp {max-width: 1920px; position: relative;}
 .popUp .couponTop {}
-.popUp .couponTop img {}
+.popUp .couponTop img {
+    width: 100%;
+}
 .popUp .close {
     display: flex; flex-flow: row nowrap;
     position: absolute; right: 0; top: 0;
@@ -1157,3 +1159,42 @@ footer .bottomBg .bottom address em {color: #3B3B3B; font-weight: 500;}
 }
 .btmTerms .term .policyTitle .policyBody h2 {padding: 15px 24px; font-weight: 500;}
 .btmTerms .term .policyTitle .policyBody p {padding: 0 24px; line-height: 1.5;}
+
+/* 반응형 */
+@media (max-width: 992px) {
+    header {
+        padding: 0;
+        height: 50px;
+    }
+    header .mainMenu .dLogo a img {
+        width: 70%;
+    }
+    header .mainMenu {
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    header .mainMenu .dLogo a img {
+        display: none;
+    }
+    header .mainMenu nav {
+        display: none;
+    }
+    header .mainMenu .mMenu {
+        display: block;
+    }
+    header .mainMenu .mLogo {
+        display: block;
+        margin: 0 auto;
+    }
+    header .mainMenu .menuRight > #login::after {
+        display: none;
+    }
+    header .mainMenu .menuRight .advertise {
+        display: none;
+    }
+}
+@media (max-width: 692px) {
+    .popUp {display: none;}
+}
